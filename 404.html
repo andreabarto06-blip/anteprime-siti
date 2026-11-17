@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><title>Anteprime di siti</title>
+<script>
+// A link copied with stray characters (markdown **, dots, quotes, brackets, %2A) lands here:
+// strip them and, if what is left names a known preview folder, go there.
+(function () {
+  var sites = ["il-bisogno", "pizzeria-jonica"];
+  var base = "/anteprime-siti/";
+  var path = decodeURIComponent(location.pathname).toLowerCase();
+  var rest = path.indexOf(base) === 0 ? path.slice(base.length) : path.replace(/^\//, "");
+  var first = rest.split("/")[0].replace(/[^a-z0-9-]/g, "");
+  var hit = sites.filter(function (s) { return first === s || first === s.replace(/-/g, ""); })[0];
+  if (hit && location.pathname.toLowerCase() !== base + hit + "/") location.replace(base + hit + "/" + location.hash);
+})();
+</script>
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f4f1ea;color:#222;font:17px/1.6 system-ui,sans-serif;padding:24px}main{max-width:32em;text-align:center}h1{font-size:1.4rem;margin:0 0 8px}</style></head>
+<body><main><h1>Pagina non trovata</h1><p>Controlla di aver copiato tutto il link che hai ricevuto, senza spazi o simboli in fondo.</p></main></body></html>

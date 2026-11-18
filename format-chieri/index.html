@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Format Bistrot Chieri · Patate ripiene, primi e antipasti nel chiostro</title>
+<meta name="description" content="Format Bistrot, Via Vittorio Emanuele II 32 a Chieri: patate ripiene, primi di pasta fresca e antipasti da condividere nel chiostro storico. Proposta in gran parte senza glutine. Tel. 011 904 4547.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--terra:#c2502c;--terra-d:#9c3b1f;--olive:#7b8a2b;--olive-d:#55611a;--plate:#f5dcb4;--kraft:#dcab55;--brown:#4b4134;--ink:#2d261f;--cream:#fbf3e6;--paper:#fffaf2;--muted:#76695a;--s:"Young Serif",Georgia,serif;--b:"Nunito Sans",system-ui,sans-serif;--k:"Kalam",cursive;--gut:clamp(18px,4vw,52px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{background:var(--cream);color:var(--ink);font:400 17px/1.65 var(--b);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(84px,10vw,140px)}
+h1,h2,h3{font-family:var(--s);font-weight:400;line-height:1.05;letter-spacing:-.01em}
+h2{font-size:clamp(2.3rem,5vw,4.2rem)}
+.hand{font:700 1.35rem/1.1 var(--k);color:var(--terra)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:14px;font:800 .92rem/1 var(--b);text-decoration:none;transition:transform .25s,background .25s}
+.btn svg{width:18px;height:18px}
+.btn.f{background:var(--terra);color:#fff;box-shadow:0 6px 0 var(--terra-d)}.btn.f:hover{transform:translateY(-2px)}
+.btn.o{background:var(--paper);color:var(--brown);box-shadow:0 6px 0 #e3cfae}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.top{position:absolute;top:0;left:0;right:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:96px}
+.top .logo img{width:84px;filter:drop-shadow(0 8px 16px rgba(0,0,0,.35))}
+.top .btn{padding:12px 18px}
+.dots{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:30;display:grid;gap:14px}
+.dots a{position:relative;display:block;width:14px;height:14px;border-radius:50%;background:var(--plate);box-shadow:inset 0 0 0 2px var(--brown);transition:transform .3s,background .3s}
+.dots a span{position:absolute;right:24px;top:50%;transform:translate(6px,-50%);white-space:nowrap;background:var(--brown);color:var(--plate);font:700 .78rem/1 var(--b);padding:6px 10px;border-radius:8px;opacity:0;pointer-events:none;transition:.25s}
+.dots a:hover span,.dots a:focus-visible span,.dots a.on span{opacity:1;transform:translate(0,-50%)}
+.dots a.on{background:var(--terra);transform:scale(1.25)}
+.mbar{display:none}
+@media (max-width:900px){.dots{display:none}.mbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;gap:8px}.mbar a{flex:1;justify-content:center;display:flex;align-items:center;gap:8px;padding:14px;border-radius:14px;font:800 .9rem/1 var(--b);text-decoration:none}.mbar a:first-child{background:var(--terra);color:#fff}.mbar a:last-child{background:var(--brown);color:var(--plate)}.mbar svg{width:18px;height:18px}footer{padding-bottom:100px!important}.top .btn{display:none}}
+.hero{position:relative;min-height:100svh;display:grid;align-items:end;color:#fff;padding-block:140px 70px;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:breathe 14s ease-in-out infinite alternate}
+@keyframes breathe{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,20,12,.6),rgba(30,20,12,.35) 35%,rgba(30,20,12,.88))}
+.hero .wrap{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:40px;align-items:end}
+.hero .hand{color:var(--plate);font-size:1.6rem}
+.hero h1{font-size:clamp(3.2rem,8.4vw,7.4rem);margin:8px 0 18px}
+.hero p{font-size:1.15rem;max-width:32em;opacity:.92}
+.hero .btns{margin-top:28px}
+.ticket{background:var(--plate);color:var(--brown);border-radius:18px;padding:22px 26px;position:relative;transform:rotate(2deg);box-shadow:0 30px 50px -20px rgba(0,0,0,.6)}
+.ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:22px;height:22px;border-radius:50%;background:#3a2a1c;transform:translateY(-50%)}
+.ticket::before{left:-11px}.ticket::after{right:-11px}
+.ticket small{font:800 .7rem/1 var(--b);letter-spacing:.18em;text-transform:uppercase;color:var(--terra)}
+.ticket b{display:block;font:400 1.8rem/1.1 var(--s);margin:8px 0 6px}
+.ticket span{font-size:.88rem}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.ticket{max-width:360px}}
+.week{background:var(--terra);color:#fff;padding-block:clamp(70px,8vw,110px)}
+.week .head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+.week .hand{color:var(--plate)}
+.week .head p{max-width:28em;opacity:.85}
+.days{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.day{background:rgba(255,255,255,.08);border:2px dashed rgba(255,255,255,.35);border-radius:20px;padding:22px;transition:background .3s,transform .3s}
+.day small{font:800 .72rem/1 var(--b);letter-spacing:.18em;text-transform:uppercase;opacity:.8}
+.day b{display:block;font:400 2.6rem/1 var(--s);margin:12px 0 6px}
+.day p{font-size:.95rem;opacity:.9}
+.day.today{background:var(--plate);color:var(--brown);border:2px solid var(--plate);transform:translateY(-6px) rotate(-1deg)}
+.day.today small::after{content:" · stasera";color:var(--terra)}
+.week .note{margin-top:22px;font-size:.85rem;opacity:.8}
+@media (max-width:820px){.days{grid-template-columns:1fr 1fr}.day b{font-size:2rem}}
+.pat .head{text-align:center;max-width:760px;margin:0 auto}
+.pat .head p{color:var(--muted);margin-top:14px}
+.lab{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,60px);align-items:center;margin-top:50px}
+.plist{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.plist button{display:flex;align-items:center;gap:10px;text-align:left;background:var(--paper);border:2px solid transparent;border-radius:14px;padding:12px 14px;font:700 .92rem/1.2 var(--b);color:var(--brown);transition:border-color .2s,background .2s}
+.plist button b{font:400 .95rem/1 var(--s);color:var(--terra);min-width:22px}
+.plist button[aria-pressed=true]{background:var(--brown);color:var(--plate)}
+.plist button[aria-pressed=true] b{color:var(--kraft)}
+.plist button:hover{border-color:var(--kraft)}
+.stage{position:relative;background:radial-gradient(circle at 50% 40%,#f3e2c2,#e8cc96 70%);border-radius:30px;padding:24px 24px 28px;text-align:center}
+.tater{position:relative;max-width:470px;margin:0 auto}
+.tater img{width:100%;mix-blend-mode:multiply}
+.tater svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.tp{animation:drop .9s cubic-bezier(.35,0,.5,1) both}
+@keyframes drop{0%{transform:translateY(-520px);opacity:0}15%{opacity:1}62%{transform:translateY(0)}78%{transform:translateY(-22px)}100%{transform:translateY(0)}}
+.ing{filter:drop-shadow(0 6px 4px rgba(60,35,10,.28))}
+.steam path{fill:none;stroke:rgba(255,255,255,.85);stroke-width:12;stroke-linecap:round;animation:steam 3s ease-in-out infinite}
+.steam path:nth-child(2){animation-delay:-1s}.steam path:nth-child(3){animation-delay:-2s}
+@keyframes steam{0%{opacity:0;transform:translateY(10px)}40%{opacity:.9}100%{opacity:0;transform:translateY(-30px)}}
+.pinfo h3{font-size:1.7rem;margin-top:6px}
+.pinfo p{color:var(--muted);margin-top:6px}
+.pinfo .row{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+.price{font:400 1.8rem/1 var(--s);color:var(--terra)}
+.badge{background:var(--olive);color:#fff;border-radius:999px;padding:5px 10px;font:800 .7rem/1 var(--b);letter-spacing:.06em}
+.real{display:none;margin:14px auto 0;width:120px;aspect-ratio:1;object-fit:cover;border-radius:16px;border:4px solid var(--paper);transform:rotate(-4deg);box-shadow:0 14px 26px -14px rgba(0,0,0,.5)}
+.real.on{display:block}
+@media (max-width:900px){.lab{grid-template-columns:1fr}.stage{order:-1}}
+@media (max-width:420px){.plist{grid-template-columns:1fr}}
+.primi{background:var(--brown);color:var(--plate)}
+.primi .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,6vw,90px);align-items:center}
+.primi .hand{color:var(--kraft)}
+.primi h2{color:#fff}
+.primi .intro{opacity:.85;margin-top:14px;max-width:30em}
+.mlist{list-style:none;margin-top:26px}
+.mlist li{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px dashed rgba(245,220,180,.25)}
+.mlist li span:first-child{flex:1}
+.mlist li i{font-style:normal;background:var(--olive);color:#fff;border-radius:999px;padding:3px 8px;font:800 .62rem/1 var(--b)}
+.mlist li b{font:400 1.15rem/1 var(--s);color:var(--kraft);white-space:nowrap}
+.spin{width:100%;max-width:520px;margin:0 auto;animation:turn 40s linear infinite}
+@keyframes turn{to{transform:rotate(360deg)}}
+@media (max-width:860px){.primi .wrap{grid-template-columns:1fr}.spin{max-width:300px}}
+.anti .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(30px,5vw,70px);align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chips span{background:var(--paper);border-radius:999px;padding:9px 14px;font:700 .88rem/1.2 var(--b);color:var(--brown);box-shadow:0 3px 0 #ead7b8}
+.chips span em{font-style:normal;color:var(--terra);margin-left:6px;white-space:nowrap}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.duo img{border-radius:22px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.duo img:last-child{margin-top:40px}
+.gf{margin-top:30px;background:var(--olive);color:#fff;border-radius:22px;padding:22px 24px;display:flex;gap:16px;align-items:center}
+.gf .ic{flex:none;width:56px;height:56px;border-radius:50%;background:var(--plate);color:var(--olive-d);display:grid;place-items:center;font:800 .8rem/1 var(--b)}
+.gf p{font-size:.95rem}
+@media (max-width:860px){.anti .wrap{grid-template-columns:1fr}}
+.chi{background:var(--olive-d);color:var(--plate)}
+.chi .hand{color:var(--kraft)}
+.chi h2{color:#fff}
+.chi .head{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end}
+.chi .head p{opacity:.85}
+.film{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px;gap:12px;margin-top:44px}
+.film img{width:100%;height:100%;object-fit:cover;border-radius:20px}
+.film img:first-child{grid-row:span 2}
+@media (max-width:860px){.chi .head{grid-template-columns:1fr}.film{grid-template-columns:1fr 1fr;grid-template-rows:auto}.film img{aspect-ratio:4/5;height:auto}.film img:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}}
+.info .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,6vw,80px);align-items:start}
+.card{background:var(--paper);border-radius:28px;padding:clamp(26px,4vw,40px);box-shadow:0 8px 0 #ead7b8}
+.card h3{font-size:1.6rem;margin-bottom:16px}
+.card dl{display:grid;gap:14px}
+.card dt{font:800 .7rem/1 var(--b);letter-spacing:.16em;text-transform:uppercase;color:var(--terra)}
+.card dd{font-size:1.05rem;margin-top:4px}
+.card dd a{text-decoration:none;border-bottom:2px solid var(--kraft)}
+.hrs{list-style:none}
+.hrs li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed #e0cfb2}
+.hrs li span:last-child{color:var(--muted);text-align:right}
+.hrs li.today{color:var(--terra);font-weight:800}
+.hrs li.today span:last-child{color:var(--terra)}
+.info .btns{margin-top:22px}
+@media (max-width:860px){.info .wrap{grid-template-columns:1fr}}
+footer{background:var(--ink);color:rgba(245,220,180,.7);text-align:center;padding:50px var(--gut) 40px;font-size:.82rem}
+footer img{width:90px;margin:0 auto 14px}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.hero>img,.spin,.steam path{animation:none}.tp{animation:none}html{scroll-behavior:auto}}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--ink);color:var(--plate);font:600 .7rem/1.3 var(--b);letter-spacing:.04em;text-align:center;padding:8px 16px}
+footer{padding-bottom:80px}
+@media (max-width:900px){.mbar{bottom:46px!important}footer{padding-bottom:140px!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-ph" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol></svg>
+<header class="top"><div class="wrap"><a class="logo" href="#top" aria-label="Format Bistrot, torna all'inizio"><img src="img/logo.png" alt="Format Bistrot" width="768" height="768"></a><a class="btn f" href="tel:+390119044547"><svg><use href="#i-ph"/></svg>011 904 4547</a></div></header>
+<nav class="dots" aria-label="Sezioni"><a href="#top"><span>Inizio</span></a><a href="#settimana"><span>La settimana</span></a><a href="#patate"><span>Patate ripiene</span></a><a href="#primi"><span>Primi</span></a><a href="#antipasti"><span>Antipasti</span></a><a href="#chiostro"><span>Il chiostro</span></a><a href="#info"><span>Orari</span></a></nav>
+<div class="mbar"><a href="tel:+390119044547"><svg><use href="#i-ph"/></svg>Chiama</a><a href="#patate">Le patate</a></div>
+<main>
+<section class="hero" id="top" aria-labelledby="t-hero">
+  <img src="img/chiostro.jpg" alt="Il dehor di Format nel chiostro storico di Via Vittorio Emanuele II" width="1600" height="1200">
+  <div class="wrap">
+    <div>
+      <span class="hand">Bistrot nel chiostro · Chieri</span>
+      <h1 id="t-hero">Primi per scelta.</h1>
+      <p>Patate ripiene, pasta fresca e antipasti da condividere, nel cuore dello storico chiostro di Via Vittorio Emanuele II. Anche da asporto e a domicilio.</p>
+      <div class="btns"><a class="btn f" href="tel:+390119044547"><svg><use href="#i-ph"/></svg>Prenota un tavolo</a><a class="btn o" href="#patate">Scegli la tua patata</a></div>
+    </div>
+    <div class="ticket" id="ticket" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="settimana" class="week" aria-labelledby="t-week"><div class="wrap">
+  <div class="head rv"><div><span class="hand">A cena conviene</span><h2 id="t-week" style="margin-top:8px">Una settimana, quattro promo.</h2></div><p>Dal lunedì al giovedì la cena al Format prende un altro gusto. Il giorno di oggi è evidenziato.</p></div>
+  <div class="days rv" id="days">
+    <div class="day" data-d="1"><small>Lunedì</small><b>50%</b><p>su tutti i primi</p></div>
+    <div class="day" data-d="2"><small>Martedì</small><b>50%</b><p>su tutto, esclusi bevande e dessert</p></div>
+    <div class="day" data-d="3"><small>Mercoledì</small><b>50%</b><p>su tutte le patate</p></div>
+    <div class="day" data-d="4"><small>Giovedì</small><b>16,90 €</b><p>Giropasta: tutta la pasta che vuoi, finché non dici basta</p></div>
+  </div>
+  <p class="note rv">Promozioni valide a cena, non a pranzo e nei giorni festivi.</p>
+</div></section>
+
+<section id="patate" class="pat" aria-labelledby="t-pat"><div class="wrap">
+  <div class="head rv"><span class="hand">La specialità della casa</span><h2 id="t-pat" style="margin-top:8px">Scegli la tua patata.</h2><p>Abbiamo cercato a lungo la patata migliore per le nostre ricette. Toccane una e guarda come la riempiamo.</p></div>
+  <div class="lab">
+    <div class="plist rv" id="plist" role="group" aria-label="Patate ripiene"></div>
+    <div class="stage rv">
+      <div class="tater">
+        <img src="img/patata-sola.jpg" alt="" width="960" height="736">
+        <svg viewBox="0 0 960 736" aria-hidden="true"><g id="tops"></g><g class="steam"><path d="M410 70c-26-36 26-60 0-100"/><path d="M500 40c-26-36 26-60 0-100"/><path d="M590 60c-26-36 26-60 0-100"/></g></svg>
+      </div>
+      <div class="pinfo" id="pinfo" aria-live="polite"></div>
+      <img class="real" id="real" alt="">
+    </div>
+  </div>
+</div></section>
+
+<section id="primi" class="primi" aria-labelledby="t-pri"><div class="wrap">
+  <img class="spin" src="img/pentola.png" alt="Tagliatelle al sugo con polpette in pentola" loading="lazy" width="768" height="723">
+  <div class="rv">
+    <span class="hand">Pasta fresca</span>
+    <h2 id="t-pri" style="margin-top:8px">I primi.</h2>
+    <p class="intro">Pasta fresca o trafilata al bronzo dopo lente essiccazioni: perfetta per la pausa pranzo dall'ufficio o per una cena informale.</p>
+    <ul class="mlist">
+      <li><span>Paccheri alla carbonara</span><b>12 €</b></li>
+      <li><span>Tajarin ai porcini</span><b>13 €</b></li>
+      <li><span>Gnocchi con provola, salsiccia e friarielli</span><b>13 €</b></li>
+      <li><span>Risotto alla zucca, toma e salsiccia di Bra</span><i>GLUTEN FREE</i><b>13 €</b></li>
+      <li><span>Agnolotti di carne al sugo d'arrosto</span><b>12 €</b></li>
+      <li><span>Paccheri all'amatriciana</span><b>11 €</b></li>
+      <li><span>Spaghettoni cacio e pepe</span><b>12 €</b></li>
+    </ul>
+    <p style="margin-top:16px;font-size:.88rem;opacity:.75">Tajarin e gnocchi anche in versione gluten free.</p>
+  </div>
+</div></section>
+
+<section id="antipasti" class="anti" aria-labelledby="t-ant"><div class="wrap">
+  <div class="rv">
+    <span class="hand">Da condividere</span>
+    <h2 id="t-ant" style="margin-top:8px">Gli antipasti.</h2>
+    <p style="color:var(--muted);margin-top:14px;max-width:30em">Molti si possono ordinare in mezza porzione: ideali da mettere al centro del tavolo e assaggiare insieme.</p>
+    <div class="chips">
+      <span>Vitello tonnato<em>4 / 7 €</em></span><span>Peperoni, acciughe e bagnetto verde<em>4 / 7 €</em></span><span>Hummus di ceci e fave<em>5 €</em></span><span>Crocchè di patate<em>5 €</em></span><span>Parmigiana di melanzane<em>6 €</em></span><span>Bombette pugliesi<em>8 €</em></span><span>Maxi chips di patate<em>5 €</em></span><span>Polpette di carne al pomodoro<em>4 / 7 €</em></span><span>Polpette di baccalà<em>4 / 7 €</em></span><span>Polpette di melanzane<em>4 / 6 €</em></span>
+    </div>
+    <div class="gf"><span class="ic" aria-hidden="true">GF</span><p>Abbiamo voluto una proposta in gran parte senza glutine: grazie alla collaborazione con AIC Piemonte, chi è intollerante può mangiare fuori casa in tutta sicurezza.</p></div>
+  </div>
+  <div class="duo rv"><img src="img/peperoni.jpg" alt="Peperoni con acciughe e bagnetto verde" loading="lazy"><img src="img/antipasto.jpg" alt="Un antipasto da condividere" loading="lazy"></div>
+</div></section>
+
+<section id="chiostro" class="chi" aria-labelledby="t-chi"><div class="wrap">
+  <div class="head rv"><div><span class="hand">Il posto</span><h2 id="t-chi" style="margin-top:8px">Un dehor nel chiostro.</h2></div><p>Al numero 32 di Via Vittorio Emanuele II si entra in un chiostro storico: muri color terracotta, ulivi, lucine sotto la pergola e lunghe tavolate per le feste.</p></div>
+  <div class="film rv">
+    <img src="img/tavolata.jpg" alt="Una lunga tavolata apparecchiata sotto la pergola del chiostro" loading="lazy">
+    <img src="img/chiostro2.jpg" alt="Il chiostro con le pareti color terracotta" loading="lazy">
+    <img src="img/chiostro3.jpg" alt="Tavoli apparecchiati nel dehor" loading="lazy">
+    <img src="img/chiostro4.jpg" alt="Il cortile con le piante" loading="lazy">
+    <img src="img/chiostro5.jpg" alt="Un tavolo pronto per la cena" loading="lazy">
+  </div>
+</div></section>
+
+<section id="info" class="info" aria-labelledby="t-info"><div class="wrap">
+  <div class="card rv">
+    <h3 id="t-info">Quando siamo aperti</h3>
+    <ul class="hrs" id="hrs">
+      <li data-d="1"><span>Lunedì</span><span>12–14:30 · 19–23</span></li>
+      <li data-d="2"><span>Martedì</span><span>12–14:30 · 19–23</span></li>
+      <li data-d="3"><span>Mercoledì</span><span>12–14:30 · 19–23</span></li>
+      <li data-d="4"><span>Giovedì</span><span>12–14:30 · 19–23</span></li>
+      <li data-d="5"><span>Venerdì</span><span>12–14:30 · 19–23</span></li>
+      <li data-d="6"><span>Sabato</span><span>19–23</span></li>
+      <li data-d="0"><span>Domenica</span><span>chiuso</span></li>
+    </ul>
+  </div>
+  <div class="card rv">
+    <h3>Prenota o ordina</h3>
+    <dl>
+      <div><dt>Indirizzo</dt><dd>Via Vittorio Emanuele II 32, Chieri (TO)</dd></div>
+      <div><dt>Telefono</dt><dd><a href="tel:+390119044547">011 904 4547</a></dd></div>
+      <div><dt>Email</dt><dd><a href="mailto:info@formatchieri.it">info@formatchieri.it</a></dd></div>
+      <div><dt>Asporto e domicilio</dt><dd>Chiamaci e passa a ritirare, oppure te lo portiamo noi.</dd></div>
+    </dl>
+    <div class="btns"><a class="btn f" href="tel:+390119044547"><svg><use href="#i-ph"/></svg>Chiama</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Vittorio+Emanuele+II+32+Chieri">Come arrivare</a></div>
+  </div>
+</div></section>
+</main>
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Format Bistrot. Non è il sito ufficiale.</div>
+<footer><img src="img/logo.png" alt="Format Bistrot" loading="lazy">Format Bistrot · Via Vittorio Emanuele II 32, Chieri · <a href="https://www.facebook.com/bistrotformatchieri">Facebook</a> · <a href="https://www.instagram.com/formatchieri/">Instagram</a></footer>
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,io='IntersectionObserver' in window,NS='http://www.w3.org/2000/svg';
+  var els=[].slice.call(document.querySelectorAll('.rv'));
+  if(io&&!reduce){var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');o.unobserve(e.target);}});},{threshold:.12});els.forEach(function(e){o.observe(e);});}else els.forEach(function(e){e.classList.add('in');});
+  var d=new Date().getDay();
+  var P={1:['Primi al 50%','Stasera tutti i primi a metà prezzo.'],2:['Tutto al 50%','Esclusi bevande e dessert.'],3:['Patate al 50%','Stasera tutte le patate ripiene a metà prezzo.'],4:['Giropasta 16,90 €','Tutta la pasta che vuoi, finché non dici basta.']};
+  var t=document.getElementById('ticket'),p=P[d];
+  t.innerHTML=p?'<small>Stasera al Format</small><b>'+p[0]+'</b><span>'+p[1]+' Solo a cena.</span>':(d===0?'<small>Oggi</small><b>Siamo chiusi</b><span>Ci vediamo lunedì, a pranzo e a cena.</span>':'<small>Stasera al Format</small><b>Cena nel chiostro</b><span>Dalle 19 alle 23: prenota un tavolo.</span>');
+  [].forEach.call(document.querySelectorAll('[data-d]'),function(e){if(+e.dataset.d===d)e.classList.add('today');});
+  /* ingredienti disegnati: ognuno centrato in 0,0, largo circa 36 unità */
+  function drz(c,w){return '<path d="M-30 0c6-10 12 10 18 0s12 10 18 0 12 10 18 0 10 8 12 2" fill="none" stroke="'+c+'" stroke-width="'+(w||6)+'" stroke-linecap="round" stroke-linejoin="round"/>';}
+  var ING={
+    mozz:'<path d="M-16-4c2-10 14-12 20-6 8-4 17 4 12 12 4 8-6 14-14 10-8 6-20 0-18-8-6-3-4-9 0-8z" fill="#fbfaf3" stroke="#e2dac6" stroke-width="1.4"/><path d="M-8-6c4-3 9-3 12 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>',
+    burrata:'<path d="M-20 2c-2-12 10-20 22-16 12-2 20 8 16 18 2 10-10 16-20 12-10 4-20-4-18-14z" fill="#fffef8" stroke="#e8e0cc" stroke-width="1.4"/><path d="M-10-6c6-5 14-5 18 0" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M-6 6c4 3 10 3 14 0" stroke="#efe7d2" stroke-width="2" fill="none" stroke-linecap="round"/>',
+    secco:'<path d="M-20 -2c4-9 14-11 22-7 6-4 16-2 18 5 2 8-6 13-14 12-6 5-18 4-24-1-4-3-4-6-2-9z" fill="#a8321e"/><path d="M-14-3c6-4 14-4 20 0M-8 5c6 1 12 0 16-3" stroke="#6e170b" fill="none" stroke-width="2.2" stroke-linecap="round"/><path d="M-12-6c4-2 8-2 10-1" stroke="#e2704f" fill="none" stroke-width="2.2" stroke-linecap="round"/>',
+    basilico:'<path d="M-17 6C-11-10 10-15 19-8 11 7-4 14-17 6z" fill="#4f8a2a"/><path d="M-15 5C-5-2 6-6 17-8" stroke="#86bd52" stroke-width="1.8" fill="none"/>',
+    salsiccia:'<path d="M-14-6c4-6 12-4 12 2 6-4 14 0 12 6 6 4 2 12-6 11-4 6-14 4-14-2-8 0-10-10-4-17z" fill="#c27b6c"/><path d="M-7-2l3 2M4 2l2 3M-4 8l3-1" stroke="#8a4a3c" stroke-width="2.4" stroke-linecap="round"/><path d="M-9-6c3-2 6-2 8 0" stroke="#e3a99b" stroke-width="2" fill="none" stroke-linecap="round"/>',
+    radicchio:'<path d="M-18 4C-12-12 12-14 20-2 10-8-6-6-14 8z" fill="#7a1f3d"/><path d="M-12 3C-6-6 6-8 14-3" stroke="#f1d8e0" stroke-width="2.2" fill="none" stroke-linecap="round"/>',
+    melanzana:'<rect x="-12" y="-12" width="24" height="24" rx="5" fill="#ecdcae" stroke="#4b2a4a" stroke-width="5" transform="rotate(12)"/><path d="M-4-3l2 1M3 3l2 1" stroke="#b49a5c" stroke-width="2" stroke-linecap="round"/>',
+    provola:'<rect x="-12" y="-11" width="24" height="22" rx="4" fill="#f1d58e" stroke="#b97a2e" stroke-width="4"/><path d="M-6-4h10" stroke="#fff3c9" stroke-width="3" stroke-linecap="round"/>',
+    toma:'<rect x="-11" y="-10" width="22" height="20" rx="4" fill="#f6ead0" stroke="#dcc79a" stroke-width="2"/><circle cx="-3" cy="-1" r="2" fill="#e2d1a8"/><circle cx="4" cy="4" r="1.6" fill="#e2d1a8"/>',
+    friarielli:'<path d="M-18 4c2-4 4 0 6-4s4 0 6-4 4 0 6-3 4 0 6-2 4 1 8 0c-2 8-8 14-18 15-6 1-12 0-14-2z" fill="#2f5c1a"/><path d="M-14 6C-4 2 6-2 16-6" stroke="#5e8e3a" stroke-width="2" fill="none"/>',
+    pulled:'<path d="M-18-6c8 4 12-4 20 0s10-2 16 2M-18 2c8 4 12-4 20 0s10-2 16 2M-14 9c8 3 10-3 18 0s8-1 12 1" fill="none" stroke="#7a3e1d" stroke-width="5" stroke-linecap="round"/><path d="M-10-4c4 2 6 0 8 0" stroke="#b46a38" stroke-width="2" stroke-linecap="round"/>',
+    anello:'<ellipse rx="15" ry="11" fill="none" stroke="#c98a2e" stroke-width="8"/><ellipse rx="15" ry="11" fill="none" stroke="#e8b45a" stroke-width="3" stroke-dasharray="3 5"/>',
+    oliva:'<ellipse rx="9" ry="8" fill="#2d2a26"/><ellipse rx="3.4" ry="3" fill="#7a6a3a"/><path d="M-6-4c2-2 4-2 6-2" stroke="#5b5650" stroke-width="2" fill="none" stroke-linecap="round"/>',
+    polpo:'<path d="M-15 10C-17-6-2-14 8-8s4 15-4 10c-4-3-2-8 2-7" fill="none" stroke="#b9506a" stroke-width="8" stroke-linecap="round"/><path d="M-15 10C-17-6-2-14 8-8" fill="none" stroke="#f0b4c2" stroke-width="2.4" stroke-dasharray="1 6" stroke-linecap="round"/>',
+    prezzemolo:'<g fill="#4f8a2a"><path d="M0 0c-8-2-10-10-4-12 4 2 6 6 4 12z"/><path d="M0 0c2-8 10-10 12-4-2 4-6 6-12 4z"/><path d="M0 0c-6 4-6 12 0 12 4-4 4-8 0-12z"/></g>',
+    porcino:'<path d="M-17 0c0-14 34-14 34 0z" fill="#8a5a2e"/><path d="M-12-4c4-5 12-6 18-3" stroke="#b07a46" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M-7 0h14l-2 15c-3 2-7 2-10 0z" fill="#f1dfb6"/>',
+    nocciola:'<g fill="#c9965a" stroke="#8f6232" stroke-width="1.2"><path d="M-10-4l6-4 4 4-3 5z"/><path d="M4-6l7 1-1 6-6-1z"/><path d="M-4 6l6-3 4 5-6 3z"/></g>',
+    uovo:'<path d="M-26 2c-2-14 14-24 28-20 16 0 26 12 20 24-4 12-22 16-34 10-10-2-14-8-14-14z" fill="#fffdf6" stroke="#ece4d0" stroke-width="1.4"/><circle cx="2" cy="0" r="11" fill="#f2b31f"/><path d="M-3-5c3-3 7-3 9-1" stroke="#ffe08a" stroke-width="3" fill="none" stroke-linecap="round"/>',
+    guanciale:'<path d="M-18-6c8-3 26-3 36 0l-2 12c-10 3-24 3-34 0z" fill="#b5523a"/><path d="M-16-1c10-2 24-2 32 0" stroke="#f3dcc4" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M-14 4c8-1 18-1 26 0" stroke="#d98a64" stroke-width="2" fill="none" stroke-linecap="round"/>',
+    mortadella:'<path d="M-18 6A18 18 0 0 1 18 6z" fill="#eba3a3" stroke="#d98080" stroke-width="2"/><circle cx="-7" cy="0" r="2.2" fill="#fff"/><circle cx="3" cy="-6" r="1.8" fill="#fff"/><circle cx="8" cy="2" r="2" fill="#8bb23c"/>',
+    pistacchio:'<g fill="#8bb23c" stroke="#5f7f22" stroke-width="1"><path d="M-9-2l5-5 5 3-3 5z"/><path d="M3-4l6 2-2 6-5-2z"/><path d="M-3 4l5-1 2 5-5 2z"/></g>',
+    polpetta:'<circle r="13" fill="#7a3a22"/><path d="M-13 4c4 6 22 6 26 0" fill="none" stroke="#c0391b" stroke-width="5" stroke-linecap="round"/><path d="M-6-6c3-3 8-3 10 0" stroke="#a65a3a" stroke-width="3" fill="none" stroke-linecap="round"/>',
+    baccala:'<circle r="13" fill="#d4a26a"/><circle r="13" fill="none" stroke="#a8743a" stroke-width="2"/><path d="M-6-5c3-3 8-3 10 0" stroke="#efcc96" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M-12 6c6 5 18 5 24-1" stroke="#b3311c" stroke-width="4" fill="none" stroke-linecap="round"/>',
+    cipolla:'<path d="M-16 4c6-12 14 6 20-6s12 4 14-2M-12 9c6-6 12 2 18-4" fill="none" stroke="#a5642b" stroke-width="4.5" stroke-linecap="round"/><path d="M-10 2c3-3 5-2 7-1" stroke="#d29a5a" stroke-width="2" stroke-linecap="round"/>',
+    grattugiato:'<g stroke="#fbf6e6" stroke-width="3.4" stroke-linecap="round"><path d="M-12-6l7 2M2-8l6 3M-6 3l8-1M6 4l7 3M-14 8l6 1"/></g>',
+    parmigiano:'<g fill="#f3e2b0" stroke="#d8c180" stroke-width="1"><path d="M-10-6l7-2 2 6-7 2z"/><path d="M3-3l7 1-2 6-6-2z"/><path d="M-5 5l6-1 1 6-6 1z"/></g>'
+  };
+  var SAUCE={basilico:'#4f8a2a',gorgonzola:'#e8dfbf',pomodoro:'#c0391b',bbq:'#5a1e0e',cheddar:'#f0a020',pecorino:'#f4ecd3',parmigiano:'#f1e2b4'};
+  var Q=[['Bufala','Mozzarella di bufala, pomodori secchi, crema di basilico','10',{s:['basilico'],t:[['mozz',4],['secco',4],['basilico',2]]},0,''],
+         ['Gorgonzola e Bra','Crema al gorgonzola, salsiccia di Bra e radicchio caramellato','13',{s:['gorgonzola','gorgonzola'],t:[['salsiccia',5],['radicchio',5]]},0,''],
+         ['Parmigiana','Melanzane a funghetto, fiordilatte, parmigiano, pomodoro e basilico','11',{s:['pomodoro'],t:[['melanzana',5],['mozz',3],['basilico',2],['parmigiano',2]]},0,''],
+         ['Provola e friarielli','Provola affumicata, salsiccia e friarielli','12',{s:[],t:[['provola',4],['salsiccia',4],['friarielli',4]]},0,''],
+         ['Pulled pork','Pulled pork, salsa BBQ, anelli di cipolla fritti, cheddar','13',{s:['bbq','cheddar'],t:[['pulled',6],['anello',4]]},0,'img/patata-pork.jpg'],
+         ['Baccalà','Polpette di baccalà al sugo, olive, pomodori secchi e cipolla caramellata','13',{s:['pomodoro'],t:[['baccala',4],['oliva',3],['secco',3],['cipolla',2]]},0,''],
+         ['Polpo e burrata','Polpo, burrata, prezzemolo e olive','13',{s:[],t:[['burrata',3],['polpo',4],['oliva',3],['prezzemolo',3]]},1,''],
+         ['Porcini e nocciola','Funghi porcini, toma, salsiccia di Bra e granella di nocciola','14',{s:[],t:[['porcino',5],['toma',3],['salsiccia',3],['nocciola',3]]},0,'img/patata-porcini.jpg'],
+         ['Uovo e guanciale','Uovo pochè, crema di pecorino, guanciale croccante','12',{s:['pecorino','pecorino'],t:[['guanciale',7],['uovo',1]]},0,''],
+         ['Stracciata e Bra','Stracciata di burrata, cipolla caramellata, salsiccia di Bra','12',{s:[],t:[['burrata',4],['cipolla',4],['salsiccia',5]]},1,'BIO'],
+         ['Mortadella e pistacchio','Burrata, mortadella e granella di pistacchio','12',{s:[],t:[['burrata',3],['mortadella',6],['pistacchio',4]]},1,''],
+         ['Polpette','Polpette di carne al pomodoro, crema di parmigiano e ricotta salata','13',{s:['pomodoro','parmigiano'],t:[['polpetta',5],['grattugiato',4],['basilico',2]]},0,'']];
+  /* dove cadono, nelle coordinate della foto (960 x 736): solo sulla polpa */
+  var POS=[[500,175],[320,170],[680,160],[420,95],[600,90],[230,250],[400,265],[810,200],[740,120],[290,335],[560,250],[700,215],[300,95],[870,215],[180,180]];
+  var DRZ=[[470,200],[620,165],[330,250]];
+  var list=document.getElementById('plist'),tops=document.getElementById('tops'),info=document.getElementById('pinfo'),real=document.getElementById('real');
+  Q.forEach(function(q,i){var b=document.createElement('button');b.type='button';b.setAttribute('aria-pressed','false');b.innerHTML='<b>'+(i+1)+'</b>'+q[0];b.addEventListener('click',function(){pick(i);if(innerWidth<900){var st=document.querySelector('.stage');st.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});}});list.appendChild(b);});
+  function drop(x,y,rot,sc,html,delay){var o=document.createElementNS(NS,'g');o.setAttribute('transform','translate('+x+' '+y+')');
+    var m=document.createElementNS(NS,'g');m.setAttribute('class','tp');m.style.animationDelay=delay+'ms';
+    var n=document.createElementNS(NS,'g');n.setAttribute('class','ing');n.setAttribute('transform','rotate('+rot+') scale('+sc+')');n.innerHTML=html;
+    m.appendChild(n);o.appendChild(m);tops.appendChild(o);}
+  function pick(i){var q=Q[i],r=q[3],d=0;[].forEach.call(list.children,function(b,j){b.setAttribute('aria-pressed',String(i===j));});
+    while(tops.firstChild)tops.removeChild(tops.firstChild);
+    var items=[];r.t.forEach(function(t){for(var n=0;n<t[1];n++)items.push(t[0]);});
+    /* alterna gli ingredienti, così non cadono tutti uguali di fila */
+    var mix=[],k=0;while(items.length){var t=r.t[k%r.t.length][0],at=items.indexOf(t);if(at>-1)mix.push(items.splice(at,1)[0]);k++;}
+    var big=mix.filter(function(t){return t==='uovo';});mix=mix.filter(function(t){return t!=='uovo';});
+    mix.forEach(function(t,n){var p=POS[n%POS.length];drop(p[0],p[1],(n*47%70)-35,2.9+(n*13%5)/10,ING[t],d);d+=70;});
+    r.s.forEach(function(c,n){var p=DRZ[n%DRZ.length];drop(p[0],p[1],(n%2?-14:10),5,drz(SAUCE[c],6),d);d+=110;});
+    big.forEach(function(t){drop(500,170,-6,4.2,ING[t],d);d+=90;});
+    info.innerHTML='<span class="hand" style="font-size:1.1rem">Patata n. '+(i+1)+'</span><h3>'+q[0]+'</h3><p>'+q[1]+'</p><div class="row"><span class="price">'+q[2]+' €</span>'+(q[4]?'<span class="badge">GLUTEN FREE</span>':'')+(q[5]==='BIO'?'<span class="badge">PRODOTTI BIO</span>':'')+'</div>';
+    if(q[5]&&q[5]!=='BIO'){real.src=q[5];real.alt='La patata '+q[0]+' come esce dalla nostra cucina';real.classList.add('on');}else{real.classList.remove('on');real.removeAttribute('src');real.alt='';}}
+  pick(0);
+  var dots=[].slice.call(document.querySelectorAll('.dots a'));
+  if(io){var secs=dots.map(function(a){return document.querySelector(a.getAttribute('href'));});var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var k=secs.indexOf(e.target);dots.forEach(function(a,j){a.classList.toggle('on',j===k);});}});},{rootMargin:'-45% 0px -50% 0px'});secs.forEach(function(s){so.observe(s);});}
+})();
+</script>
+</body>
+</html>

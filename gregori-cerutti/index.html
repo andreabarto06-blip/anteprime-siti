@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Dentistico Gregori-Cerutti · Dentista nel centro storico di Chieri</title>
+<meta name="description" content="Studio Dentistico Gregori-Cerutti, Via Vittorio Emanuele II 31/C a Chieri: ortodonzia, implantologia, pedodonzia, igiene e TAC in studio. Tel. 011 942 3123.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--bone:#f6f3ee;--paper:#fffdf9;--petrol:#0b3b5c;--petrol-2:#11507a;--mint:#8fcfea;--mint-l:#e2f2fa;--brick:#c96a14;--brick-l:#fbe5cf;--ink:#1a2526;--muted:#5f6e6e;--line:#e3ddd3;--h:"Outfit",system-ui,sans-serif;--s:"Instrument Serif",Georgia,serif;--b:"Figtree",system-ui,sans-serif;--gut:clamp(18px,4vw,44px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:86px}
+html,body{overflow-x:clip}
+body{background:var(--bone);color:var(--ink);font:400 17px/1.65 var(--b);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,10vw,130px)}
+h1,h2,h3{font-family:var(--h);font-weight:600;letter-spacing:-.03em;line-height:1.04}
+h2{font-size:clamp(2.2rem,4.6vw,3.7rem)}
+h1 em,h2 em{font:italic 400 1.08em/1 var(--s);letter-spacing:-.01em;color:var(--brick)}
+.ey{display:inline-flex;align-items:center;gap:10px;font:600 .76rem/1 var(--b);letter-spacing:.16em;text-transform:uppercase;color:var(--petrol-2)}
+.ey svg{width:26px;height:10px;color:var(--brick)}
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:1em 1.5em;border-radius:999px;font:600 .95rem/1 var(--b);text-decoration:none;transition:transform .2s,background .2s}
+.btn svg{width:1.1em;height:1.1em}
+.btn.p{background:var(--brick);color:#fff}.btn.p:hover{transform:translateY(-2px);background:#a85810}
+.btn.d{background:var(--petrol);color:#fff}.btn.d:hover{background:var(--petrol-2)}
+.btn.s{background:transparent;color:var(--petrol);box-shadow:inset 0 0 0 1.5px var(--petrol)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+/* brand */
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--petrol)}
+.lg{width:50px;height:auto;flex:none;mix-blend-mode:multiply;clip-path:inset(2% 0 0 0)}
+footer .lg{mix-blend-mode:normal;clip-path:none;width:58px;background:#fff;border-radius:14px;padding:7px}
+.logo b{display:block;font:600 1rem/1.1 var(--h);letter-spacing:-.01em}
+.logo small{display:block;font:500 .68rem/1.3 var(--b);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(246,243,238,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;height:76px}
+.nav{position:relative;display:flex;gap:4px}
+.nav a{padding:.7em .9em 1.1em;font:500 .93rem/1 var(--b);text-decoration:none;color:var(--muted);transition:color .3s}
+.nav a.on{color:var(--petrol)}
+.nav .smile{position:absolute;bottom:2px;left:0;width:40px;height:10px;color:var(--brick);opacity:0;transition:left .45s cubic-bezier(.3,.7,.2,1),width .45s,opacity .3s}
+.nav .smile.v{opacity:1}
+@media (max-width:1000px){.nav{display:none}}
+@media (max-width:560px){.top .btn{display:none}}
+/* hero */
+.hero{padding-top:clamp(60px,8vw,110px);padding-bottom:0;text-align:center}
+.hero .ey{justify-content:center}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.6rem);max-width:15ch;margin:22px auto 0}
+.hero h1 .u{position:relative;display:inline-block;white-space:nowrap}
+.hero h1 .u svg{position:absolute;left:-2%;right:-2%;bottom:-.32em;width:104%;height:.42em;overflow:visible}
+.hero h1 .u path{fill:none;stroke:var(--brick);stroke-width:5;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;transition:stroke-dashoffset 1.6s .5s cubic-bezier(.6,0,.2,1)}
+.hero.go h1 .u path{stroke-dashoffset:0}
+.hero .lead{font-size:1.15rem;color:var(--muted);max-width:36em;margin:34px auto 0}
+.hero .btns{justify-content:center;margin-top:32px}
+.duo{position:relative;display:grid;grid-template-columns:1.4fr 1fr;gap:14px;margin-top:clamp(50px,7vw,80px)}
+.duo img{width:100%;height:clamp(240px,34vw,460px);object-fit:cover;border-radius:28px 28px 0 0}
+.duo .b img{border-radius:28px 28px 0 0}
+.chips{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);display:flex;gap:10px;flex-wrap:wrap;justify-content:center;width:max-content;max-width:94%}
+.chip{display:flex;align-items:center;gap:8px;background:var(--paper);border-radius:999px;padding:10px 16px 10px 10px;font:600 .88rem/1 var(--b);color:var(--petrol);box-shadow:0 14px 30px -16px rgba(15,61,62,.5)}
+.chip i{width:26px;height:26px;border-radius:50%;background:var(--mint-l);color:var(--petrol);display:grid;place-items:center;font:700 .7rem/1 var(--h);font-style:normal}
+@media (max-width:760px){.duo{grid-template-columns:1fr}.duo .b{display:none}.chips{position:static;transform:none;width:auto;max-width:none;margin-top:14px}}
+/* facts band */
+.band{background:var(--petrol);color:#fff;padding-block:0}
+.band .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.band div{padding:30px 22px;border-left:1px solid rgba(255,255,255,.12)}
+.band div:first-child{border-left:0}
+.band b{display:block;font:600 1.05rem/1.2 var(--h)}
+.band span{font-size:.9rem;opacity:.72}
+@media (max-width:820px){.band .wrap{grid-template-columns:1fr 1fr}.band div:nth-child(3){border-left:0}}
+/* check-up */
+.steps{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:54px}
+.steps .rail{position:absolute;left:28px;right:28px;top:27px;height:3px;background:var(--line);border-radius:3px}
+.steps .fill{position:absolute;inset:0 auto 0 0;width:calc(var(--p,0)*100%);background:var(--brick);border-radius:3px}
+.step .dot{width:56px;height:56px;border-radius:50%;background:var(--paper);border:3px solid var(--line);display:grid;place-items:center;font:600 1rem/1 var(--h);color:var(--muted);transition:all .4s;position:relative}
+.step.lit .dot{border-color:var(--brick);background:var(--brick);color:#fff;box-shadow:0 0 0 6px var(--brick-l)}
+.step h3{font-size:1.2rem;margin:18px 0 8px}
+.step p{font-size:.95rem;color:var(--muted)}
+@media (max-width:820px){.steps{grid-template-columns:1fr}.steps .rail{left:26px;right:auto;top:28px;bottom:28px;width:3px;height:auto}.steps .fill{inset:0 0 auto 0;width:auto;height:calc(var(--p,0)*100%)}.step{display:grid;grid-template-columns:56px 1fr;gap:0 18px}.step h3{margin-top:4px}.step p{grid-column:2}}
+/* arch explorer */
+.cure{background:var(--paper)}
+.cure .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(30px,5vw,70px);align-items:start;margin-top:44px}
+.stage{position:relative;aspect-ratio:1/1;border-radius:36px;overflow:hidden;background:radial-gradient(circle at 30% 25%,#fff 0,var(--mint-l) 45%,#cfe7f3 100%);display:grid;place-items:center}
+.stage::after{content:"";position:absolute;width:64%;aspect-ratio:1;border-radius:50%;border:1.5px dashed rgba(15,61,62,.2);animation:spin 50s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stage .big{position:absolute;left:28px;top:10px;font:italic 400 clamp(5rem,11vw,9rem)/1 var(--s);color:rgba(15,61,62,.12)}
+.stage .ill{position:relative;z-index:1;width:56%;height:auto;overflow:visible}
+.ill path{fill:none;stroke:var(--petrol);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.ill .fl{fill:#fff}
+.ill .a{stroke:var(--brick)}
+.ill .dr{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.5s cubic-bezier(.6,0,.2,1) forwards}
+.ill .a.dr{animation-delay:.8s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.ill .tw{fill:var(--brick);stroke:none;transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s 1.6s forwards,tw 2.4s ease-in-out 2.1s infinite}
+@keyframes pop{to{opacity:1}}
+@keyframes tw{50%{transform:scale(.55)}}
+.stage .cap{position:absolute;left:0;right:0;bottom:24px;text-align:center;z-index:1}
+.stage .cap span{display:inline-block;background:var(--paper);color:var(--petrol);border-radius:999px;padding:9px 16px;font:600 .85rem/1 var(--b);box-shadow:0 12px 26px -16px rgba(15,61,62,.5)}
+.tlist{display:grid;gap:6px}
+.tlist button{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:12px;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:13px 4px;font:500 1rem/1.25 var(--b);cursor:pointer;color:var(--ink)}
+.tlist button b{font:600 .78rem/1 var(--h);color:var(--muted)}
+.tlist button span.go{font-size:1.1rem;color:var(--brick);opacity:0;transform:translateX(-6px);transition:.3s}
+.tlist button[aria-selected=true]{color:var(--petrol);font-weight:600}
+.tlist button[aria-selected=true] b{color:var(--brick)}
+.tlist button[aria-selected=true] span.go{opacity:1;transform:none}
+.tdesc{margin-top:22px;background:var(--petrol);color:#fff;border-radius:22px;padding:24px 26px}
+.tdesc h3{font-size:1.45rem}
+.tdesc p{margin-top:8px;opacity:.85;font-size:.98rem}
+.tdesc .tag{display:inline-block;margin-top:14px;background:var(--mint);color:var(--petrol);border-radius:999px;padding:7px 12px;font:600 .8rem/1 var(--b)}
+.tdesc.swap{animation:swap .45s ease}
+@keyframes swap{from{opacity:0;transform:translateY(8px)}}
+@media (max-width:900px){.cure .grid{grid-template-columns:1fr}}
+/* 8 ore */
+.eight{background:var(--petrol);color:#fff;overflow:hidden}
+.eight .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.dial{width:230px;height:230px;position:relative}
+.dial svg{width:100%;height:100%;transform:rotate(-90deg)}
+.dial circle{fill:none;stroke-width:12}
+.dial .bg{stroke:rgba(255,255,255,.12)}
+.dial .fg{stroke:var(--mint);stroke-linecap:round;stroke-dasharray:597;stroke-dashoffset:597;transition:stroke-dashoffset 2.2s cubic-bezier(.3,.6,.2,1)}
+.dial.go .fg{stroke-dashoffset:0}
+.dial b{position:absolute;inset:0;display:grid;place-content:center;text-align:center;font:600 4rem/1 var(--h)}
+.dial b small{display:block;font:italic 400 1.2rem/1 var(--s);opacity:.8;margin-top:6px}
+.eight .ey{color:var(--mint)}
+.eight h2 em{color:var(--mint)}
+.eight p{margin-top:16px;opacity:.82;max-width:36em}
+.eight .note{font-size:.82rem;opacity:.6}
+@media (max-width:760px){.eight .wrap{grid-template-columns:1fr;justify-items:center;text-align:center}}
+/* team */
+.team-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.faces{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.faces img{border-radius:999px 999px 24px 24px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.faces img:nth-child(2){transform:translateY(30px)}
+.people{list-style:none;margin-top:24px;border-top:1px solid var(--line)}
+.people li{padding:14px 0;border-bottom:1px solid var(--line)}
+.people b{font:600 1.08rem/1.2 var(--h);color:var(--petrol)}
+.people span{display:block;font-size:.92rem;color:var(--muted)}
+@media (max-width:860px){.team-grid{grid-template-columns:1fr}}
+/* chieri */
+.chieri{position:relative;color:#fff;background-color:#a9502f;background-image:linear-gradient(rgba(70,25,12,.5),rgba(70,25,12,.62)),repeating-linear-gradient(0deg,transparent 0 30px,rgba(60,20,8,.55) 30px 33px),repeating-linear-gradient(90deg,#b75a37 0 70px,#a54f30 70px 73px,#b2573a 73px 140px,#a54f30 140px 143px)}
+.chieri .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:center}
+.chieri .ey{color:var(--brick-l)}
+.chieri h2 em{color:#ffd9c7}
+.chieri p.l{margin-top:18px;max-width:30em;opacity:.9}
+.plaque{background:linear-gradient(135deg,#fbfaf7,#ebe7df 60%,#f6f3ee);color:#2b2b2b;border-radius:6px;padding:26px 30px;text-align:center;box-shadow:0 30px 60px -30px rgba(0,0,0,.6),inset 0 0 0 1px rgba(0,0,0,.08);transform:rotate(-1.2deg);max-width:440px}
+.plaque small{display:block;font:600 .7rem/1 var(--b);letter-spacing:.3em;text-transform:uppercase;color:#777}
+.plaque b{display:block;font:italic 400 clamp(1.5rem,2.7vw,2.3rem)/1.05 var(--s);margin:10px 0 6px;white-space:nowrap}
+.plaque span{font:600 1rem/1 var(--h);letter-spacing:.2em}
+.contacts{margin-top:28px;display:grid;gap:14px}
+.contacts div{display:flex;gap:14px;align-items:baseline;border-top:1px solid rgba(255,255,255,.25);padding-top:14px}
+.contacts dt{width:90px;flex:none;font:600 .7rem/1 var(--b);letter-spacing:.16em;text-transform:uppercase;opacity:.75}
+.contacts dd{font:500 1.05rem/1.4 var(--b)}
+.contacts dd a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+.chieri .btn.p{background:#fff;color:var(--brick)}
+.chieri .btn.s{color:#fff;box-shadow:inset 0 0 0 1.5px #fff}
+.perks{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.perks li{background:rgba(255,255,255,.14);border-radius:999px;padding:8px 14px;font-size:.88rem}
+@media (max-width:860px){.chieri .wrap{grid-template-columns:1fr}}
+footer{background:var(--petrol);color:rgba(255,255,255,.7);padding:40px var(--gut) 100px;text-align:center;font-size:.82rem}
+footer .logo{justify-content:center;color:#fff;margin-bottom:16px}
+footer .logo small{color:rgba(255,255,255,.6)}
+.fab{position:fixed;right:18px;bottom:18px;z-index:40;display:flex;align-items:center;gap:8px;background:var(--brick);color:#fff;text-decoration:none;padding:14px 18px;border-radius:999px;font:600 .95rem/1 var(--b);box-shadow:0 14px 30px -12px rgba(185,88,58,.8)}
+.fab svg{width:20px;height:20px}
+.js .up{opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s}
+.js .up.in{opacity:1;transform:none}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--petrol);color:var(--mint-l);font:500 .74rem/1.3 var(--b);letter-spacing:.04em;text-align:center;padding:8px 16px;border-top:1px solid rgba(255,255,255,.15)}
+.fab{bottom:52px}
+footer{padding-bottom:130px}
+@media (prefers-reduced-motion:reduce){.js .up{opacity:1;transform:none;transition:none}.hero h1 .u path{transition:none;stroke-dashoffset:0}.dial .fg{transition:none;stroke-dashoffset:0}.ill .dr{animation:none;stroke-dashoffset:0}.ill .tw{animation:none;opacity:1}.stage::after{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-ph" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-sm" viewBox="0 0 26 10"><path d="M2 2q11 12 22 0" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+</svg>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#top" aria-label="Studio Dentistico Gregori-Cerutti, torna all'inizio"><img class="lg" src="img/logo.jpg" alt="" width="892" height="772"><span><b>Studio Gregori-Cerutti</b><small>Dentisti · Chieri</small></span></a>
+  <nav class="nav" aria-label="Sezioni"><a href="#checkup">Check-up</a><a href="#cure">Le cure</a><a href="#team">Il team</a><a href="#dove">Dove siamo</a><svg class="smile" aria-hidden="true"><use href="#i-sm"/></svg></nav>
+  <a class="btn p" href="tel:+390119423123"><svg><use href="#i-ph"/></svg>011 942 3123</a>
+</div></header>
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="t-hero"><div class="wrap">
+  <span class="ey"><svg aria-hidden="true"><use href="#i-sm"/></svg>Studio dentistico nel centro storico di Chieri</span>
+  <h1 id="t-hero">Il momento migliore per andare dal dentista è <span class="u"><em>quando stai bene</em><svg viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true"><path d="M6 8 Q200 60 394 8"/></svg></span>.</h1>
+  <p class="lead">Uno studio giovane e moderno, con la TAC in studio e uno specialista per ogni cura: dalla prima visita dei bambini all'implantologia.</p>
+  <div class="btns"><a class="btn p" href="tel:+390119423123"><svg><use href="#i-ph"/></svg>Prenota una visita</a><a class="btn s" href="#cure">Scopri le cure</a></div>
+  <div class="duo">
+    <div class="a"><img src="img/studio-1.jpg" alt="Uno degli ambulatori dello studio, con la poltrona odontoiatrica" width="1800" height="1200"></div>
+    <div class="b"><img src="img/studio-2.jpg" alt="Un altro ambulatorio luminoso dello studio" width="1800" height="1200"></div>
+    <div class="chips"><span class="chip"><i>3D</i>TAC in studio</span><span class="chip"><i>€</i>Dilazioni di pagamento</span><span class="chip"><i>P</i>Parcheggi comodi</span></div>
+  </div>
+</div></section>
+<section class="band" aria-label="In breve"><div class="wrap">
+  <div><b>Trattamenti a 360°</b><span>dai bambini all'implantologia</span></div><div><b>Radiologia 2D e 3D</b><span>senza andare lontano</span></div><div><b>Orari comodi</b><span>per tutti</span></div><div><b>Centro storico</b><span>Via Vittorio Emanuele II 31/C</span></div>
+</div></section>
+<section id="checkup" aria-labelledby="t-check"><div class="wrap">
+  <span class="ey"><svg aria-hidden="true"><use href="#i-sm"/></svg>La prima visita</span>
+  <h2 id="t-check" class="up" style="margin-top:16px">Il check-up, <em>in quattro passi</em>.</h2>
+  <div class="steps" id="steps"><div class="rail" aria-hidden="true"><div class="fill"></div></div>
+    <div class="step"><div class="dot">01</div><h3>Anamnesi</h3><p>Conosciamo le tue abitudini di igiene orale, le patologie passate e i disturbi che senti.</p></div>
+    <div class="step"><div class="dot">02</div><h3>Visita approfondita</h3><p>Ti visita l'odontoiatra più indicato per il tuo caso.</p></div>
+    <div class="step"><div class="dot">03</div><h3>Radiografia digitale</h3><p>Se serve, l'indagine radiografica più adatta, direttamente in studio.</p></div>
+    <div class="step"><div class="dot">04</div><h3>Diagnosi e piano di cura</h3><p>Una diagnosi chiara sullo stato di salute della bocca, con il relativo piano di cura.</p></div>
+  </div>
+</div></section>
+<section id="cure" class="cure" aria-labelledby="t-cure"><div class="wrap">
+  <span class="ey"><svg aria-hidden="true"><use href="#i-sm"/></svg>Le nostre specializzazioni</span>
+  <h2 id="t-cure" class="up" style="margin-top:16px">Tutto il sorriso, <em>in un solo studio</em>.</h2>
+  <div class="grid">
+    <div class="stage up" aria-hidden="true"><span class="big" id="big">01</span><svg class="ill" id="ill" viewBox="0 0 120 120"></svg><p class="cap"><span id="cap">Denti allineati</span></p></div>
+    <div>
+      <div class="tlist" role="tablist" aria-label="Specializzazioni" id="tlist"></div>
+      <div class="tdesc" role="tabpanel" id="tdesc" aria-live="polite"></div>
+    </div>
+  </div>
+</div></section>
+<section class="eight" aria-labelledby="t-8"><div class="wrap">
+  <div class="dial" id="dial" aria-hidden="true"><svg viewBox="0 0 220 220"><circle class="bg" cx="110" cy="110" r="95"/><circle class="fg" cx="110" cy="110" r="95"/></svg><b><span id="hrs">0</span><small>ore</small></b></div>
+  <div>
+    <span class="ey"><svg aria-hidden="true"><use href="#i-sm"/></svg>Implantologia a carico immediato</span>
+    <h2 id="t-8" style="margin-top:16px">Denti fissi <em>in 8 ore</em>.</h2>
+    <p>Gli impianti a carico immediato permettono di recuperare subito la masticazione e l'estetica, ripristinando i denti mancanti con denti fissi. Per un dente singolo, la riabilitazione avviene tra i 3 e i 6 mesi dal posizionamento dell'impianto.</p>
+    <p class="note">Ogni caso viene valutato durante la visita.</p>
+  </div>
+</div></section>
+<section id="team" aria-labelledby="t-team"><div class="wrap team-grid">
+  <div class="faces up"><img src="img/dott-1.jpg" alt="Uno dei dottori dello studio" loading="lazy"><img src="img/dott-2.jpg" alt="Uno dei dottori dello studio" loading="lazy"><img src="img/dott-3.jpg" alt="Uno dei dottori dello studio" loading="lazy"></div>
+  <div>
+    <span class="ey"><svg aria-hidden="true"><use href="#i-sm"/></svg>Il team</span>
+    <h2 id="t-team" class="up" style="margin-top:16px">Ogni dottore, <em>una specialità</em>.</h2>
+    <p class="up" style="margin-top:14px;color:var(--muted)">Ortodonzia, pedodonzia, endodonzia, protesi, chirurgia e implantologia: per offrirvi un servizio completo.</p>
+    <ul class="people up">
+      <li><b>Dott. Guido Gregori</b><span>Laurea magistrale in Odontoiatria e Protesi Dentaria</span></li>
+      <li><b>Dott. Carlo Alberto Cerutti</b><span>Laurea magistrale in Odontoiatria e Protesi Dentaria</span></li>
+      <li><b>Dott. Pier Tutino</b><span>Laurea magistrale in Odontoiatria, specializzazione in Ortognatodonzia</span></li>
+      <li><b>Marina e Laura</b><span>Segreteria e assistenza alla poltrona</span></li>
+    </ul>
+  </div>
+</div></section>
+<section id="dove" class="chieri" aria-labelledby="t-dove"><div class="wrap">
+  <div class="up">
+    <span class="ey"><svg aria-hidden="true"><use href="#i-sm"/></svg>Dove siamo</span>
+    <h2 id="t-dove" style="margin-top:16px">Tra i mattoni <em>del centro storico</em>.</h2>
+    <p class="l">Lo studio è nel cuore di Chieri, con parcheggi comodi: per curarti al meglio non hai bisogno di andare lontano.</p>
+    <dl class="contacts">
+      <div><dt>Telefono</dt><dd><a href="tel:+390119423123">011 942 3123</a> · <a href="tel:+393913780157">391 378 0157</a></dd></div>
+      <div><dt>Email</dt><dd><a href="mailto:studiogregoricerutti@gmail.com">studiogregoricerutti@gmail.com</a></dd></div>
+    </dl>
+    <ul class="perks"><li>Orari comodi</li><li>Dilazioni di pagamento</li><li>Parcheggi comodi</li><li>TAC in studio</li></ul>
+    <div class="btns" style="margin-top:28px"><a class="btn p" href="tel:+390119423123"><svg><use href="#i-ph"/></svg>Chiama lo studio</a><a class="btn s" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Vittorio+Emanuele+II+31+Chieri">Come arrivare</a></div>
+  </div>
+  <div class="up" style="display:grid;justify-items:center">
+    <div class="plaque"><small>Città di Chieri</small><b>Via Vittorio Emanuele II</b><span>31/C · 10023</span></div>
+  </div>
+</div></section>
+</main>
+<footer><a class="logo" href="#top"><img class="lg" src="img/logo.jpg" alt="" width="892" height="772"><span><b>Studio Gregori-Cerutti</b><small>Dentisti · Chieri</small></span></a>Studio Dentistico Gregori-Cerutti di Gregori Guido e Cerutti Carlo Alberto · Via Vittorio Emanuele II 31/C, Chieri · <a href="https://www.facebook.com/studioGCchieri">Facebook</a></footer>
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto allo Studio Dentistico Gregori-Cerutti. Non è il sito ufficiale.</div>
+<a class="fab" href="tel:+390119423123" aria-label="Chiama lo studio"><svg><use href="#i-ph"/></svg>Chiama</a>
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,io='IntersectionObserver' in window,NS='http://www.w3.org/2000/svg';
+  requestAnimationFrame(function(){requestAnimationFrame(function(){document.getElementById('hero').classList.add('go');});});
+  var els=[].slice.call(document.querySelectorAll('.up'));
+  if(io&&!reduce){var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');o.unobserve(e.target);}});},{threshold:.15});els.forEach(function(e){o.observe(e);});}else els.forEach(function(e){e.classList.add('in');});
+  /* treatment illustrations */
+  var TOOTH='M44 20c-12 0-20 9-20 22 0 11 5 18 7 28 2 13 4 32 12 32 7 0 7-19 11-26 1-2 3-3 6-3s5 1 6 3c4 7 4 26 11 26 8 0 10-19 12-32 2-10 7-17 7-28 0-13-8-22-20-22-7 0-11 3-16 3s-9-3-16-3z';
+  var CROWN='M14 64c-4-12 2-22 10-22 3 0 5 1 8 1s5-1 8-1c8 0 14 10 10 22z';
+  function P(d,c){return '<path pathLength="1" class="dr'+(c?' '+c:'')+'" d="'+d+'"/>';}
+  function S(x,y,s){return '<g transform="translate('+x+' '+y+') scale('+(s||1)+')"><path class="tw" d="M0-9C1-3 3-1 9 0 3 1 1 3 0 9-1 3-3 1-9 0-3-1-1-3 0-9z"/></g>';}
+  var tooth=P(TOOTH,'fl');
+  var ICON={
+    ortho:tooth+P('M6 50h108','a')+P('M51 44h18v12H51z','a')+P('M20 46v8M100 46v8','a'),
+    kid:'<g transform="translate(18 26) scale(.7)">'+tooth+'</g>'+S(96,30)+S(24,24,.7)+S(98,92,.6),
+    impl:P('M34 50c-6-16 3-30 15-30 4 0 7 2 11 2s7-2 11-2c12 0 21 14 15 30z','fl')+P('M49 56h22l-3 36-8 12-8-12z','a')+P('M48 66h24M49 76h22M50 86h20','a'),
+    prot:'<g transform="translate(-6 0)">'+P(CROWN,'fl')+'</g><g transform="translate(28 0)">'+P(CROWN,'fl')+'</g><g transform="translate(62 0)">'+P(CROWN,'fl')+'</g>'+P('M10 72h100','a')+P('M26 72v14M60 72v14M94 72v14','a'),
+    endo:tooth+P('M50 46q10-8 20 0','a')+P('M52 54c-1 14-3 28-7 40M68 54c1 14 3 28 7 40','a'),
+    hyg:tooth+S(100,22)+S(16,34,.8)+S(104,74,.6),
+    aest:P('M12 60c12-15 29-19 48-11 19-8 36-4 48 11-12 19-29 30-48 30S24 79 12 60z','fl')+P('M12 60c24 9 72 9 96 0','a')+S(100,28,.8),
+    rx:'<g transform="translate(15 15) scale(.75)">'+tooth+'</g>'+P('M10 32V10h22M88 10h22v22M110 88v22H88M32 110H10V88','a')+P('M18 60h84','a'),
+    gnato:P('M14 50q46-36 92 0','fl')+P('M14 70q46 36 92 0','fl')+P('M60 30v14M54 38l6 6 6-6M60 90V76M54 82l6-6 6 6','a')
+  };
+  var T=[
+    ['Ortodonzia invisibile e tradizionale',"Con l'ortodonzia tradizionale piccoli dispositivi incollati ai denti e un filo li riallineano. Con l'ortodonzia invisibile si usano dispositivi non visibili dall'esterno della bocca.",'Denti allineati','ortho'],
+    ['Odontoiatria pediatrica','La pedodonzia previene e cura le patologie dei bambini, a partire dalla carie. Personale preparato a gestire i più piccoli, con consigli su dieta, fluoro e igiene orale.','Per i bambini','kid'],
+    ['Implantologia a carico immediato','Ripristina i denti estratti con impianti che permettono di recuperare subito masticazione ed estetica.','Denti fissi in 8 ore','impl'],
+    ['Protesi fissa e mobile','Protesi funzionali e resistenti, progettate e installate in studio, con denti simili a quelli naturali per non alterare il profilo.','Masticazione e funzione','prot'],
+    ['Endodonzia conservativa','Cura della carie e devitalizzazione: una chiusura corretta delle radici permette di conservare e restaurare il proprio dente senza estrarlo.','Salvare il dente','endo'],
+    ['Igiene professionale',"Igiene e prevenzione sono la base di una bocca sana: controlli ogni sei mesi e una detartrasi almeno una volta all'anno.",'Ogni 6 mesi','hyg'],
+    ['Medicina estetica','In collaborazione con professionisti esperti, per il miglioramento estetico del sorriso e del volto nel suo complesso.','Sorriso e volto','aest'],
+    ['Radiologia 2D e 3D','Lo studio è attrezzato anche con la TAC: per curarti al meglio non hai bisogno di andare lontano.','TAC in studio','rx'],
+    ['Ortognatodonzia','Lo specialista in ortognatodonzia dello studio segue la correzione della posizione dei denti e delle arcate.','Specialista dedicato','gnato']
+  ];
+  var ill=document.getElementById('ill'),big=document.getElementById('big'),list=document.getElementById('tlist'),desc=document.getElementById('tdesc'),cap=document.getElementById('cap');
+  T.forEach(function(t,i){var b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.id='tb-'+i;b.setAttribute('aria-controls','tdesc');b.innerHTML='<b>'+String(i+1).padStart(2,'0')+'</b><span>'+t[0]+'</span><span class="go" aria-hidden="true">→</span>';
+    b.addEventListener('click',function(){pick(i);});b.addEventListener('keydown',function(e){var k=(e.key==='ArrowDown'||e.key==='ArrowRight')?1:(e.key==='ArrowUp'||e.key==='ArrowLeft')?-1:0;if(k){e.preventDefault();pick((i+k+T.length)%T.length,1);}});list.appendChild(b);});
+  function pick(i,f){[].forEach.call(list.children,function(b,j){b.setAttribute('aria-selected',String(i===j));b.tabIndex=i===j?0:-1;});var t=T[i];
+    desc.setAttribute('aria-labelledby','tb-'+i);desc.innerHTML='<h3>'+t[0]+'</h3><p>'+t[1]+'</p><span class="tag">'+t[2]+'</span>';desc.classList.remove('swap');void desc.offsetWidth;desc.classList.add('swap');
+    cap.textContent=t[2];big.textContent=String(i+1).padStart(2,'0');ill.innerHTML=ICON[t[3]];
+    if(f)list.children[i].focus();}
+  pick(0);
+  var stage=document.querySelector('.stage');if(io&&!reduce){var ao=new IntersectionObserver(function(es){if(es[0].isIntersecting){var s=list.querySelector('[aria-selected=true]');pick([].indexOf.call(list.children,s));ao.disconnect();}},{threshold:.5});ao.observe(stage);}
+  /* stepper */
+  var steps=document.getElementById('steps'),st=[].slice.call(steps.querySelectorAll('.step'));
+  function prog(){var r=steps.getBoundingClientRect(),vh=innerHeight,p=reduce?1:Math.max(0,Math.min(1,(vh*.75-r.top)/(r.height+vh*.25)));steps.style.setProperty('--p',p);st.forEach(function(s,i){s.classList.toggle('lit',reduce||p>=i/(st.length-1)-.02);});}
+  addEventListener('scroll',prog,{passive:true});prog();
+  /* dial */
+  var dial=document.getElementById('dial'),hrs=document.getElementById('hrs');
+  function run(){dial.classList.add('go');if(reduce){hrs.textContent=8;return;}var t0=performance.now();(function f(t){var p=Math.min((t-t0)/2200,1);hrs.textContent=Math.round(8*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f);})(t0);}
+  if(io){var dd=new IntersectionObserver(function(es){if(es[0].isIntersecting){run();dd.disconnect();}},{threshold:.5});dd.observe(dial);}else run();
+  /* nav smile indicator */
+  var nav=document.querySelector('.nav'),sm=nav.querySelector('.smile'),links=[].slice.call(nav.querySelectorAll('a'));
+  function move(a){links.forEach(function(l){l.classList.toggle('on',l===a);});if(!a){sm.classList.remove('v');return;}sm.style.left=(a.offsetLeft+a.offsetWidth/2-20)+'px';sm.classList.add('v');}
+  if(io){var secs=links.map(function(l){return document.querySelector(l.getAttribute('href'));});var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)move(links[secs.indexOf(e.target)]);});},{rootMargin:'-45% 0px -50% 0px'});secs.forEach(function(x){so.observe(x);});
+    new IntersectionObserver(function(es){if(es[0].isIntersecting)move(null);},{rootMargin:'-45% 0px -50% 0px'}).observe(document.getElementById('hero'));}
+})();
+</script>
+</body>
+</html>

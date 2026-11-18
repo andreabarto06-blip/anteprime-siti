@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kreuzberg TrattoBar · Antipasteria · Piazza San Donato, Pinerolo</title>
+<meta name="description" content="Kreuzberg TrattoBar-Antipasteria, Piazza San Donato 1 a Pinerolo: cucina casalinga piemontese, antipasti, vini di cantina e caffetteria sotto i portici. Tel. 348 568 9836.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--sage:#92ada4;--sage-l:#dfe8e3;--sage-d:#4f6b62;--ink:#161819;--pink:#f2cbb8;--pink-d:#c97b5e;--cream:#f6f2eb;--night:#14171b;--board:#1f2622;--wood:#b07a45;--h:"Archivo",system-ui,sans-serif;--m:"IBM Plex Mono",ui-monospace,monospace;--c:"Caveat",cursive;--gut:clamp(16px,4vw,48px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+html,body{overflow-x:clip}
+body{background:var(--cream);color:var(--ink);font:400 17px/1.6 var(--h);font-stretch:100%;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{max-width:1220px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,10vw,130px)}
+.mono{font:500 .74rem/1.2 var(--m);letter-spacing:.22em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--h);font-weight:850;font-stretch:125%;line-height:.95;letter-spacing:-.01em;text-transform:uppercase}
+h2{font-size:clamp(2.2rem,5.4vw,4.4rem)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 22px;font:500 .8rem/1 var(--m);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1.5px solid currentColor;transition:background .25s,color .25s}
+.btn svg{width:18px;height:18px}
+.btn.f{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.btn.f:hover{background:var(--sage-d);border-color:var(--sage-d)}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.band{position:sticky;top:0;z-index:40;background:var(--ink);color:var(--cream)}
+.band .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:56px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:38px;height:38px;border-radius:50%;object-fit:cover;clip-path:circle(46%)}
+.brand span{font:500 .82rem/1 var(--m);letter-spacing:.55em}
+.band nav{display:flex;gap:26px}
+.band nav a{font:500 .72rem/1 var(--m);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;opacity:.7;transition:opacity .2s}
+.band nav a:hover,.band nav a.on{opacity:1}
+.band .tel{font:500 .72rem/1 var(--m);letter-spacing:.14em;text-decoration:none;background:var(--sage);color:var(--ink);padding:10px 14px;white-space:nowrap}
+@media (max-width:900px){.band nav{display:none}.brand span{letter-spacing:.35em;font-size:.72rem}}
+@media (max-width:380px){.brand span{display:none}}
+.hero{--bg:var(--sage);--fg:var(--ink);--ac:var(--cream);background:var(--bg);color:var(--fg);padding-block:clamp(40px,6vw,80px) clamp(60px,8vw,100px);transition:background .9s ease,color .9s ease}
+.hero[data-t=merenda]{--bg:var(--pink);--fg:#2a1a14;--ac:#fff6f0}
+.hero[data-t=sera]{--bg:var(--night);--fg:#f3ece2;--ac:#e8b46a}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(30px,5vw,80px);align-items:center}
+.hero h1{font-size:clamp(2.4rem,5.6vw,5.4rem);margin:22px 0 26px}
+.hero h1 em{font:700 1.02em/1 var(--c);font-stretch:100%;text-transform:none;color:var(--ac);display:inline-block;transform:rotate(-3deg);transition:color .9s}
+.when{display:inline-flex;border:1.5px solid currentColor;margin-bottom:22px}
+.when button{background:none;border:0;padding:11px 16px;font:500 .72rem/1 var(--m);letter-spacing:.16em;text-transform:uppercase;opacity:.65;transition:background .3s,color .3s,opacity .3s}
+.when button[aria-pressed=true]{background:var(--fg);color:var(--bg);opacity:1}
+.when button+button{border-left:1.5px solid currentColor}
+.mood{min-height:7.4em}
+.mood h3{font-size:clamp(1.25rem,2vw,1.6rem);margin-bottom:10px}
+.mood p{max-width:30em;opacity:.85}
+.mood.sw{animation:sw .6s ease}
+@keyframes sw{from{opacity:0;transform:translateY(10px)}}
+.hero .btns{margin-top:26px}
+.hero[data-t=sera] .btn.f{background:var(--ac);color:var(--night);border-color:var(--ac)}
+.mat{background:var(--ink);padding:14px 14px 0;box-shadow:0 40px 70px -40px rgba(0,0,0,.6);transform:rotate(1.6deg)}
+.mat .ph{position:relative;aspect-ratio:1/1;overflow:hidden}
+.mat .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity 1s ease,transform 1.6s ease}
+.mat .ph img.on{opacity:1;transform:none}
+.mat .strip{display:flex;justify-content:space-between;align-items:center;color:var(--cream);padding:14px 4px}
+.mat .strip b{font:500 .8rem/1 var(--m);letter-spacing:.6em}
+.mat .strip small{font:500 .65rem/1 var(--m);letter-spacing:.14em;opacity:.6}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.mat{max-width:460px;width:100%;justify-self:center}.mood{min-height:0}}
+@media (max-width:420px){.when button{padding:10px 11px;letter-spacing:.1em}.mat .strip b{letter-spacing:.4em}}
+.intro{background:var(--cream)}
+.intro .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.intro .logo{width:clamp(150px,18vw,230px);border-radius:50%;clip-path:circle(47%)}
+.intro p.big{font:500 clamp(1.4rem,2.6vw,2.1rem)/1.3 var(--h);max-width:28em}
+.intro p.big b{font-weight:850;font-stretch:125%;text-transform:uppercase}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.facts span{border:1.5px solid var(--ink);padding:9px 12px;font:500 .7rem/1 var(--m);letter-spacing:.14em;text-transform:uppercase}
+@media (max-width:760px){.intro .wrap{grid-template-columns:1fr;justify-items:start}}
+.lav{background:var(--sage-l)}
+.lav .head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+.lav .head p{max-width:30em;color:#3d4a45}
+.board{margin-top:44px;padding:clamp(12px,2vw,22px);background:linear-gradient(90deg,#9a6535,#c08a52 30%,#a56d3b 60%,#c4925b);box-shadow:0 30px 60px -30px rgba(0,0,0,.55)}
+.slate{position:relative;background:radial-gradient(ellipse at 30% 20%,#2c3530,var(--board) 70%);color:#f1efe6;padding:clamp(20px,4vw,48px);overflow:hidden}
+.slate::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);pointer-events:none}
+.tabs{position:relative;display:flex;gap:6px;flex-wrap:wrap;margin-bottom:26px}
+.tabs button{background:none;border:0;font:700 clamp(1.4rem,2.4vw,1.9rem)/1 var(--c);color:rgba(241,239,230,.5);padding:4px 10px;position:relative}
+.tabs button[aria-selected=true]{color:#fff}
+.tabs button[aria-selected=true]::after{content:"";position:absolute;left:8px;right:8px;bottom:-4px;height:3px;background:#fff;border-radius:3px;transform:rotate(-1.5deg);opacity:.85}
+.menu{position:relative;list-style:none;columns:2;column-gap:clamp(30px,5vw,70px)}
+.menu li{break-inside:avoid;display:flex;justify-content:space-between;gap:18px;align-items:baseline;font:500 clamp(1.35rem,2.1vw,1.75rem)/1.25 var(--c);padding:6px 0;text-shadow:0 0 1px rgba(255,255,255,.4)}
+.menu li b{font-weight:700;white-space:nowrap;color:#f7e3a8}
+.menu li.price{color:#f7e3a8}
+.js .menu li{clip-path:inset(0 100% 0 0)}
+.js .menu li.w{clip-path:inset(0 0 0 0);transition:clip-path .7s steps(14,end)}
+.slate .note{position:relative;margin-top:24px;font:500 .7rem/1.4 var(--m);letter-spacing:.12em;text-transform:uppercase;color:rgba(241,239,230,.55)}
+@media (max-width:760px){.menu{columns:1}}
+.piatti .head{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end}
+.piatti .head p{color:#444}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:44px}
+.grid figure{position:relative;overflow:hidden;background:#ddd}
+.grid figure:nth-child(1),.grid figure:nth-child(6){grid-column:span 2;grid-row:span 2}
+.grid img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1;transition:transform .7s ease}
+.grid figure:hover img{transform:scale(1.05)}
+.piatti .fb{margin-top:24px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+@media (max-width:760px){.piatti .head{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.grid figure:nth-child(6){grid-column:span 1;grid-row:span 1}}
+.cantina{background:var(--ink);color:var(--cream)}
+.cantina .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px)}
+.cantina article{position:relative;overflow:hidden;min-height:520px;display:flex;align-items:flex-end}
+.cantina article img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cantina article::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(10,10,10,.85))}
+.cantina article div{position:relative;z-index:1;padding:clamp(22px,3vw,36px)}
+.cantina h3{font-size:clamp(1.6rem,3vw,2.4rem);margin:10px 0 10px}
+.cantina p{opacity:.85;max-width:28em}
+@media (max-width:820px){.cantina .wrap{grid-template-columns:1fr}.cantina article{min-height:420px}}
+.posto .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,70px);align-items:center}
+.pics{position:relative}
+.pics .a{width:100%;aspect-ratio:1/1;object-fit:cover}
+.pics .b{position:absolute;right:-6%;bottom:-8%;width:44%;aspect-ratio:4/5;object-fit:cover;border:10px solid var(--cream);box-shadow:0 30px 50px -30px rgba(0,0,0,.6)}
+.posto h2{margin:18px 0 22px}
+.posto p+p{margin-top:14px}
+@media (max-width:860px){.posto .wrap{grid-template-columns:1fr}.pics{margin-bottom:40px}.pics .b{right:0}}
+.info{background:var(--sage)}
+.card{background:var(--ink);color:var(--cream);display:grid;grid-template-columns:repeat(3,1fr)}
+.card>div{padding:clamp(24px,3.4vw,44px);border-left:1px solid rgba(246,242,235,.14)}
+.card>div:first-child{border-left:0}
+.card h3{font-size:1.3rem;margin:12px 0 18px}
+.card ul{list-style:none;display:grid;gap:10px}
+.card li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed rgba(246,242,235,.2);padding-bottom:9px;font-size:.95rem}
+.card li span:last-child{font:500 .82rem/1.5 var(--m);text-align:right;opacity:.85}
+.card a{text-decoration:none;border-bottom:1px solid rgba(246,242,235,.4)}
+.card .btns{margin-top:22px}
+.card .btn{color:var(--cream);border-bottom:1.5px solid currentColor}
+.card .btn.f{background:var(--sage);color:var(--ink);border-color:var(--sage)}
+.card .stars{margin-top:20px;font:500 .7rem/1.5 var(--m);letter-spacing:.12em;text-transform:uppercase;opacity:.65}
+@media (max-width:900px){.card{grid-template-columns:1fr}.card>div{border-left:0;border-top:1px solid rgba(246,242,235,.14)}.card>div:first-child{border-top:0}}
+footer{background:var(--ink);color:var(--cream);text-align:center;padding:clamp(50px,7vw,90px) var(--gut) 40px;overflow:hidden}
+.kz{display:block;font:500 clamp(1.4rem,6.2vw,5rem)/1 var(--m);letter-spacing:.08em;white-space:nowrap;transition:letter-spacing 1.6s cubic-bezier(.2,.8,.2,1),margin 1.6s cubic-bezier(.2,.8,.2,1)}
+.kz.in{letter-spacing:.42em;margin-right:-.42em}
+footer p{margin-top:28px;font:400 .72rem/1.6 var(--m);letter-spacing:.1em;opacity:.6}
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .9s,transform .9s}
+.js .rv.in{opacity:1;transform:none}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--cream);color:var(--ink);border-top:1.5px solid var(--ink);font:500 .7rem/1.3 var(--m);letter-spacing:.06em;text-align:center;padding:8px 16px}
+footer{padding-bottom:80px}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.js .menu li{clip-path:none}.mat .ph img{transition:none}.hero,.hero h1 em{transition:none}.kz{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-ph" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></symbol>
+</svg>
+<header class="band"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Kreuzberg TrattoBar, torna all'inizio"><img src="img/logo.jpg" alt="" width="1004" height="1004"><span>KREUZBERG</span></a>
+  <nav aria-label="Sezioni"><a href="#lavagna">La lavagna</a><a href="#piatti">I piatti</a><a href="#posto">Il posto</a><a href="#orari">Orari</a></nav>
+  <a class="tel" href="tel:+393485689836">348 568 9836</a>
+</div></header>
+<main id="top">
+<section class="hero" id="hero" data-t="pranzo" aria-labelledby="t-hero"><div class="wrap">
+  <div>
+    <span class="mono">TrattoBar · Antipasteria · Pinerolo</span>
+    <h1 id="t-hero">Cuciniamo <em>noi</em> per te.</h1>
+    <div class="when" role="group" aria-label="Scegli il momento della giornata">
+      <button type="button" data-t="pranzo" aria-pressed="true">Pranzo</button><button type="button" data-t="merenda" aria-pressed="false">Merenda</button><button type="button" data-t="sera" aria-pressed="false">Sera</button>
+    </div>
+    <div class="mood" id="mood" aria-live="polite"></div>
+    <div class="btns"><a class="btn f" href="tel:+393485689836"><svg><use href="#i-ph"/></svg>Prenota un tavolo</a><a class="btn" href="https://wa.me/393485689836"><svg><use href="#i-wa"/></svg>WhatsApp</a></div>
+  </div>
+  <div class="mat" aria-hidden="true">
+    <div class="ph"><img data-t="pranzo" class="on" src="img/pranzo.jpg" alt="" width="1440" height="1440"><img data-t="merenda" src="img/merenda.jpg" alt="" width="1440" height="1440"><img data-t="sera" src="img/sera.jpg" alt="" width="1440" height="1440"></div>
+    <div class="strip"><b>KREUZBERG</b><small id="mtime">PIAZZA SAN DONATO</small></div>
+  </div>
+</div></section>
+
+<section class="intro" aria-label="Chi siamo"><div class="wrap">
+  <img class="logo rv" src="img/logo.jpg" alt="Logo KRZ di Kreuzberg: un piatto con forchetta e coltello disegnati a una linea" width="1004" height="1004" loading="lazy">
+  <div class="rv">
+    <p class="big"><b>Trattoria</b> di cucina casalinga piemontese e tipica, <b>vini</b> di cantina e un bancone pieno di antipasti, in un ambiente metropolitano nel cuore di Pinerolo.</p>
+    <div class="facts"><span>Cucina sempre aperta</span><span>Dalle 15 caffetteria</span><span>Dehors in piazza</span><span>Fascia di prezzo €</span></div>
+  </div>
+</div></section>
+
+<section id="lavagna" class="lav" aria-labelledby="t-lav"><div class="wrap">
+  <div class="head rv"><div><span class="mono">La lavagna</span><h2 id="t-lav" style="margin-top:16px">Oggi in cucina</h2></div><p>Il menu lo scriviamo ogni giorno a gesso, davanti alla porta. Ecco una lavagna vera, presa da un giorno qualunque.</p></div>
+  <div class="board rv"><div class="slate">
+    <div class="tabs" role="tablist" aria-label="Portate" id="tabs"></div>
+    <ul class="menu" id="menu" role="tabpanel" aria-live="polite"></ul>
+    <p class="note">Esempio da una lavagna del giorno: piatti e prezzi cambiano spesso. Coperto 2 €, a pranzo 1 € fino alle 15:30.</p>
+  </div></div>
+</div></section>
+
+<section id="piatti" class="piatti" aria-labelledby="t-pi"><div class="wrap">
+  <div class="head rv"><div><span class="mono">I piatti</span><h2 id="t-pi" style="margin-top:16px">Ogni giorno un piatto nuovo</h2></div><p>Gnocchi, porcini, sformati, uova in purgatorio, brasati: quello che esce dalla nostra cucina lo raccontiamo ogni giorno su Facebook e Instagram.</p></div>
+  <div class="grid rv">
+    <figure><img src="img/d2.jpg" alt="Funghi porcini freschi" loading="lazy"></figure>
+    <figure><img src="img/d1.jpg" alt="Gnocchi di patate" loading="lazy"></figure>
+    <figure><img src="img/d3.jpg" alt="Rigatoni con tartufo" loading="lazy"></figure>
+    <figure><img src="img/d5.jpg" alt="Sformatino gratinato" loading="lazy"></figure>
+    <figure><img src="img/d6.jpg" alt="Uovo in salsa di pomodoro" loading="lazy"></figure>
+    <figure><img src="img/d9.jpg" alt="Brasato al sugo" loading="lazy"></figure>
+    <figure><img src="img/d4.jpg" alt="Avocado con uovo e pancetta" loading="lazy"></figure>
+    <figure><img src="img/d7.jpg" alt="Pasta con formaggio grattugiato" loading="lazy"></figure>
+    <figure><img src="img/d8.jpg" alt="Melone e prosciutto crudo" loading="lazy"></figure>
+    <figure><img src="img/d10.jpg" alt="Paccheri" loading="lazy"></figure>
+  </div>
+  <div class="fb rv"><a class="btn" href="https://www.facebook.com/KreuzbergTrattoBar">Seguici su Facebook</a><a class="btn" href="https://www.instagram.com/kreuzberg.trattobar/">Instagram</a></div>
+</div></section>
+
+<section class="cantina" aria-label="Vini e formaggi"><div class="wrap">
+  <article class="rv"><img src="img/vino.jpg" alt="Una bottiglia di Barbera d'Alba con due calici e un tagliere sul tavolo verde" loading="lazy"><div><span class="mono">Vini di cantina</span><h3>Un calice di Piemonte</h3><p>Barbera, Barbaresco e le altre bottiglie della nostra cantina, da accompagnare con un tagliere o con gli antipasti della lavagna.</p></div></article>
+  <article class="rv"><img src="img/formaggi.jpg" alt="Forme di toma alle erbe, caciocavallo e formaggi stagionati" loading="lazy"><div><span class="mono">Il bancone</span><h3>Formaggi e salumi</h3><p>Toma alle erbe, formaggi piemontesi e qualche ospite da fuori, come il caciocavallo stagionato 24 mesi.</p></div></article>
+</div></section>
+
+<section id="posto" class="posto" aria-labelledby="t-po"><div class="wrap">
+  <div class="pics rv"><img class="a" src="img/palazzo.jpg" alt="Il palazzo rosa con i portici e il dehors di Kreuzberg in Piazza San Donato" loading="lazy"><img class="b" src="img/lavagna.jpg" alt="La lavagna del menu davanti alla vetrina, con le volte in mattoni dentro" loading="lazy"></div>
+  <div class="rv">
+    <span class="mono">Il posto</span>
+    <h2 id="t-po">Sotto i portici di San Donato</h2>
+    <p>Siamo in Piazza San Donato, nel centro di Pinerolo, sotto i portici di un palazzo rosa. Dentro, volte in mattoni, tavoli verde salvia e bottiglie fino al soffitto.</p>
+    <p>Fuori, il dehors tra gli ulivi: di giorno all'ombra degli ombrelloni, la sera con le luci accese sulla piazza.</p>
+  </div>
+</div></section>
+
+<section id="orari" class="info" aria-labelledby="t-or"><div class="wrap">
+  <div class="card rv">
+    <div>
+      <span class="mono" style="color:var(--sage)">Orari invernali</span>
+      <h3 id="t-or">Quando ci trovi</h3>
+      <ul><li><span>Martedì–sabato</span><span>pranzo e cena</span></li><li><span>Domenica</span><span>solo pranzo</span></li><li><span>Lunedì</span><span>chiuso</span></li><li><span>Pomeriggio</span><span>dalle 15 caffetteria</span></li></ul>
+    </div>
+    <div>
+      <span class="mono" style="color:var(--sage)">Al tavolo</span>
+      <h3>Da sapere</h3>
+      <ul><li><span>Cucina</span><span>sempre aperta</span></li><li><span>Coperto</span><span>2,00 €</span></li><li><span>Coperto pausa pranzo</span><span>1,00 € fino 15:30</span></li><li><span>Dehors</span><span>in piazza</span></li></ul>
+      <p class="stars">96% di valutazioni positive su Facebook</p>
+    </div>
+    <div>
+      <span class="mono" style="color:var(--sage)">Contatti</span>
+      <h3>Prenota</h3>
+      <ul><li><span>Indirizzo</span><span>Piazza San Donato 1, Pinerolo</span></li><li><span>Telefono</span><span><a href="tel:+393485689836">348 568 9836</a></span></li></ul>
+      <div class="btns"><a class="btn f" href="tel:+393485689836"><svg><use href="#i-ph"/></svg>Chiama</a><a class="btn" href="https://wa.me/393485689836"><svg><use href="#i-wa"/></svg>WhatsApp</a><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Piazza+San+Donato+1+Pinerolo">Mappa</a></div>
+    </div>
+  </div>
+</div></section>
+</main>
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Kreuzberg TrattoBar. Non è il sito ufficiale.</div>
+<footer><span class="kz" id="kz">KREUZBERG</span><p>Kreuzberg TrattoBar · Antipasteria · Piazza San Donato 1, Pinerolo · <a href="https://www.facebook.com/KreuzbergTrattoBar">Facebook</a> · <a href="https://www.instagram.com/kreuzberg.trattobar/">Instagram</a></p></footer>
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,io='IntersectionObserver' in window;
+  var els=[].slice.call(document.querySelectorAll('.rv,#kz'));
+  if(io&&!reduce){var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');o.unobserve(e.target);}});},{threshold:.15});els.forEach(function(e){o.observe(e);});}else els.forEach(function(e){e.classList.add('in');});
+  var M={pranzo:['Pranzo in trattoria','Cucina casalinga piemontese, gli antipasti del bancone e un calice di vino. In pausa pranzo il coperto è di 1 € fino alle 15:30.','PAUSA PRANZO'],
+         merenda:['Merenda sotto i portici','Dalle 15 il bar diventa caffetteria: cioccolata calda, tè, tisane e qualcosa di dolce. Fuori freddo, dentro felicità.','DALLE 15 · CAFFETTERIA'],
+         sera:['La sera in piazza','Il dehors si accende in Piazza San Donato: bagna caöda, polenta, salsiccia alla pilsner e i vini della nostra cantina.','A CENA']};
+  var hero=document.getElementById('hero'),mood=document.getElementById('mood'),mt=document.getElementById('mtime'),bt=[].slice.call(hero.querySelectorAll('.when button')),ims=[].slice.call(hero.querySelectorAll('.mat img'));
+  function set(t,first){hero.dataset.t=t;bt.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.t===t));});ims.forEach(function(i){i.classList.toggle('on',i.dataset.t===t);});
+    var m=M[t];mood.innerHTML='<h3>'+m[0]+'</h3><p>'+m[1]+'</p>';mt.textContent=m[2];if(!first){mood.classList.remove('sw');void mood.offsetWidth;mood.classList.add('sw');}}
+  bt.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.t);});});
+  var d=new Date(),h=d.getHours()+d.getMinutes()/60;set(h>=15.5&&h<19?'merenda':(h>=19||h<5?'sera':'pranzo'),1);
+  var L={'Antipasti':[['Peperone e bagna caöda'],['Cubotti di polenta e fontina'],['Provola alla piastra e pomodori secchi'],['Sformatino di cime e toma'],['Crostone, patè di ceci e cipolline in agrodolce'],['Vellutata di finocchi'],['Zuppetta porri e patate'],['Cavolfiori impanati'],['Polenta bianca e ragù di salsiccia'],['Uovo pochè su battuta di vitello'],['Fagioli e cotiche'],['Ogni antipasto','4,90','price']],
+         'Primi':[['Risotto zafferano e pecorino','8,40'],['Spaghetti ca\' muddica atturrata','7,90'],['Penne porri, radicchio e pancetta','7,90'],['Pasta e ceci','7,90'],['Orecchiette alle cime di rapa','7,90'],['Tazza di bagna caöda con verdure','10,90']],
+         'Secondi e contorni':[['Salsiccia alla pilsner','9,60'],['Polpette in umido','9,60'],['Patate al forno','2,50'],['Scarola saltata','2,50'],['Polenta bianca','2,50']]};
+  var tabs=document.getElementById('tabs'),menu=document.getElementById('menu'),keys=Object.keys(L),timers=[],started=false;
+  keys.forEach(function(k,i){var b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.id='tab-'+i;b.textContent=k;b.addEventListener('click',function(){show(i);});b.addEventListener('keydown',function(e){var dd=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(dd){e.preventDefault();show((i+dd+keys.length)%keys.length,1);}});tabs.appendChild(b);});
+  function show(i,f){timers.forEach(clearTimeout);timers=[];[].forEach.call(tabs.children,function(b,j){b.setAttribute('aria-selected',String(i===j));b.tabIndex=i===j?0:-1;});menu.setAttribute('aria-labelledby','tab-'+i);
+    menu.innerHTML=L[keys[i]].map(function(r){return '<li'+(r[2]?' class="'+r[2]+'"':'')+'><span>'+r[0]+'</span>'+(r[1]?'<b>'+r[1]+' €</b>':'')+'</li>';}).join('');
+    var li=[].slice.call(menu.children);if(reduce)li.forEach(function(l){l.classList.add('w');});else if(started)li.forEach(function(l,k){timers.push(setTimeout(function(){l.classList.add('w');},k*160));});
+    if(f)tabs.children[i].focus();}
+  show(0);
+  var slate=document.querySelector('.slate');function start(){started=true;var s=tabs.querySelector('[aria-selected=true]');show([].indexOf.call(tabs.children,s));}
+  if(io&&!reduce){var so=new IntersectionObserver(function(es){if(es[0].isIntersecting){start();so.disconnect();}},{threshold:.3});so.observe(slate);}else start();
+  var links=[].slice.call(document.querySelectorAll('.band nav a'));
+  if(io){var secs=links.map(function(l){return document.querySelector(l.getAttribute('href'));});var no=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var k=secs.indexOf(e.target);links.forEach(function(l,j){l.classList.toggle('on',j===k);});}});},{rootMargin:'-45% 0px -50% 0px'});secs.forEach(function(s){no.observe(s);});}
+})();
+</script>
+</body>
+</html>

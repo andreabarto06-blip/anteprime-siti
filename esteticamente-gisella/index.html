@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esteticamente Gisella · Centro estetico a Chieri</title>
+<meta name="description" content="Esteticamente Gisella, centro estetico nel centro storico di Chieri dal 2006: viso, massaggi, corpo, mani e piedi, ceretta ed epilazione laser. Vicolo dei Fantini 2/a, su appuntamento.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--cream:#f6efe8;--nude:#ecdccf;--sand:#d8bfac;--clay:#a8624a;--cocoa:#36231d;--muted:#7a6359;--line:#e2d2c5;--d:"Bodoni Moda",Georgia,serif;--b:"Hanken Grotesk",system-ui,sans-serif;--rail:96px;--gut:clamp(18px,4vw,56px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{background:var(--cream);color:var(--cocoa);font:400 17px/1.7 var(--b);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit}
+h1,h2,h3{font-family:var(--d);font-weight:400;line-height:1.02;letter-spacing:-.01em}
+h2{font-size:clamp(2.5rem,5.5vw,4.6rem)}
+h2 i,h1 i{font-style:italic;color:var(--clay)}
+.k{font:600 .72rem/1 var(--b);letter-spacing:.24em;text-transform:uppercase;color:var(--clay)}
+.page{margin-left:var(--rail)}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(90px,11vw,150px)}
+.rail{position:fixed;inset:0 auto 0 0;width:var(--rail);z-index:40;background:var(--cream);border-right:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:26px 0}
+.mark{writing-mode:vertical-rl;transform:rotate(180deg);text-decoration:none;font:400 1.55rem/1 var(--d);letter-spacing:.02em;white-space:nowrap}
+.mark i{color:var(--clay)}
+.mark small{font:600 .6rem/1 var(--b);letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:14px}
+.rail nav{display:flex;flex-direction:column;gap:6px}
+.rail nav a{position:relative;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;text-decoration:none;font:500 .78rem/1 var(--b);color:var(--muted);transition:background .3s,color .3s}
+.rail nav a span{position:absolute;left:54px;white-space:nowrap;background:var(--cocoa);color:var(--cream);padding:6px 10px;border-radius:6px;font-size:.78rem;opacity:0;transform:translateX(-6px);pointer-events:none;transition:.25s}
+.rail nav a:hover span,.rail nav a:focus-visible span{opacity:1;transform:none}
+.rail nav a.on{background:var(--cocoa);color:var(--cream)}
+.rail{padding-bottom:50px}
+.rail .wa-s{width:44px;height:44px;border-radius:50%;background:var(--clay);color:#fff;display:grid;place-items:center}
+.rail .wa-s svg,.mbar svg,.btn svg{width:20px;height:20px}
+.mbar{display:none}
+@media (max-width:860px){
+  :root{--rail:0px}
+  .rail{display:none}
+  .mbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;background:var(--cocoa);color:var(--cream);border-radius:999px;padding:6px 6px 6px 20px;align-items:center;justify-content:space-between;box-shadow:0 14px 30px -14px rgba(54,35,29,.6)}
+  .mbar .mk{font:400 1.1rem/1 var(--d)}.mbar .mk i{color:var(--sand)}
+  .mbar a.go{display:flex;align-items:center;gap:8px;background:var(--clay);color:#fff;text-decoration:none;border-radius:999px;padding:11px 16px;font:600 .88rem/1 var(--b)}
+}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;text-decoration:none;font:600 .92rem/1 var(--b);transition:transform .25s,background .25s}
+.btn.f{background:var(--cocoa);color:var(--cream)}.btn.f:hover{background:var(--clay);transform:translateY(-2px)}
+.btn.o{border:1px solid var(--cocoa)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.hero{min-height:100svh;padding-block:clamp(40px,6vw,70px);display:grid;align-items:center}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,80px);align-items:center;width:100%}
+.hero h1{font-size:clamp(3.2rem,6.4vw,6.4rem);line-height:.92;margin:26px 0 28px}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln>span{display:block}
+.js .hero h1 .ln>span{transform:translateY(105%);transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.js .hero.ready h1 .ln>span{transform:none}
+.hero h1 .ln:nth-child(2)>span{transition-delay:.12s}.hero h1 .ln:nth-child(3)>span{transition-delay:.24s}
+.hero p.lead{font-size:1.12rem;max-width:30em;color:var(--muted)}
+.hero .btns{margin-top:34px}
+.arch{position:relative;border-radius:999px 999px 0 0;overflow:hidden;aspect-ratio:3/4;background:var(--nude)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.hero .arch img{transform:scale(1.12);transition:transform 1.8s cubic-bezier(.2,.8,.2,1)}
+.hero.ready .arch img{transform:none}
+.since{position:absolute;right:-10px;bottom:30px;width:118px;height:118px;border-radius:50%;background:var(--cream);display:grid;place-content:center;text-align:center;font:400 2rem/1 var(--d);box-shadow:0 18px 40px -20px rgba(54,35,29,.5)}
+.since small{font:600 .6rem/1.3 var(--b);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.hero .side{position:relative}
+.ring{position:absolute;inset:-26px -26px auto auto;width:150px;height:150px;animation:spin 26s linear infinite}
+.ring text{font:600 10.5px var(--b);letter-spacing:.3em;fill:var(--clay);text-transform:uppercase}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (max-width:860px){.hero{min-height:0}.hero .wrap{grid-template-columns:1fr}.hero .side{max-width:420px;margin-inline:auto;width:100%}.ring{inset:-18px -6px auto auto;width:120px;height:120px}.since{right:6px}}
+.about .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(30px,6vw,100px);align-items:center}
+.about .arch{aspect-ratio:4/5}
+.about h2{margin:18px 0 26px}
+.about p+p{margin-top:16px}
+.sign{margin-top:30px;font:italic 400 2rem/1 var(--d);color:var(--clay)}
+@media (max-width:860px){.about .wrap{grid-template-columns:1fr}.about .arch{max-width:380px}}
+.method{background:var(--cocoa);color:var(--cream)}
+.method .k{color:var(--sand)}
+.method h2 i{color:var(--sand)}
+.mlist{list-style:none;margin-top:56px;border-top:1px solid rgba(246,239,232,.18)}
+.mlist li{display:grid;grid-template-columns:110px 1fr 1.2fr;gap:24px;align-items:baseline;padding:30px 0;border-bottom:1px solid rgba(246,239,232,.18)}
+.mlist .n{font:italic 400 3rem/1 var(--d);color:var(--sand)}
+.mlist h3{font-size:clamp(1.6rem,2.6vw,2.3rem)}
+.mlist p{opacity:.78}
+@media (max-width:760px){.mlist li{grid-template-columns:60px 1fr}.mlist p{grid-column:2}.mlist .n{font-size:2.2rem}}
+.rit{padding:0}
+.rit .head{padding-top:clamp(90px,11vw,150px)}
+.rit .head p{max-width:34em;color:var(--muted);margin-top:18px}
+.pin{position:relative}
+.pin .stick{position:sticky;top:0;height:100vh;display:flex;align-items:center;overflow:hidden}
+.track{display:flex;gap:clamp(20px,3vw,40px);padding-inline:var(--gut);will-change:transform}
+.panel{flex:none;width:min(78vw,820px);display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(20px,3vw,40px);align-items:center;background:#fff;border-radius:28px;padding:clamp(18px,2.4vw,28px)}
+.panel .arch{aspect-ratio:3/4;max-height:72vh}
+.panel .num{font:italic 400 1rem/1 var(--d);color:var(--clay)}
+.panel h3{font-size:clamp(2rem,3.4vw,3rem);margin:10px 0 14px}
+.panel ul{list-style:none;margin-top:12px}
+.panel li{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.panel li small{display:block;color:var(--muted);font-size:.8rem}
+.panel li b{font:500 1.05rem/1.4 var(--d);white-space:nowrap}
+.prog{position:absolute;left:var(--gut);right:var(--gut);bottom:28px;height:2px;background:var(--line)}
+.prog i{position:absolute;inset:0 auto 0 0;width:calc(var(--p,0)*100%);background:var(--clay)}
+.rit .note{padding:0 var(--gut) clamp(60px,8vw,100px);max-width:1180px;margin:0 auto;font-size:.88rem;color:var(--muted)}
+@media (max-width:860px){
+  .pin{height:auto!important}.pin .stick{position:static;height:auto;overflow:visible;display:block;padding-block:40px}
+  .track{overflow-x:auto;scroll-snap-type:x mandatory;transform:none!important;padding-bottom:16px;scrollbar-width:none}
+  .panel{width:86vw;grid-template-columns:1fr;scroll-snap-align:center}.panel .arch{aspect-ratio:4/3;border-radius:200px 200px 0 0}
+  .prog{display:none}
+}
+.well .wrap{text-align:center;max-width:980px}
+.well h2{font-size:clamp(3rem,8vw,7rem);margin:20px 0 30px}
+.well .x{position:relative;display:inline-block;color:var(--muted)}
+.well .x::after{content:"";position:absolute;left:-4%;right:-4%;top:52%;height:.08em;background:var(--clay);transform:scaleX(0);transform-origin:left;transition:transform .9s .3s cubic-bezier(.7,0,.2,1)}
+.well.in .x::after{transform:scaleX(1)}
+.well .y{display:inline-block;font-style:italic;color:var(--clay);opacity:0;transform:translateY(20px);transition:1s 1.1s}
+.well.in .y{opacity:1;transform:none}
+.well p{max-width:36em;margin:0 auto;font-size:1.12rem;color:var(--muted)}
+.duo{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px;text-align:left}
+.duo div{border-top:1px solid var(--cocoa);padding-top:16px}
+.duo s{display:block;color:var(--muted);font-size:.9rem}
+.duo b{font:400 1.35rem/1.25 var(--d)}
+@media (max-width:760px){.duo{grid-template-columns:1fr}}
+.rev{background:var(--nude)}
+.rev .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.stack{position:relative;height:340px}
+.stack figure{position:absolute;inset:0;background:var(--cream);border-radius:24px;padding:clamp(26px,4vw,44px);display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 50px -30px rgba(54,35,29,.5);transition:transform .6s cubic-bezier(.2,.8,.2,1),opacity .6s}
+.stack blockquote{font:400 clamp(1.35rem,2.3vw,1.85rem)/1.3 var(--d)}
+.stack blockquote::before{content:"“";display:block;font-size:3.2rem;line-height:.6;color:var(--clay)}
+.stack figcaption{font-size:.85rem;color:var(--muted)}
+.rev .ctl{display:flex;align-items:center;gap:16px;margin-top:26px}
+.rev .ctl button{width:52px;height:52px;border-radius:50%;border:1px solid var(--cocoa);background:none;cursor:pointer;font-size:1.2rem}
+.rev .ctl button:hover{background:var(--cocoa);color:var(--cream)}
+.rev .ctl span{font:italic 400 1.1rem/1 var(--d)}
+.rev .src{font-size:.8rem;color:var(--muted);margin-top:18px}
+@media (max-width:860px){.rev .wrap{grid-template-columns:1fr}.stack{height:380px;margin-right:28px}}
+.book .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(30px,5vw,70px);align-items:start}
+.book h2{margin:18px 0 18px}
+.book .intro{color:var(--muted);max-width:32em}
+.groups{margin-top:36px;display:grid;gap:26px}
+.groups h3{font:600 .72rem/1 var(--b);letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--sand);background:#fff;border-radius:999px;padding:10px 16px;font-size:.9rem;cursor:pointer;transition:background .25s,border-color .25s,color .25s}
+.chip em{font-style:normal;color:var(--muted);margin-left:6px}
+.chip[aria-pressed=true]{background:var(--cocoa);border-color:var(--cocoa);color:var(--cream)}
+.chip[aria-pressed=true] em{color:var(--sand)}
+.ticket{position:sticky;top:30px;background:#fff;border-radius:28px;padding:30px;box-shadow:0 30px 60px -40px rgba(54,35,29,.6)}
+.ticket h3{font-size:1.9rem}
+.ticket ol{list-style:none;margin:18px 0;min-height:60px}
+.ticket li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.92rem;animation:pop .35s ease}
+@keyframes pop{from{opacity:0;transform:translateX(-8px)}}
+.ticket .empty{color:var(--muted);font-size:.92rem;border:0}
+.ticket .tot{display:flex;justify-content:space-between;align-items:baseline;margin:6px 0 22px}
+.ticket .tot b{font:400 2.2rem/1 var(--d)}
+.ticket .btn{width:100%;justify-content:center}
+.ticket .btn[aria-disabled=true]{opacity:.4;pointer-events:none}
+.ticket small{display:block;margin-top:12px;font-size:.78rem;color:var(--muted)}
+@media (max-width:860px){.book .wrap{grid-template-columns:1fr}.ticket{position:static}}
+.visit{background:var(--cocoa);color:var(--cream)}
+.visit .k{color:var(--sand)}
+.visit h2 i{color:var(--sand)}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:end}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin:34px 0}
+.days span{text-align:center;padding:14px 0;border-radius:999px 999px 0 0;border:1px solid rgba(246,239,232,.25);font-size:.82rem}
+.days span.on{background:var(--sand);border-color:var(--sand);color:var(--cocoa);font-weight:600}
+.visit dl{display:grid;gap:18px}
+.visit dt{font:600 .7rem/1 var(--b);letter-spacing:.22em;text-transform:uppercase;color:var(--sand)}
+.visit dd{font:400 1.4rem/1.3 var(--d);margin-top:6px}
+.visit dd a{text-decoration:none}
+.visit .btn.f{background:var(--cream);color:var(--cocoa)}
+.visit .btn.o{border-color:var(--cream)}
+@media (max-width:860px){.visit .wrap{grid-template-columns:1fr}}
+footer{background:var(--cocoa);color:rgba(246,239,232,.6);border-top:1px solid rgba(246,239,232,.15);padding:40px var(--gut) 100px;text-align:center;font-size:.8rem}
+footer .big{display:block;font:400 clamp(2.4rem,8vw,6.4rem)/1 var(--d);color:var(--cream);margin-bottom:20px;letter-spacing:-.02em}
+footer .big i{color:var(--sand)}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity 1s,transform 1s}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.arch{clip-path:inset(0 0 100% 0);opacity:1;transform:none;transition:clip-path 1.3s cubic-bezier(.7,0,.2,1)}
+.js .rv.arch.in{clip-path:inset(0 0 0 0)}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--cocoa);color:var(--sand);font:500 .74rem/1.3 var(--b);letter-spacing:.04em;text-align:center;padding:8px 16px;border-top:1px solid rgba(246,239,232,.15)}
+footer{padding-bottom:130px}
+@media (min-width:861px){.preview-bar{left:var(--rail)}}
+@media (max-width:860px){.mbar{bottom:48px}}
+@media (prefers-reduced-motion:reduce){.js .rv,.js .rv.arch{opacity:1;transform:none;clip-path:none;transition:none}.js .hero h1 .ln>span,.hero .arch img{transform:none;transition:none}.ring{animation:none}.well .x::after{transform:scaleX(1);transition:none}.well .y{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></symbol></svg>
+<aside class="rail" aria-label="Navigazione">
+  <a class="mark" href="#top">Esteticamente <i>Gisella</i><small>Chieri · dal 2006</small></a>
+  <nav aria-label="Sezioni">
+    <a href="#chi-sono">01<span>Chi sono</span></a><a href="#metodo">02<span>Il metodo</span></a><a href="#rituali">03<span>Trattamenti e prezzi</span></a><a href="#recensioni">04<span>Recensioni</span></a><a href="#prenota">05<span>Prenota</span></a><a href="#visita">06<span>Orari e contatti</span></a>
+  </nav>
+  <a class="wa-s" href="https://wa.me/393408274913" aria-label="Scrivi a Gisella su WhatsApp"><svg><use href="#i-wa"/></svg></a>
+</aside>
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Esteticamente Gisella. Non è il sito ufficiale.</div>
+<div class="mbar"><span class="mk">Esteticamente <i>Gisella</i></span><a class="go" href="#prenota"><svg><use href="#i-wa"/></svg>Prenota</a></div>
+<div class="page">
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="t-hero"><div class="wrap">
+  <div>
+    <span class="k">Centro estetico · Chieri centro storico</span>
+    <h1 id="t-hero"><span class="ln"><span>Un'ora</span></span><span class="ln"><span>solo <i>per te</i>,</span></span><span class="ln"><span>su misura.</span></span></h1>
+    <p class="lead">Trattamenti viso e corpo costruiti sulla tua pelle, mai uguali per tutti, in un piccolo istituto nel cuore di Chieri.</p>
+    <div class="btns"><a class="btn f" href="#prenota"><svg><use href="#i-wa"/></svg>Componi la tua prenotazione</a><a class="btn o" href="#rituali">Trattamenti e prezzi</a></div>
+  </div>
+  <div class="side">
+    <div class="arch"><img src="img/hero-maschera.jpg" alt="Una cliente rilassata durante un trattamento viso con maschera" width="1600" height="1067"></div>
+    <svg class="ring" viewBox="0 0 150 150" aria-hidden="true"><defs><path id="cp" d="M75 75m-58 0a58 58 0 1 1 116 0a58 58 0 1 1-116 0"/></defs><text><textPath href="#cp">Well-ageing · Su appuntamento · Vicolo dei Fantini ·</textPath></text></svg>
+    <div class="since">2006<small>dal</small></div>
+  </div>
+</div></section>
+
+<section id="chi-sono" class="about" aria-labelledby="t-chi"><div class="wrap">
+  <div class="arch rv"><img src="img/metodo.jpg" alt="Preparazione di una maschera cosmetica in una ciotola" loading="lazy"></div>
+  <div class="rv">
+    <span class="k">Chi sono</span>
+    <h2 id="t-chi">Un sogno nato <i>a ventidue anni</i>.</h2>
+    <p>Esteticamente Gisella nasce nel marzo del 2006 nel cuore del centro storico di Chieri. A ventidue anni ho realizzato il mio sogno dell'infanzia, aprendo il mio istituto dopo anni di sacrifici e studi.</p>
+    <p>Per me professionalità e serietà vogliono dire attenzione a ogni cliente: i trattamenti non sono mai uguali per tutti. E continuo ad aggiornarmi con corsi di formazione professionale, per offrirti sempre il meglio.</p>
+    <p class="sign">Gisella</p>
+  </div>
+</div></section>
+
+<section id="metodo" class="method" aria-labelledby="t-met"><div class="wrap">
+  <span class="k">Il metodo</span>
+  <h2 id="t-met" class="rv" style="margin-top:18px">Prima ti conosco, <i>poi ti curo</i>.</h2>
+  <ol class="mlist">
+    <li class="rv"><span class="n">i.</span><h3>Diagnosi avanzata</h3><p>Conoscere la tua pelle e le tue abitudini di vita è il primo passo.</p></li>
+    <li class="rv"><span class="n">ii.</span><h3>Dermopurificazione</h3><p>Accurata e specifica: il punto di partenza di ogni trattamento su viso e corpo.</p></li>
+    <li class="rv"><span class="n">iii.</span><h3>Un programma per te</h3><p>Costruito sulle tue esigenze, per lavorare davvero sugli inestetismi.</p></li>
+  </ol>
+</div></section>
+
+<section id="rituali" class="rit" aria-labelledby="t-rit">
+  <div class="wrap head"><span class="k">Trattamenti e prezzi</span><h2 id="t-rit" class="rv" style="margin-top:18px">Cinque modi per <i>prenderti cura</i> di te.</h2><p class="rv">Prezzi chiari, trattamenti su misura. Continua a scorrere: i trattamenti passano uno dopo l'altro.</p></div>
+  <div class="pin" id="pin"><div class="stick"><div class="track" id="track">
+    <article class="panel"><div class="arch"><img src="img/viso.jpg" alt="Mani dell'estetista durante un trattamento viso" loading="lazy"></div><div><span class="num">01 / 05</span><h3>Viso</h3><p>Pulizia, microdermoabrasione e massaggi pensati per la tua pelle.</p><ul><li><span>Pulizia viso con vapore</span><b>35 €</b></li><li><span>Microdermoabrasione</span><b>40 €</b></li><li><span>Trattamento con massaggio specifico</span><b>45 €</b></li><li><span>Solo massaggio viso<small>Lifting, drenante, illuminante · 35 min</small></span><b>35 €</b></li></ul></div></article>
+    <article class="panel"><div class="arch"><img src="img/pietre.jpg" alt="Pietre calde per il massaggio" loading="lazy"></div><div><span class="num">02 / 05</span><h3>Massaggi</h3><p>Relax, drenante o distensivo: il tempo per staccare davvero.</p><ul><li><span>Massaggio corpo<small>40 min</small></span><b>40 €</b></li><li><span>Drenante gambe e addome<small>40 min</small></span><b>40 €</b></li><li><span>Pancia Piatta<small>contro il gonfiore · 30 min</small></span><b>40 €</b></li><li><span>Distensivo schiena<small>20 min</small></span><b>25 €</b></li></ul></div></article>
+    <article class="panel"><div class="arch"><img src="img/corpo.jpg" alt="Trattamento corpo" loading="lazy"></div><div><span class="num">03 / 05</span><h3>Corpo</h3><p>Scrub, bendaggi e pressoterapia per una pelle levigata e leggera.</p><ul><li><span>Massaggio esfoliante<small>scrub e idratazione · 40 min</small></span><b>40 €</b></li><li><span>Drenanti con bendaggio o pressoterapia<small>40–50 min</small></span><b>40 €</b></li></ul></div></article>
+    <article class="panel"><div class="arch"><img src="img/mani.jpg" alt="Mani curate dopo la manicure" loading="lazy"></div><div><span class="num">04 / 05</span><h3>Mani e piedi</h3><p>Manicure e pedicure, anche con semipermanente.</p><ul><li><span>Manicure</span><b>15 €</b></li><li><span>Manicure con semipermanente</span><b>25 €</b></li><li><span>Pedicure con pediluvio</span><b>25 €</b></li><li><span>Pedicure con semipermanente</span><b>39 €</b></li><li><span>Rimozione semipermanente</span><b>8 €</b></li></ul></div></article>
+    <article class="panel"><div class="arch"><img src="img/pelle.jpg" alt="Pelle liscia e luminosa" loading="lazy"></div><div><span class="num">05 / 05</span><h3>Ceretta e laser</h3><p>Ceretta tradizionale ed epilazione laser.</p><ul><li><span>Ceretta gamba intera<small>con inguine totale 30 €</small></span><b>25 €</b></li><li><span>Ceretta mezza gamba<small>con inguine totale 25 €</small></span><b>15 €</b></li><li><span>Ascelle · sopracciglia · baffetti</span><b>5 · 5 · 3 €</b></li><li><span>Laser viso · ascelle</span><b>19 · 29 €</b></li><li><span>Laser mezza gamba · coscia · gamba intera</span><b>39 · 49 · 88 €</b></li></ul></div></article>
+  </div><div class="prog" aria-hidden="true"><i></i></div></div></div>
+  <p class="note">Nei trattamenti viso l'epilazione di baffetti e sopracciglia si conta a parte. Listino completo su richiesta.</p>
+</section>
+
+<section class="well" id="well" aria-labelledby="t-well"><div class="wrap">
+  <span class="k">La mia filosofia</span>
+  <h2 id="t-well"><span class="x">Anti-age</span><br><span class="y">Well-ageing.</span></h2>
+  <p>Il tempo non si può fermare, ma si può cambiare il modo di viverlo: con più consapevolezza, ascoltando il corpo e amando la pelle che cambia.</p>
+  <div class="duo">
+    <div class="rv"><s>Combattere ogni segno del tempo</s><b>Accompagnare la pelle che cambia</b></div>
+    <div class="rv"><s>Inseguire un'eterna giovinezza</s><b>Ritrovare luminosità e un aspetto sano</b></div>
+    <div class="rv"><s>Eliminare le rughe</s><b>Renderle più armoniose</b></div>
+  </div>
+</div></section>
+
+<section id="recensioni" class="rev" aria-labelledby="t-rev"><div class="wrap">
+  <div class="rv">
+    <span class="k">Recensioni</span>
+    <h2 id="t-rev" style="margin-top:18px">Dicono di <i>Gisella</i>.</h2>
+    <div class="ctl"><button type="button" id="prev" aria-label="Recensione precedente">←</button><button type="button" id="next" aria-label="Recensione successiva">→</button><span id="cnt" aria-live="polite">1 / 5</span></div>
+    <p class="src">Recensioni pubblicate sul sito di Esteticamente Gisella.</p>
+  </div>
+  <div class="stack" id="stack">
+    <figure><blockquote>Vado da Gisella da anni perché è brava, gentile, disponibile ed onesta. Il suo centro è sempre pulito.</blockquote><figcaption>Una cliente</figcaption></figure>
+    <figure><blockquote>Ti ascolta, ti consiglia ma non ti obbliga. Mi sento libera di scegliere cosa fare.</blockquote><figcaption>Una cliente</figcaption></figure>
+    <figure><blockquote>Grazie a lei faccio la pulizia del viso tutti i mesi. Ha una mano delicatissima.</blockquote><figcaption>Una cliente</figcaption></figure>
+    <figure><blockquote>Abito all'estero, ma quando torno in Italia prenoto almeno un paio d'ore da lei.</blockquote><figcaption>Una cliente</figcaption></figure>
+    <figure><blockquote>Sa come coccolare le sue clienti. Molto brava e in costante aggiornamento.</blockquote><figcaption>Una cliente</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="prenota" class="book" aria-labelledby="t-book"><div class="wrap">
+  <div>
+    <span class="k">Prenota</span>
+    <h2 id="t-book">Componi il tuo <i>momento</i>.</h2>
+    <p class="intro">Scegli i trattamenti che ti interessano: il messaggio per Gisella si prepara da solo, tu lo invii su WhatsApp e lei ti risponde con il primo posto libero.</p>
+    <div class="groups" id="groups"></div>
+  </div>
+  <aside class="ticket" aria-labelledby="t-tk">
+    <h3 id="t-tk">La tua richiesta</h3>
+    <ol id="sel" aria-live="polite"></ol>
+    <div class="tot"><span>Totale indicativo</span><b id="tot">0 €</b></div>
+    <a class="btn f" id="send" href="https://wa.me/393408274913" aria-disabled="true"><svg><use href="#i-wa"/></svg>Invia a Gisella su WhatsApp</a>
+    <small>Il messaggio si apre su WhatsApp: puoi modificarlo prima di inviarlo.</small>
+  </aside>
+</div></section>
+
+<section id="visita" class="visit" aria-labelledby="t-vis"><div class="wrap">
+  <div class="rv">
+    <span class="k">Orari e contatti</span>
+    <h2 id="t-vis" style="margin-top:18px">Ti aspetto in <i>Vicolo dei Fantini</i>.</h2>
+    <div class="days" aria-label="Aperto da lunedì a venerdì"><span class="on">Lun</span><span class="on">Mar</span><span class="on">Mer</span><span class="on">Gio</span><span class="on">Ven</span><span>Sab</span><span>Dom</span></div>
+    <div class="btns"><a class="btn f" href="https://wa.me/393408274913"><svg><use href="#i-wa"/></svg>Scrivimi su WhatsApp</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&amp;query=Vicolo+dei+Fantini+2a+Chieri">Come arrivare</a></div>
+  </div>
+  <dl class="rv">
+    <div><dt>Orario</dt><dd>Lunedì–venerdì, orario continuato, su appuntamento</dd></div>
+    <div><dt>Indirizzo</dt><dd>Vicolo dei Fantini 2/a, 10023 Chieri (TO)</dd></div>
+    <div><dt>Telefono e WhatsApp</dt><dd><a href="tel:+393408274913">340 827 4913</a></dd></div>
+  </dl>
+</div></section>
+</main>
+<footer><span class="big">Esteticamente <i>Gisella</i></span>Esteticamente Gisella di Meriano Gisella · P.IVA 09265940016 · <a href="https://www.facebook.com/esteticamentegisellachieri">Facebook</a></footer>
+</div>
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,io='IntersectionObserver' in window;
+  requestAnimationFrame(function(){requestAnimationFrame(function(){document.getElementById('hero').classList.add('ready');});});
+  var els=[].slice.call(document.querySelectorAll('.rv,#well'));
+  if(io&&!reduce){var tg=new Map(),o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){(tg.get(e.target)||[]).forEach(function(x){x.classList.add('in');});o.unobserve(e.target);}});},{threshold:.2});
+    els.forEach(function(el){var w=el.classList.contains('arch')?el.parentElement:el;if(!tg.has(w)){tg.set(w,[]);o.observe(w);}tg.get(w).push(el);});}else els.forEach(function(e){e.classList.add('in');});
+  var links=[].slice.call(document.querySelectorAll('.rail nav a'));
+  if(io){var secs=links.map(function(l){return document.querySelector(l.getAttribute('href'));});var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=secs.indexOf(e.target);links.forEach(function(l,j){l.classList.toggle('on',i===j);});}});},{rootMargin:'-45% 0px -50% 0px'});secs.forEach(function(s){so.observe(s);});}
+  var pin=document.getElementById('pin'),track=document.getElementById('track'),mq=matchMedia('(max-width:860px)'),page=document.querySelector('.page');
+  function off(){return mq.matches||reduce;}
+  function size(){if(off()){pin.style.height='';track.style.transform='';return;}var dist=Math.max(0,track.scrollWidth-(innerWidth-page.getBoundingClientRect().left));pin.dataset.dist=dist;pin.style.height=(innerHeight+dist)+'px';move();}
+  function move(){if(off())return;var r=pin.getBoundingClientRect(),d=+pin.dataset.dist||0,p=d?Math.max(0,Math.min(1,-r.top/d)):0;track.style.transform='translateX('+(-p*d)+'px)';pin.style.setProperty('--p',p);}
+  if(reduce&&!mq.matches){var s=pin.querySelector('.stick');s.style.position='static';s.style.height='auto';s.style.overflow='visible';track.style.flexWrap='wrap';track.style.justifyContent='center';track.style.paddingBlock='40px';}
+  addEventListener('scroll',move,{passive:true});addEventListener('resize',size);addEventListener('load',size);size();
+  var st=[].slice.call(document.querySelectorAll('#stack figure')),cur=0,cnt=document.getElementById('cnt');
+  function lay(){st.forEach(function(f,i){var k=(i-cur+st.length)%st.length;f.style.zIndex=st.length-k;f.style.transform=k<3?'translate('+(k*14)+'px,'+(k*14)+'px) rotate('+(k*1.6)+'deg)':'translate(28px,28px) rotate(3deg)';f.style.opacity=k<3?1:0;f.setAttribute('aria-hidden',k?'true':'false');});cnt.textContent=(cur+1)+' / '+st.length;}
+  document.getElementById('next').onclick=function(){cur=(cur+1)%st.length;lay();};
+  document.getElementById('prev').onclick=function(){cur=(cur-1+st.length)%st.length;lay();};
+  lay();
+  var G=[['Viso',[['Pulizia viso con vapore',35],['Microdermoabrasione',40],['Trattamento viso con massaggio',45],['Massaggio viso',35]]],
+         ['Massaggi e corpo',[['Massaggio corpo',40],['Drenante gambe e addome',40],['Pancia Piatta',40],['Distensivo schiena',25],['Massaggio esfoliante',40],['Bendaggio o pressoterapia',40]]],
+         ['Mani e piedi',[['Manicure',15],['Manicure con semipermanente',25],['Pedicure con pediluvio',25],['Pedicure con semipermanente',39]]],
+         ['Ceretta e laser',[['Ceretta gamba intera',25],['Ceretta mezza gamba',15],['Ceretta ascelle',5],['Sopracciglia',5],['Laser viso',19],['Laser ascelle',29],['Laser gamba intera',88]]]];
+  var box=document.getElementById('groups'),sel=document.getElementById('sel'),tot=document.getElementById('tot'),send=document.getElementById('send'),picked=[];
+  G.forEach(function(g){var d=document.createElement('div');d.innerHTML='<h3>'+g[0]+'</h3>';var c=document.createElement('div');c.className='chips';g[1].forEach(function(t){var b=document.createElement('button');b.type='button';b.className='chip';b.setAttribute('aria-pressed','false');b.innerHTML=t[0]+'<em>'+t[1]+' €</em>';b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',String(on));if(on)picked.push(t);else picked=picked.filter(function(x){return x!==t;});render();};c.appendChild(b);});d.appendChild(c);box.appendChild(d);});
+  function render(){sel.innerHTML=picked.length?'':'<li class="empty">Nessun trattamento scelto, per ora.</li>';var s=0;picked.forEach(function(t){s+=t[1];var li=document.createElement('li');li.innerHTML='<span>'+t[0]+'</span><span>'+t[1]+' €</span>';sel.appendChild(li);});tot.textContent=s+' €';
+    var msg='Ciao Gisella, vorrei prenotare: '+picked.map(function(t){return t[0];}).join(', ')+'. Quando hai un posto libero?';send.href='https://wa.me/393408274913?text='+encodeURIComponent(msg);send.setAttribute('aria-disabled',picked.length?'false':'true');}
+  render();
+})();
+</script>
+</body>
+</html>

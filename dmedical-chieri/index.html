@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dmedical · Odontoiatria e medicina estetica rigenerativa · Chieri</title>
+<meta name="description" content="Dmedical, Viale Fasano 36A angolo Viale Cappuccini a Chieri: odontoiatria, medicina estetica e medicina rigenerativa. Dott.ssa Alessandra D'Agostino, specialista in medicina estetica. Tel. 011 429 9315.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--sage:#4f6e60;--sage-d:#2c4238;--sage-l:#dfe6df;--cream:#f4efe6;--paper:#fbf8f3;--ink:#1f2b25;--acc:#4f6e60;--h:"Cormorant Garamond",Georgia,serif;--b:"Jost",system-ui,sans-serif;--gut:clamp(16px,4vw,56px)}
+body[data-w=pelle]{--acc:#a1705c}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+html,body{overflow-x:clip}
+body{background:var(--cream);color:var(--ink);font:300 17px/1.7 var(--b);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,11vw,150px)}
+h1,h2,h3{font-family:var(--h);font-weight:300;line-height:1.02;letter-spacing:-.01em}
+h2{font-size:clamp(2.6rem,6vw,4.8rem)}
+h2 i{font-weight:300;color:var(--acc);transition:color .6s}
+.eyebrow{font:500 .72rem/1 var(--b);letter-spacing:.3em;text-transform:uppercase;color:var(--sage)}
+.lead{font-size:1.12rem;max-width:34em}
+
+/* top + switch */
+.top{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px var(--gut);transition:background .4s,box-shadow .4s}
+.top.s{background:rgba(244,239,230,.92);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(31,43,37,.08)}
+.top .logo{width:150px;border-radius:6px}
+.sw{position:relative;display:flex;background:#fff;border-radius:999px;padding:4px;box-shadow:0 8px 24px -14px rgba(31,43,37,.5)}
+.sw button{position:relative;z-index:1;width:110px;padding:10px 0;font:500 .78rem/1 var(--b);letter-spacing:.14em;text-transform:uppercase;border-radius:999px;transition:color .4s}
+.sw button[aria-pressed=true]{color:#fff}
+.sw .pill{position:absolute;top:4px;bottom:4px;left:4px;width:110px;border-radius:999px;background:var(--acc);transition:transform .5s cubic-bezier(.6,0,.2,1),background .6s}
+body[data-w=pelle] .sw .pill{transform:translateX(110px)}
+.top .cta{font:500 .78rem/1 var(--b);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:12px 18px;border:1px solid var(--ink);border-radius:999px}
+.top .cta:hover{background:var(--ink);color:#fff}
+
+/* hero */
+.hero{min-height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:120px var(--gut) 60px;max-width:1280px;margin:0 auto}
+.hero h1{font-size:clamp(3rem,6.6vw,5.8rem)}
+.hero h1 i{color:var(--acc);transition:color .6s}
+.hero .lead{margin-top:20px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 26px;border-radius:999px;font:500 .8rem/1 var(--b);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid var(--ink);transition:background .3s,color .3s,border-color .3s}
+.btn.p{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn.p:hover{background:var(--ink);border-color:var(--ink)}
+.btn.g:hover{background:var(--ink);color:#fff}
+.dframe{position:relative;width:min(430px,82vw);justify-self:center;padding:22px 64px 22px 0}
+.dframe svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.dframe .ph{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 40px 70px -40px rgba(31,43,37,.55);background:#e5ddd0}
+.dframe .ph img{width:100%;height:auto}
+.dline{fill:none;stroke:var(--acc);stroke-width:1.6;transition:stroke .6s;vector-effect:non-scaling-stroke}
+.js .dline{stroke-dasharray:3000;stroke-dashoffset:3000;animation:draw 2.6s cubic-bezier(.6,0,.2,1) .3s forwards}
+.leaf{fill:none;stroke:var(--sage);stroke-width:1.6;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.js .leaf{stroke-dasharray:300;stroke-dashoffset:300;animation:draw 1.6s ease 2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.js .dframe .ph{opacity:0;transform:translateY(16px);animation:fade 1.2s ease .9s forwards}
+@keyframes fade{to{opacity:1;transform:none}}
+.dframe .cap{position:absolute;left:-8%;bottom:10%;background:#fff;padding:14px 18px;border-radius:14px;box-shadow:0 18px 40px -20px rgba(31,43,37,.5)}
+.dframe .cap b{display:block;font:500 1.3rem/1.1 var(--h)}
+.dframe .cap span{font-size:.82rem;color:#5d6b63}
+.live{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font:500 .72rem/1 var(--b);letter-spacing:.16em;text-transform:uppercase;color:#5d6b63}
+.live i{width:8px;height:8px;border-radius:50%;background:#b9b1a4}
+.live.open i{background:#5fa36f;animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(95,163,111,.6)}70%{box-shadow:0 0 0 9px rgba(95,163,111,0)}100%{box-shadow:0 0 0 0 rgba(95,163,111,0)}}
+
+/* due mondi */
+.worlds{background:var(--paper)}
+.wintro{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+.panel{display:none;margin-top:44px}
+.panel.on{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,70px);animation:rise .6s ease}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+.panel .pic{border-radius:220px 220px 18px 18px;overflow:hidden;aspect-ratio:4/5;background:var(--sage-l)}
+.panel .pic img{width:100%;height:100%;object-fit:cover}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{padding:10px 16px;border-radius:999px;border:1px solid rgba(31,43,37,.25);font-size:.92rem;transition:background .3s,color .3s,border-color .3s}
+.chips button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#fff}
+.tcard{margin-top:22px;padding:30px;border-radius:18px;background:#fff;box-shadow:0 20px 50px -34px rgba(31,43,37,.6);min-height:220px}
+.tcard h3{font-size:2.2rem}
+.tcard p{margin-top:8px;max-width:34em}
+.tcard a{display:inline-block;margin-top:16px;font:500 .78rem/1 var(--b);letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+
+/* dottoressa */
+.doc{background:var(--sage-d);color:var(--cream)}
+.doc .wrap{max-width:1000px}
+.doc .eyebrow{color:#b8cbbf}
+.doc blockquote{font:italic 300 clamp(2.2rem,5vw,3.8rem)/1.08 var(--h);margin-top:18px;max-width:16em}
+.doc blockquote b{font-weight:500;color:#cfe0d4}
+.prin{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.prin button{text-align:left;padding:22px 0 0;border-top:1px solid rgba(244,239,230,.25);position:relative;align-self:start}
+.prin button::before{content:"";position:absolute;top:-1px;left:0;height:1px;width:0;background:#cfe0d4;transition:width .7s cubic-bezier(.6,0,.2,1)}
+.prin button[aria-expanded=true]::before{width:100%}
+.prin .q{display:block;font:300 1.7rem/1.1 var(--h)}
+.prin .a{display:block;font:italic 500 1.7rem/1.1 var(--h);color:#cfe0d4;max-height:0;opacity:0;overflow:hidden;transition:max-height .6s,opacity .6s,margin .6s}
+.prin .t{display:block;font-size:.92rem;color:#c9d6cd;max-height:0;opacity:0;overflow:hidden;transition:max-height .6s .1s,opacity .6s .1s}
+.prin button[aria-expanded=true] .a{max-height:3em;opacity:1;margin-top:4px}
+.prin button[aria-expanded=true] .t{max-height:6em;opacity:1;margin-top:8px}
+.prin .hint{display:block;margin-top:12px;font:500 .66rem/1 var(--b);letter-spacing:.24em;text-transform:uppercase;color:#8fa79a;transition:opacity .4s}
+.prin button[aria-expanded=true] .hint{opacity:0}
+.path{background:var(--cream)}
+.steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:50px}
+.steps::before,.steps::after{content:"";position:absolute;top:23px;left:24px;right:24px;height:1px;background:rgba(31,43,37,.15)}
+.steps::after{background:var(--acc);right:auto;width:calc((100% - 48px)*var(--sp,0));transition:background .6s}
+.step{position:relative;z-index:1}
+.step .n{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--cream);border:1px solid rgba(31,43,37,.2);font:500 1.3rem/1 var(--h);transition:background .5s,color .5s,border-color .5s}
+.step.on .n{background:var(--acc);border-color:var(--acc);color:#fff}
+.step h3{font-size:1.7rem;margin-top:16px}
+.step p{font-size:.96rem;color:#55625b;margin-top:6px}
+.book{margin-top:22px;padding:28px;border-radius:18px;background:#fff;box-shadow:0 20px 50px -34px rgba(31,43,37,.6)}
+.book .row{margin-top:18px}
+.book .row:first-child{margin-top:0}
+.book .lab{display:block;font:500 .68rem/1 var(--b);letter-spacing:.24em;text-transform:uppercase;color:#6b766f;margin-bottom:10px}
+.book .opts{display:flex;flex-wrap:wrap;gap:8px}
+.book .opts button{padding:9px 14px;border-radius:999px;border:1px solid rgba(31,43,37,.22);font-size:.9rem;line-height:1.2;transition:background .3s,color .3s,border-color .3s}
+.book .opts button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#fff}
+.book .opts button small{display:block;font-size:.7rem;opacity:.75}
+.book .sum{margin-top:20px;padding-top:18px;border-top:1px solid rgba(31,43,37,.1);font:300 1.35rem/1.3 var(--h)}
+.book .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+
+/* studio */
+.studio .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.studio .pics{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.studio .pics img{border-radius:16px;aspect-ratio:1;object-fit:cover}
+.studio .pics img:last-child{margin-top:50px}
+
+/* contatti */
+.visit{background:var(--paper)}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px)}
+.hours{list-style:none;margin-top:18px}
+.hours li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(31,43,37,.12)}
+.hours li.today{color:var(--acc);font-weight:500}
+.hours li.today span:first-child::after{content:"oggi";margin-left:10px;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;padding:3px 8px;border-radius:999px;background:var(--acc);color:#fff;vertical-align:2px}
+.cont a.big{display:block;font:300 clamp(2rem,3.6vw,2.8rem)/1.25 var(--h);text-decoration:none}
+.cont a.big:hover{color:var(--acc)}
+.cont p{margin-top:16px}
+.note{margin-top:12px;font-size:.85rem;color:#6b766f}
+
+footer{background:var(--sage);color:var(--cream);padding:40px var(--gut);display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center;font-size:.9rem}
+footer img{width:140px}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv{opacity:1;transform:none}
+
+@media (max-width:900px){
+ .top{flex-wrap:wrap;justify-content:space-between}
+ .top .logo{width:110px}
+ .top .cta{display:none}
+ .hero{grid-template-columns:1fr;padding-top:120px}
+ .panel.on,.doc .wrap,.studio .wrap,.visit .wrap{grid-template-columns:1fr}
+ .panel .pic{max-height:380px;aspect-ratio:auto}
+ .prin,.steps{grid-template-columns:1fr}
+ .steps::before,.steps::after{display:none}
+}
+@media (max-width:520px){
+ .top .logo{width:92px}
+ .sw button,.sw .pill{width:86px}
+ body[data-w=pelle] .sw .pill{transform:translateX(86px)}
+ .sw button{font-size:.68rem}
+ .dframe .cap{left:0}
+ .dframe{padding-right:40px}
+}
+@media (prefers-reduced-motion:reduce){
+ .js .dline,.js .leaf{animation:none;stroke-dashoffset:0}.js .dframe .ph{animation:none;opacity:1}
+ .rv{opacity:1;transform:none;transition:none}
+}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#2c4238;color:#f4efe6;font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}body{padding-bottom:34px}
+</style>
+</head>
+<body data-w="sorriso">
+<header class="top" id="top">
+  <a href="#" aria-label="Dmedical, inizio pagina"><img class="logo" src="img/logo.png" alt="Dmedical · odontoiatria, medicina estetica e rigenerativa" width="507" height="232"></a>
+  <div class="sw" role="group" aria-label="Scegli il percorso">
+    <span class="pill" aria-hidden="true"></span>
+    <button type="button" data-w="sorriso" aria-pressed="true">Sorriso</button>
+    <button type="button" data-w="pelle" aria-pressed="false">Pelle</button>
+  </div>
+  <a class="cta" href="#visita">Prenota una visita</a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="t-hero">
+  <div>
+    <span class="eyebrow">Chieri · Viale Fasano angolo Viale Cappuccini</span>
+    <h1 id="t-hero" style="margin-top:18px">La tua bellezza, <i>la nostra cura.</i></h1>
+    <p class="lead">Un unico centro per la salute del sorriso e per la medicina estetica e rigenerativa. Percorsi personalizzati, tecnologie non invasive e un'idea chiara: risultati naturali, che durano nel tempo.</p>
+    <div class="btns">
+      <a class="btn p" href="tel:+390114299315">Chiama 011 429 9315</a>
+      <a class="btn g" href="#mondi">Scopri i trattamenti</a>
+    </div>
+    <span class="live" id="live"><i></i><span></span></span>
+  </div>
+  <div class="dframe">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      <path class="dline" d="M-3 2 H58 C92 2 104 28 104 50 C104 72 92 98 58 98 H-3 Z"/>
+      <path class="leaf" d="M100 94 C106 84 106 74 102 66 M102 66 C97 70 96 76 99 80 M103 74 C108 72 110 68 109 63 M101 84 C106 84 109 81 110 77"/>
+    </svg>
+    <div class="ph"><img src="img/dottoressa.jpg" alt="La dottoressa Alessandra D'Agostino" width="570" height="640"></div>
+    <div class="cap"><b>Dott.ssa Alessandra D'Agostino</b><span>specialista in medicina estetica</span></div>
+  </div>
+</section>
+
+<section id="mondi" class="worlds" aria-labelledby="t-mondi">
+  <div class="wrap">
+    <div class="wintro rv">
+      <div><span class="eyebrow">Due percorsi, un solo studio</span><h2 id="t-mondi" style="margin-top:14px">Cosa desideri <i id="wword">per il tuo sorriso?</i></h2></div>
+      <p class="lead" style="max-width:24em">Usa l'interruttore in alto per passare dal sorriso alla pelle. Tocca un trattamento per saperne di più.</p>
+    </div>
+    <div class="panel on" data-p="sorriso">
+      <div class="pic"><img src="img/ingresso.jpg" alt="L'ingresso dello studio Dmedical con l'insegna verde" width="640" height="640" loading="lazy"></div>
+      <div><div class="chips" role="group" aria-label="Trattamenti di odontoiatria"></div><div class="tcard" aria-live="polite"></div></div>
+    </div>
+    <div class="panel" data-p="pelle">
+      <div class="pic"><img src="img/crio.jpg" alt="Trattamento di criolipolisi sull'addome" width="215" height="560" loading="lazy"></div>
+      <div><div class="chips" role="group" aria-label="Trattamenti di medicina estetica"></div><div class="tcard" aria-live="polite"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="doc" aria-labelledby="t-doc">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Medicina estetica rigenerativa</span>
+      <h2 id="t-doc" style="margin-top:14px;font-size:clamp(2rem,4vw,3rem)">Dott.ssa Alessandra D'Agostino</h2>
+      <blockquote>«Non seguo le mode. <b>Seguo la scienza.</b>»</blockquote>
+    </div>
+    <div class="prin rv">
+      <button type="button" aria-expanded="false"><span class="q">Non copre.</span><span class="a">Rigenera.</span><span class="t">Stimola la pelle a tornare come se l'età non l'avesse mai toccata.</span><span class="hint">scopri</span></button>
+      <button type="button" aria-expanded="false"><span class="q">Non cambia chi sei.</span><span class="a">Esalta chi sei.</span><span class="t">Risultati autentici, mai costruiti.</span><span class="hint">scopri</span></button>
+      <button type="button" aria-expanded="false"><span class="q">Non è tendenza.</span><span class="a">È scienza.</span><span class="t">È medicina, è rigenerazione, è una scelta consapevole.</span><span class="hint">scopri</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="studio" aria-labelledby="t-studio">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Lo studio</span>
+      <h2 id="t-studio" style="margin-top:14px">All'angolo tra <i>Viale Fasano</i> e Viale Cappuccini</h2>
+      <p class="lead" style="margin-top:16px">Uno studio nuovo e luminoso a Chieri. Odontoiatria, medicina estetica e consulenza nutrizionale sotto lo stesso tetto, con la stessa attenzione al paziente.</p>
+    </div>
+    <div class="pics rv">
+      <img src="img/facciata.jpg" alt="La facciata dello studio Dmedical su Viale Fasano" width="640" height="640" loading="lazy">
+      <img src="img/ingresso.jpg" alt="Le vetrine dello studio con l'insegna Dmedical" width="640" height="640" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="path" aria-labelledby="t-path">
+  <div class="wrap">
+    <div class="rv"><span class="eyebrow">Come funziona</span><h2 id="t-path" style="margin-top:14px">Il tuo percorso, <i>passo dopo passo</i></h2></div>
+    <div class="steps" id="steps">
+      <div class="step"><span class="n">1</span><h3>Il primo contatto</h3><p>Una telefonata o un'email: ci racconti cosa desideri e fissiamo la visita.</p></div>
+      <div class="step"><span class="n">2</span><h3>La visita</h3><p>Ascolto, valutazione e tutte le domande che vuoi fare, senza fretta.</p></div>
+      <div class="step"><span class="n">3</span><h3>Il tuo piano</h3><p>Un percorso costruito su di te, con tempi e trattamenti chiari fin dall'inizio.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="visita" class="visit" aria-labelledby="t-visita">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Orari</span>
+      <h2 id="t-visita" style="margin-top:14px">Vieni a <i>trovarci</i></h2>
+      <ul class="hours" id="hours"></ul>
+      <p class="note">Si riceve su appuntamento.</p>
+    </div>
+    <div class="cont rv">
+      <span class="eyebrow">Prepara la tua richiesta</span>
+      <div class="book" id="book">
+        <div class="row"><span class="lab">Percorso</span><div class="opts" data-g="w"><button type="button" data-v="sorriso" aria-pressed="true">Sorriso</button><button type="button" data-v="pelle" aria-pressed="false">Pelle</button></div></div>
+        <div class="row"><span class="lab">Trattamento</span><div class="opts" data-g="t"></div></div>
+        <div class="row"><span class="lab">Quando preferisci</span><div class="opts" data-g="d"></div></div>
+        <div class="row"><span class="lab">Fascia oraria</span><div class="opts" data-g="h"><button type="button" data-v="mattina" aria-pressed="false">Mattina</button><button type="button" data-v="pomeriggio" aria-pressed="false">Pomeriggio</button></div></div>
+        <p class="sum" id="bsum" aria-live="polite"></p>
+        <div class="acts"><a class="btn p" id="bmail" href="mailto:dmedicalclinicsrl@gmail.com">Invia la richiesta</a><a class="btn g" href="tel:+390114299315">Oppure chiama</a></div>
+      </div>
+      <p style="margin-top:22px">011 429 9315 · 327 177 3940<br>Viale Fasano 36A, angolo Viale Cappuccini 2A · 10023 Chieri (TO)<br><a href="https://maps.google.com/?q=Dmedical+Clinic+Viale+Fasano+36A+Chieri" target="_blank" rel="noopener">Indicazioni</a> · <a href="https://www.instagram.com/dmedical.clinic/" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Dmedical. Non è il sito ufficiale.</div>
+<footer><img src="img/logo.png" alt="" width="507" height="232"><span>Dmedical · Viale Fasano 36A, Chieri · 011 429 9315</span></footer>
+
+<script>
+(function(){
+  var top=document.getElementById('top');addEventListener('scroll',function(){top.classList.toggle('s',scrollY>30)},{passive:true});
+  var T={
+   sorriso:[['Igiene e prevenzione','Controlli regolari, igiene professionale e cure mirate per mantenere la salute della bocca nel tempo.'],['Conservativa','Interventi mirati per preservare i denti naturali, con tecniche aggiornate e materiali estetici.'],['Ortodonzia','Piani ortodontici su misura, per ogni età, per allineare i denti con precisione e comfort.'],['Implantologia','Per sostituire uno o più denti mancanti e tornare a masticare e sorridere con serenità.'],['Faccette','Per correggere forma e colore dei denti anteriori, con un risultato naturale.'],['Protesi','Soluzioni fisse e mobili per ripristinare funzione ed estetica del sorriso.']],
+   pelle:[['Medicina rigenerativa','Trattamenti che stimolano la pelle a rigenerarsi, senza l\'effetto «rifatto»: è la filosofia della dottoressa D\'Agostino.'],['Biorivitalizzazione','Per idratare la pelle in profondità e restituirle luminosità ed elasticità.'],['Filler','Usati con misura, per armonizzare i volumi rispettando i tratti del viso.'],['Summer Glass Skin','Il protocollo firmato dalla dottoressa per preparare la pelle all\'estate, puntando sulla luminosità.'],['Criolipolisi','Tecnologia non invasiva che agisce con il freddo sulle adiposità localizzate.'],['Consulenza nutrizionale','Con il medico nutrizionista: valutazione, abitudini alimentari e un piano personalizzato.']]};
+  function build(k){
+    var p=document.querySelector('.panel[data-p='+k+']'),ch=p.querySelector('.chips'),card=p.querySelector('.tcard');
+    ch.innerHTML=T[k].map(function(t,i){return '<button type="button" data-i="'+i+'" aria-pressed="'+(i===0)+'">'+t[0]+'</button>'}).join('');
+    function sel(i){var t=T[k][i];[].forEach.call(ch.children,function(b){b.setAttribute('aria-pressed',+b.dataset.i===i)});
+      card.innerHTML='<h3>'+t[0]+'</h3><p>'+t[1]+'</p><a href="mailto:dmedicalclinicsrl@gmail.com?subject='+encodeURIComponent('Richiesta visita: '+t[0])+'">Chiedi una visita per questo trattamento →</a>';}
+    ch.addEventListener('click',function(e){var b=e.target.closest('button');if(b)sel(+b.dataset.i)});sel(0);
+  }
+  build('sorriso');build('pelle');
+  var ww=document.getElementById('wword');
+  function setW(w){document.body.dataset.w=w;[].forEach.call(document.querySelectorAll('.sw button'),function(b){b.setAttribute('aria-pressed',b.dataset.w===w)});
+    [].forEach.call(document.querySelectorAll('.panel'),function(p){p.classList.toggle('on',p.dataset.p===w)});ww.textContent=w==='sorriso'?'per il tuo sorriso?':'per la tua pelle?';
+    if(window.__bookSync)window.__bookSync(w);}
+  [].forEach.call(document.querySelectorAll('.sw button'),function(b){b.addEventListener('click',function(){setW(b.dataset.w)})});
+
+  var H=[['Domenica','chiuso'],['Lunedì','9:30 – 19:00'],['Martedì','9:30 – 19:00'],['Mercoledì','13:00 – 19:00'],['Giovedì','9:30 – 19:00'],['Venerdì','9:30 – 15:00'],['Sabato','9:30 – 12:30']],td=new Date().getDay();
+  document.getElementById('hours').innerHTML=[1,2,3,4,5,6,0].map(function(i){return '<li'+(i===td?' class="today"':'')+'><span>'+H[i][0]+'</span><span>'+H[i][1]+'</span></li>'}).join('');
+
+  // principi
+  [].forEach.call(document.querySelectorAll('.prin button'),function(b){function t(v){b.setAttribute('aria-expanded',v)}b.addEventListener('click',function(){t(b.getAttribute('aria-expanded')!=='true')});});
+
+  // percorso: la linea avanza con lo scroll
+  var st=document.getElementById('steps'),sts=st.querySelectorAll('.step');
+  function prog(){var r=st.getBoundingClientRect(),v=Math.max(0,Math.min(1,(innerHeight*0.8-r.top)/(innerHeight*0.6)));st.style.setProperty('--sp',v);[].forEach.call(sts,function(x,i){x.classList.toggle('on',v>0.02&&v>=i/2-0.001)});}
+  addEventListener('scroll',prog,{passive:true});prog();
+
+  // aperto ora
+  var OP={1:[570,1140],2:[570,1140],3:[780,1140],4:[570,1140],5:[570,900],6:[570,750]},now=new Date(),mm=now.getHours()*60+now.getMinutes(),o=OP[td],lv=document.getElementById('live'),f=function(x){return Math.floor(x/60)+':'+('0'+x%60).slice(-2)};
+  var isOpen=!!(o&&mm>=o[0]&&mm<o[1]);lv.classList.toggle('open',isOpen);
+  lv.querySelector('span').textContent=isOpen?'Studio aperto ora · fino alle '+f(o[1]):(o&&mm<o[0]?'Oggi apriamo alle '+f(o[0]):'Studio chiuso ora · lasciaci un messaggio');
+
+  // prenotazione guidata
+  var bk=document.getElementById('book'),sel={w:'sorriso',t:null,d:null,h:null},DN=['dom','lun','mar','mer','gio','ven','sab'],MN=['gen','feb','mar','apr','mag','giu','lug','ago','set','ott','nov','dic'];
+  function opts(g,arr){bk.querySelector('[data-g='+g+']').innerHTML=arr.map(function(x){return '<button type="button" data-v="'+x[0]+'" aria-pressed="false">'+x[1]+'</button>'}).join('');}
+  function fillT(){opts('t',T[sel.w].map(function(x){return [x[0],x[0]]}));sel.t=null;}
+  var days=[];for(var k=1;days.length<5&&k<10;k++){var x=new Date(now.getTime()+k*864e5);if(OP[x.getDay()])days.push([DN[x.getDay()]+' '+x.getDate()+' '+MN[x.getMonth()],DN[x.getDay()]+'<small>'+x.getDate()+' '+MN[x.getMonth()]+'</small>']);}
+  opts('d',days);fillT();
+  function sum(){var e=document.getElementById('bsum'),m=document.getElementById('bmail');
+    e.textContent=(sel.t?sel.t:'Scegli un trattamento')+(sel.d?' · '+sel.d:'')+(sel.h?', '+sel.h:'');
+    var body='Buongiorno,\n\nvorrei prenotare una visita.\nPercorso: '+sel.w+'\nTrattamento: '+(sel.t||'da definire')+'\nGiorno preferito: '+(sel.d||'indifferente')+'\nFascia oraria: '+(sel.h||'indifferente')+'\n\nNome e cognome:\nTelefono:\n\nGrazie';
+    m.href='mailto:dmedicalclinicsrl@gmail.com?subject='+encodeURIComponent('Richiesta visita'+(sel.t?': '+sel.t:''))+'&body='+encodeURIComponent(body);}
+  window.__bookSync=function(w){if(sel.w===w)return;sel.w=w;[].forEach.call(bk.querySelectorAll('[data-g=w] button'),function(x){x.setAttribute('aria-pressed',x.dataset.v===w)});fillT();sum();};
+  bk.addEventListener('click',function(e){var b=e.target.closest('.opts button');if(!b)return;var g=b.parentNode.dataset.g;
+    [].forEach.call(b.parentNode.children,function(x){x.setAttribute('aria-pressed',x===b)});
+    if(g==='w'){setW(b.dataset.v);return;}sel[g]=b.dataset.v;sum();});
+  sum();
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  [].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

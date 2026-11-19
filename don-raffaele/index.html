@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Don Raffaele · Pizzeria DOC · Piazza Garibaldi, Pinerolo</title>
+<meta name="description" content="Don Raffaele, pizzeria certificata Pizzeria DOC dall'Accademia Nazionale Pizza DOC. Pizza contemporanea, napoletana e romana, teglia, fritte e panuozzi. Piazza Garibaldi 22/a, Pinerolo. Tel. 0121 480203, chiuso il mercoledì.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--coal:#141210;--coal2:#1d1a17;--cream:#f3ead8;--gold:#c9a24b;--gold2:#e8c877;--tomato:#c2381f;--h:"Bodoni Moda",Didot,serif;--o:"Oswald",Impact,sans-serif;--b:"Libre Franklin",system-ui,sans-serif;--gut:clamp(16px,4vw,52px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+html,body{overflow-x:clip}
+body{background:var(--coal);color:var(--cream);font:400 17px/1.65 var(--b);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,11vw,150px)}
+h1,h2,h3{font-family:var(--h);font-weight:700;line-height:1;letter-spacing:-.01em}
+h2{font-size:clamp(2.6rem,6.4vw,5rem)}
+h2 i{color:var(--gold2);font-weight:600}
+.cap{font:600 .78rem/1 var(--o);letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.lead{font-size:1.12rem;max-width:34em;color:#e7dcc6}
+.orn{display:flex;align-items:center;gap:14px}
+.orn::before,.orn::after{content:"";height:1px;flex:1;max-width:80px;background:currentColor}
+
+/* nav */
+.top{position:fixed;inset:0 0 auto;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:10px var(--gut);transition:background .4s}
+.top.s{background:rgba(20,18,16,.9);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,162,75,.25)}
+.top nav{display:flex;gap:26px}
+.top nav:last-child{justify-content:flex-end}
+.top nav a{font:600 .78rem/1 var(--o);letter-spacing:.24em;text-transform:uppercase;text-decoration:none;opacity:.85}
+.top nav a:hover{color:var(--gold2);opacity:1}
+.top .seal{width:56px;filter:invert(.92) sepia(.3)}
+.mbar{display:none}
+
+/* hero */
+.hero{min-height:100svh;position:relative;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:20px;padding:110px var(--gut) 60px;overflow:hidden}
+.hero .fire{position:absolute;inset:0;background:url(img/fuoco.jpg) center/cover;opacity:.38}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--coal) 30%,rgba(20,18,16,.4) 70%,var(--coal)),linear-gradient(transparent 60%,var(--coal))}
+.hero > *{position:relative;z-index:2}
+.hero .firma{width:min(420px,80%);margin:18px 0 6px}
+.hero h1{font-size:clamp(2.2rem,4.4vw,3.6rem);font-style:italic;font-weight:600;max-width:15em}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.badge{display:inline-flex;align-items:center;gap:12px;margin-top:26px;padding:10px 16px 10px 10px;border:1px solid var(--gold);border-radius:999px}
+.badge svg{width:40px;height:40px;flex:none}
+.badge span{font:600 .74rem/1.3 var(--o);letter-spacing:.18em;text-transform:uppercase}
+.badge small{display:block;font:400 .78rem/1.3 var(--b);letter-spacing:0;text-transform:none;opacity:.8}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 24px;font:600 .82rem/1 var(--o);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);transition:background .3s,color .3s}
+.btn.p{background:var(--gold);color:var(--coal)}
+.btn.p:hover{background:var(--gold2)}
+.btn.g:hover{background:var(--gold);color:var(--coal)}
+.spin{width:min(540px,90vw);justify-self:center;position:relative}
+.spin img{width:100%;filter:drop-shadow(0 40px 50px rgba(0,0,0,.7));animation:float 7s ease-in-out infinite;transform-origin:50% 60%}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-18px) rotate(2deg)}}
+.spin::before{content:"";position:absolute;left:12%;right:12%;bottom:-4%;height:40px;border-radius:50%;background:radial-gradient(rgba(0,0,0,.6),transparent 70%);animation:shadow 7s ease-in-out infinite}
+@keyframes shadow{50%{transform:scale(.85);opacity:.6}}
+.spin .tag{position:absolute;right:0;bottom:6%;background:var(--cream);color:var(--coal);font:600 .74rem/1.3 var(--o);letter-spacing:.16em;text-transform:uppercase;padding:10px 14px;transform:rotate(-4deg)}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font:600 .74rem/1 var(--o);letter-spacing:.18em;text-transform:uppercase}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#8a8070}
+.status.open::before{background:#6cc04a;box-shadow:0 0 10px #6cc04a}
+
+/* quote */
+.quote{text-align:center;background:var(--coal2);border-block:1px solid rgba(201,162,75,.25)}
+.quote blockquote{font:italic 600 clamp(1.8rem,4vw,3.2rem)/1.2 var(--h);max-width:20em;margin:24px auto 0}
+.quote blockquote b{color:var(--gold2);font-weight:600}
+.quote .seal2{width:110px;margin:0 auto;filter:invert(.9) sepia(.3)}
+
+/* confronto impasti */
+.vs .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.cmp{position:relative;aspect-ratio:1;width:100%;max-width:560px;justify-self:center;user-select:none;touch-action:pan-y}
+.cmp .pz{position:absolute;inset:0;display:grid;place-items:center}
+.cmp .pz img{width:92%}
+.cmp .b{clip-path:inset(0 0 0 var(--x,50%))}
+.cmp .a{clip-path:inset(0 calc(100% - var(--x,50%)) 0 0)}
+.cmp .line{position:absolute;top:8%;bottom:8%;left:var(--x,50%);width:2px;background:var(--gold);transform:translateX(-1px)}
+.cmp .knob{position:absolute;top:50%;left:var(--x,50%);transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:var(--gold);color:var(--coal);display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.5);font:600 1.2rem/1 var(--o)}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}
+.cmp .l,.cmp .r{position:absolute;top:0;font:600 .78rem/1.4 var(--o);letter-spacing:.2em;text-transform:uppercase}
+.cmp .l{left:0}.cmp .r{right:0;text-align:right}
+.cmp .l b,.cmp .r b{display:block;font:italic 600 1.8rem/1 var(--h);letter-spacing:0;text-transform:none;color:var(--gold2)}
+.doughs{display:grid;gap:12px;margin-top:28px}
+.doughs div{padding:18px 20px;border-left:3px solid var(--gold);background:rgba(243,234,216,.04);transition:background .4s}
+.doughs h3{font:600 1rem/1 var(--o);letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
+.doughs p{margin-top:6px;font-size:.96rem;color:#ddd1bb}
+.doughs div.hl{background:rgba(201,162,75,.16)}
+
+/* menu */
+.menu{background:var(--cream);color:var(--coal)}
+.menu h2 i{color:var(--tomato)}
+.menu .cap{color:#8a6a2a}
+.mtabs{display:flex;flex-wrap:wrap;gap:6px;margin:28px 0 24px;border-bottom:1px solid rgba(20,18,16,.15)}
+.mtabs button{padding:12px 14px;font:600 .78rem/1 var(--o);letter-spacing:.16em;text-transform:uppercase;border-bottom:3px solid transparent;margin-bottom:-1px}
+.mtabs button[aria-pressed=true]{border-color:var(--tomato);color:var(--tomato)}
+.mlist{display:grid;grid-template-columns:1fr 1fr;gap:0 50px}
+.mi{display:grid;grid-template-columns:1fr auto;gap:2px 14px;padding:14px 0;border-bottom:1px dotted rgba(20,18,16,.3)}
+.mi b{font:700 1.15rem/1.2 var(--h)}
+.mi em{font:600 1rem/1.2 var(--o);font-style:normal;color:var(--tomato);white-space:nowrap}
+.mi span{grid-column:1/-1;font-size:.92rem;color:#5b5145}
+.mfoot{margin-top:22px;font-size:.9rem;color:#5b5145}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:50px}
+.feat figure{background:#fff;padding:12px 12px 16px;box-shadow:0 20px 40px -26px rgba(20,18,16,.5)}
+.feat img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.feat figcaption{font:600 .76rem/1.3 var(--o);letter-spacing:.18em;text-transform:uppercase;margin-top:12px}
+
+/* DOC */
+.doc .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,6vw,80px);align-items:center}
+.doc img{border:1px solid rgba(201,162,75,.4)}
+.doc ul{list-style:none;margin-top:22px;display:grid;gap:10px}
+.doc li{display:flex;gap:12px;align-items:flex-start}
+.doc li::before{content:"✦";color:var(--gold)}
+
+/* contatti */
+.dove{background:var(--coal2)}
+.dove .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid rgba(201,162,75,.3);padding:30px}
+.card h3{font:600 .8rem/1 var(--o);letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+.card p,.card a.v{display:block;font:italic 600 1.45rem/1.3 var(--h);margin-top:14px;text-decoration:none}
+.card small{display:block;margin-top:10px;color:#cbbfa8;font-size:.9rem;word-break:break-word}
+.week{list-style:none;margin-top:14px}
+.week li{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(243,234,216,.1);font-size:.95rem}
+.week li.today{color:var(--gold2);font-weight:600}
+.week li.off span:last-child{color:#e0715a}
+
+footer{text-align:center;padding:50px var(--gut);color:#a59a86;font-size:.88rem}
+footer img{width:200px;margin:0 auto 12px;opacity:.9}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv{opacity:1;transform:none}
+
+@media (max-width:900px){
+ .top{grid-template-columns:auto;justify-content:center}
+ .top nav{display:none}
+ .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--coal);border-top:1px solid rgba(201,162,75,.35)}
+ .mbar a{flex:1;text-align:center;padding:16px 4px;font:600 .74rem/1 var(--o);letter-spacing:.18em;text-transform:uppercase;text-decoration:none}
+ .mbar a:first-child{background:var(--gold);color:var(--coal)}
+ body{padding-bottom:50px}
+ .hero,.vs .wrap,.doc .wrap,.dove .grid{grid-template-columns:1fr}
+ .hero{padding-top:100px}
+ .spin{width:min(420px,84vw)}
+ .mlist{grid-template-columns:1fr}
+ .feat{grid-template-columns:1fr 1fr}
+}
+@media (max-width:520px){
+ .feat{grid-template-columns:1fr}
+ .mtabs{flex-wrap:nowrap;overflow-x:auto}
+ .mtabs button{white-space:nowrap}
+}
+@media (prefers-reduced-motion:reduce){
+ .spin img{animation:none}.rv{opacity:1;transform:none;transition:none}
+}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#141210;color:#f3ead8;border-top:1px solid rgba(201,162,75,.4);font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}body{padding-bottom:34px}@media (max-width:900px){.mbar{bottom:34px}body{padding-bottom:84px}}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+  <nav aria-label="Sezioni"><a href="#impasti">Impasti</a><a href="#menu">Menù</a></nav>
+  <a href="#" aria-label="Don Raffaele, inizio pagina"><img class="seal" src="img/stemma.png" alt="" width="697" height="888"></a>
+  <nav aria-label="Altre sezioni"><a href="#doc">Pizzeria DOC</a><a href="#dove">Dove siamo</a></nav>
+</header>
+<nav class="mbar" aria-label="Azioni rapide">
+  <a href="tel:+390121480203">Chiama</a><a href="https://wa.me/393480425530?text=Buonasera%2C%20vorrei%20ordinare%20una%20pizza" target="_blank" rel="noopener">WhatsApp</a><a href="#menu">Menù</a>
+</nav>
+
+<main>
+<section class="hero" aria-labelledby="t-hero">
+  <div class="fire" aria-hidden="true"></div>
+  <div>
+    <span class="cap">Pinerolo · Piazza Garibaldi</span>
+    <img class="firma" src="img/firma.png" alt="Don Raffaele" width="1000" height="214">
+    <h1 id="t-hero">L'essenza della <em>contemporaneità</em>, in una pizza.</h1>
+    <div class="badge">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="#c9a24b" stroke-width="2"/><path d="M12 20l6 6 11-12" fill="none" stroke="#e8c877" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Pizzeria DOC certificata<small>Accademia Nazionale Pizza DOC</small></span>
+    </div>
+    <div class="btns">
+      <a class="btn p" href="tel:+390121480203">Prenota · 0121 480203</a>
+      <a class="btn g" href="https://wa.me/393480425530?text=Buonasera%2C%20vorrei%20ordinare%20una%20pizza" target="_blank" rel="noopener">Ordina su WhatsApp</a>
+    </div>
+    <span class="status" id="status"></span>
+  </div>
+  <div class="spin" aria-hidden="true">
+    <img src="img/polpettona.png" alt="" width="994" height="1000">
+    <span class="tag">la Polpettona</span>
+  </div>
+</section>
+
+<section class="quote" aria-label="La nostra filosofia">
+  <div class="wrap rv">
+    <img class="seal2" src="img/stemma.png" alt="" width="697" height="888">
+    <blockquote>Maturare significa crescere. Un po' come un <b>uomo</b>, un po' come una <b>pizza</b>.</blockquote>
+    <p class="orn cap" style="justify-content:center;margin-top:24px">ogni fetta è un viaggio nel cuore dell'Italia</p>
+  </div>
+</section>
+
+<section id="impasti" class="vs" aria-labelledby="t-imp">
+  <div class="wrap">
+    <div class="rv">
+      <span class="cap">Tre impasti, una sola ricerca</span>
+      <h2 id="t-imp" style="margin-top:14px">Napoletana <i>o</i> romana?</h2>
+      <p class="lead" style="margin-top:16px">Trascina la linea sulla pizza e guarda la differenza: il cornicione alto e alveolato della napoletana, la stesura sottile e croccante della romana.</p>
+      <div class="doughs" id="doughs">
+        <div data-d="c"><h3>Contemporanea</h3><p>Impasto idratato e digeribile, frutto di una ricerca continua per offrirvi un'esperienza unica.</p></div>
+        <div data-d="n"><h3>Impasto napoletano</h3><p>Cornicione pronunciato e alveolato all'interno, per farti assaporare la vera pizza napoletana.</p></div>
+        <div data-d="r"><h3>Impasto romano</h3><p>Più maturato, fragrante e croccante: l'aria si distende su tutta la pizza, come vuole la tradizione.</p></div>
+      </div>
+    </div>
+    <div class="cmp rv" id="cmp" style="--x:50%">
+      <div class="pz a"><img src="img/parmigiana.png" alt="Pizza napoletana Parmigiana con cornicione alto" width="1000" height="979"></div>
+      <div class="pz b"><img src="img/romana.png" alt="Pizza romana sottile e croccante" width="1000" height="516"></div>
+      <div class="line" aria-hidden="true"></div>
+      <div class="knob" aria-hidden="true">⇆</div>
+      <span class="l" aria-hidden="true">impasto<b>napoletano</b></span>
+      <span class="r" aria-hidden="true">impasto<b>romano</b></span>
+      <input type="range" min="0" max="100" value="50" aria-label="Confronta impasto napoletano e romano">
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu" aria-labelledby="t-menu">
+  <div class="wrap">
+    <div class="rv"><span class="cap">Dal forno</span><h2 id="t-menu" style="margin-top:14px">Il <i>menù</i></h2></div>
+    <div class="mtabs" role="group" aria-label="Categoria" id="mtabs"></div>
+    <div class="mlist" id="mlist" aria-live="polite"></div>
+    <p class="mfoot">Tutte le nostre pizze contengono olio extravergine d'oliva biologico e basilico fresco. Allergeni: chiedi al personale.</p>
+    <div class="feat">
+      <figure class="rv"><img src="img/bufala.jpg" alt="Pizza con bufala e pomodorini riflessa sul bancone" width="1400" height="1050" loading="lazy"><figcaption>Bufala DOP, ogni giorno</figcaption></figure>
+      <figure class="rv"><img src="img/panuozzo.jpg" alt="Panuozzo farcito appena sfornato" width="1400" height="934" loading="lazy"><figcaption>I panuozzi</figcaption></figure>
+      <figure class="rv"><img src="img/teglia.jpg" alt="Pizza in teglia vista dall'alto" width="1400" height="1050" loading="lazy"><figcaption>Teglia su ordinazione, 24 ore prima</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="doc" class="doc" aria-labelledby="t-doc">
+  <div class="wrap">
+    <div class="rv"><img src="img/certificato.jpg" alt="Il certificato Pizzeria DOC dell'Accademia Nazionale Pizza DOC rilasciato a Don Raffaele" width="1200" height="675" loading="lazy"></div>
+    <div class="rv">
+      <span class="cap">Un riconoscimento</span>
+      <h2 id="t-doc" style="margin-top:14px">Pizzeria <i>DOC</i></h2>
+      <p class="lead" style="margin-top:16px">L'Accademia Nazionale Pizza DOC ci ha riconosciuto la qualifica di Pizzeria DOC, dopo il percorso di formazione secondo il Metodo DOC. Un premio alla passione, alla qualità e all'impegno di ogni giorno.</p>
+      <ul>
+        <li>Certificazione n. ANPD PI512025</li>
+        <li>Standard su ingredienti, impasti e servizio</li>
+        <li>Olio EVO biologico e basilico fresco su ogni pizza</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="dove" class="dove" aria-labelledby="t-dove">
+  <div class="wrap">
+    <h2 id="t-dove" class="rv" style="margin-bottom:40px">Ti aspettiamo in <i>piazza</i></h2>
+    <div class="grid">
+      <div class="card rv"><h3>Dove</h3><p>Piazza Giuseppe Garibaldi 22/a</p><small>10064 Pinerolo (TO)</small><a class="btn g" style="margin-top:20px" href="https://maps.google.com/?q=Don+Raffaele+Piazza+Garibaldi+22a+Pinerolo" target="_blank" rel="noopener">Indicazioni</a></div>
+      <div class="card rv"><h3>Orari</h3><ul class="week" id="week"></ul></div>
+      <div class="card rv"><h3>Prenota e ordina</h3><a class="v" href="tel:+390121480203">0121 480203</a><a class="v" href="https://wa.me/393480425530" target="_blank" rel="noopener">348 042 5530 · WhatsApp</a><small><a href="mailto:info@pizzapinerolodonraffaele.com">info@pizzapinerolodonraffaele.com</a></small></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Pizzeria Don Raffaele. Non è il sito ufficiale.</div>
+<footer><img src="img/firma.png" alt="" width="1000" height="214">Pizzeria Don Raffaele · Piazza Garibaldi 22/a, Pinerolo</footer>
+
+<script>
+(function(){
+  var top=document.getElementById('top');addEventListener('scroll',function(){top.classList.toggle('s',scrollY>40)},{passive:true});
+
+  var d=new Date(),day=d.getDay(),m=d.getHours()*60+d.getMinutes(),open=day!==3&&m>=1110&&m<1320,st=document.getElementById('status');
+  st.textContent=open?'Forno acceso · fino alle 22:00':(day===3?'Oggi riposo · ci vediamo domani alle 18:30':(m<1110?'Stasera dalle 18:30':(day===2?'Chiuso · domani riposo, ci vediamo giovedì':'Chiuso · domani dalle 18:30')));
+  st.classList.toggle('open',open);
+  var N=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'];
+  document.getElementById('week').innerHTML=[1,2,3,4,5,6,0].map(function(i){return '<li class="'+(i===day?'today ':'')+(i===3?'off':'')+'"><span>'+N[i]+'</span><span>'+(i===3?'chiuso':'18:30 – 22:00')+'</span></li>'}).join('');
+
+  var cmp=document.getElementById('cmp'),rng=cmp.querySelector('input'),ds=document.querySelectorAll('#doughs div');
+  function setX(v){cmp.style.setProperty('--x',v+'%');[].forEach.call(ds,function(x){x.classList.toggle('hl',(x.dataset.d==='n'&&v>60)||(x.dataset.d==='r'&&v<40))});}
+  rng.addEventListener('input',function(){setX(+rng.value)});
+  var auto=true;rng.addEventListener('pointerdown',function(){auto=false});rng.addEventListener('keydown',function(){auto=false});
+  var io2=new IntersectionObserver(function(es){if(es[0].isIntersecting&&auto&&!matchMedia('(prefers-reduced-motion: reduce)').matches){var t0=performance.now();(function f(t){if(!auto)return;var p=Math.min(1,(t-t0)/2200);var v=50+Math.sin(p*Math.PI*2)*30;rng.value=v;setX(v);if(p<1)requestAnimationFrame(f)})(t0);io2.disconnect();}},{threshold:.5});
+  io2.observe(cmp);
+
+  var M={
+   gourmet:['Pizze gourmet',[['Don Raffaè','sporcata di pomodoro, bresaola, pomodorini, bufala DOP','11'],['Pulled pork','bufala DOP, pomodorini, pulled pork','12'],['Parmigiana','pomodoro, fiordilatte, melanzane fritte, pomodorini, scaglie di parmigiano','12'],['Primavera','fiordilatte, pomodorini gialli e rossi, acciughe o guanciale, pinoli, olive, trito mediterraneo','12'],['Sardegna','pomodoro, zucchine, gamberetti, ricotta di pecora, bottarga, pecorino','12'],['Mortazza','pesto di basilico, stracchino, mortadella IGP, datterino giallo, granella di nocciola','12,50'],['Viola','vellutata di cavolo viola, fiordilatte, gorgonzola, pancetta, parmigiano e noci','12,50'],['Zuccotta','vellutata di zucca, porcini, fontina, lardo, ricotta salata','12,50'],['Polpettona','ragù casereccio, polpette fritte, burrata affumicata, scaglie di parmigiano','13'],['Burrata norvegese','fiordilatte, salmone affumicato, rucola bio, parmigiano, burrata','13'],['Tartufata','crema di tartufo, porcini, scaglie di parmigiano, bufala DOP','13'],['Mortazza 2.0','crema di pistacchio, bufala DOP, mortadella IGP, burrata affumicata','14']]],
+   classiche:['Pizze classiche',[['Margherita','pomodoro San Marzano e fiordilatte','6'],['Marinara','pomodoro, aglio, origano','6'],['Bufala DOP','pomodoro, bufala DOP','8,50'],['Diavola','pomodoro, fiordilatte, spianata calabra','7,50'],['Capricciosa','pomodoro, fiordilatte, cotto, carciofi, funghi, spianata, olive taggiasche','9,50'],['Calabrese','pomodoro, \'nduja, spianata calabra, cipolla di Tropea','9'],['Salsiccia e friarielli','fiordilatte, salsiccia, friarielli','9'],['Crocchè','fiordilatte, salsiccia, scamorza, crocchè di patate, grana','9,50'],['Molisana','pomodoro, porcini, lardo, peperoncino, parmigiano','9,50'],['Gorgo e noci','fiordilatte, gorgonzola, noci','9,50']]],
+   fritte:['Pizze fritte',[['Don Matteo','stracciatella di burrata, crudo, olio e crema di tartufo','11'],['Scrocchiarella','mortadella IGP, burrata 200 g, datterino giallo','11'],['Made in Italy','datterino, bufala DOP, parmigiano, rucola bio','9'],['Bedda mia','spianata, \'nduja, ricotta fresca, crema di friarielli','10'],['Della nonna','melanzane fritte, datterino, bufala DOP, parmigiano','10']]],
+   panuozzi:['Panuozzi e focacce',[['Panuozzo tirolese','speck, brie, rucola bio','8'],['Panuozzo classico','fiordilatte, salsiccia, friarielli, peperoncino','8,50'],['Panuozzo stuzzicante','bufala DOP, \'nduja, spianata, salsiccia','9'],['Panuozzo fresco','datterino fresco, stracciatella di burrata, rucola','9'],['Focaccia crudo','crudo, rucola bio, pomodorini, burrata 200 g','11'],['Focaccia lardo','lardo, pecorino, miele','9'],['Focaccia Napulè','datterino giallo, bufala DOP','8']]],
+   sfizi:['Sfizi e dolci',[['Arancino 220 g','salsiccia e cipolla · cotto e mozzarella · ragù e piselli · mozzarella e pistacchio · mortadella e pistacchio · caponata','5'],['Chiacchiere farcite','speck, crudo o \'nduja','7'],['Cannolo siciliano artigianale','classico, pistacchio, Nutella o nocciola','5'],['Tiramisù fatto in casa','','5'],['Chiacchiere fritte alla Nutella','','6']]]};
+  var mt=document.getElementById('mtabs'),ml=document.getElementById('mlist'),ks=Object.keys(M);
+  mt.innerHTML=ks.map(function(k,i){return '<button type="button" data-k="'+k+'" aria-pressed="'+(i===0)+'">'+M[k][0]+'</button>'}).join('');
+  function show(k){ml.innerHTML=M[k][1].map(function(x){return '<div class="mi"><b>'+x[0]+'</b><em>'+x[2]+' €</em>'+(x[1]?'<span>'+x[1]+'</span>':'')+'</div>'}).join('');}
+  mt.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(mt.children,function(x){x.setAttribute('aria-pressed',x===b)});show(b.dataset.k);});
+  show('gourmet');
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  [].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

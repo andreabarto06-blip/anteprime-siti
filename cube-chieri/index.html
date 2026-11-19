@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cube · Pizza Concept · Food · Drink · Piazza Cavour, Chieri</title>
+<meta name="description" content="Cube, Piazza Cavour 3 a Chieri: pizza contemporanea, al padellino e chiacchiere sotto le volte in mattoni della piazza. Tre impasti, cucina e drink list. Aperti tutte le sere. Tel. 011 934 2413.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--night:#0a0c0c;--teal:#0f3d44;--teal-l:#1d6470;--brick:#c0643d;--sand:#efe3d3;--moss:#5d7d3c;--h:"Outfit",system-ui,sans-serif;--m:"DM Mono",ui-monospace,monospace;--gut:clamp(16px,4vw,56px);--rail:84px;--cs:min(330px,60vw)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{background:var(--night);color:var(--sand);font:300 17px/1.65 var(--h);-webkit-font-smoothing:antialiased;padding-left:var(--rail)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,11vw,150px)}
+h1,h2,h3{font-family:var(--h);font-weight:200;line-height:.95;letter-spacing:-.03em;text-transform:lowercase}
+h2{font-size:clamp(2.8rem,7vw,6rem)}
+h2 b{font-weight:700}
+.mono{font:500 .72rem/1.3 var(--m);letter-spacing:.18em;text-transform:uppercase;color:#b9ab98}
+.lead{font-size:1.15rem;max-width:34em;color:#e4d8c8}
+
+/* rail nav */
+.rail{position:fixed;left:0;top:0;bottom:0;width:var(--rail);z-index:60;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:22px 0;border-right:1px solid rgba(239,227,211,.1);background:rgba(10,12,12,.86);backdrop-filter:blur(8px)}
+.rail .mark{width:36px;height:36px}
+.rail nav{display:flex;flex-direction:column;gap:6px}
+.rail nav a{writing-mode:vertical-rl;transform:rotate(180deg);text-decoration:none;font:500 .7rem/1 var(--m);letter-spacing:.2em;text-transform:uppercase;padding:12px 8px;border-radius:8px;opacity:.6;transition:opacity .3s,background .3s}
+.rail nav a:hover,.rail nav a.on{opacity:1;background:rgba(29,100,112,.35)}
+.rail .tel{writing-mode:vertical-rl;transform:rotate(180deg);font:500 .7rem/1 var(--m);letter-spacing:.14em;text-decoration:none;color:var(--brick)}
+
+/* hero + cubo */
+.hero{min-height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;padding:60px var(--gut);position:relative;overflow:hidden;background:radial-gradient(ellipse at 70% 40%,rgba(29,100,112,.35),transparent 60%)}
+.hero .logo{width:min(300px,64%);filter:invert(1) brightness(1.1)}
+.hero h1{font-size:clamp(2.6rem,5.4vw,4.6rem);margin-top:26px}
+.hero h1 b{font-weight:700;color:var(--brick)}
+.hero .lead{margin-top:18px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 24px;border-radius:4px;font:500 .78rem/1 var(--m);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid var(--sand);transition:background .3s,color .3s,transform .3s}
+.btn.p{background:var(--sand);color:var(--night)}
+.btn:hover{transform:translateY(-2px)}
+.btn.g:hover{background:var(--sand);color:var(--night)}
+.scene{width:var(--cs);height:var(--cs);perspective:1100px;margin:0 auto}
+.cube{position:relative;width:100%;height:100%;transform-style:preserve-3d;transform:rotateX(-18deg) rotateY(var(--ry,-30deg))}
+.face{position:absolute;inset:0;background:center/cover;border:1px solid rgba(239,227,211,.25);box-shadow:inset 0 0 80px rgba(0,0,0,.45);backface-visibility:hidden}
+.face span{position:absolute;left:14px;bottom:12px;font:500 .66rem/1 var(--m);letter-spacing:.2em;text-transform:uppercase;background:rgba(10,12,12,.7);padding:6px 8px}
+.f1{transform:translateZ(calc(var(--cs)/2))}
+.f2{transform:rotateY(90deg) translateZ(calc(var(--cs)/2))}
+.f3{transform:rotateY(180deg) translateZ(calc(var(--cs)/2))}
+.f4{transform:rotateY(-90deg) translateZ(calc(var(--cs)/2))}
+.f5{transform:rotateX(90deg) translateZ(calc(var(--cs)/2))}
+.f6{transform:rotateX(-90deg) translateZ(calc(var(--cs)/2))}
+.cube-shadow{width:70%;height:30px;margin:90px auto 0;border-radius:50%;background:radial-gradient(rgba(29,100,112,.55),transparent 70%);filter:blur(6px)}
+.hint{text-align:center;margin-top:14px}
+
+/* sotto la piazza */
+.under .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.vault{position:relative;aspect-ratio:4/5;border-radius:200px 200px 6px 6px;overflow:hidden}
+.vault img{width:100%;height:100%;object-fit:cover}
+.under .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.under .facts div{border-top:1px solid rgba(239,227,211,.2);padding-top:12px}
+.under .facts b{display:block;font:200 2.4rem/1 var(--h);color:var(--brick)}
+
+/* impasti */
+.dough{background:var(--teal)}
+.dough .wrap{display:block}
+.dough .head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+.dough .head .lead{max-width:26em;color:#d7e6e4}
+.acc{display:flex;gap:10px;height:560px;margin-top:44px}
+.panel{flex:1;position:relative;overflow:hidden;border-radius:6px;text-align:left;display:flex;align-items:flex-end;isolation:isolate;transition:flex .9s cubic-bezier(.6,0,.2,1);min-width:0}
+.panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.08);transition:transform 1.4s cubic-bezier(.2,.7,.2,1),filter .9s;filter:saturate(.7) brightness(.75)}
+.panel::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,12,12,.05) 30%,rgba(10,12,12,.88))}
+.panel.on{flex:3.4}
+.panel.on img{transform:scale(1);filter:none}
+.panel .in{display:block;padding:28px;width:100%}
+.panel .no{display:block;font:500 .7rem/1 var(--m);letter-spacing:.24em;color:#cfe3e2}
+.panel .ttl{display:block;font:200 clamp(2rem,3.4vw,3rem)/1 var(--h);margin-top:10px;white-space:nowrap;transition:font-size .6s}
+.panel .ttl b{font-weight:700}
+.panel:not(.on) .ttl{font-size:1.6rem}
+.panel .more{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .8s cubic-bezier(.6,0,.2,1),opacity .5s}
+.panel .more > span{overflow:hidden;display:block}
+.panel.on .more{grid-template-rows:1fr;opacity:1;transition-delay:.25s}
+.panel .txt{display:block;margin-top:12px;max-width:30em;color:#e9dfd1;font-size:1rem}
+.panel .price{display:inline-block;margin-top:14px;font:500 .72rem/1 var(--m);letter-spacing:.16em;text-transform:uppercase;padding:8px 12px;border:1px solid rgba(239,227,211,.5);border-radius:999px}
+.panel:focus-visible{outline:2px solid var(--sand);outline-offset:3px}
+@media (max-width:900px){
+ .acc{flex-direction:column;height:auto}
+ .panel{flex:none;height:120px;transition:height .8s cubic-bezier(.6,0,.2,1)}
+ .panel.on{flex:none;height:380px}
+ .panel .ttl{white-space:normal}
+}
+/* menu */
+.mhero{margin-top:30px;border-radius:6px;overflow:hidden;aspect-ratio:21/8}
+.mhero img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+@media (max-width:600px){.mhero{aspect-ratio:4/3}}
+.mtabs{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0}
+.mtabs button{padding:11px 18px;border-radius:999px;border:1px solid rgba(239,227,211,.3);font:500 .74rem/1 var(--m);letter-spacing:.14em;text-transform:uppercase}
+.mtabs button[aria-pressed=true]{background:var(--brick);border-color:var(--brick);color:#fff}
+.mintro{color:#cdbfae;max-width:44em;margin-bottom:18px}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 46px}
+.mi{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:16px 0;border-bottom:1px solid rgba(239,227,211,.12)}
+.mi b{font:500 1.05rem/1.3 var(--h);text-transform:lowercase}
+.mi em{font:500 .9rem/1.3 var(--m);font-style:normal;color:var(--brick)}
+.mi span{grid-column:1/-1;font-size:.9rem;color:#b9ab98}
+.mi .new{font:500 .6rem/1 var(--m);letter-spacing:.14em;background:var(--moss);color:#fff;padding:3px 6px;border-radius:3px;margin-left:8px;vertical-align:2px;text-transform:uppercase}
+.gf{margin-top:22px;font:500 .74rem/1.6 var(--m);letter-spacing:.08em;color:#cfe3e2}
+
+/* drink */
+.drink{padding:0}
+.drink .row{display:grid;grid-template-columns:1fr 1fr;min-height:640px}
+.drink .ph{background:url(img/cocktail.jpg) center/cover}
+.drink .txt{background:#140f0d;padding:clamp(40px,6vw,90px);display:flex;flex-direction:column;justify-content:center}
+
+/* eventi */
+.ev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.ev{border:1px solid rgba(239,227,211,.14);border-radius:6px;overflow:hidden;background:#111515}
+.ev img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.ev div{padding:18px}
+.ev h3{font-size:1.6rem;font-weight:300}
+.ev p{color:#b9ab98;font-size:.94rem;margin-top:6px}
+
+/* orari */
+.hours{background:var(--sand);color:var(--night)}
+.hours .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px)}
+.hours .mono{color:#6c5e4f}
+.week{list-style:none;margin-top:20px}
+.week li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid rgba(10,12,12,.14);font:500 .9rem/1 var(--m);letter-spacing:.08em;text-transform:uppercase}
+.week li span:first-child{flex:1}
+.week li.today{color:var(--brick)}
+.week li.today span:first-child::after{content:" · oggi";font-size:.7rem}
+.contact a.big{display:block;font:200 clamp(1.8rem,3.4vw,2.8rem)/1.25 var(--h);text-decoration:none;letter-spacing:-.02em}
+.contact a.big:hover{color:var(--brick)}
+.contact p{margin-top:18px;color:#4e4338}
+.contact p a{font:500 .78rem/2 var(--m);letter-spacing:.12em;text-transform:uppercase}
+
+footer{padding:40px var(--gut);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font:500 .7rem/1.6 var(--m);letter-spacing:.12em;text-transform:uppercase;color:#8b7f71}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv{opacity:1;transform:none}
+
+@media (max-width:900px){
+ :root{--rail:0px;--cs:min(300px,64vw)}
+ .rail{top:auto;bottom:0;right:0;width:auto;height:58px;flex-direction:row;padding:0 12px;border-right:0;border-top:1px solid rgba(239,227,211,.12)}
+ .rail nav{flex-direction:row;gap:0}
+ .rail nav a{writing-mode:horizontal-tb;transform:none;padding:10px 7px;font-size:.6rem;letter-spacing:.08em}
+ .rail .tel{display:none}
+ .rail .mark{width:28px;height:28px}
+ body{padding-bottom:58px}
+ .hero,.under .wrap,.dough .wrap,.hours .wrap,.drink .row{grid-template-columns:1fr}
+ .hero{padding-top:50px}
+ .scene{margin-top:40px}
+ .mgrid{grid-template-columns:1fr}
+ .ev-grid{grid-template-columns:1fr 1fr}
+ .drink .ph{min-height:360px}
+}
+@media (max-width:520px){
+ .ev-grid{grid-template-columns:1fr}
+ .under .facts b{font-size:1.8rem}
+}
+@media (prefers-reduced-motion:reduce){
+ .rv{opacity:1;transform:none;transition:none}
+}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#0a0c0c;color:#efe3d3;border-top:1px solid rgba(239,227,211,.2);font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}.rail{bottom:34px}@media (max-width:900px){.rail{bottom:34px}body{padding-bottom:92px}}footer{padding-bottom:70px}
+</style>
+</head>
+<body>
+<aside class="rail">
+  <a href="#" aria-label="cube, inizio pagina"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 36 12v16L20 37 4 28V12z M4 12l16 9 16-9 M20 21v16" fill="none" stroke="#efe3d3" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+  <nav aria-label="Sezioni">
+    <a href="#sotto">il locale</a><a href="#impasti">impasti</a><a href="#menu">menù</a><a href="#eventi">eventi</a><a href="#orari">orari</a>
+  </nav>
+  <a class="tel" href="tel:+390119342413">011 934 2413</a>
+</aside>
+
+<main>
+<header class="hero" aria-labelledby="t-hero">
+  <div>
+    <img class="logo" src="img/logo.png" alt="cube · Pizza Concept, Food, Drink" width="1000" height="500">
+    <h1 id="t-hero">la pizza non sarà <b>“la solita pizza”</b>.</h1>
+    <p class="lead">Al piano interrato di Piazza Cavour, sotto le volte in mattoni, una pizzeria che lavora sull'impasto, sugli ingredienti e sulla presentazione. Con una cucina vera e una carta di drink da sorseggiare durante e dopo.</p>
+    <div class="btns">
+      <a class="btn p" href="tel:+390119342413">Prenota · 011 934 2413</a>
+      <a class="btn g" href="https://wa.me/393496279254" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div aria-hidden="true">
+    <div class="scene"><div class="cube" id="cube">
+      <div class="face f1" style="background-image:url(img/insegna.jpg)"><span>l'ingresso</span></div>
+      <div class="face f2" style="background-image:url(img/sala.jpg)"><span>la sala</span></div>
+      <div class="face f3" style="background-image:url(img/forno.jpg)"><span>il forno</span></div>
+      <div class="face f4" style="background-image:url(img/cocktail.jpg)"><span>il bancone</span></div>
+      <div class="face f5" style="background-image:url(img/volta.jpg)"><span>la volta</span></div>
+      <div class="face f6" style="background-image:url(img/vini.jpg)"><span>la cantina</span></div>
+    </div></div>
+    <div class="cube-shadow"></div>
+    <p class="hint mono">scorri: il cubo gira</p>
+  </div>
+</header>
+
+<section id="sotto" class="under" aria-labelledby="t-sotto">
+  <div class="wrap">
+    <div class="vault rv"><img src="img/tavolo.jpg" alt="Un tavolo sotto la volta in mattoni, con la parete color petrolio" width="1000" height="1500" loading="lazy"></div>
+    <div class="rv">
+      <span class="mono">Piazza Cavour 3 · piano interrato</span>
+      <h2 id="t-sotto" style="margin-top:14px">sotto la <b>piazza</b></h2>
+      <p class="lead" style="margin-top:18px">Mattoni a vista, pareti color petrolio, muschio verde e luci basse. Si scende qualche gradino dalla piazza storica di Chieri e si entra in un'altra atmosfera.</p>
+      <div class="facts">
+        <div><b>3</b><span class="mono">impasti</span></div>
+        <div><b>7/7</b><span class="mono">aperti ogni sera</span></div>
+        <div><b>01:00</b><span class="mono">venerdì e sabato</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="impasti" class="dough" aria-labelledby="t-imp">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="mono" style="color:#cfe3e2">scegli la base</span><h2 id="t-imp" style="margin-top:14px">tre <b>impasti</b></h2></div>
+      <p class="lead">Una farina sola, di tipo 1 dal Molino Bongiovanni: grano piemontese coltivato senza pesticidi e macinato a pietra. Tre modi di lavorarla.</p>
+    </div>
+    <div class="acc rv" id="acc">
+      <button type="button" class="panel on" aria-expanded="true">
+        <img src="img/forno.jpg" alt="" loading="lazy">
+        <span class="in"><span class="no">01 · incluso</span><span class="ttl"><b>classico</b></span>
+          <span class="more"><span><span class="txt">Doppia fermentazione e cottura sulla pietra: cornicione morbido, gradevolmente fragrante.</span><span class="price">la base di tutte le pizze</span></span></span></span>
+      </button>
+      <button type="button" class="panel" aria-expanded="false">
+        <img src="img/mattoni.jpg" alt="" loading="lazy">
+        <span class="in"><span class="no">02 · +2 €</span><span class="ttl"><b>multicereali</b></span>
+          <span class="more"><span><span class="txt">Sottile e croccante: tipo 1 macinata a pietra, grano duro arso e sesamo nero. Saporito, leggero, molto digeribile.</span><span class="price">anche per le baciate</span></span></span></span>
+      </button>
+      <button type="button" class="panel" aria-expanded="false">
+        <img src="img/fuoco.jpg" alt="" loading="lazy">
+        <span class="in"><span class="no">03 · +2 €</span><span class="ttl"><b>carbone</b> vegetale</span>
+          <span class="more"><span><span class="txt">Il nostro classico con carbone vegetale e fermentazione mista: ancora più fragrante e facilissimo da digerire.</span><span class="price">anche al padellino</span></span></span></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="menu" aria-labelledby="t-menu">
+  <div class="wrap">
+    <div class="rv"><span class="mono">dal forno e dalla cucina</span><h2 id="t-menu" style="margin-top:14px">il <b>menù</b></h2></div>
+    <figure class="mhero rv"><img src="img/pz-servite.jpg" alt="Due pizze del Cube appena sfornate, portate al tavolo" width="1400" height="1051" loading="lazy"></figure>
+    <div class="mtabs" role="group" aria-label="Sezione del menù" id="mtabs"></div>
+    <p class="mintro" id="mintro"></p>
+    <div class="mgrid" id="mgrid" aria-live="polite"></div>
+    <p class="gf">Molti piatti sono disponibili senza glutine e con mozzarella senza lattosio (+1 €): chiedi in sala.</p>
+  </div>
+</section>
+
+<section class="drink" aria-labelledby="t-drink">
+  <div class="row">
+    <div class="ph" role="img" aria-label="Cocktail con agrumi essiccati"></div>
+    <div class="txt rv">
+      <span class="mono">drink list · distillati · vini</span>
+      <h2 id="t-drink" style="margin-top:14px">dopo la pizza, <b>il bancone</b></h2>
+      <p class="lead" style="margin-top:18px">Una carta di superalcolici scelta con cura e una drink list da sorseggiare durante e dopo la cena. E una cantina di rossi piemontesi a vista, sulle mensole in ferro.</p>
+      <div class="btns"><a class="btn g" href="https://airdrink.it/public/qrcodemenu/203/956" target="_blank" rel="noopener">Carta vini e drink</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="eventi" aria-labelledby="t-ev">
+  <div class="wrap">
+    <div class="rv"><span class="mono">mostre · dj set · serate</span><h2 id="t-ev" style="margin-top:14px">sotto la piazza <b>succede</b></h2>
+      <p class="lead" style="margin-top:16px">Le pareti del Cube ospitano mostre di artisti, la consolle si accende con i DJ set, e d'estate si sale in piazza per le serate della città.</p></div>
+    <div class="ev-grid">
+      <article class="ev rv"><img src="img/mostra2.jpg" alt="Locandina della mostra di Mario Saini al Cube" width="720" height="900" loading="lazy"><div><h3>le mostre</h3><p>Pittori e artisti espongono sotto le volte, con un'inaugurazione aperta a tutti.</p></div></article>
+      <article class="ev rv"><img src="img/mattoni.jpg" alt="Le volte in mattoni illuminate" width="1000" height="1500" loading="lazy"><div><h3>la consolle</h3><p>DJ set e aperitivi per le serate speciali, come la Notte Bianca.</p></div></article>
+      <article class="ev rv"><img src="img/padellino.jpg" alt="Locandina della pizza al padellino" width="720" height="900" loading="lazy"><div><h3>le novità</h3><p>Nuove pizze e nuovi impasti: le scopri prima su Instagram.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="orari" class="hours" aria-labelledby="t-orari">
+  <div class="wrap">
+    <div class="rv">
+      <span class="mono">aperti tutte le sere</span>
+      <h2 id="t-orari" style="margin-top:14px">orari</h2>
+      <ul class="week" id="week"></ul>
+    </div>
+    <div class="contact rv">
+      <span class="mono">prenota</span>
+      <a class="big" href="tel:+390119342413" style="margin-top:14px">011 934 2413</a>
+      <a class="big" href="https://wa.me/393496279254" target="_blank" rel="noopener">349 627 9254 · whatsapp</a>
+      <a class="big" href="mailto:info@cubechieri.it">info@cubechieri.it</a>
+      <p>Piazza Cavour 3 · 10023 Chieri (TO)<br><a href="https://goo.gl/maps/6hYJCYAqmAKiqgFX7" target="_blank" rel="noopener">indicazioni</a> · <a href="https://www.instagram.com/cubechieri/" target="_blank" rel="noopener">instagram</a> · <a href="https://www.facebook.com/cubechieri/" target="_blank" rel="noopener">facebook</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Cube. Non è il sito ufficiale.</div>
+<footer><span>cube srl · p.iva 12329160019</span><span>pizza concept · food · drink · chieri</span></footer>
+
+<script>
+(function(){
+  var cube=document.getElementById('cube'),rm=matchMedia('(prefers-reduced-motion: reduce)').matches,t0=performance.now(),idle=0;
+  if(!rm){(function tick(t){idle=(t-t0)/80;cube.style.setProperty('--ry',(-30-idle-scrollY*0.35)+'deg');requestAnimationFrame(tick)})(t0);}
+
+  var acc=document.getElementById('acc'),pans=[].slice.call(acc.children);
+  function openP(b){pans.forEach(function(x){var on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-expanded',on)});}
+  pans.forEach(function(b){b.addEventListener('click',function(){openP(b)});b.addEventListener('mouseenter',function(){if(matchMedia('(hover:hover) and (min-width:901px)').matches)openP(b)});});
+
+  var MENU={
+   tonde:['Pizze tonde','Cotte sulla pietra, con il nostro impasto classico o con gli altri due.',[['Margherita','pomodoro bio Miglioretti, fior di latte, pomodorino del Piennolo giallo, crema di basilico','9'],['Parma','pomodoro bio, crudo di Parma 24 mesi del Cavalier Boschi, Piennolo giallo, bufala fuori cottura','16'],['Bra e porcini','fior di latte, toma piemontese, porcini trifolati, salsiccia di Bra della macelleria Gola, granella di nocciola','16'],['Bologna','fior di latte, burrata, mortadella Favola del salumificio Mec Palmieri, crema di pomodoro','14'],['Ligure','fior di latte, crema di patate, burrata, polpo, olive taggiasche, crema di basilico','16'],['Carbonara','fior di latte, guanciale croccante, pecorino, uovo cotto a bassa temperatura','15'],['Capricciosa','pomodoro bio, fior di latte, carciofi alla brace, porcini, cotto, cacciatorino piccante, taggiasche','15'],['Cinque formaggi','fior di latte, gorgonzola, toma piemontese, ricotta di bufala, cialda di parmigiano','13']]],
+   padellino:['Al padellino','La pizza al padellino è una specialità torinese nata negli anni Trenta: si cuoce in una padella di ferro, non direttamente sulla pietra. Anche al carbone vegetale (+2 €).',[['Zucca, gorgo e guanciale','fior di latte, zucca caramellata, gorgonzola, guanciale, pecorino romano','15'],['Zucca, porcini e salsiccia','fior di latte, porcini, zucca al forno, salsiccia, fontina, rosmarino','16'],['Zucca, gorgo, miele e noci','fior di latte, gorgonzola, zucca caramellata al miele, noci tostate','15'],['Pancetta, cipolle e pistacchio','fior di latte, cipolle di Tropea, pancetta, pepe nero, granella di pistacchio','15'],['Gorgo, guanciale e carciofi','fior di latte, crema di patate, gorgonzola, guanciale, carciofi alla brace, pecorino','16'],['Bismark','fior di latte, cotto alla brace, uovo poché, parmigiano','16']]],
+   ripiene:['Ripiene e baciate','Due strati di impasto, chiusi o sovrapposti.',[['Ripiena al ragù','pomodoro bio, ricotta di bufala, fior di latte, ragù di salame di turgia, basilico','16',1],['Ripiena al prosciutto cotto','pomodoro bio, ricotta di bufala, fior di latte, provola affumicata, cotto, parmigiano','15',1],['Baciata burrata e mortadella','due strati multicereali con burrata, mortadella Favola, valeriana, parmigiano','15']]],
+   tapas:['Tapas e chiacchiere','Pasta cresciuta farcita, e i roll di pizza in stile sushi.',[['Chiacchiera Mortazza','stracciata di burrata, mortadella Favola, granella di pistacchio · 4 pz','13'],['Chiacchiera Bra','stracciata di burrata, salsiccia di Bra, cipolla rossa caramellata · 4 pz','13'],['Chiacchiera 24 mesi','bufala, crudo di Parma del Cavalier Boschi, marmellata di fichi · 4 pz','13'],['Chiacchiera Cetara','stracciata di burrata, acciughe di Sicilia, pomodoro, crema di basilico · 4 pz','13'],['Pizza sushi roll gamberi','mousse di Philadelphia alla soia, misticanza, gambero piastrato, sesamo · 6 pz','12'],['Pizza sushi roll Bra','mousse di Philadelphia alla soia, misticanza, salsiccia di Bra, sesamo · 6 pz','12'],['Gamberi in pastella','con salsa agrodolce','15']]],
+   cucina:['Dalla cucina','Antipasti, primi e secondi. Con la Doppietta, tapas o antipasto più un primo, a 27 €.',[['Uovo, porcini e tartufo','uovo poché, crema di porcini, tartufo nero, cialda di parmigiano','15'],['Cruda al coltello','Fassona battuta al coltello, caprino, fichi, crumble di pinoli','15'],['Tajarin al ragù','tajarin del Pastificio Bolognese, ragù delle Valli di Lanzo con salame di turgia','16'],['Agnolotti al sugo d\'arrosto','agnolotti alla piemontese, fondo bruno, parmigiano','16'],['Risotto zucca, gorgonzola e amaretto','Carnaroli Gli Aironi, chips di cavolo nero','16'],['Guancia brasata','guancia di vitello, crema di patate allo zafferano','24'],['Grissinopoli di vitello','sottofiletto nel panko, costine ripassate, fondo di vitello','22'],['Baccalà in tempura','indivia riccia, crema di pomodoro, polvere di olive','22']]]};
+  var mt=document.getElementById('mtabs'),mg=document.getElementById('mgrid'),mi=document.getElementById('mintro'),keys=Object.keys(MENU);
+  mt.innerHTML=keys.map(function(k,i){return '<button type="button" data-k="'+k+'" aria-pressed="'+(i===0)+'">'+MENU[k][0]+'</button>'}).join('');
+  function showM(k){var m=MENU[k];mi.textContent=m[1];mg.innerHTML=m[2].map(function(x){return '<div class="mi"><b>'+x[0]+(x[3]?'<span class="new">novità</span>':'')+'</b><em>'+x[2]+' €</em><span>'+x[1]+'</span></div>'}).join('');}
+  mt.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(mt.children,function(x){x.setAttribute('aria-pressed',x===b)});showM(b.dataset.k);});
+  showM('tonde');
+
+  var H=[['domenica','19 – 24'],['lunedì','19 – 24'],['martedì','19 – 24'],['mercoledì','19 – 24'],['giovedì','19 – 24'],['venerdì','19 – 01'],['sabato','19 – 01']],td=new Date().getDay();
+  document.getElementById('week').innerHTML=[1,2,3,4,5,6,0].map(function(i){return '<li'+(i===td?' class="today"':'')+'><span>'+H[i][0]+'</span><span>'+H[i][1]+'</span></li>'}).join('');
+
+  var links=[].slice.call(document.querySelectorAll('.rail nav a'));
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})})},{rootMargin:'-45% 0px -50% 0px'});
+  ['sotto','impasti','menu','eventi','orari'].forEach(function(id){so.observe(document.getElementById(id))});
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  [].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

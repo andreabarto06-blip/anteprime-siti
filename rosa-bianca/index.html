@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trattoria Rosa Bianca · Pinerolo · Ciao bellissimi!</title>
+<meta name="description" content="Trattoria Rosa Bianca, Via Stefano Fer 42 a Pinerolo: cucina di casa piemontese e italiana, menù del giorno a 11 € a pranzo e 19 € la sera, asporto e giardino sotto il pergolato. Tel. e WhatsApp 338 993 7426.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--red:#c8312b;--red-d:#9d221d;--cream:#fbf6ec;--paper:#fffdf7;--ink:#2b211c;--olive:#5c6b3a;--sun:#f2b33d;--h:"Fraunces",Georgia,serif;--k:"Kalam",cursive;--b:"Nunito Sans",system-ui,sans-serif;--gut:clamp(16px,4vw,48px);
+--ging:repeating-linear-gradient(0deg,rgba(200,49,43,.55) 0 22px,transparent 22px 44px),repeating-linear-gradient(90deg,rgba(200,49,43,.55) 0 22px,transparent 22px 44px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+html,body{overflow-x:clip}
+body{background:var(--cream);color:var(--ink);font:400 17px/1.65 var(--b);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(70px,10vw,130px)}
+h1,h2,h3{font-family:var(--h);font-variation-settings:"SOFT" 100;font-weight:800;line-height:1;letter-spacing:-.015em}
+h2{font-size:clamp(2.4rem,6vw,4.4rem)}
+.hand{font-family:var(--k);color:var(--red);font-weight:700}
+.lead{font-size:1.15rem;max-width:33em}
+
+/* ticket nav */
+.tabbar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:60;display:flex;gap:2px;background:var(--paper);border-radius:16px;padding:6px;box-shadow:0 14px 40px -12px rgba(43,33,28,.45),0 0 0 1px rgba(43,33,28,.08);width:max-content;max-width:calc(100vw - 20px)}
+.tabbar::before,.tabbar::after{content:"";position:absolute;top:50%;width:14px;height:14px;border-radius:50%;background:var(--cream);transform:translateY(-50%)}
+.tabbar::before{left:-7px}.tabbar::after{right:-7px}
+.tabbar a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 14px;border-radius:11px;text-decoration:none;font:800 .7rem/1 var(--b);letter-spacing:.06em;text-transform:uppercase}
+.tabbar a svg{width:22px;height:22px}
+.tabbar a.on{background:var(--red);color:#fff}
+.tabbar a.call{background:var(--ink);color:#fff}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;padding:60px var(--gut);background:var(--cream);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0 0 0 52%;background:var(--ging),#fff;opacity:.9}
+.hero .logo{width:min(320px,70%);mix-blend-mode:multiply}
+.hero h1{font-size:clamp(3.4rem,9vw,7rem);margin-top:26px}
+.hero h1 .hand{display:block;font-size:.62em;transform:rotate(-3deg);transform-origin:left;margin-bottom:6px}
+.hero p{margin-top:18px}
+.plate-wrap{position:relative;z-index:1;justify-self:center;width:min(480px,86vw);aspect-ratio:1}
+.plate{position:absolute;inset:0;border-radius:50%;background:#fff;box-shadow:0 40px 60px -30px rgba(43,33,28,.55),0 0 0 14px #fff,0 0 0 15px rgba(43,33,28,.1);overflow:hidden}
+.plate img{position:absolute;inset:7%;width:86%;height:86%;border-radius:50%;object-fit:cover;opacity:0;transform:rotate(-40deg) scale(.9);transition:opacity .8s,transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.plate img.on{opacity:1;transform:none}
+.fork{position:absolute;right:-6%;top:12%;width:16%;height:76%;z-index:2}
+.dish-name{position:absolute;left:50%;bottom:-54px;transform:translateX(-50%) rotate(-2deg);white-space:nowrap;font:700 1.5rem/1 var(--k);color:var(--red)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;font:800 .86rem/1 var(--b);text-decoration:none;border:2px solid var(--ink);transition:transform .25s,background .25s,color .25s}
+.btn.p{background:var(--red);border-color:var(--red);color:#fff}
+.btn:hover{transform:translateY(-2px)}
+.btn.g:hover{background:var(--ink);color:#fff}
+.stars{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:700;font-size:.95rem}
+.stars b{color:var(--sun);letter-spacing:2px}
+
+/* comanda */
+.oggi{background:var(--ging),var(--paper);background-size:auto;position:relative}
+.oggi::before{content:"";position:absolute;inset:0;background:linear-gradient(var(--cream),rgba(251,246,236,.82) 40%,rgba(251,246,236,.82) 60%,var(--cream))}
+.oggi .wrap{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,70px);align-items:start}
+.days{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 8px}
+.days button{padding:10px 16px;border-radius:999px;border:2px solid var(--ink);font-weight:800;font-size:.85rem;background:var(--paper)}
+.days button[aria-pressed=true]{background:var(--ink);color:#fff}
+.days button .t{font:700 .7rem/1 var(--k);color:var(--red);margin-left:4px}
+.days button[aria-pressed=true] .t{color:var(--sun)}
+.note{font:400 1.05rem/1.3 var(--k);color:var(--olive);margin-top:8px}
+.price{display:flex;gap:16px;margin-top:22px;flex-wrap:wrap}
+.price div{background:var(--paper);border:2px dashed var(--red);border-radius:14px;padding:12px 18px}
+.price b{font:800 2rem/1 var(--h);color:var(--red)}
+.price span{display:block;font-size:.85rem}
+
+.pad{background:var(--paper);border-radius:6px 6px 14px 14px;box-shadow:0 30px 60px -30px rgba(43,33,28,.6);padding:34px clamp(20px,3vw,40px) 30px;position:relative;background-image:repeating-linear-gradient(transparent 0 33px,rgba(63,120,190,.18) 33px 34px);background-position:0 18px;transform:rotate(.6deg)}
+.pad::before{content:"";position:absolute;inset:-14px 0 auto;height:22px;background:radial-gradient(circle at 12px 11px,var(--cream) 6px,transparent 7px) 0 0/34px 22px repeat-x,#7a1d19;border-radius:6px 6px 0 0}
+.pad h3{font:700 1.9rem/1 var(--k);color:var(--red)}
+.pad .grp{margin-top:18px}
+.pad .grp > span{font:800 .72rem/1 var(--b);letter-spacing:.24em;text-transform:uppercase;color:var(--olive)}
+.pad ul{list-style:none;margin-top:6px}
+.pad li label{display:flex;align-items:center;gap:10px;font:400 1.22rem/34px var(--k);cursor:pointer;clip-path:inset(0 100% 0 0);animation:write .7s ease forwards;animation-delay:calc(var(--i)*.07s)}
+@keyframes write{to{clip-path:inset(0 0 0 0)}}
+.pad input{appearance:none;-webkit-appearance:none;position:relative;margin:0;width:22px;height:22px;border:2px solid var(--ink);border-radius:50%;flex:none}
+.pad input:checked{border-color:var(--red)}
+.pad input:checked{background:radial-gradient(circle,var(--red) 0 4px,transparent 5px)}
+.pad input:checked::after{content:"";position:absolute;left:50%;top:50%;width:30px;height:26px;border:2.5px solid var(--red);border-radius:50%;transform:translate(-50%,-50%) rotate(-12deg)}
+.pad input:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.extra li{display:flex;justify-content:space-between;font:400 1.15rem/34px var(--k)}
+.bill{margin-top:22px;border-top:2px dashed rgba(43,33,28,.35);padding-top:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.bill p{font:700 1.25rem/1.2 var(--k)}
+.bill p small{display:block;font:400 .9rem/1.3 var(--b);color:#6b5a50}
+
+/* sera */
+.sera{background:var(--ink);color:var(--cream)}
+.sera .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.sera .ph{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sera .ph img{border-radius:50%;aspect-ratio:1;object-fit:cover;border:8px solid #fff}
+.sera .ph img:nth-child(2){margin-top:60px}
+.cols{columns:2;column-gap:28px;margin-top:22px}
+.cols p{break-inside:avoid;padding:6px 0;border-bottom:1px solid rgba(251,246,236,.14)}
+.cols b{display:block;font:800 .72rem/1 var(--b);letter-spacing:.24em;color:var(--sun);margin:14px 0 4px;border:0}
+
+/* vini */
+.vini .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,70px)}
+.shelf{display:grid;gap:10px;align-content:start}
+.wine{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:14px 18px;background:var(--paper);border-radius:14px;box-shadow:0 1px 0 rgba(43,33,28,.08)}
+.wine i{width:12px;height:44px;border-radius:6px 6px 3px 3px;background:var(--c)}
+.wine b{font-weight:800}
+.wine span{display:block;font-size:.88rem;color:#6b5a50}
+.wine em{font:800 1.1rem/1 var(--h);font-style:normal;color:var(--red);white-space:nowrap}
+.wtabs{display:flex;gap:8px;margin:20px 0}
+.wtabs button{padding:9px 16px;border-radius:999px;border:2px solid var(--ink);font-weight:800;font-size:.85rem}
+.wtabs button[aria-pressed=true]{background:var(--red);border-color:var(--red);color:#fff}
+
+/* giardino */
+.giardino{padding:0}
+.giardino .row{display:grid;grid-template-columns:1.2fr .8fr}
+.giardino .big{min-height:560px;background:url(img/pergola.jpg) center/cover}
+.giardino .txt{background:var(--olive);color:var(--cream);padding:clamp(40px,6vw,80px);display:flex;flex-direction:column;justify-content:center}
+.giardino .small{display:flex;gap:12px;margin-top:24px}
+.giardino .small img{width:50%;border-radius:12px;aspect-ratio:1;object-fit:cover}
+
+/* casa */
+.casa .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.letter{background:var(--paper);padding:clamp(28px,4vw,50px);border-radius:4px;box-shadow:0 30px 50px -30px rgba(43,33,28,.5);transform:rotate(-1deg);position:relative}
+.letter::after{content:"";position:absolute;top:-16px;left:50%;width:120px;height:30px;transform:translateX(-50%) rotate(2deg);background:rgba(242,179,61,.55)}
+.letter p{font:400 1.25rem/1.6 var(--k)}
+.letter .sig{margin-top:16px;color:var(--red);font-weight:700}
+.info{display:grid;gap:4px}
+.info div{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:2px dotted rgba(43,33,28,.25)}
+.info b{min-width:110px;font:800 .74rem/1.6 var(--b);letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+
+footer{background:var(--red);color:#fff;text-align:center;padding:50px var(--gut) 110px}
+footer .hand{color:#fff;font-size:2.4rem;display:block;margin-bottom:8px}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv{opacity:1;transform:none}
+
+@media (max-width:900px){
+ .hero{grid-template-columns:1fr;padding-top:40px}
+ .hero::before{inset:auto 0 0 0;height:46%}
+ .plate-wrap{width:min(360px,78vw);margin-bottom:60px}
+ .oggi .wrap,.sera .wrap,.vini .wrap,.casa .wrap,.giardino .row{grid-template-columns:1fr}
+ .giardino .big{min-height:340px}
+ .cols{columns:1}
+}
+@media (max-width:520px){
+ .tabbar a{padding:8px 9px;font-size:.6rem}
+ .tabbar a svg{width:20px;height:20px}
+ .info div{flex-direction:column;gap:4px}
+}
+@media (prefers-reduced-motion:reduce){
+ .pad li label{animation:none;clip-path:none}
+ .plate img{transition:none}
+ .rv{opacity:1;transform:none;transition:none}
+}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#2b211c;color:#fbf6ec;font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}.tabbar{bottom:46px}footer{padding-bottom:140px}
+</style>
+</head>
+<body>
+<nav class="tabbar" aria-label="Sezioni">
+  <a href="#oggi" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>Oggi</a>
+  <a href="#sera"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 14A8 8 0 1 1 10 4a6 6 0 0 0 10 10z"/></svg>Sera</a>
+  <a href="#vini"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 3h8l-1 7a3 3 0 0 1-6 0zM12 13v7M8 21h8"/></svg>Vini</a>
+  <a href="#casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Dove</a>
+  <a href="tel:+393389937426" class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Chiama</a>
+</nav>
+
+<main>
+<header class="hero" aria-labelledby="t-hero">
+  <div>
+    <img class="logo" src="img/logo.png" alt="Trattoria Rosa Bianca" width="700" height="460">
+    <h1 id="t-hero"><span class="hand">Ciao bellissimi!</span>Si mangia come a casa.</h1>
+    <p class="lead">A pochi passi dal centro di Pinerolo, piatti della tradizione piemontese e italiana cucinati con passione. Da più di cinquant'anni la nostra casa, e la vostra.</p>
+    <div class="btns">
+      <a class="btn p" href="#oggi">Il menù di oggi</a>
+      <a class="btn g" href="https://wa.me/393389937426" target="_blank" rel="noopener">Prenota su WhatsApp</a>
+    </div>
+    <span class="stars"><b aria-hidden="true">★★★★★</b> 4,6 su Google · oltre 1.600 recensioni</span>
+  </div>
+  <div class="plate-wrap" aria-hidden="true">
+    <div class="plate" id="plate">
+      <img class="on" src="img/spaghetti.jpg" alt="" data-n="Spaghetti al pomodoro">
+      <img src="img/penne.jpg" alt="" data-n="Salsiccia, rucola e ricotta">
+      <img src="img/antipasto.jpg" alt="" data-n="Antipasto misto della casa">
+      <img src="img/tagliere.jpg" alt="" data-n="Tagliere e bruschette">
+    </div>
+    <svg class="fork" viewBox="0 0 40 200"><path d="M8 4v52a12 12 0 0 0 24 0V4M20 4v54M20 70v124" stroke="#b9b2a8" stroke-width="6" stroke-linecap="round" fill="none"/></svg>
+    <span class="dish-name" id="dname">Spaghetti al pomodoro</span>
+  </div>
+</header>
+
+<section id="oggi" class="oggi" aria-labelledby="t-oggi">
+  <div class="wrap">
+    <div class="rv">
+      <span class="hand" style="font-size:1.5rem">a pranzo, dal lunedì al venerdì</span>
+      <h2 id="t-oggi">Il menù del giorno</h2>
+      <p class="lead" style="margin-top:14px">Ogni giorno un menù diverso. Scegli il tuo primo, il secondo e il contorno sul blocchetto: te lo prepariamo da mangiare qui o da portare via.</p>
+      <div class="days" role="group" aria-label="Giorno della settimana" id="days"></div>
+      <p class="note" id="dnote"></p>
+      <div class="price">
+        <div><b>11 €</b><span>pranzo · primo + secondo<br>+ contorno e pane</span></div>
+        <div><b>19 €</b><span>sera · primo + secondo<br>+ contorno e pane</span></div>
+      </div>
+    </div>
+    <div class="pad rv" id="pad" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="sera" class="sera" aria-labelledby="t-sera">
+  <div class="wrap">
+    <div class="ph rv">
+      <img src="img/penne.jpg" alt="Penne con salsiccia, rucola e ricotta sulla tovaglia a quadri" width="640" height="640" loading="lazy">
+      <img src="img/antipasto.jpg" alt="Antipasto misto della casa su tagliere di legno" width="640" height="640" loading="lazy">
+    </div>
+    <div class="rv">
+      <span class="hand" style="font-size:1.5rem;color:var(--sun)">anche a cena</span>
+      <h2 id="t-sera" style="color:#fff">Il menù della sera</h2>
+      <p style="margin-top:12px;opacity:.85">Menù completo a 19 €: primo a scelta, secondo a scelta, contorno e pane.</p>
+      <div class="cols">
+        <b>PRIMI</b>
+        <p>Tagliolini al salmone</p><p>Ravioli al ragù</p><p>Ravioli in salsa di noci</p><p>Penne all'arrabbiata</p><p>Mezze maniche salsiccia, rucola e ricotta</p><p>Gnocchi ai quattro formaggi</p><p>Minestra del giorno</p>
+        <b>SECONDI</b>
+        <p>Arrosto al forno</p><p>Milanese</p><p>Petto di pollo ai ferri</p><p>Braciola di maiale ai ferri</p><p>Fettina di vitello ai ferri</p><p>Salsiccia ai ferri</p><p>Scamorza alla piastra</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vini" class="vini" aria-labelledby="t-vini">
+  <div class="wrap">
+    <div class="rv">
+      <span class="hand" style="font-size:1.5rem">dalla nostra cantina</span>
+      <h2 id="t-vini">La carta dei vini</h2>
+      <p class="lead" style="margin-top:14px">Langhe, Monferrato e le colline di casa nostra, con qualche bollicina per le occasioni.</p>
+      <div class="wtabs" role="group" aria-label="Tipo di vino">
+        <button type="button" data-w="r" aria-pressed="true">Rossi</button>
+        <button type="button" data-w="b" aria-pressed="false">Bianchi</button>
+        <button type="button" data-w="s" aria-pressed="false">Bollicine</button>
+      </div>
+    </div>
+    <div class="shelf rv" id="shelf" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="giardino" aria-labelledby="t-giardino">
+  <div class="row">
+    <div class="big" role="img" aria-label="Il pergolato d'uva del giardino"></div>
+    <div class="txt rv">
+      <span class="hand" style="font-size:1.5rem;color:var(--sun)">quando arriva il caldo</span>
+      <h2 id="t-giardino">Si mangia sotto il pergolato</h2>
+      <p style="margin-top:14px">Tavoli all'aperto tra l'uva e le lucine, seggioloni per i più piccoli e cani benvenuti.</p>
+      <div class="small">
+        <img src="img/dehors.jpg" alt="Il giardino di sera con le lucine accese" width="640" height="640" loading="lazy">
+        <img src="img/tagliere.jpg" alt="Tagliere sulla tovaglia a quadri" width="640" height="640" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="casa" class="casa" aria-labelledby="t-casa">
+  <div class="wrap">
+    <div class="letter rv">
+      <p>Da più di cinquant'anni questa trattoria è la nostra casa, e un po' anche la vostra. Grazie per il calore, l'affetto e la vicinanza che ci dimostrate ogni giorno.</p>
+      <p class="sig">Un abbraccio, Silvana, Marco e Alessandro</p>
+    </div>
+    <div class="rv">
+      <h2 id="t-casa">Vieni a trovarci</h2>
+      <div class="info" style="margin-top:20px">
+        <div><b>Indirizzo</b><span>Via Stefano Fer, 42 · 10064 Pinerolo (TO)<br><a href="https://maps.google.com/?q=Trattoria+Rosa+Bianca+Via+Stefano+Fer+42+Pinerolo" target="_blank" rel="noopener">Apri in Maps</a></span></div>
+        <div><b>Orari</b><span>Lunedì – venerdì<br>pranzo 12:00 – 15:00 · cena 18:30 – 22:15<br>Sabato e domenica chiuso</span></div>
+        <div><b>Prenota</b><span><a href="tel:+393389937426">338 993 7426</a> · anche su <a href="https://wa.me/393389937426" target="_blank" rel="noopener">WhatsApp</a></span></div>
+        <div><b>Social</b><span><a href="https://www.instagram.com/trattoria_rosabianca/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=100026943405428" target="_blank" rel="noopener">Facebook</a></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Trattoria Rosa Bianca. Non è il sito ufficiale.</div>
+<footer>
+  <span class="hand">Ciao bellissimi!</span>
+  Trattoria Rosa Bianca · Via Stefano Fer 42, Pinerolo · 338 993 7426
+</footer>
+
+<script>
+(function(){
+  var imgs=[].slice.call(document.querySelectorAll('#plate img')),dn=document.getElementById('dname'),pi=0;
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(function(){imgs[pi].classList.remove('on');pi=(pi+1)%imgs.length;imgs[pi].classList.add('on');dn.textContent=imgs[pi].dataset.n;},3600);
+
+  var M={
+   1:['Lunedì',['Minestra di pasta e ceci','Penne al sugo di melanzane','Mezze maniche al ragù'],['Milanese','Arrosto al forno','Salsiccia ai ferri','Petto di pollo ai ferri'],['Carote al burro','Patatine fritte','Insalata']],
+   2:['Martedì',['Minestra di pasta e fagioli','Fusilli all\'amatriciana','Tortellini panna e prosciutto','Tortellini al ragù'],['Cosce di pollo al forno','Braciola di maiale ai ferri','Salsiccia ai ferri','Arrosto al forno'],['Spinaci al burro','Patatine fritte','Insalata']],
+   3:['Mercoledì',['Minestrone di verdure','Conchiglioni salsiccia, rucola e ricotta','Farfalle al ragù'],['Polpette al sugo della Rosa','Braciola di maiale ai ferri','Petto di pollo ai ferri','Salsiccia ai ferri'],['Piselli in umido','Patatine fritte','Insalata']],
+   4:['Giovedì',['Minestra di riso e patate','Rigatoni alla campagnola','Tortelli al ragù'],['Spiedini al forno','Milanese','Braciola ai ferri','Salsiccia ai ferri','Petto di pollo ai ferri'],['Spinaci','Patatine fritte','Insalata']],
+   5:['Venerdì',['Minestra di pasta e fagioli','Lasagna al forno','Spaghetti al sugo di vongole','Mezze maniche al tonno'],['Merluzzo impanato','Arrosto al forno','Salsiccia ai ferri','Braciola ai ferri','Petto di pollo ai ferri'],['Carote al burro','Patatine fritte','Insalata']]};
+  var EX=[['Antipasto misto della casa','13 €'],['Tagliere di salumi e formaggi','12 €'],['Tris di bruschette','10 €'],['Insalatona mista di tutto','9 €'],['Prosciutto crudo e mozzarella','10 €']];
+  var today=new Date().getDay(),sel=(today>=1&&today<=5)?today:1,days=document.getElementById('days'),pad=document.getElementById('pad'),note=document.getElementById('dnote');
+  var hb='';for(var d=1;d<=5;d++)hb+='<button type="button" data-d="'+d+'" aria-pressed="'+(d===sel)+'">'+M[d][0].slice(0,3)+(d===today?'<span class="t">oggi</span>':'')+'</button>';
+  days.innerHTML=hb;
+  note.textContent=(today===0||today===6)?'Oggi siamo chiusi: ecco il menù di lunedì.':'';
+  function grp(name,key,list){var h='<div class="grp"><span>'+name+'</span><ul>';list.forEach(function(x,i){h+='<li style="--i:'+i+'"><label><input type="radio" name="'+key+'" value="'+x.replace(/"/g,'&quot;')+'">'+x+'</label></li>';});return h+'</ul></div>';}
+  function render(){
+    var m=M[sel];
+    pad.innerHTML='<h3>Comanda di '+m[0].toLowerCase()+'</h3>'+grp('Primo','p',m[1])+grp('Secondo','s',m[2])+grp('Contorno','c',m[3])+
+      '<div class="grp"><span>Piatti extra</span><ul class="extra">'+EX.map(function(e){return '<li><span>'+e[0]+'</span><span>'+e[1]+'</span></li>'}).join('')+'</ul></div>'+
+      '<div class="bill"><p id="tot"></p><a class="btn p" id="wa" href="https://wa.me/393389937426" target="_blank" rel="noopener">Ordina su WhatsApp</a></div>';
+    upd();
+  }
+  function upd(){
+    var v=function(n){var c=pad.querySelector('input[name='+n+']:checked');return c?c.value:null},p=v('p'),s=v('s'),c=v('c'),t=document.getElementById('tot'),wa=document.getElementById('wa');
+    var ch=[p,s,c].filter(Boolean);
+    t.innerHTML=ch.length===3?'Il tuo menù: 11 €<small>'+ch.join(' · ')+'</small>':'Scelti '+ch.length+' su 3<small>Menù completo 11 € · pane compreso</small>';
+    wa.href='https://wa.me/393389937426?text='+encodeURIComponent('Ciao! Vorrei il menù del giorno di '+M[sel][0].toLowerCase()+(ch.length?': '+ch.join(', '):'')+'. Da asporto alle ore: ');
+  }
+  pad.addEventListener('change',upd);
+  days.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;sel=+b.dataset.d;[].forEach.call(days.children,function(x){x.setAttribute('aria-pressed',x===b)});render();});
+  render();
+
+  var W={r:[['Morra Stefanino','Nebbiolo Langhe DOC','16','#7b1f2a'],['Angelo Pastura','Nebbiolo Langhe DOC','18','#7b1f2a'],['Damilano','Nebbiolo Langhe DOC Marghe','20','#7b1f2a'],['Bea Pinerolo','Nebbiolo Merenda con Corvi DOC','20','#7b1f2a'],['Renato Ratti','Nebbiolo Langhe DOC Ochetti','22','#7b1f2a'],['Bea Pinerolo','Barbera Merenda con Corvi DOC','12','#5e1a2b'],['Angelo Pastura','Barbera d\'Alba DOC Superiore','15','#5e1a2b'],['Montalbera','Ruché di Castagnole Monferrato Laccento DOCG','22','#8e2340'],['Morra Stefanino','Dolcetto d\'Alba DOC','15','#4b1838'],['Renato Ratti','Langhe Dolcetto DOC Colombè','16','#4b1838']],
+         b:[['Govone','Muntin Langhe Arneis DOC','8','#e5c96a'],['Damilano','Langhe DOC Arneis','15','#e5c96a']],
+         s:[['Mionetto','Spumante Extra Dry Vivo Blu','12','#f0dc8c'],['Rocche dei Manzoni','Metodo Classico Brut Valentino Riserva Elena','30','#f0dc8c'],['Ca\' del Bosco','Franciacorta DOCG Cuvée Prestige','40','#f0dc8c'],['Bellavista','Franciacorta Brut Grande Cuvée Alma','40','#f0dc8c']]};
+  var shelf=document.getElementById('shelf');
+  function wines(k){shelf.innerHTML=W[k].map(function(w){return '<div class="wine" style="--c:'+w[3]+'"><i aria-hidden="true"></i><div><b>'+w[0]+'</b><span>'+w[1]+'</span></div><em>'+w[2]+' €</em></div>'}).join('');}
+  [].forEach.call(document.querySelectorAll('.wtabs button'),function(b){b.addEventListener('click',function(){[].forEach.call(document.querySelectorAll('.wtabs button'),function(x){x.setAttribute('aria-pressed',x===b)});wines(b.dataset.w);});});
+  wines('r');
+
+  var links=[].slice.call(document.querySelectorAll('.tabbar a[href^="#"]'));
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+  ['oggi','sera','vini','casa'].forEach(function(id){so.observe(document.getElementById(id))});
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  [].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

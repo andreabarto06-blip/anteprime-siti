@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Old Building · Murphy's Pub · Ristorante pizzeria irlandese a Chieri</title>
+<meta name="description" content="Old Building Murphy's Pub a Chieri: un angolo irlandese dal 1999. Pub, ristorante e pizzeria, Guinness alla spina, musica dal vivo e DJ, cene di Natale. Tel. 011 1884 7435.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--green:#0f3b2e;--green2:#0a2a20;--stout:#140c08;--foam:#f2e6cc;--brass:#d2ab55;--ink:#f4ecd8;--mute:#b9c4b5;--h:"Fraunces",Georgia,serif;--f:"Libre Franklin",system-ui,sans-serif;--gut:clamp(16px,4vw,56px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+html,body{overflow-x:clip}
+body{background:var(--green2);color:var(--ink);font:400 17px/1.65 var(--f);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,10vw,130px)}
+h1,h2,h3{font-family:var(--h);font-weight:900;line-height:1;letter-spacing:-.015em}
+h2{font-size:clamp(2.5rem,5.8vw,4.4rem)}
+h1 em,h2 em{font-weight:500;font-style:italic;color:var(--brass)}
+.kick{font:800 .74rem/1 var(--f);letter-spacing:.3em;text-transform:uppercase;color:var(--brass)}
+.lead{font-size:1.15rem;max-width:32em;color:#dfe5d8}
+
+/* nav */
+.top{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px var(--gut);transition:background .4s}
+.top.s{background:rgba(10,42,32,.95);backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(210,171,85,.3)}
+.top .logo{display:flex;align-items:center;gap:10px;text-decoration:none;line-height:1}
+.top .logo svg{width:36px;height:36px;flex:none}
+.top .logo b{display:block;font:900 1.25rem/1 var(--h);letter-spacing:.01em}
+.top .logo small{display:block;font:800 .58rem/1.5 var(--f);letter-spacing:.28em;text-transform:uppercase;color:var(--brass)}
+.top nav{display:flex;gap:22px}
+.top nav a{text-decoration:none;font:800 .76rem/1 var(--f);letter-spacing:.16em;text-transform:uppercase;padding:8px 0}
+.top nav a:hover{color:var(--brass)}
+.top .call{border:1px solid var(--brass);color:var(--brass);text-decoration:none;font:800 .76rem/1 var(--f);letter-spacing:.16em;text-transform:uppercase;padding:12px 16px}
+.top .call:hover{background:var(--brass);color:var(--green2)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;align-items:center;padding:110px 0 60px;overflow:hidden}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.42) saturate(1.1)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,42,32,.92),rgba(10,42,32,.55) 55%,rgba(10,42,32,.2))}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(30px,5vw,70px);align-items:center;width:100%}
+.hero h1{font-size:clamp(3.2rem,7.4vw,6.2rem)}
+.hero .since{display:inline-block;margin-top:18px;border:1px solid var(--brass);color:var(--brass);padding:8px 12px;font:800 .76rem/1 var(--f);letter-spacing:.2em;text-transform:uppercase}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;padding:15px 22px;font:800 .8rem/1 var(--f);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid var(--ink);transition:background .3s,color .3s}
+.btn.p{background:var(--brass);border-color:var(--brass);color:var(--green2)}
+.btn.p:hover{background:var(--ink);border-color:var(--ink)}
+.btn.g:hover{background:var(--ink);color:var(--green2)}
+.rating{display:flex;align-items:center;gap:10px;margin-top:22px;font-weight:600}
+.rating b{font:900 1.6rem/1 var(--h);color:var(--brass)}
+
+/* la pinta */
+.pour{text-align:center}
+.pour svg{width:min(280px,58vw);height:auto;overflow:visible}
+.pour .step{font:italic 500 1.1rem/1.4 var(--h);color:var(--foam);min-height:3em;margin-top:12px}
+.pour button{margin-top:4px;font:800 .72rem/1 var(--f);letter-spacing:.2em;text-transform:uppercase;color:var(--brass);border-bottom:1px solid var(--brass);padding:6px 0}
+.bub{fill:#d9b98a;opacity:0}
+
+/* storia */
+.storia{background:var(--foam);color:var(--stout)}
+.storia .kick{color:#8a6a24}
+.storia h2 em{color:var(--green)}
+.storia .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.storia .lead{color:#3a2e22}
+.date{font:900 clamp(3rem,8vw,6rem)/1 var(--h);color:var(--green)}
+.storia .ph{position:relative}
+.storia .ph img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.storia .ph img+img{position:absolute;right:-18px;bottom:-40px;width:42%;aspect-ratio:3/4;border:8px solid var(--foam);box-shadow:0 20px 40px -20px rgba(0,0,0,.5)}
+.facts{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.facts li{border-top:2px solid var(--green);padding-top:10px;font:600 .95rem/1.4 var(--f)}
+.facts b{display:block;font:900 1.35rem/1.1 var(--h);color:var(--green)}
+
+/* serate */
+.serate .head{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:end}
+.serate .live{margin-top:40px;position:relative}
+.serate .live img{width:100%;aspect-ratio:21/9;object-fit:cover}
+.serate .live span{position:absolute;left:16px;bottom:16px;background:var(--brass);color:var(--green2);font:800 .74rem/1 var(--f);letter-spacing:.2em;text-transform:uppercase;padding:10px 12px}
+.nights{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.night{border:1px solid rgba(210,171,85,.4);padding:26px 22px;transition:border-color .3s,transform .3s}
+.night:hover{border-color:var(--brass);transform:translateY(-4px)}
+.night small{font:800 .7rem/1 var(--f);letter-spacing:.2em;text-transform:uppercase;color:var(--brass)}
+.night h3{font-size:1.6rem;margin-top:10px;color:var(--foam)}
+.night p{color:var(--mute);margin-top:8px;font-size:.98rem}
+.xmas{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,50px);align-items:center;margin-top:50px;border:1px solid var(--brass);padding:clamp(20px,3vw,34px);background:rgba(0,0,0,.2)}
+.xmas img{width:100%}
+.xmas h3{font-size:clamp(1.8rem,3.6vw,2.6rem);color:var(--foam)}
+.xmas ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.xmas li{border:1px solid rgba(242,230,204,.35);padding:7px 12px;font:600 .82rem/1 var(--f)}
+
+/* cucina */
+.cucina{background:var(--foam);color:var(--stout)}
+.cucina .kick{color:#8a6a24}
+.cucina h2 em{color:var(--green)}
+.cucina .grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px;margin-top:40px}
+.cucina figure{position:relative;overflow:hidden;background:#ddd}
+.cucina figure img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.cucina figure:hover img{transform:scale(1.05)}
+.cucina figcaption{position:absolute;left:10px;bottom:10px;background:var(--green2);color:var(--foam);padding:7px 11px;font:800 .72rem/1 var(--f);letter-spacing:.14em;text-transform:uppercase}
+.cucina .w2{grid-column:span 2}.cucina .h2{grid-row:span 2}
+
+/* bancone */
+.bancone{background:var(--stout)}
+.bancone .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.bancone .pint{width:100%;aspect-ratio:3/4;object-fit:cover}
+.taps{list-style:none;margin-top:24px}
+.taps li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px dashed rgba(242,230,204,.2);font:italic 500 1.15rem/1.4 var(--h)}
+.taps li span{font:800 .7rem/1.8 var(--f);font-style:normal;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);white-space:nowrap}
+.note{margin-top:22px;font:italic 500 1rem/1.5 var(--h);color:var(--mute)}
+
+/* dove */
+.dove .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.dove .sign img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.dove .big{display:block;font:900 clamp(2rem,4vw,3rem)/1.2 var(--h);text-decoration:none;color:var(--brass)}
+.dove p{color:#dfe5d8;margin-top:14px}
+.dove .small{font-size:.9rem;color:var(--mute)}
+footer{text-align:center;padding:36px var(--gut);color:var(--mute);font-size:.9rem;border-top:1px solid rgba(210,171,85,.3)}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv{opacity:1;transform:none}
+@media (max-width:900px){
+ .top nav{display:none}
+ .hero .wrap,.storia .wrap,.serate .head,.bancone .wrap,.dove .wrap,.xmas{grid-template-columns:1fr}
+ .nights{grid-template-columns:1fr}
+ .cucina .grid{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
+ .storia .ph img+img{right:0;bottom:-30px}
+ .serate .live img{aspect-ratio:16/10}
+}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.night,.cucina figure img{transition:none}}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#16110e;color:#f8f2e7;border-top:1px solid rgba(239,228,210,.25);font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}body{padding-bottom:34px}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+  <a class="logo" href="#" aria-label="Old Building Murphy's Pub, inizio pagina"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#0a2a20" stroke="#d2ab55" stroke-width="1.5"/><g fill="#3a9a5b"><circle cx="20" cy="13" r="5.5"/><circle cx="14" cy="21" r="5.5"/><circle cx="26" cy="21" r="5.5"/></g><path d="M20 21 C21 27 22 30 25 33" stroke="#3a9a5b" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg><span><b>Old Building</b><small>Murphy's Pub</small></span></a>
+  <nav aria-label="Sezioni"><a href="#storia">Dal 1999</a><a href="#serate">Serate</a><a href="#cucina">Cucina</a><a href="#bancone">Bancone</a><a href="#dove">Dove</a></nav>
+  <a class="call" href="tel:+3901118847435">Prenota</a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="t-hero">
+  <img class="bg" src="img/insegna-hd.jpg" alt="" width="1080" height="810">
+  <div class="wrap">
+    <div>
+      <span class="kick">Murphy's Pub · Ristorante pizzeria · Chieri</span>
+      <h1 id="t-hero" style="margin-top:18px">Un angolo <em>irlandese</em> a Chieri.</h1>
+      <span class="since">Dal 9 settembre 1999</span>
+      <p class="lead" style="margin-top:20px">Una Guinness versata come si deve, una pizza o un piatto caldo, e una serata in compagnia con buona musica.</p>
+      <div class="btns"><a class="btn p" href="tel:+3901118847435">Prenota un tavolo</a><a class="btn g" href="#serate">Le serate</a></div>
+      <div class="rating"><b>4,2</b><span>su Google, con oltre 600 recensioni</span></div>
+    </div>
+    <div class="pour">
+      <svg viewBox="0 0 200 330" role="img" aria-label="Una pinta di birra scura che viene versata in due tempi">
+        <defs>
+          <clipPath id="glass"><path d="M40 20 L160 20 L150 250 C149 270 146 290 140 310 L60 310 C54 290 51 270 50 250 Z"/></clipPath>
+          <linearGradient id="st" x1="0" x2="1"><stop offset="0" stop-color="#1a0f09"/><stop offset=".5" stop-color="#2a170c"/><stop offset="1" stop-color="#140b06"/></linearGradient>
+          <linearGradient id="surge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c49a6c"/><stop offset="1" stop-color="#5a3a22"/></linearGradient>
+        </defs>
+        <g clip-path="url(#glass)">
+          <rect x="0" y="0" width="200" height="330" fill="rgba(255,255,255,.06)"/>
+          <rect id="liq" x="0" y="310" width="200" height="0" fill="url(#st)"/>
+          <rect id="surgeR" x="0" y="310" width="200" height="0" fill="url(#surge)" opacity="0"/>
+          <rect id="head" x="0" y="310" width="200" height="0" fill="#f2e6cc"/>
+          <g id="bubs"></g>
+        </g>
+        <path d="M40 20 L160 20 L150 250 C149 270 146 290 140 310 L60 310 C54 290 51 270 50 250 Z" fill="none" stroke="rgba(242,230,204,.6)" stroke-width="3"/>
+        <path d="M52 40 L58 240" stroke="rgba(255,255,255,.18)" stroke-width="6" stroke-linecap="round"/>
+        <rect id="stream" x="97" y="-40" width="6" height="0" fill="#2a170c" rx="3"/>
+        <g transform="translate(100 170)" opacity=".9"><circle r="22" fill="none" stroke="#d2ab55" stroke-width="1.5"/><text y="6" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-weight="900" font-size="14" fill="#d2ab55">1999</text></g>
+      </svg>
+      <p class="step" id="pstep" aria-live="polite">Prima versata, a 45 gradi…</p>
+      <button type="button" id="again">Versane un'altra</button>
+    </div>
+  </div>
+</section>
+
+<section id="storia" class="storia" aria-labelledby="t-storia">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kick">La nostra storia</span>
+      <div class="date" style="margin-top:14px">09·09·1999</div>
+      <h2 id="t-storia" style="margin-top:12px">Da allora, <em>la stessa porta aperta.</em></h2>
+      <p class="lead" style="margin-top:18px">L'Old Building apre a Chieri a fine estate del 1999, con l'idea semplice di un pub all'irlandese: legno, birra buona, cucina vera e gente che si conosce per nome. Oggi è pub, ristorante e pizzeria, e la sera si riempie di musica.</p>
+      <ul class="facts">
+        <li><b>Pub</b>birre irlandesi alla spina</li>
+        <li><b>Pizzeria</b>per cena e da asporto</li>
+        <li><b>Ristorante</b>burger, panini e piatti caldi</li>
+        <li><b>Musica</b>band dal vivo e DJ set</li>
+      </ul>
+    </div>
+    <div class="ph rv">
+      <img src="img/sala.jpg" alt="La sala del pub con i tavoli in legno, gli sgabelli rossi e le insegne alle pareti" width="1400" height="1050" loading="lazy">
+      <img src="img/guinness.jpg" alt="Una pinta di Guinness sul bancone" width="966" height="1400" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="serate" class="serate" aria-labelledby="t-serate">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="kick">Buon cibo e bella musica</span><h2 id="t-serate" style="margin-top:14px">Le <em>serate</em> del Murphy's.</h2></div>
+      <p class="lead">Ogni mese pubblichiamo il calendario sui nostri social. Queste sono le serate che non mancano mai.</p>
+    </div>
+    <figure class="live rv"><img src="img/live.jpg" alt="Una band suona dal vivo nella sala del pub" width="1400" height="631" loading="lazy"><span>Musica dal vivo</span></figure>
+    <div class="nights">
+      <article class="night rv"><small>DJ set</small><h3>Anni 90 e 2000</h3><p>In console Mimmo DJ, con le hit che sapete tutti a memoria.</p></article>
+      <article class="night rv"><small>Live</small><h3>Band e tributi</h3><p>Serate da cantare tutti insieme, come quella con gli Akuakiara sulle canzoni di Lucio Battisti.</p></article>
+      <article class="night rv"><small>Feste</small><h3>Le ricorrenze</h3><p>Halloween e le feste dell'anno, sempre con un DJ set.</p></article>
+    </div>
+    <div class="xmas rv">
+      <img src="img/ig/natale.jpg" alt="Locandina delle cene di Natale al Murphy's Pub" width="640" height="640" loading="lazy">
+      <div>
+        <span class="kick">Ora si prenota</span>
+        <h3 style="margin-top:12px">Le cene di Natale da Murphy's</h3>
+        <p class="lead" style="margin-top:12px">Il posto giusto per scambiarsi regali e auguri in compagnia. Posti limitati: chiamateci per tempo.</p>
+        <ul><li>Per bambini</li><li>Aziende</li><li>Gruppi di amici</li></ul>
+        <div class="btns"><a class="btn p" href="tel:+3901118847435">Prenota la cena</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cucina" class="cucina" aria-labelledby="t-cucina">
+  <div class="wrap">
+    <div class="rv"><span class="kick">Ristorante e pizzeria</span><h2 id="t-cucina" style="margin-top:14px">Dalla cucina <em>del pub.</em></h2></div>
+    <div class="grid">
+      <figure class="w2 h2 rv"><img src="img/burger.jpg" alt="Hamburger con patatine sulla tovaglia a quadri" width="1400" height="788" loading="lazy"><figcaption>Burger e patatine</figcaption></figure>
+      <figure class="h2 rv"><img src="img/piatto.jpg" alt="Hamburger al piatto con patatine e insalata" width="646" height="1400" loading="lazy"><figcaption>Al piatto</figcaption></figure>
+      <figure class="rv"><img src="img/panino.jpg" alt="Un panino caldo servito sul tagliere con una birra" width="1400" height="788" loading="lazy"><figcaption>Panini</figcaption></figure>
+      <figure class="rv"><img src="img/insalata.jpg" alt="Insalata con uovo all'occhio di bue e pomodorini" width="1400" height="1050" loading="lazy"><figcaption>Insalatone</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="bancone" class="bancone" aria-labelledby="t-banc">
+  <div class="wrap">
+    <img class="pint rv" src="img/guinness.jpg" alt="Una pinta di Guinness appena spillata sul bancone di legno" width="966" height="1400" loading="lazy">
+    <div class="rv">
+      <span class="kick">Al bancone</span>
+      <h2 id="t-banc" style="margin-top:14px">Ordina <em>come un irlandese.</em></h2>
+      <ul class="taps">
+        <li>"A pint of Guinness, please."<span>la pinta</span></li>
+        <li>"Sláinte!"<span>salute</span></li>
+        <li>"One more for the road."<span>l'ultima</span></li>
+        <li>"Let's have the craic."<span>ci si diverte</span></li>
+      </ul>
+      <p class="note">E se l'irlandese non lo parlate, va benissimo anche il piemontese.</p>
+    </div>
+  </div>
+</section>
+
+<section id="dove" class="dove" aria-labelledby="t-dove">
+  <div class="wrap">
+    <div class="sign rv"><img src="img/insegna-hd.jpg" alt="L'insegna illuminata di Old Building Pub, ristorante pizzeria" width="1080" height="810" loading="lazy"></div>
+    <div class="rv">
+      <span class="kick">Dove siamo</span>
+      <h2 id="t-dove" style="margin-top:14px">Nel centro <em>di Chieri.</em></h2>
+      <p>Piazza Caselli 16 · 10023 Chieri (TO)<br>Aperti la sera, dalle 19.</p>
+      <a class="big" href="tel:+3901118847435" style="margin-top:18px">011 1884 7435</a>
+      <p class="small">Per le serate e le cene di Natale i posti sono limitati: meglio chiamare.</p>
+      <div class="btns"><a class="btn g" href="https://maps.google.com/?q=Pub+Old+building+Chieri" target="_blank" rel="noopener">Indicazioni</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Old Building Murphy's Pub. Non è il sito ufficiale.</div>
+<footer>Old Building · Murphy's Pub · Chieri · dal 1999</footer>
+
+<script>
+(function(){
+  var top=document.getElementById('top');addEventListener('scroll',function(){top.classList.toggle('s',scrollY>30)},{passive:true});
+  var liq=document.getElementById('liq'),sur=document.getElementById('surgeR'),head=document.getElementById('head'),stream=document.getElementById('stream'),step=document.getElementById('pstep'),bubs=document.getElementById('bubs');
+  var B=310,T=20,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,raf;
+  var h='';for(var i=0;i<26;i++)h+='<circle class="bub" r="'+(1+Math.random()*1.6).toFixed(1)+'" cx="'+(60+Math.random()*80).toFixed(0)+'" cy="300" data-s="'+Math.random().toFixed(2)+'"/>';bubs.innerHTML=h;
+  var bs=[].slice.call(bubs.children);
+  function lvl(f){return B-(B-T-8)*f}
+  function draw(fill,surge,headH,str,t){var y=lvl(fill);
+    liq.setAttribute('y',y);liq.setAttribute('height',B-y);
+    sur.setAttribute('y',y);sur.setAttribute('height',B-y);sur.setAttribute('opacity',surge);
+    head.setAttribute('y',y-headH);head.setAttribute('height',headH);
+    stream.setAttribute('height',str?Math.max(0,y-headH+40):0);
+    bs.forEach(function(b){var s=+b.dataset.s,cy=B-((t*60*(0.5+s)+s*300)%(B-y+1));b.setAttribute('cy',cy);b.style.opacity=surge*0.8});}
+  var S=[['Prima versata, a 45 gradi…',0],['Si lascia riposare: la tempesta sale…',2.2],['Poi si colma, piano…',4.6],['Ecco la pinta perfetta. Sláinte!',6.2]];
+  function run(){cancelAnimationFrame(raf);var t0=performance.now();
+    if(reduce){draw(.97,0,22,false,0);step.textContent=S[3][0];return}
+    (function f(now){var t=Math.max(0,(now-t0)/1000),fill,surge,hd,str;
+      if(t<2.2){fill=.75*t/2.2;surge=Math.min(1,t/1.5);hd=6*t/2.2;str=true}
+      else if(t<4.6){fill=.75;surge=Math.max(0,1-(t-2.2)/2.2);hd=6+10*(t-2.2)/2.4;str=false}
+      else if(t<6.2){var k=(t-4.6)/1.6;fill=.75+.22*k;surge=.25*(1-k);hd=16+6*k;str=true}
+      else{fill=.97;surge=0;hd=22;str=false}
+      for(var i=S.length-1;i>=0;i--){if(t>=S[i][1]){if(step.textContent!==S[i][0])step.textContent=S[i][0];break}}
+      draw(fill,surge,hd,str,t);if(t<6.4)raf=requestAnimationFrame(f)})(t0)}
+  document.getElementById('again').addEventListener('click',run);
+  setTimeout(run,500);
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  [].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

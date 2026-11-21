@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Todrà · Griglieria, hamburgheria e cocktail · Piazza Trento, Chieri</title>
+<meta name="description" content="Todrà, Piazza Trento 2 a Chieri: griglieria, hamburgheria, pizza, cocktail e birre fino a tardi, con un grande dehors. Dal martedì alla domenica dalle 19. Tel. 338 315 7498.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--black:#0e0d0c;--film:#1a1816;--paper:#efe8da;--sepia:#c9b48e;--beer:#f0b43c;--mute:#a59d8f;--h:"Bodoni Moda",Didot,Georgia,serif;--t:"Special Elite","Courier New",monospace;--gut:clamp(16px,4vw,56px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+html,body{overflow-x:clip}
+body{background:var(--black);color:var(--paper);font:400 17px/1.7 var(--t);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,10vw,130px);position:relative}
+h1,h2,h3{font-family:var(--h);font-weight:800;line-height:.95;letter-spacing:-.01em}
+h2{font-size:clamp(2.6rem,6.4vw,5rem)}
+h2 em,h1 em{font-weight:500;font-style:italic;color:var(--beer)}
+
+/* grana di pellicola */
+.grain{position:fixed;inset:-50%;z-index:100;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain .5s steps(4) infinite}
+@keyframes grain{25%{transform:translate(3%,-2%)}50%{transform:translate(-2%,3%)}75%{transform:translate(2%,2%)}}
+
+/* nav */
+.top{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px var(--gut);transition:background .4s}
+.top.s{background:rgba(14,13,12,.92);backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(239,232,218,.15)}
+.top .logo{text-decoration:none;font:800 1.6rem/1 var(--h);letter-spacing:.02em}
+.top .logo span{color:var(--beer)}
+.top nav{display:flex;gap:22px}
+.top nav a{text-decoration:none;font:400 .9rem/1 var(--t);padding:8px 0;border-bottom:1px solid transparent}
+.top nav a:hover{border-color:var(--beer)}
+.top .call{background:var(--paper);color:var(--black);text-decoration:none;font:400 .9rem/1 var(--t);padding:12px 16px}
+
+/* hero: la luna e la bottiglia */
+.hero{min-height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(30px,5vw,70px);padding-top:110px}
+.hero .kick{font:400 .95rem/1.4 var(--t);color:var(--sepia)}
+.hero h1{font-size:clamp(3.4rem,8vw,7rem);margin-top:14px}
+.hero p{margin-top:20px;max-width:30em;color:#d6cfc1}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;padding:15px 22px;font:400 .95rem/1 var(--t);text-decoration:none;border:1px solid var(--paper);transition:background .3s,color .3s}
+.btn.p{background:var(--beer);border-color:var(--beer);color:var(--black)}
+.btn.p:hover{background:var(--paper);border-color:var(--paper)}
+.btn.g:hover{background:var(--paper);color:var(--black)}
+.status{display:flex;align-items:center;gap:10px;margin-top:24px;font:400 .92rem/1 var(--t);color:var(--mute)}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#5a554d}
+.status.on{color:var(--paper)}.status.on::before{background:#7be08f;box-shadow:0 0 10px #7be08f}
+.stage{position:relative;aspect-ratio:1;max-width:520px;width:100%;justify-self:center}
+.moon{position:absolute;inset:8%;border-radius:50%;overflow:hidden;background:#ddd;box-shadow:0 0 0 1px rgba(239,232,218,.2),0 0 120px -20px rgba(240,232,210,.5)}
+.moon img{width:100%;height:100%;object-fit:cover;object-position:50% 34%;transform:scale(2.15);transform-origin:50% 33%;filter:grayscale(1) contrast(1.15) brightness(1.05)}
+.moon::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:inset -30px -20px 70px rgba(0,0,0,.55)}
+.bottle{position:absolute;width:15%;left:-6%;top:-4%;transform-origin:50% 50%;offset-path:path("M0 0 C 120 -60 220 40 248 172");offset-rotate:auto 90deg;offset-distance:0%;opacity:0}
+.flew .bottle{animation:fly 1.6s cubic-bezier(.4,.1,.6,1) .5s forwards}
+@keyframes fly{0%{offset-distance:0%;opacity:1}92%{offset-distance:100%;opacity:1}100%{offset-distance:100%;opacity:1}}
+.splat{position:absolute;left:45%;top:37%;width:16%;aspect-ratio:1;opacity:0;transform:scale(.2)}
+.flew .splat{animation:splat .5s ease-out 2s forwards}
+@keyframes splat{to{opacity:1;transform:scale(1)}}
+.stage .cap{position:absolute;left:50%;bottom:-2%;transform:translateX(-50%);font:400 .85rem/1 var(--t);color:var(--mute);white-space:nowrap}
+
+/* didascalie da film muto */
+.card{border:3px double var(--paper);outline:1px solid var(--paper);outline-offset:8px;padding:clamp(26px,4vw,44px);text-align:center;max-width:760px;margin:0 auto;position:relative}
+.card .act{font:400 .9rem/1 var(--t);color:var(--sepia);letter-spacing:.2em;text-transform:uppercase}
+.card h2{margin-top:14px}
+.card p{margin-top:14px;color:#d6cfc1}
+.card::before,.card::after{content:"✦";position:absolute;top:50%;transform:translateY(-50%);color:var(--beer);font-size:1.2rem}
+.card::before{left:-30px}.card::after{right:-30px}
+
+/* pellicola dei piatti */
+.reel{margin-top:60px;background:var(--film);padding:26px 0;position:relative}
+.reel::before,.reel::after{content:"";position:absolute;left:0;right:0;height:14px;background:radial-gradient(ellipse 6px 4px at 50% 50%,var(--black) 98%,transparent) 0 0/28px 14px}
+.reel::before{top:6px}.reel::after{bottom:6px}
+.strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 var(--gut);scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.frame{flex:0 0 clamp(250px,28vw,340px);scroll-snap-align:center;background:var(--black);padding:10px}
+.frame .im{aspect-ratio:4/3;overflow:hidden}
+.frame img{width:100%;height:100%;object-fit:cover;filter:sepia(.85) grayscale(.35) contrast(1.05);transition:filter .6s,transform .8s}
+.frame:hover img,.frame:focus-within img,.frame.live img{filter:none;transform:scale(1.04)}
+.frame h3{font-size:1.4rem;margin-top:12px}
+.frame p{font-size:.88rem;color:var(--mute);margin-top:4px}
+.hintline{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:18px;font-size:.9rem;color:var(--mute)}
+.hintline .arrows{display:flex;gap:8px}
+.hintline button{width:48px;height:48px;border:1px solid var(--paper);font-size:1.2rem;transition:background .2s,color .2s}
+.hintline button:hover{background:var(--paper);color:var(--black)}
+
+/* fuori */
+.fuori{padding:0}
+.fuori .bg{position:relative;min-height:90svh;display:grid;place-items:center;overflow:hidden;padding:60px var(--gut)}
+.fuori .bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.4) contrast(1.1) brightness(.7)}
+.fuori .bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 30%,rgba(14,13,12,.85) 80%)}
+.fuori .card{z-index:1;background:rgba(14,13,12,.7);backdrop-filter:blur(2px)}
+
+/* bancone */
+.bar .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center;margin-top:60px}
+.bar .duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bar .duo img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:sepia(.4);border:8px solid var(--paper)}
+.bar .duo img:last-child{margin-top:40px;transform:rotate(2deg)}
+.bar .duo img:first-child{transform:rotate(-2deg)}
+.bar ul{list-style:none;margin-top:8px}
+.bar li{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px dashed rgba(239,232,218,.25)}
+.bar li b{font:800 1.3rem/1.2 var(--h)}
+.bar li span{color:var(--mute);text-align:right}
+
+/* programmazione */
+.prog .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,70px);margin-top:60px}
+.ticket{background:var(--paper);color:var(--black);padding:28px clamp(20px,3vw,34px);position:relative;-webkit-mask:radial-gradient(circle 12px at 0 50%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 12px at 100% 50%,transparent 98%,#000) right/51% 100% no-repeat;mask:radial-gradient(circle 12px at 0 50%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 12px at 100% 50%,transparent 98%,#000) right/51% 100% no-repeat}
+.ticket h3{font-size:1.8rem;text-align:center;border-bottom:2px dashed var(--black);padding-bottom:14px}
+.week{list-style:none;margin-top:10px}
+.week li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dotted rgba(14,13,12,.3)}
+.week li.t{font-weight:700;background:var(--beer);margin-inline:-10px;padding-inline:10px}
+.prog .big{display:block;font:800 clamp(2rem,4vw,3rem)/1.15 var(--h);text-decoration:none;color:var(--beer)}
+.prog .mail{font:400 1.1rem/1.4 var(--t)}
+.prog p{color:#d6cfc1;margin-top:14px}
+footer{text-align:center;padding:40px var(--gut);font:400 .9rem/1.6 var(--t);color:var(--mute);border-top:1px solid rgba(239,232,218,.15)}
+footer b{display:block;font:800 2rem/1 var(--h);color:var(--paper);margin-bottom:8px}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv{opacity:1;transform:none}
+@media (max-width:900px){
+ .top nav{display:none}
+ .hero,.bar .wrap,.prog .wrap{grid-template-columns:1fr}
+ .hero{padding-top:96px}
+ .stage{max-width:380px}
+ .card::before,.card::after{display:none}
+}
+@media (prefers-reduced-motion:reduce){.grain{animation:none}.flew .bottle{animation:none;offset-distance:100%;opacity:1}.flew .splat{animation:none;opacity:1;transform:none}.rv{opacity:1;transform:none;transition:none}.frame img{transition:none}}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#16110e;color:#f8f2e7;border-top:1px solid rgba(239,228,210,.25);font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}body{padding-bottom:34px}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="top" id="top">
+  <a class="logo" href="#" aria-label="Todrà, inizio pagina">tod<span>rà</span></a>
+  <nav aria-label="Sezioni"><a href="#cucina">Atto I · la cucina</a><a href="#fuori">Atto II · il dehors</a><a href="#bancone">Atto III · il bancone</a><a href="#orari">Orari</a></nav>
+  <a class="call" href="tel:+393383157498">Prenota</a>
+</header>
+
+<main>
+<section class="hero wrap" aria-labelledby="t-hero">
+  <div>
+    <span class="kick">Piazza Trento · Chieri · ogni sera, tranne il lunedì</span>
+    <h1 id="t-hero">Viaggio<br>nella <em>luna</em><br>di Chieri.</h1>
+    <p>Griglia, hamburger, pizza e cocktail, fino alle due di notte. La luna sulla facciata la conoscete già: stasera la proiezione è dentro, e fuori nel dehors.</p>
+    <div class="btns"><a class="btn p" href="tel:+393383157498">Prenota un tavolo</a><a class="btn g" href="#cucina">Guarda il programma</a></div>
+    <span class="status" id="status"></span>
+  </div>
+  <div class="stage" id="stage" aria-hidden="true">
+    <div class="moon"><img src="img/luna.jpg" alt="" width="1300" height="973"></div>
+    <svg class="splat" viewBox="0 0 40 40"><path d="M20 6 L23 15 L33 12 L26 20 L34 27 L23 25 L20 34 L17 25 L6 28 L14 20 L7 12 L17 15 Z" fill="#f0b43c"/></svg>
+    <svg class="bottle" viewBox="0 0 30 80"><path d="M11 0h8v14c0 4 7 8 7 18v42c0 3-2 6-5 6H9c-3 0-5-3-5-6V32c0-10 7-14 7-18z" fill="#3b2412" stroke="#efe8da" stroke-width="1.5"/><rect x="9" y="38" width="12" height="16" fill="#efe8da"/><rect x="11" y="0" width="8" height="5" fill="#f0b43c"/></svg>
+    <span class="cap">la nostra insegna, in Piazza Trento</span>
+  </div>
+</section>
+
+<section id="cucina" aria-labelledby="t-cucina">
+  <div class="wrap">
+    <div class="card rv">
+      <span class="act">Atto primo</span>
+      <h2 id="t-cucina">La <em>cucina</em>.</h2>
+      <p>Dove si accende la griglia, si schiacciano gli hamburger e si inforna la pizza. Si mangia fino a tardi.</p>
+    </div>
+  </div>
+  <div class="reel rv">
+    <div class="strip" id="strip" tabindex="0" aria-label="I piatti: scorri in orizzontale">
+      <article class="frame"><div class="im"><img src="img/burger.jpg" alt="Hamburger con bacon e formaggio nel panino" width="1300" height="973" loading="lazy"></div><h3>L'hamburger</h3><p>Carne alla griglia, panino morbido e patatine.</p></article>
+      <article class="frame"><div class="im"><img src="img/grigliata.jpg" alt="Grigliata mista di carne" width="1300" height="730" loading="lazy"></div><h3>La grigliata</h3><p>Dalla brace, da dividere al tavolo.</p></article>
+      <article class="frame"><div class="im"><img src="img/tagliata.jpg" alt="Tagliata di manzo" width="1300" height="973" loading="lazy"></div><h3>La tagliata</h3><p>Tagliata al momento e servita calda.</p></article>
+      <article class="frame"><div class="im"><img src="img/burger2.jpg" alt="Hamburger con patatine" width="1032" height="774" loading="lazy"></div><h3>Burger e patatine</h3><p>Il classico del Todrà.</p></article>
+      <article class="frame"><div class="im"><img src="img/castelmagno.jpg" alt="Un primo con crema di Castelmagno" width="1032" height="774" loading="lazy"></div><h3>Al Castelmagno</h3><p>Il formaggio delle nostre valli.</p></article>
+      <article class="frame"><div class="im"><img src="img/pasta.jpg" alt="Un piatto di pasta" width="1300" height="975" loading="lazy"></div><h3>I primi</h3><p>Per chi ha fame vera, anche a tarda sera.</p></article>
+      <article class="frame"><div class="im"><img src="img/insalata.jpg" alt="Un'insalata ricca" width="1300" height="975" loading="lazy"></div><h3>Le insalatone</h3><p>Quando la serata chiede leggerezza.</p></article>
+      <article class="frame"><div class="im"><img src="img/burger3.jpg" alt="Un altro hamburger della casa" width="975" height="1300" loading="lazy"></div><h3>Il burger della casa</h3><p>Chiedete quello del giorno.</p></article>
+    </div>
+  </div>
+  <div class="wrap hintline"><span>Le foto si colorano quando ci passate sopra.</span><span class="arrows"><button type="button" id="prev" aria-label="Piatti precedenti">←</button><button type="button" id="next" aria-label="Piatti successivi">→</button></span></div>
+</section>
+
+<section id="fuori" class="fuori" aria-labelledby="t-fuori">
+  <div class="bg">
+    <img src="img/notte.jpg" alt="Il Todrà illuminato di sera in Piazza Trento" width="1300" height="1300" loading="lazy">
+    <div class="card rv">
+      <span class="act">Atto secondo</span>
+      <h2 id="t-fuori">Il <em>dehors</em>.</h2>
+      <p>Un grande spazio all'aperto sulla piazza, per le sere d'estate e per chi non ha nessuna voglia di andare a casa.</p>
+    </div>
+  </div>
+</section>
+
+<section id="bancone" class="bar" aria-labelledby="t-banc">
+  <div class="wrap" style="display:block;margin-top:0">
+    <div class="card rv">
+      <span class="act">Atto terzo</span>
+      <h2 id="t-banc">Il <em>bancone</em>.</h2>
+      <p>La cucina chiude, il bar no. Fino alle due.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="duo rv">
+      <img src="img/cocktail.jpg" alt="Un cocktail al bancone" width="853" height="640" loading="lazy">
+      <img src="img/patatine.jpg" alt="Patatine fritte da condividere" width="973" height="1300" loading="lazy">
+    </div>
+    <div class="rv">
+      <ul>
+        <li><b>Cocktail</b><span>i classici e quelli della casa</span></li>
+        <li><b>Birre</b><span>alla spina e in bottiglia</span></li>
+        <li><b>Da condividere</b><span>patatine e stuzzichini</span></li>
+        <li><b>Asporto</b><span>anche da portare a casa</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="orari" class="prog" aria-labelledby="t-orari">
+  <div class="wrap" style="display:block;margin-top:0">
+    <div class="card rv">
+      <span class="act">In programmazione</span>
+      <h2 id="t-orari">Tutte le <em>sere</em>.</h2>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="ticket rv"><h3>Spettacolo serale</h3><ul class="week" id="week"></ul></div>
+    <div class="rv">
+      <a class="big" href="tel:+393383157498">338 315 7498</a>
+      <a class="mail" href="mailto:todrachieri@gmail.com">todrachieri@gmail.com</a>
+      <p>Piazza Trento, 2 · 10023 Chieri (TO)</p>
+      <div class="btns"><a class="btn p" href="tel:+393383157498">Prenota un tavolo</a><a class="btn g" href="https://maps.google.com/?q=Todr%C3%A0+Piazza+Trento+2+Chieri" target="_blank" rel="noopener">Indicazioni</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Todrà. Non è il sito ufficiale.</div>
+<footer><b>Fine.</b>Todrà · Piazza Trento 2, Chieri · griglieria, hamburgheria, cocktail bar</footer>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var top=document.getElementById('top');addEventListener('scroll',function(){top.classList.toggle('s',scrollY>30)},{passive:true});
+  document.getElementById('stage').classList.add('flew');
+
+  // orari: mar-sab 19-02, dom 19-24, lun chiuso
+  var O={0:[1140,1440],2:[1140,1560],3:[1140,1560],4:[1140,1560],5:[1140,1560],6:[1140,1560]};
+  var d=new Date(),day=d.getDay(),m=d.getHours()*60+d.getMinutes(),y=(day+6)%7;
+  var on=!!((O[day]&&m>=O[day][0]&&m<O[day][1])||(O[y]&&O[y][1]>1440&&m<O[y][1]-1440));
+  var st=document.getElementById('status');st.classList.toggle('on',on);
+  st.textContent=on?'In sala adesso: venite pure':(day===1?'Oggi riposo · si riapre domani alle 19':(m<1140?'Stasera si apre alle 19':'Ci vediamo domani sera'));
+  var N=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'];
+  document.getElementById('week').innerHTML=[2,3,4,5,6,0,1].map(function(i){return '<li'+(i===day?' class="t"':'')+'><span>'+N[i]+'</span><span>'+(i===1?'riposo':(i===0?'19:00 – 24:00':'19:00 – 02:00'))+'</span></li>'}).join('');
+
+  // pellicola
+  var strip=document.getElementById('strip'),fr=[].slice.call(strip.querySelectorAll('.frame'));
+  function go(dir){strip.scrollBy({left:dir*(fr[0].offsetWidth+14),behavior:reduce?'auto':'smooth'})}
+  document.getElementById('prev').addEventListener('click',function(){go(-1)});
+  document.getElementById('next').addEventListener('click',function(){go(1)});
+  function live(){var r=strip.getBoundingClientRect(),c=r.left+r.width/2,best=null,bd=1e9;fr.forEach(function(f){var b=f.getBoundingClientRect(),dd=Math.abs(b.left+b.width/2-c);if(dd<bd){bd=dd;best=f}});fr.forEach(function(f){f.classList.toggle('live',f===best)})}
+  strip.addEventListener('scroll',function(){requestAnimationFrame(live)},{passive:true});live();
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  [].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

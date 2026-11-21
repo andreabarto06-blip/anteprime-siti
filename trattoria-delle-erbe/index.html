@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trattoria delle Erbe · Cucina sarda e di mare · Piazza Umberto I, Chieri</title>
+<meta name="description" content="Trattoria delle Erbe, Piazza Umberto I 4 a Chieri: cucina sarda e di mare a pranzo, dal lunedì al sabato. Fregola, paella all'algherese, crostacei, seadas, mirto e prodotti sardi. Tel. 011 942 4579 · 349 470 7465.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--wool:#f4ecdc;--wool2:#eadfc8;--red:#b3261e;--saff:#e1a325;--sea:#1f3a5f;--ink:#1b1a17;--mute:#6d6456;--h:"Gloock",Georgia,serif;--b:"Figtree",system-ui,sans-serif;--gut:clamp(16px,4vw,56px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+html,body{overflow-x:clip}
+body{background:var(--wool);color:var(--ink);font:400 17px/1.65 var(--b);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,10vw,130px)}
+h1,h2,h3{font-family:var(--h);font-weight:400;line-height:1}
+h2{font-size:clamp(2.5rem,6vw,4.6rem)}
+.sd{display:inline-flex;align-items:baseline;gap:10px;font:800 .78rem/1 var(--b);letter-spacing:.22em;text-transform:uppercase;color:var(--red)}
+.sd i{font:italic 400 .95rem/1 var(--b);letter-spacing:0;text-transform:none;color:var(--mute)}
+.lead{font-size:1.15rem;max-width:33em}
+
+/* bordo tessuto: punti a pibiones */
+.band{height:28px;background:
+ radial-gradient(circle at 50% 50%,var(--red) 0 3px,transparent 3.5px) 0 0/14px 14px,
+ radial-gradient(circle at 50% 50%,var(--saff) 0 3px,transparent 3.5px) 7px 7px/14px 14px,var(--wool2)}
+
+/* nav */
+.top{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:18px;padding:12px var(--gut);transition:background .4s,box-shadow .4s}
+.top.s{background:rgba(244,236,220,.95);backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(27,26,23,.1)}
+.top .name{text-decoration:none;font:400 1.3rem/1 var(--h);background:var(--wool);padding:8px 12px;border:2px solid var(--ink)}
+.top nav{margin-left:auto;display:flex;gap:4px}
+.top nav a{text-decoration:none;font:600 .9rem/1 var(--b);padding:10px 12px;background:rgba(244,236,220,.85)}
+.top nav a:hover{background:var(--ink);color:var(--wool)}
+.top .call{background:var(--red);color:#fff;text-decoration:none;font:800 .82rem/1 var(--b);letter-spacing:.1em;text-transform:uppercase;padding:13px 16px}
+
+/* hero: il telaio */
+.hero{position:relative;min-height:100svh;display:grid;grid-template-columns:1.15fr .85fr;padding:0}
+.loom{position:relative;overflow:hidden;background:var(--wool2)}
+.loom canvas{position:absolute;inset:0;width:100%;height:100%}
+.shuttle{position:absolute;left:0;right:0;height:3px;background:var(--ink);top:0;opacity:0;pointer-events:none}
+.label{position:relative;z-index:2;margin:clamp(110px,16vh,160px) var(--gut) 60px;max-width:600px;background:var(--wool);padding:clamp(26px,4vw,46px);border:2px solid var(--ink);box-shadow:10px 10px 0 var(--ink);opacity:0;transform:translateY(14px);transition:opacity .8s,transform .8s}
+.woven .label{opacity:1;transform:none}
+.label h1{font-size:clamp(3.4rem,8vw,6.6rem);color:var(--red);margin-top:10px}
+.label .it{font:400 clamp(1.3rem,2.4vw,1.8rem)/1.25 var(--h);margin-top:10px}
+.label p{margin-top:16px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;padding:15px 22px;font:800 .82rem/1 var(--b);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:2px solid var(--ink);transition:background .25s,color .25s}
+.btn.p{background:var(--red);border-color:var(--red);color:#fff}
+.btn.p:hover{background:var(--ink);border-color:var(--ink)}
+.btn.g:hover{background:var(--ink);color:var(--wool)}
+.today{display:flex;align-items:center;gap:8px;margin-top:20px;font:600 .9rem/1 var(--b)}
+.today::before{content:"";width:10px;height:10px;border-radius:50%;background:#a89f90}
+.today.on::before{background:#2c9a52;box-shadow:0 0 10px #2c9a52}
+.hero .pic{position:relative;overflow:hidden;background:var(--sea)}
+.hero .pic img{width:100%;height:100%;object-fit:cover}
+.hero .pic figcaption{position:absolute;left:18px;bottom:18px;background:var(--saff);padding:12px 16px;font:400 1.05rem/1.2 var(--h);box-shadow:5px 5px 0 var(--ink)}
+.hero .pic figcaption b{display:block;font:800 .7rem/1 var(--b);letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}
+
+/* numeri */
+.nums{background:var(--ink);color:var(--wool);padding-block:34px}
+.nums .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.nums b{display:block;font:400 clamp(2rem,4vw,3rem)/1 var(--h);color:var(--saff)}
+.nums span{font-size:.92rem;color:#d5ccbb}
+
+/* su mare: carosello */
+.mare .head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.arrows{display:flex;gap:8px}
+.arrows button{display:grid;place-items:center;width:52px;height:52px;border:2px solid var(--ink);font-size:1.3rem;transition:background .2s,color .2s}
+.arrows button:hover{background:var(--ink);color:var(--wool)}
+.track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:40px var(--gut) 20px;margin-top:10px;scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.dish{flex:0 0 clamp(260px,30vw,360px);scroll-snap-align:start;background:#fff;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink)}
+.dish .im{aspect-ratio:4/5;overflow:hidden;border-bottom:2px solid var(--ink)}
+.dish img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.dish:hover img{transform:scale(1.05)}
+.dish .tx{padding:16px 18px 20px}
+.dish .tx em{font:800 .7rem/1 var(--b);letter-spacing:.2em;text-transform:uppercase;font-style:normal;color:var(--red)}
+.dish h3{font-size:1.55rem;margin-top:8px}
+.dish p{color:var(--mute);font-size:.95rem;margin-top:6px}
+.dish.sea .tx em{color:var(--sea)}
+
+/* sa bottega */
+.bottega{background:var(--sea);color:var(--wool)}
+.bottega .sd{color:var(--saff)}.bottega .sd i{color:#b9c6d6}
+.bottega .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.prods{list-style:none;margin-top:28px;display:grid;gap:0}
+.prods li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:center;padding:14px 0;border-bottom:1px dashed rgba(244,236,220,.3)}
+.prods li i{width:44px;height:44px;border-radius:50%;background:radial-gradient(circle,var(--saff) 0 5px,transparent 6px),radial-gradient(circle at 25% 25%,var(--red) 0 3px,transparent 4px),radial-gradient(circle at 75% 75%,var(--red) 0 3px,transparent 4px),radial-gradient(circle at 75% 25%,var(--wool) 0 3px,transparent 4px),radial-gradient(circle at 25% 75%,var(--wool) 0 3px,transparent 4px);border:2px solid rgba(244,236,220,.5)}
+.prods b{font:400 1.35rem/1.1 var(--h);display:block}
+.prods span{color:#c9d3df;font-size:.95rem}
+.bottega .duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.bottega .duo img{width:100%;aspect-ratio:3/4;object-fit:cover;border:2px solid var(--wool)}
+.bottega .duo img:last-child{margin-top:50px}
+
+/* brindisi */
+.toast{text-align:center;background:var(--wool2)}
+.glass{width:110px;height:170px;margin:30px auto 0;position:relative}
+.glass svg{width:100%;height:100%;overflow:visible}
+#mirto{transition:transform 1.6s cubic-bezier(.3,.7,.2,1);transform:scaleY(0);transform-origin:50% 100%;transform-box:fill-box}
+.toast.full #mirto{transform:scaleY(1)}
+.toast .say{font:400 clamp(2.6rem,7vw,5rem)/1 var(--h);color:var(--red);margin-top:18px;opacity:0;transform:scale(.9);transition:opacity .6s .9s,transform .6s .9s}
+.toast.full .say{opacity:1;transform:none}
+.toast .btn{margin-top:22px}
+
+/* dove */
+.dove .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:start}
+.dove .ph{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dove .ph img{width:100%;aspect-ratio:3/4;object-fit:cover;border:2px solid var(--ink)}
+.dove .ph img:first-child{grid-column:1/-1;aspect-ratio:16/10}
+.week{list-style:none;margin-top:18px}
+.week li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:2px dotted rgba(27,26,23,.2)}
+.week li.t{color:var(--red);font-weight:800}
+.dove .big{display:block;font:400 clamp(1.8rem,3.4vw,2.6rem)/1.25 var(--h);text-decoration:none}
+footer{background:var(--ink);color:#cfc5b2;text-align:center;padding:30px var(--gut);font-size:.92rem}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv,html:not(.js) .label{opacity:1;transform:none}
+@media (max-width:900px){
+ .top nav{display:none}.top .call{margin-left:auto}
+ .hero{grid-template-columns:1fr}
+ .label{margin-top:100px}
+ .hero .pic{min-height:340px}
+ .nums .wrap{grid-template-columns:1fr 1fr}
+ .bottega .wrap,.dove .wrap{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.rv,.label{opacity:1;transform:none;transition:none}#mirto,.toast .say{transition:none}.dish img{transition:none}}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#16110e;color:#f8f2e7;border-top:1px solid rgba(239,228,210,.25);font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}body{padding-bottom:34px}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+  <a class="name" href="#" aria-label="Trattoria delle Erbe, inizio pagina">Trattoria delle Erbe</a>
+  <nav aria-label="Sezioni"><a href="#mare">Il mare</a><a href="#bottega">La bottega</a><a href="#brindisi">Il brindisi</a><a href="#dove">Dove</a></nav>
+  <a class="call" href="tel:+390119424579">Prenota</a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="t-hero">
+  <div class="loom" id="loom">
+    <canvas id="weave" aria-hidden="true"></canvas>
+    <i class="shuttle" id="shuttle" aria-hidden="true"></i>
+    <div class="label">
+      <span class="sd">Piazza Umberto I · Chieri</span>
+      <h1 id="t-hero">Benènnidos.</h1>
+      <p class="it">Benvenuti nella piccola Sardegna di Chieri.</p>
+      <p>Cucina sarda e di mare, a pranzo dal lunedì al sabato: fregola, paella all'algherese, crostacei e pesce del giorno. Per finire, seadas e un bicchierino di mirto.</p>
+      <div class="btns"><a class="btn p" href="tel:+390119424579">Prenota il pranzo</a><a class="btn g" href="#mare">I nostri piatti</a></div>
+      <span class="today" id="today"></span>
+    </div>
+  </div>
+  <figure class="pic">
+    <img src="img/padella.jpg" alt="Una padella di paella all'algherese con gamberoni e cozze" width="1300" height="975">
+    <figcaption><b>La specialità</b>Paella all'algherese</figcaption>
+  </figure>
+</section>
+
+<div class="band" aria-hidden="true"></div>
+
+<section class="nums" aria-label="In breve">
+  <div class="wrap">
+    <div><b>4,7</b><span>su Tripadvisor</span></div>
+    <div><b>4,6</b><span>su Google, 173 recensioni</span></div>
+    <div><b>12–14:30</b><span>pranzo, lun–sab</span></div>
+    <div><b>Asporto</b><span>tutti i piatti</span></div>
+  </div>
+</section>
+
+<section id="mare" class="mare" aria-labelledby="t-mare">
+  <div class="wrap head">
+    <div class="rv"><span class="sd">Su mare <i>· il mare</i></span><h2 id="t-mare" style="margin-top:14px">Dalla cucina,<br>col sapore dell'isola.</h2></div>
+    <div class="arrows rv"><button type="button" id="prev" aria-label="Piatti precedenti"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4 L6 10 L12 16" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></button><button type="button" id="next" aria-label="Piatti successivi"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4 L14 10 L8 16" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></button></div>
+  </div>
+  <div class="track" id="track" tabindex="0" aria-label="I piatti, scorri in orizzontale">
+    <article class="dish"><div class="im"><img src="img/paella.jpg" alt="Paella all'algherese con cozze e gamberoni" width="731" height="1300" loading="lazy"></div><div class="tx"><em>Alghero</em><h3>Paella all'algherese</h3><p>Con la fregola al posto del riso, cozze, vongole e gamberoni.</p></div></article>
+    <article class="dish sea"><div class="im"><img src="img/crostacei.jpg" alt="Fregola con gamberone e cozze" width="975" height="1300" loading="lazy"></div><div class="tx"><em>Primo</em><h3>Fregola ai crostacei</h3><p>La pasta di semola tostata, cotta nel sugo di mare.</p></div></article>
+    <article class="dish"><div class="im"><img src="img/spaghetti.jpg" alt="Spaghetti con vongole e cozze" width="1300" height="641" loading="lazy"></div><div class="tx"><em>Primo</em><h3>Spaghetti vongole e cozze</h3><p>Il classico, fatto come si deve.</p></div></article>
+    <article class="dish sea"><div class="im"><img src="img/grigliata.jpg" alt="Grigliata di gamberoni e calamari con limone" width="975" height="1300" loading="lazy"></div><div class="tx"><em>Secondo</em><h3>Grigliata di pesce</h3><p>Gamberoni, calamari e quello che offre il mercato.</p></div></article>
+    <article class="dish"><div class="im"><img src="img/branzino.jpg" alt="Filetto di branzino con verdure" width="1080" height="792" loading="lazy"></div><div class="tx"><em>Secondo</em><h3>Branzino ai carciofi</h3><p>Filetto di branzino, carciofi e olive.</p></div></article>
+    <article class="dish sea"><div class="im"><img src="img/tiepida.jpg" alt="Insalata tiepida di mare con cozze, gamberi e calamari" width="975" height="1300" loading="lazy"></div><div class="tx"><em>Antipasto</em><h3>Insalata tiepida di mare</h3><p>Cozze, gamberi e calamari, appena scottati.</p></div></article>
+    <article class="dish"><div class="im"><img src="img/frutti.jpg" alt="Piatto di frutti di mare" width="1300" height="1300" loading="lazy"></div><div class="tx"><em>Antipasto</em><h3>Frutti di mare</h3><p>Il sauté di cozze e gamberi, col pane per la scarpetta.</p></div></article>
+    <article class="dish sea"><div class="im"><img src="img/pomodoro.jpg" alt="Spaghetti al pomodoro fresco e basilico" width="975" height="1300" loading="lazy"></div><div class="tx"><em>Sa terra · la terra</em><h3>Spaghetti al pomodoro</h3><p>Per chi il pesce non lo mangia: c'è sempre anche la terra.</p></div></article>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true"></div>
+
+<section id="bottega" class="bottega" aria-labelledby="t-bott">
+  <div class="wrap">
+    <div class="rv">
+      <span class="sd">Sa butega <i>· la bottega</i></span>
+      <h2 id="t-bott" style="margin-top:14px">La Sardegna,<br>da portare a casa.</h2>
+      <p class="lead" style="margin-top:16px;color:#dbe2ea">In trattoria vendiamo anche prodotti sardi di qualità. Chiedete in sala cosa è arrivato dall'isola.</p>
+      <ul class="prods">
+        <li><i aria-hidden="true"></i><div><b>Seadas</b><span>il dolce sardo fritto, con formaggio e miele</span></div></li>
+        <li><i aria-hidden="true"></i><div><b>Mirto</b><span>il liquore delle bacche di mirto, per chiudere</span></div></li>
+        <li><i aria-hidden="true"></i><div><b>Fregola</b><span>la pasta di semola tostata, da cucinare a casa</span></div></li>
+        <li><i aria-hidden="true"></i><div><b>Cassata</b><span>quando c'è, non lasciatevela scappare</span></div></li>
+      </ul>
+    </div>
+    <div class="duo rv">
+      <img src="img/fregola.jpg" alt="Fregola ai frutti di mare" width="1080" height="791" loading="lazy">
+      <img src="img/sala.jpg" alt="La vetrina della trattoria" width="1030" height="579" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="brindisi" class="toast" aria-labelledby="t-toast">
+  <div class="wrap">
+    <span class="sd">Su brindisi <i>· il brindisi</i></span>
+    <h2 id="t-toast" style="margin-top:14px">Alla fine, un mirto.</h2>
+    <div class="glass" aria-hidden="true">
+      <svg viewBox="0 0 110 170"><defs><clipPath id="gl"><path d="M20 10 L90 10 L80 110 Q55 122 30 110 Z"/></clipPath></defs>
+        <g clip-path="url(#gl)"><rect id="mirto" x="0" y="34" width="110" height="90" fill="#4a1630"/></g>
+        <path d="M20 10 L90 10 L80 110 Q55 122 30 110 Z" fill="none" stroke="#1b1a17" stroke-width="3"/>
+        <path d="M55 116 L55 156 M32 160 L78 160" stroke="#1b1a17" stroke-width="3" stroke-linecap="round"/></svg>
+    </div>
+    <p class="say" id="say">A kent'annos!</p>
+    <p class="lead" style="margin:10px auto 0">Il brindisi sardo: cent'anni di salute, a voi e a chi vi sta accanto.</p>
+    <button class="btn g" type="button" id="pour">Versa il mirto</button>
+  </div>
+</section>
+
+<section id="dove" class="dove" aria-labelledby="t-dove">
+  <div class="wrap">
+    <div class="ph rv">
+      <img src="img/dehors.jpg" alt="I tavolini all'aperto sotto l'ombrellone in Piazza Umberto I" width="1189" height="1101" loading="lazy">
+      <img src="img/lavagna.jpg" alt="La lavagna del menù del giorno fuori dalla trattoria" width="975" height="1300" loading="lazy">
+      <img src="img/tiepida.jpg" alt="Insalata tiepida di mare" width="975" height="1300" loading="lazy">
+    </div>
+    <div class="rv">
+      <span class="sd">Inue semus <i>· dove siamo</i></span>
+      <h2 id="t-dove" style="margin-top:14px">Piazza Umberto I, 4.</h2>
+      <ul class="week" id="week"></ul>
+      <a class="big" href="tel:+390119424579" style="margin-top:22px">011 942 4579</a>
+      <a class="big" href="tel:+393494707465">349 470 7465</a>
+      <p style="margin-top:14px">10023 Chieri (TO) · pochi tavoli, meglio prenotare.<br>Il menù cambia ogni giorno: lo trovate sulla lavagna fuori.</p>
+      <div class="btns"><a class="btn g" href="https://maps.google.com/?q=Trattoria+delle+Erbe+Piazza+Umberto+I+4+Chieri" target="_blank" rel="noopener">Indicazioni</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Trattoria delle Erbe. Non è il sito ufficiale.</div>
+<footer>Trattoria delle Erbe · Piazza Umberto I 4, Chieri · cucina sarda e di mare</footer>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var top=document.getElementById('top');addEventListener('scroll',function(){top.classList.toggle('s',scrollY>30)},{passive:true});
+
+  // il telaio: tappeto a pibiones tessuto riga per riga
+  var loom=document.getElementById('loom'),cv=document.getElementById('weave'),sh=document.getElementById('shuttle'),ctx=cv.getContext('2d');
+  var CELL=14,N=24,COL={r:'#b3261e',y:'#e1a325',b:'#1f3a5f',k:'#1b1a17'};
+  function motif(x,y){var tx=x%N,ty=y%N,c=12,d=Math.abs(tx-c)+Math.abs(ty-c);
+    if(ty===0||ty===1)return (tx%2===0)?'k':null;
+    if(d===11)return 'r';if(d===8)return (tx+ty)%2?'b':null;if(d===5)return 'y';if(d===2)return 'r';if(d===0)return 'b';
+    if(d>=13&&d<=14&&(tx+ty)%2===0)return 'y';return null}
+  var rows,cols,W,H,dpr;
+  function size(){dpr=Math.min(2,devicePixelRatio||1);W=loom.clientWidth;H=loom.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);cols=Math.ceil(W/CELL);rows=Math.ceil(H/CELL)}
+  function row(y){for(var x=0;x<cols;x++){var m=motif(x,y);if(!m)continue;var cx=x*CELL+CELL/2,cy=y*CELL+CELL/2;
+      ctx.beginPath();ctx.arc(cx,cy,CELL*0.32,0,6.283);ctx.fillStyle=COL[m];ctx.fill();
+      ctx.beginPath();ctx.arc(cx-1.3,cy-1.3,CELL*0.11,0,6.283);ctx.fillStyle='rgba(255,255,255,.35)';ctx.fill();}}
+  function all(){ctx.clearRect(0,0,W,H);for(var y=0;y<rows;y++)row(y)}
+  size();
+  if(reduce){all();loom.classList.add('woven')}
+  else{var y=0,t0=performance.now(),dur=2400;sh.style.opacity=1;
+    (function step(now){var target=Math.min(rows,Math.max(0,Math.floor((now-t0)/dur*rows)));while(y<target){row(y);y++}
+      sh.style.top=(y*CELL)+'px';if(y<rows)requestAnimationFrame(step);else{sh.style.opacity=0;loom.classList.add('woven')}})(t0);
+    setTimeout(function(){loom.classList.add('woven')},600);}
+  var rz;addEventListener('resize',function(){clearTimeout(rz);rz=setTimeout(function(){size();all()},150)});
+
+  // aperti ora
+  var d=new Date(),day=d.getDay(),m=d.getHours()*60+d.getMinutes(),on=day!==0&&m>=720&&m<870,t=document.getElementById('today');
+  t.textContent=day===0?'Oggi riposo · ci vediamo lunedì a pranzo':(on?'Aperti ora · cucina fino alle 14:30':(m<720?'Oggi a pranzo dalle 12':'Ci vediamo domani a pranzo'));t.classList.toggle('on',on);
+  var N2=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'];
+  document.getElementById('week').innerHTML=[1,2,3,4,5,6,0].map(function(i){return '<li'+(i===day?' class="t"':'')+'><span>'+N2[i]+'</span><span>'+(i===0?'chiuso':'pranzo 12:00 – 14:30')+'</span></li>'}).join('');
+
+  // carosello
+  var tr=document.getElementById('track');
+  function go(dir){var c=tr.querySelector('.dish');tr.scrollBy({left:dir*(c.offsetWidth+18),behavior:reduce?'auto':'smooth'})}
+  document.getElementById('prev').addEventListener('click',function(){go(-1)});
+  document.getElementById('next').addEventListener('click',function(){go(1)});
+
+  // brindisi
+  var toast=document.getElementById('brindisi'),pb=document.getElementById('pour');
+  pb.addEventListener('click',function(){if(toast.classList.contains('full')){toast.classList.remove('full');pb.textContent='Versa il mirto'}else{toast.classList.add('full');pb.textContent='Svuota e riprova'}});
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  [].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

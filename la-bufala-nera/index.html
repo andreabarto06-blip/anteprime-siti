@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Bufala Nera · La vera pizza napoletana a Chieri</title>
+<meta name="description" content="La Bufala Nera, pizzeria napoletana in Via Avezzana 79/b a Chieri: forno a legna, mozzarella di bufala, pizze provinciali, al metro e dolci napoletani. Aperti tutte le sere dalle 18:45, anche asporto e domicilio. Tel. 011 941 3379.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--coal:#121212;--coal2:#1c1b1a;--milk:#fbf8f2;--tom:#d7301f;--basil:#2f8a3e;--gold:#f2b134;--h:"Bungee",Impact,sans-serif;--b:"Nunito",system-ui,sans-serif;--gut:clamp(16px,4vw,56px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+html,body{overflow-x:clip}
+body{background:var(--milk);color:var(--coal);font:400 17px/1.6 var(--b);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,10vw,130px)}
+h1,h2,h3{font-family:var(--h);font-weight:400;line-height:.95;letter-spacing:.01em}
+h2{font-size:clamp(2.2rem,5.6vw,4.2rem)}
+.kick{font:900 .78rem/1 var(--b);letter-spacing:.24em;text-transform:uppercase;color:var(--tom)}
+.lead{font-size:1.15rem;max-width:33em}
+.flag{display:flex;height:6px;width:60px;margin:14px 0}
+.flag i{flex:1}.flag i:nth-child(1){background:var(--basil)}.flag i:nth-child(2){background:#fff}.flag i:nth-child(3){background:var(--tom)}
+
+.bar{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:16px;padding:12px var(--gut);transition:background .4s}
+.bar.s{background:rgba(18,18,18,.92);backdrop-filter:blur(8px)}
+.bar .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--milk);font:400 1.05rem/1 var(--h)}
+.bar .logo i{width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#444 0 20%,#111 21% 100%);box-shadow:inset 0 0 0 3px var(--milk)}
+.bar nav{margin-left:auto;display:flex;gap:4px}
+.bar nav a{color:var(--milk);text-decoration:none;font:700 .86rem/1 var(--b);padding:10px 12px;border-radius:999px}
+.bar nav a:hover{background:rgba(255,255,255,.12)}
+.bar .order{background:var(--tom);color:#fff;text-decoration:none;font:900 .8rem/1 var(--b);letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;border-radius:999px}
+
+.hero{min-height:100svh;background:var(--coal);color:var(--milk);display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:30px;padding:110px var(--gut) 60px;overflow:hidden}
+.hero h1{font-size:clamp(2.8rem,6vw,5rem)}
+.hero h1 b{color:var(--tom);font-weight:400}
+.hero p{margin-top:18px;font-size:1.15rem;max-width:30em;color:#ddd5c8}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 22px;border-radius:999px;font:900 .82rem/1 var(--b);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:2px solid currentColor;transition:transform .25s,background .25s,color .25s}
+.btn.p{background:var(--tom);border-color:var(--tom);color:#fff}
+.btn:hover{transform:translateY(-2px)}
+.btn.g:hover{background:var(--milk);color:var(--coal)}
+.hero .pz{position:relative;justify-self:center;width:min(440px,38vw);aspect-ratio:1}
+.hero .pz::before{content:"";position:absolute;inset:-5%;border-radius:50%;background:radial-gradient(circle,#2a2725 0 60%,#1c1a19 61% 100%);box-shadow:0 0 0 1px rgba(255,255,255,.06),0 50px 80px -30px #000}
+.hero .pz img{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 14px 22px rgba(0,0,0,.55));animation:turn 18s linear infinite}
+@keyframes turn{to{transform:rotate(360deg)}}
+.hero .ticket{position:absolute;left:-4%;bottom:8%;background:var(--gold);color:var(--coal);padding:12px 16px;border-radius:6px;font:900 .82rem/1.3 var(--b);transform:rotate(-6deg);box-shadow:0 14px 30px -14px #000}
+.hero .ticket b{display:block;font:400 1.3rem/1 var(--h)}
+.open{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font:900 .8rem/1 var(--b);letter-spacing:.12em;text-transform:uppercase}
+.open::before{content:"";width:10px;height:10px;border-radius:50%;background:#888}
+.open.on::before{background:#3cb35a;box-shadow:0 0 10px #3cb35a}
+
+.giro .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center;margin-top:30px}
+.map{width:100%;max-width:500px;justify-self:center;overflow:visible}
+.map .land{fill:#efe7da;stroke:#c9bba5;stroke-width:1.5;stroke-linejoin:round}
+.map .pin{cursor:pointer}
+.map .pin circle{fill:var(--coal);transition:fill .3s}
+.map .pin text{font:400 10px var(--h);fill:var(--coal);pointer-events:none}
+.map .pin:hover circle,.map .pin.on circle{fill:var(--tom)}
+.map .pin.on circle{r:9}
+.map .pin.on text{fill:var(--tom)}
+.map .pin:focus{outline:none}
+.map .pin:focus-visible circle{stroke:var(--gold);stroke-width:3}
+.map .home circle{fill:var(--basil)}
+.map .home text{fill:var(--basil)}
+.card{background:#fff;border-radius:20px;padding:30px;box-shadow:0 30px 60px -36px rgba(18,18,18,.5);position:relative;overflow:hidden;min-height:250px}
+.card .city{font:400 clamp(2.4rem,5vw,3.6rem)/1 var(--h);color:var(--tom)}
+.card .ing{margin-top:12px;font-size:1.15rem}
+.card .pr{display:inline-block;margin-top:16px;background:var(--coal);color:var(--milk);font:400 1.2rem/1 var(--h);padding:10px 14px;border-radius:8px}
+.card .nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.card .nav button{border:2px solid var(--coal);border-radius:999px;padding:8px 14px;font:900 .78rem/1 var(--b);letter-spacing:.1em;text-transform:uppercase}
+.card .nav button:hover{background:var(--coal);color:var(--milk)}
+.hint{margin-top:12px;font-size:.92rem;color:#6b645a}
+
+.spec{background:var(--coal);color:var(--milk)}
+.spec .kick{color:var(--gold)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.sp{background:var(--coal2);border-radius:18px;overflow:hidden}
+.sp img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.sp div{padding:20px}
+.sp h3{font-size:1.4rem;color:var(--gold)}
+.sp p{margin-top:8px;color:#d7cfc2;font-size:.98rem}
+.sp em{display:block;margin-top:10px;font:400 1rem/1 var(--h);font-style:normal;color:var(--milk)}
+
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0}
+.tabs button{padding:10px 16px;border-radius:999px;border:2px solid var(--coal);font:900 .78rem/1 var(--b);letter-spacing:.08em;text-transform:uppercase}
+.tabs button[aria-pressed=true]{background:var(--tom);border-color:var(--tom);color:#fff}
+.list{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.it{display:grid;grid-template-columns:1fr auto;gap:2px 14px;padding:14px 0;border-bottom:2px dotted #d9cfbf}
+.it b{font-weight:900}
+.it em{font:400 1rem/1 var(--h);font-style:normal;color:var(--tom);white-space:nowrap}
+.it span{grid-column:1/-1;color:#5b554c;font-size:.95rem}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:40px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%}
+
+.place{background:#f3ece0}
+.place .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.place .ph{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.place .ph img{border-radius:14px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.place .ph img:nth-child(2){margin-top:40px}
+.info{list-style:none;margin-top:22px;display:grid;gap:10px}
+.info li{display:flex;gap:12px;align-items:baseline;padding-bottom:10px;border-bottom:1px solid #e3d9c8}
+.info b{min-width:100px;font:900 .74rem/1.5 var(--b);letter-spacing:.18em;text-transform:uppercase;color:var(--tom)}
+footer{background:var(--coal);color:#b9b1a4;text-align:center;padding:40px var(--gut);font-size:.92rem}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv{opacity:1;transform:none}
+@media (max-width:900px){
+ .bar nav{display:none}.bar .order{margin-left:auto}
+ .hero,.giro .grid,.place .wrap{grid-template-columns:1fr}
+ .hero{padding-top:100px}
+ .hero .pz{width:min(340px,78vw);margin-top:20px}
+ .hero .ticket{left:0}
+ .cards{grid-template-columns:1fr}
+ .list{grid-template-columns:1fr}
+ .gallery{grid-template-columns:1fr 1fr}
+ .info li{flex-direction:column;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){.hero .pz img{animation:none}.rv{opacity:1;transform:none;transition:none}}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#16110e;color:#f8f2e7;border-top:1px solid rgba(239,228,210,.25);font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}body{padding-bottom:34px}
+</style>
+</head>
+<body>
+<header class="bar" id="top">
+  <a class="logo" href="#" aria-label="La Bufala Nera, inizio pagina"><i aria-hidden="true"></i>La Bufala Nera</a>
+  <nav aria-label="Sezioni"><a href="#giro">Giro d'Italia</a><a href="#specialita">Specialità</a><a href="#menu">Menù</a><a href="#dove">Dove</a></nav>
+  <a class="order" href="tel:+390119413379">Ordina</a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="t-hero">
+  <div>
+    <span class="kick" style="color:var(--gold)">Pizzeria napoletana · Chieri</span>
+    <div class="flag" aria-hidden="true"><i></i><i></i><i></i></div>
+    <h1 id="t-hero">La vera pizza <b>napoletana</b>, a Chieri.</h1>
+    <p>Farina di Napoli, forno a legna e mozzarella di bufala. Al tavolo oppure a casa tua, tutte le sere della settimana.</p>
+    <div class="btns">
+      <a class="btn p" href="tel:+390119413379">Chiama · 011 941 3379</a>
+      <a class="btn g" href="#giro">Fai il giro d'Italia</a>
+    </div>
+    <span class="open" id="open"></span>
+  </div>
+  <div class="pz" aria-hidden="true">
+    <img src="img/margherita-tonda.webp" alt="" width="900" height="900">
+    <span class="ticket">aperti 7 giorni su 7<b>18:45 – 22:00</b></span>
+  </div>
+</section>
+
+<section id="giro" class="giro" aria-labelledby="t-giro">
+  <div class="wrap">
+    <div class="rv"><span class="kick">Le pizze provinciali</span><h2 id="t-giro" style="margin-top:12px">Il giro d'Italia<br>in 19 pizze.</h2>
+      <p class="lead" style="margin-top:14px">Ogni città ha la sua pizza. Tocca una città sulla mappa e scopri cosa ci mettiamo sopra: da Aosta a Palermo, passando per casa nostra.</p></div>
+    <div class="grid">
+      <svg class="map rv" id="map" viewBox="0 0 520 540" role="group" aria-label="Mappa d'Italia con le pizze provinciali"></svg>
+      <div class="rv">
+        <div class="card" aria-live="polite" id="card"></div>
+        <p class="hint">Il pallino verde è Chieri: siamo qui.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="specialita" class="spec" aria-labelledby="t-spec">
+  <div class="wrap">
+    <div class="rv"><span class="kick">Non solo pizza tonda</span><h2 id="t-spec" style="margin-top:12px">Le specialità della casa.</h2></div>
+    <div class="cards">
+      <article class="sp rv"><img src="img/metro2.jpg" alt="Pizza al metro con due gusti, friarielli e verdure" width="975" height="1300" loading="lazy"><div><h3>La pizza al metro</h3><p>Lunga, da dividere, con più gusti nello stesso impasto. Perfetta per le tavolate.</p></div></article>
+      <article class="sp rv"><img src="img/salsiccia.jpg" alt="Pizza con salsiccia e verdure appena sfornata" width="975" height="1300" loading="lazy"><div><h3>Le pizze super</h3><p>Casatiello, La porcino, Provola e crocchè: le napoletane più golose, con la bufala nera.</p><em>da 9 a 13,50 €</em></div></article>
+      <article class="sp rv"><img src="img/forno.jpg" alt="Il forno a legna della pizzeria" width="1300" height="975" loading="lazy"><div><h3>La pizza del mese</h3><p>Ogni mese una ricetta nuova, anche con l'impasto al carbone vegetale.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu" aria-labelledby="t-menu">
+  <div class="wrap">
+    <div class="rv"><span class="kick">Il menù</span><h2 id="t-menu" style="margin-top:12px">Dal forno a legna.</h2></div>
+    <div class="tabs" role="group" aria-label="Sezione del menù" id="tabs"></div>
+    <div class="list" id="list" aria-live="polite"></div>
+    <div class="gallery">
+      <img class="rv" src="img/bufala.jpg" alt="Pizza margherita con bufala" width="1249" height="1300" loading="lazy">
+      <img class="rv" src="img/cotto.jpg" alt="Pizza con prosciutto cotto" width="1300" height="1276" loading="lazy">
+      <img class="rv" src="img/capricciosa.jpg" alt="Pizza capricciosa con olive e funghi" width="1219" height="1300" loading="lazy">
+      <img class="rv" src="img/tonda.jpg" alt="Pizza tonda appena sfornata" width="975" height="1300" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="dove" class="place" aria-labelledby="t-dove">
+  <div class="wrap">
+    <div class="ph rv">
+      <img src="img/insegna.jpg" alt="L'insegna La Bufala Nera illuminata di sera" width="975" height="1300" loading="lazy">
+      <img src="img/sala.jpg" alt="La sala con i tavoli in legno" width="975" height="1300" loading="lazy">
+    </div>
+    <div class="rv">
+      <span class="kick">Al tavolo o a casa tua</span>
+      <h2 id="t-dove" style="margin-top:12px">Vieni a trovarci.</h2>
+      <p class="lead" style="margin-top:14px">Una ventina di posti, quindi meglio prenotare. Oppure ordina da asporto o a domicilio.</p>
+      <ul class="info">
+        <li><b>Indirizzo</b><span>Via Avezzana 79/b (proseguimento di Via delle Rosine), Chieri</span></li>
+        <li><b>Orari</b><span>Tutte le sere, 18:45 – 22:00</span></li>
+        <li><b>Telefono</b><span><a href="tel:+390119413379">011 941 3379</a></span></li>
+        <li><b>Social</b><span><a href="https://www.instagram.com/labufalanerachieri/" target="_blank" rel="noopener">Instagram @labufalanerachieri</a></span></li>
+      </ul>
+      <div class="btns"><a class="btn p" href="tel:+390119413379">Prenota o ordina</a><a class="btn g" href="https://maps.google.com/?q=La+Bufala+Nera+Via+Avezzana+79b+Chieri" target="_blank" rel="noopener">Indicazioni</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a La Bufala Nera. Non è il sito ufficiale.</div>
+<footer>La Bufala Nera · Pizzeria napoletana · Via Avezzana 79/b, Chieri · 011 941 3379</footer>
+
+<script>
+(function(){
+  var top=document.getElementById('top');addEventListener('scroll',function(){top.classList.toggle('s',scrollY>30)},{passive:true});
+  var d=new Date(),m=d.getHours()*60+d.getMinutes(),on=m>=1125&&m<1320,op=document.getElementById('open');
+  op.textContent=on?'Forno acceso · fino alle 22':(m<1125?'Stasera si accende alle 18:45':'Forno spento · domani dalle 18:45');op.classList.toggle('on',on);
+
+  function P(lon,lat){return [Math.round((lon-6.4)*36.5+60),Math.round((47.3-lat)*50+10)];}
+  var IT=[[7.0,45.9],[7.9,46.3],[8.6,46.1],[9.3,46.5],[10.1,46.6],[10.5,46.9],[11.2,46.97],[12.2,47.08],[13.7,46.5],[13.6,45.8],[12.4,45.4],[12.3,44.8],[12.6,44.0],[13.6,43.5],[14.2,42.4],[15.0,42.0],[16.0,41.9],[15.9,41.5],[17.0,41.1],[18.0,40.6],[18.5,40.1],[18.3,39.8],[17.2,40.4],[16.6,40.0],[16.6,39.4],[17.1,39.0],[16.5,38.4],[15.9,38.0],[15.6,38.3],[16.1,38.7],[15.8,39.5],[15.6,40.0],[15.0,40.3],[14.4,40.6],[14.0,40.8],[13.0,41.2],[12.4,41.7],[11.8,42.1],[11.1,42.4],[10.5,42.9],[10.3,43.6],[10.0,44.0],[9.5,44.2],[8.8,44.4],[8.2,44.0],[7.5,43.8],[7.0,44.2],[6.9,44.9],[7.1,45.3],[6.8,45.8]];
+  var SI=[[12.4,37.8],[13.3,38.2],[14.0,38.0],[15.6,38.3],[15.1,37.5],[15.1,36.7],[14.5,36.8],[13.0,37.6]];
+  var SA=[[9.2,41.25],[9.8,40.9],[9.7,40.0],[9.6,39.2],[9.0,39.1],[8.5,38.9],[8.4,39.6],[8.5,40.3],[8.2,40.6],[8.2,40.9],[8.8,41.0]];
+  function path(a){return 'M'+a.map(function(p){return P(p[0],p[1]).join(' ')}).join(' L')+'Z';}
+  var C=[['Aosta',7.32,45.74,'pomodoro, mozzarella, fontina, prosciutto, basilico','8,00'],['Torino',7.69,45.07,'pomodoro, mozzarella, acciughe, peperoni, basilico','8,00'],['Milano',9.19,45.46,'mozzarella, gorgonzola, noci, basilico','8,00'],['Trento',11.12,46.07,'pomodoro, mozzarella, speck, brie, basilico','8,00'],['Venezia',12.34,45.44,'bordo ripieno di ricotta, mozzarella, spianata calabra, olive taggiasche, pomodorini','9,00'],['Trieste',13.77,45.65,'mozzarella, cipolle, würstel, patate, basilico','9,50'],['Genova',8.93,44.41,'pomodoro, mozzarella, stracchino, pesto, basilico','7,50'],['Bologna',11.34,44.49,'pachino, mozzarella, crudo, scaglie di parmigiano, rucola, basilico','9,50'],['Firenze',11.25,43.77,'mozzarella, olive taggiasche, origano, burrata, basilico','10,00'],['Ancona',13.52,43.62,'mozzarella, crudo, panna','9,50'],['Perugia',12.39,43.11,'pomodoro, mozzarella, salsiccia, zucchine, basilico','8,00'],['Aquila',13.4,42.35,'funghi, rucola, scamorza, panna, basilico','9,00'],['Roma',12.5,41.9,'pomodoro, mozzarella, pancetta affumicata, uovo, pepe, basilico','8,50'],['Napoli',14.27,40.85,'pomodoro, mozzarella, acciughe, basilico','7,00'],['Bari',16.87,41.12,'mozzarella, scamorza, radicchio, pomodorini, speck, parmigiano','10,00'],['Potenza',15.8,40.64,'scamorza, salsiccia, melanzana fritta, basilico','8,50'],['Catanzaro',16.59,38.91,'pomodoro, mozzarella, spianata calabra, cipolle rosse, basilico','8,50'],['Palermo',13.36,38.12,'pomodoro, mozzarella, melanzane fritte, pecorino fuori cottura, basilico','8,50'],['Cagliari',9.11,39.22,'pomodoro, mozzarella, salsiccia, patate lesse, pecorino fuori cottura, basilico','9,00']];
+  var LEFT={'Aosta':1,'Torino':1,'Milano':0,'Genova':1,'Firenze':1,'Roma':1,'Cagliari':1,'Perugia':1,'Bologna':0,'Napoli':1,'Palermo':1,'Potenza':0,'Catanzaro':1};
+  var svg=document.getElementById('map'),h='<path class="land" d="'+path(IT)+'"/><path class="land" d="'+path(SI)+'"/><path class="land" d="'+path(SA)+'"/>';
+  var ch=P(7.82,45.01);h+='<g class="pin home" aria-hidden="true"><circle cx="'+ch[0]+'" cy="'+ch[1]+'" r="7"/><text x="'+(ch[0]+4)+'" y="'+(ch[1]+20)+'">CHIERI</text></g>';
+  C.forEach(function(c,i){var p=P(c[1],c[2]),l=!!LEFT[c[0]];h+='<g class="pin" tabindex="0" role="button" aria-label="Pizza '+c[0]+'" data-i="'+i+'"><circle cx="'+p[0]+'" cy="'+p[1]+'" r="6"/><text x="'+(l?p[0]-10:p[0]+10)+'" y="'+(p[1]+4)+'" text-anchor="'+(l?'end':'start')+'">'+c[0].toUpperCase()+'</text></g>';});
+  svg.innerHTML=h;
+  var pins=[].slice.call(svg.querySelectorAll('.pin[data-i]')),card=document.getElementById('card'),cur=13;
+  function show(i){cur=(i+C.length)%C.length;var c=C[cur];pins.forEach(function(p){p.classList.toggle('on',+p.dataset.i===cur)});
+    card.innerHTML='<span class="kick">Pizza provinciale</span><div class="city" style="margin-top:10px">'+c[0]+'</div><p class="ing">'+c[3]+'</p><span class="pr">'+c[4]+' €</span><div class="nav"><button type="button" data-d="-1">← Precedente</button><button type="button" data-d="1">Successiva →</button></div>';}
+  pins.forEach(function(p){var i=+p.dataset.i;p.addEventListener('click',function(){show(i)});p.addEventListener('mouseenter',function(){show(i)});p.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();show(i)}});});
+  card.addEventListener('click',function(e){var b=e.target.closest('button');if(b)show(cur+ +b.dataset.d)});
+  show(13);
+
+  var M={'Classiche':[['Margherita','pomodoro, mozzarella, basilico','6,00'],['Marinara','pomodoro, aglio, origano, basilico','5,50'],['Cosacca','pomodoro, parmigiano in cottura, basilico','6,50'],['Diavola','pomodoro, mozzarella, spianata calabra, basilico','7,50'],['Prosciutto e funghi','pomodoro, mozzarella, prosciutto, funghi, basilico','7,50'],['Quattro formaggi','pomodoro, mozzarella, fontina, gorgonzola, parmigiano','8,00'],['Gorgo e cipolle','pomodoro, mozzarella, gorgonzola, cipolle rosse','8,00'],['Capricciosa','pomodoro, mozzarella, carciofini, olive, prosciutto, funghi, spianata','9,50']],
+   'Super':[['Pizza Casatiello','impasto doppio napoletano, cicoli, provola di Agerola, ricotta, bufala nera','13,50'],['La porcino','porcini freschi, bufala DOP, pomodori gialli, salsiccia di Napoli, tarallo','13,50'],['Provola e crocchè','mozzarella, provola di Agerola, cotto, crocchette napoletane','12,50'],['Pizza pazza','pizza e calzone, a sorpresa','11,00'],['Sasiz','scamorza, salsiccia, friarielli, basilico','9,00'],['Calabrotta','pomodoro, mozzarella, \'nduja, salsiccia, basilico','9,00']],
+   'Farinate e chiacchiere':[['Farinata','','4,50'],['Farinata farcita','con gli ingredienti che preferisci','6,50'],['Chiacchiere salate','','7,50'],['Chiacchiere bufala e pomodorini','','11,00'],['Burrata, pomodorini e crudo','','13,50']],
+   'Dolci napoletani':[['Zeppola di San Giuseppe','al forno, con crema pasticciera','5,50'],['Babà','tipico napoletano, con liquore','5,50'],['Babà scomposto','con crema, cioccolato e panna','5,50'],['Deliziosa napoletana','doppio biscotto, chantilly, granella di nocciole','5,50'],['Maritozzo','brioche, panna e crema','5,50'],['Montanarine dolci','pizza fritta con Nutella e zucchero a velo','9,00']]};
+  var tabs=document.getElementById('tabs'),list=document.getElementById('list'),ks=Object.keys(M);
+  tabs.innerHTML=ks.map(function(k,i){return '<button type="button" aria-pressed="'+(i===0)+'">'+k+'</button>'}).join('');
+  function showM(k){list.innerHTML=M[k].map(function(x){return '<div class="it"><b>'+x[0]+'</b><em>'+x[2]+' €</em>'+(x[1]?'<span>'+x[1]+'</span>':'')+'</div>'}).join('');}
+  tabs.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(tabs.children,function(x){x.setAttribute('aria-pressed',x===b)});showM(b.textContent)});
+  showM(ks[0]);
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  [].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

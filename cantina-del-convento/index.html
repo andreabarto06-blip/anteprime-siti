@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Cantina del Convento · Bistrot · Via Broglia 13, Chieri</title>
+<meta name="description" content="La Cantina del Convento, bistrot nel centro di Chieri: aperitivo e cena nella corte interna, cucina piemontese di stagione, burger di Fassona, focacce e taglieri. Via Broglia 13. Tel. 011 947 0857.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--parch:#f3ead6;--parch2:#e9dcc0;--ink:#2a2018;--rubric:#a3241c;--gold:#b98a2e;--h:"Cinzel Decorative",serif;--b:"EB Garamond",Georgia,serif;--k:"Caveat",cursive;--gut:clamp(16px,4vw,56px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+html,body{overflow-x:clip}
+body{background:var(--parch);color:var(--ink);font:400 19px/1.6 var(--b);-webkit-font-smoothing:antialiased;background-image:radial-gradient(ellipse at 20% 10%,rgba(185,138,46,.08),transparent 50%),radial-gradient(ellipse at 80% 80%,rgba(163,36,28,.05),transparent 50%)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1140px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,10vw,130px)}
+h1,h2,h3{font-family:var(--b);font-weight:600;line-height:1.02;letter-spacing:-.01em}
+h2{font-size:clamp(2.4rem,5.6vw,4.2rem)}
+h2 i{color:var(--rubric)}
+.rub{font:600 .78rem/1 var(--b);letter-spacing:.3em;text-transform:uppercase;color:var(--rubric)}
+.lead{font-size:1.2rem;max-width:32em}
+.cap::first-letter{float:left;font:700 4.6rem/.8 var(--h);color:var(--rubric);margin:.08em .12em 0 0;padding:.06em .1em;background:linear-gradient(135deg,#f7e3a8,#d9b25a);border:2px solid var(--gold);border-radius:4px}
+
+/* nav: le ore */
+.hours-nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px var(--gut);transition:background .4s,box-shadow .4s}
+.hours-nav.s{background:rgba(243,234,214,.94);backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(42,32,24,.12)}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mark svg{width:34px;height:34px;flex:none}
+.mark b{font:700 1rem/1 var(--h)}
+.hours-nav nav{display:flex;gap:4px;background:rgba(255,255,255,.5);border:1px solid rgba(42,32,24,.15);border-radius:999px;padding:4px}
+.hours-nav nav a{text-decoration:none;padding:8px 14px;border-radius:999px;font:600 .92rem/1 var(--b);display:flex;flex-direction:column;align-items:center;gap:2px}
+.hours-nav nav a small{font:400 .66rem/1 var(--b);letter-spacing:.12em;color:#7a6a58}
+.hours-nav nav a.on{background:var(--ink);color:var(--parch)}
+.hours-nav nav a.on small{color:#d9c9a9}
+
+/* hero: il portone che si apre sulla corte */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:#1d1610;perspective:1600px}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:85% 70%;transform:scale(1.12);transition:transform 3.2s cubic-bezier(.2,.7,.2,1) .6s}
+.hero.open .bg{transform:scale(1)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(29,22,16,.92) 0,rgba(29,22,16,.75) 50%,rgba(29,22,16,.1) 85%),linear-gradient(transparent 55%,rgba(29,22,16,.6));z-index:1}
+.hero .copy{position:relative;z-index:3;color:var(--parch);padding:140px var(--gut) clamp(60px,9vh,100px);max-width:760px;opacity:0;transform:translateY(20px);transition:opacity 1s 1.4s,transform 1s 1.4s}
+.hero.open .copy{opacity:1;transform:none}
+.hero .rub{color:#e2b85c}
+.hero h1{font-size:clamp(3rem,7vw,5.6rem)}
+.hero h1 span{display:block;font:700 .42em/1.2 var(--h);color:#e2b85c;letter-spacing:.04em;margin-bottom:8px}
+.hero .lead{margin-top:20px;color:#efe4cc}
+.hero .lead.cap::first-letter{color:#e2b85c}
+.hero .btn.g{border-color:var(--parch);color:var(--parch)}
+.hero .btn.g:hover{background:var(--parch);color:var(--ink)}
+.doors{position:absolute;inset:0;z-index:2;display:flex;pointer-events:none}
+.leaf{flex:1;position:relative;background:
+ repeating-linear-gradient(90deg,rgba(0,0,0,.28) 0 2px,transparent 2px 64px),
+ linear-gradient(180deg,#6b4526,#4a2e18 60%,#3a2313);box-shadow:inset 0 0 80px rgba(0,0,0,.55);transition:transform 2.2s cubic-bezier(.6,.05,.25,1) .5s}
+.leaf::before{content:"";position:absolute;left:8%;right:8%;top:14%;height:3px;background:#2a1a0e;box-shadow:0 1px 0 rgba(255,255,255,.08),0 52vh 0 #2a1a0e}
+.leaf::after{content:"";position:absolute;inset:14% 8% auto;height:52vh;background:radial-gradient(circle,#1b120a 0 4px,transparent 5px) 0 0/64px 64px;opacity:.7}
+.leaf.l{transform-origin:0 50%;border-right:2px solid #1b120a}
+.leaf.r{transform-origin:100% 50%;border-left:2px solid #1b120a}
+.leaf .ring{position:absolute;top:50%;width:34px;height:34px;margin-top:-17px;border:5px solid #b98a2e;border-radius:50%;box-shadow:0 3px 6px rgba(0,0,0,.5)}
+.leaf.l .ring{right:22px}.leaf.r .ring{left:22px}
+.hero.open .leaf.l{transform:rotateY(-108deg)}
+.hero.open .leaf.r{transform:rotateY(108deg)}
+.knock{position:absolute;z-index:3;left:50%;top:50%;transform:translate(-50%,-50%);font:600 1.6rem/1.2 var(--k);color:#f3ead6;text-align:center;transition:opacity .4s .3s}
+.hero.open .knock{opacity:0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;font:600 1rem/1 var(--b);letter-spacing:.06em;text-decoration:none;border:1.5px solid var(--ink);border-radius:2px;transition:background .3s,color .3s}
+.btn.p{background:var(--rubric);border-color:var(--rubric);color:#fff}
+.btn.p:hover{background:var(--ink);border-color:var(--ink)}
+.btn.g:hover{background:var(--ink);color:var(--parch)}
+.hours-nav:not(.s) .mark b,.hours-nav:not(.s) nav a{color:var(--parch)}
+.hours-nav:not(.s) nav a small{color:#d9c9a9}
+.hours-nav:not(.s) nav{background:rgba(29,22,16,.55);border-color:rgba(243,234,214,.25)}
+
+/* scritta */
+.motto{background:var(--ink);color:var(--parch);text-align:center;padding-block:clamp(70px,9vw,110px)}
+.motto p{font:600 clamp(2.4rem,6vw,4.6rem)/1.1 var(--k)}
+.motto p .w{display:inline-block;opacity:0;transform:translateY(12px) rotate(-2deg);transition:opacity .5s,transform .5s}
+.motto.in p .w{opacity:1;transform:none}
+.motto small{display:block;margin-top:16px;font:400 1rem/1.4 var(--b);color:#cdbd9d}
+
+/* confessionale */
+.conf .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,70px);align-items:start}
+.sins{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px}
+.sins button{text-align:left;padding:16px 18px;border:1.5px solid rgba(42,32,24,.3);background:rgba(255,255,255,.4);border-radius:2px;transition:background .3s,border-color .3s,color .3s}
+.sins button b{display:block;font:700 1rem/1.1 var(--h)}
+.sins button span{font-size:.95rem;color:#6a5a48}
+.sins button[aria-pressed=true]{background:var(--ink);color:var(--parch);border-color:var(--ink)}
+.sins button[aria-pressed=true] span{color:#d9c9a9}
+.scroll{position:relative;background:#fbf5e6;border:1px solid rgba(42,32,24,.2);padding:36px clamp(22px,4vw,44px);box-shadow:0 30px 50px -34px rgba(42,32,24,.6);margin-top:12px}
+.scroll::before,.scroll::after{content:"";position:absolute;left:-8px;right:-8px;height:16px;background:linear-gradient(var(--parch2),#d8c6a0);border-radius:8px;box-shadow:0 2px 0 rgba(42,32,24,.15)}
+.scroll::before{top:-10px}.scroll::after{bottom:-10px}
+.scroll .rub{display:block}
+.scroll h3{font-size:2.2rem;margin:10px 0}
+.scroll p{font-size:1.1rem}
+.scroll .pen{display:block;margin-top:16px;font:600 1.5rem/1.2 var(--k);color:var(--rubric)}
+.scroll .in{display:block;animation:unroll .6s ease}
+.scroll img{width:100%;aspect-ratio:16/10;object-fit:cover;margin:4px 0 16px;border:1px solid rgba(42,32,24,.2)}
+@keyframes unroll{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+
+/* carta */
+.carta{background:var(--parch2)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0}
+.tabs button{padding:10px 18px;border:1.5px solid var(--ink);border-radius:999px;font:600 1rem/1 var(--b)}
+.tabs button[aria-pressed=true]{background:var(--rubric);border-color:var(--rubric);color:#fff}
+.page{display:grid;grid-template-columns:1fr 1fr;gap:0 60px;background:#fbf5e6;padding:clamp(24px,4vw,50px);border:1px solid rgba(42,32,24,.15);position:relative}
+.page::before{content:"";position:absolute;top:24px;bottom:24px;left:50%;width:1px;background:rgba(42,32,24,.15)}
+.dish{padding:14px 0;border-bottom:1px dotted rgba(42,32,24,.3)}
+.dish b{font:600 1.2rem/1.2 var(--b)}
+.dish span{display:block;color:#5c4d3d;font-size:1rem}
+.note{margin-top:16px;color:#5c4d3d;font-style:italic}
+
+/* corte */
+.corte .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(30px,5vw,70px);align-items:center}
+.corte .ph{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.corte .ph img{width:100%;height:100%;object-fit:cover;border-radius:2px}
+.corte .ph img:first-child{grid-column:span 2;aspect-ratio:2/1}
+.corte .ph img:nth-child(n+2){aspect-ratio:3/4}
+.corte ul{list-style:none;margin-top:20px}
+.corte li{padding:8px 0;border-bottom:1px dotted rgba(42,32,24,.3)}
+.corte li::before{content:"✠ ";color:var(--rubric)}
+
+/* dolci */
+.sweets{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.sweets figure{background:#fbf5e6;padding:10px 10px 14px;border:1px solid rgba(42,32,24,.12)}
+.sweets img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.sweets figcaption{margin-top:10px;font:600 1.3rem/1.1 var(--k);color:var(--rubric);text-align:center}
+
+/* dove */
+.dove{background:var(--ink);color:var(--parch)}
+.dove .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px)}
+.dove .rub{color:#e2b95a}
+.dove h2 i{color:#e2b95a}
+.dove a.big{display:block;font:600 clamp(1.8rem,3.4vw,2.6rem)/1.25 var(--b);text-decoration:none}
+.dove a.big:hover{color:#e2b95a}
+.week{list-style:none;margin-top:18px}
+.week li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(243,234,214,.15)}
+.week li.t{color:#e2b95a;font-weight:600}
+.week li.off span:last-child{opacity:.6}
+footer{background:var(--ink);color:#b8a88a;text-align:center;padding:30px var(--gut) 40px;border-top:1px solid rgba(243,234,214,.12);font-size:.95rem}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv,html:not(.js) .motto p .w{opacity:1;transform:none}
+
+@media (max-width:900px){
+ .hours-nav nav a small{display:none}
+ .hours-nav nav a{padding:8px 10px;font-size:.82rem}
+ .mark b{display:none}
+ .hero,.conf .wrap,.corte .wrap,.dove .wrap{grid-template-columns:1fr}
+ .hero .copy{padding-top:110px}
+ .page{grid-template-columns:1fr}.page::before{display:none}
+ .sweets{grid-template-columns:1fr 1fr}
+}
+@media (max-width:520px){.sins{grid-template-columns:1fr}.hours-nav{padding-inline:10px}}
+@media (prefers-reduced-motion:reduce){.leaf,.hero .bg,.hero .copy{transition:none}.rv,.motto p .w{opacity:1;transform:none;transition:none}.scroll .in{animation:none}}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#16110e;color:#f8f2e7;border-top:1px solid rgba(239,228,210,.25);font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}body{padding-bottom:34px}
+</style>
+</head>
+<body>
+<header class="hours-nav" id="top">
+  <a class="mark" href="#" aria-label="La Cantina del Convento, inizio pagina">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="#b98a2e" stroke-width="1.5"/><path d="M20 6v28M11 15h18" stroke="#a3241c" stroke-width="4" stroke-linecap="round"/></svg>
+    <b>Cantina del Convento</b>
+  </a>
+  <nav aria-label="Le ore del convento">
+    <a href="#confessionale"><span>Vespri</span><small>aperitivo</small></a>
+    <a href="#carta"><span>Cena</span><small>la carta</small></a>
+    <a href="#corte"><span>Chiostro</span><small>la corte</small></a>
+    <a href="#dove"><span>Compieta</span><small>dove siamo</small></a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="hero" aria-labelledby="t-hero">
+  <img class="bg" src="img/insegna.jpg" alt="La corte della Cantina del Convento con l'insegna sul muro e gli ombrelloni" width="1600" height="757">
+  <div class="doors" aria-hidden="true"><div class="leaf l"><i class="ring"></i></div><div class="leaf r"><i class="ring"></i></div></div>
+  <span class="knock" aria-hidden="true">toc toc…<br>avanti, è aperto</span>
+  <div class="copy">
+    <span class="rub">Bistrot · Via Broglia 13 · Chieri</span>
+    <h1 id="t-hero" style="margin-top:18px"><span>Cantina del Convento</span>Quel che passa il convento, stasera.</h1>
+    <p class="lead">Si entra dal portone e si arriva nella corte. Cucina informale e di stagione, menù completi oppure un tagliere, una focaccia, un burger di Fassona e un buon bicchiere, dall'aperitivo fino a tarda sera.</p>
+    <div class="btns">
+      <a class="btn p" href="tel:+390119470857">Prenota · 011 947 0857</a>
+      <a class="btn g" href="#confessionale">Confessa un peccato</a>
+    </div>
+  </div>
+</section>
+
+<section class="motto" id="motto" aria-label="Il motto della casa">
+  <div class="wrap">
+    <p aria-label="Il bere trionferà sul male">il bere trionferà sul male</p>
+    <small>scritto a mano sul muro della nostra sala</small>
+  </div>
+</section>
+
+<section id="confessionale" class="conf" aria-labelledby="t-conf">
+  <div class="wrap">
+    <div class="rv">
+      <span class="rub">Il confessionale</span>
+      <h2 id="t-conf" style="margin-top:14px">Confessa il tuo <i>peccato</i>.</h2>
+      <p class="lead" style="margin-top:14px">Qui non si giudica nessuno. Scegli la tua debolezza di stasera: la penitenza la decide la cucina.</p>
+      <div class="sins" role="group" aria-label="Scegli il peccato">
+        <button type="button" data-k="0" aria-pressed="true"><b>Gola</b><span>«vorrei tutto»</span></button>
+        <button type="button" data-k="1" aria-pressed="false"><b>Superbia</b><span>«solo il meglio»</span></button>
+        <button type="button" data-k="2" aria-pressed="false"><b>Pigrizia</b><span>«non ho voglia di scegliere»</span></button>
+        <button type="button" data-k="3" aria-pressed="false"><b>Invidia</b><span>«il piatto del vicino»</span></button>
+      </div>
+    </div>
+    <div class="scroll rv" id="scroll" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="carta" class="carta" aria-labelledby="t-carta">
+  <div class="wrap">
+    <div class="rv"><span class="rub">La carta</span><h2 id="t-carta" style="margin-top:14px">Il libro delle <i>ore</i> golose.</h2>
+      <p class="lead" style="margin-top:14px">La cucina segue la stagione: questi sono alcuni dei piatti passati dal convento.</p></div>
+    <div class="tabs" role="group" aria-label="Sezione della carta" id="tabs"></div>
+    <div class="page rv" id="page" aria-live="polite"></div>
+    <p class="note">Il menù cambia spesso: chiedi in sala quel che passa il convento oggi. Opzioni vegetariane, vegane e senza glutine su richiesta.</p>
+    <div class="sweets">
+      <figure class="rv"><img src="img/tortino.jpg" alt="Tortino al cioccolato con zucchero a velo e frutti rossi" width="902" height="1200" loading="lazy"><figcaption>il tortino</figcaption></figure>
+      <figure class="rv"><img src="img/dolce.jpg" alt="Semifreddo con fragole e salsa al cioccolato" width="902" height="1200" loading="lazy"><figcaption>frozen ma non troppo</figcaption></figure>
+      <figure class="rv"><img src="img/aperitivo.jpg" alt="Taglieri dell'aperitivo con spritz" width="1400" height="1050" loading="lazy"><figcaption>l'aperigourmet</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="corte" class="corte" aria-labelledby="t-corte">
+  <div class="wrap">
+    <div class="ph rv">
+      <img src="img/corte.jpg" alt="La corte interna con gli ombrelloni e l'insegna Cantina del Convento sul muro giallo" width="1600" height="758" loading="lazy">
+      <img src="img/scritta.jpg" alt="La scritta il bere trionferà sul male sotto una lampada in latta" width="1400" height="1312" loading="lazy">
+      <img src="img/tavola.jpg" alt="Una tavolata con l'aperitivo e gli spritz" width="886" height="690" loading="lazy">
+    </div>
+    <div class="rv">
+      <span class="rub">Il chiostro</span>
+      <h2 id="t-corte" style="margin-top:14px">Una corte nascosta <i>in centro</i>.</h2>
+      <p class="lead" style="margin-top:14px">Dietro il portone di Via Broglia si apre una corte interna: ombrelloni, lucine, piante e una cascata in acciaio corten. Con la bella stagione si cena qui, d'inverno in sala.</p>
+      <ul>
+        <li>Tavoli all'aperto nella corte</li>
+        <li>Serate con musica dal vivo</li>
+        <li>Vini e birre artigianali</li>
+        <li>Seggioloni per i più piccoli</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="dove" class="dove" aria-labelledby="t-dove">
+  <div class="wrap">
+    <div class="rv">
+      <span class="rub">Compieta</span>
+      <h2 id="t-dove" style="margin-top:14px">Vieni a <i>trovarci</i>.</h2>
+      <ul class="week" id="week"></ul>
+    </div>
+    <div class="rv">
+      <span class="rub">Prenota</span>
+      <a class="big" href="tel:+390119470857" style="margin-top:14px">011 947 0857</a>
+      <a class="big" href="tel:+393382762626">338 276 2626</a>
+      <p style="margin-top:18px">Via Broglia, 13 · 10023 Chieri (TO)<br><a href="https://maps.google.com/?q=Cantina+del+Convento+Via+Broglia+13+Chieri" target="_blank" rel="noopener">Indicazioni</a> · <a href="https://www.instagram.com/cantina_del_convento/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/33259822198" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Cantina del Convento. Non è il sito ufficiale.</div>
+<footer>La Cantina del Convento · Bistrot · Via Broglia 13, Chieri</footer>
+
+<script>
+(function(){
+  var hero=document.getElementById('hero');setTimeout(function(){hero.classList.add('open')},matchMedia('(prefers-reduced-motion: reduce)').matches?0:400);
+  var top=document.getElementById('top');addEventListener('scroll',function(){top.classList.toggle('s',scrollY>30)},{passive:true});
+  var mp=document.querySelector('.motto p');mp.innerHTML=mp.textContent.split(' ').map(function(w,i){return '<span class="w" aria-hidden="true" style="transition-delay:'+(i*.18)+'s">'+w+'</span>'}).join(' ');
+
+  var IMG=[['img/tavola.jpg','La tavolata con taglieri e spritz'],['img/corte.jpg','La corte con gli ombrelloni'],['img/aperitivo.jpg','Il tagliere dell\'aperitivo con gli spritz'],['img/tortino-c.jpg','Il tortino al cioccolato della casa con panna e frutti di bosco']];
+  var P=[['Gola','Fra\' Pantagruele','La pan-pizza con rösti di patate, formaggio fuso, pomodoro, hamburger di Fassona, uovo all\'occhio di bue e maionese.','Penitenza: finirlo tutto, da solo.'],
+         ['Superbia','Tagliata di Fassona','450 grammi di Fassona alle erbe da BBQ, con patate al forno, al tavolo migliore della corte. Per chi non si accontenta.','Penitenza: dividerla con qualcuno. Facoltativa.'],
+         ['Pigrizia','Aperigourmet XXL','Non devi scegliere niente: arriva il tagliere grande dell\'aperitivo, con stuzzichini caldi e freddi.','Penitenza: alzare il calice, e basta.'],
+         ['Invidia','I dolci della casa','Il tortino al cioccolato, il Resuscitamisù: quelli che resuscitano le serate. Il vicino li guarderà, e avrà ragione.','Penitenza: non dargliene nemmeno un cucchiaino.']];
+  var sc=document.getElementById('scroll'),btns=[].slice.call(document.querySelectorAll('.sins button'));
+  function confess(k){var p=P[k];btns.forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.k===k)});
+    sc.innerHTML='<span class="in"><span class="rub">Peccato di '+p[0].toLowerCase()+'</span><img src="'+IMG[k][0]+'" alt="'+IMG[k][1]+'"><h3>'+p[1]+'</h3><p>'+p[2]+'</p><span class="pen">'+p[3]+'</span></span>';}
+  btns.forEach(function(b){b.addEventListener('click',function(){confess(+b.dataset.k)})});
+  confess(0);
+
+  var M={
+   'Quel che passa il convento':[['Lunette al tartufo','in crema di Castelmagno e nocciole'],['Tagliatelle caserecce','con ragù di salsiccia al Nebbiolo'],['Fassona cube','con porcini, funghi di bosco saltati e patate al forno'],['Tagliata di Fassona','alle erbe da BBQ e patate al forno, 450 g'],['Sformatino di spinaci','al Taleggio, con biscottino salato'],['Lasagnetta d\'autunno','e porcini fritti, quando è stagione']],
+   'Burger e pan gourmet':[['Maxiburger 100% Fassona piemontese','con patatine non fritte, contorno a scelta'],['Maxiburger 100% Scottona','con patate arrosto'],['Fra\' Pantagruele','pan-pizza con rösti di patate, formaggio fuso, pomodoro, hamburger di Fassona, uovo all\'occhio di bue e maionese']],
+   'Aperitivo':[['Aperigourmet Classic','il tagliere dell\'aperitivo'],['Aperigourmet XXL','per chi ha fame davvero'],['Focacce','farcite, da dividere'],['Taglieri','salumi e formaggi']],
+   'Dolci':[['Resuscitamisù','il tiramisù della casa'],['Frozen ma non troppo','al torrone, su specchio al cioccolato'],['Tortino al cioccolato','con frutti rossi']]};
+  var tabs=document.getElementById('tabs'),page=document.getElementById('page'),ks=Object.keys(M);
+  tabs.innerHTML=ks.map(function(k,i){return '<button type="button" aria-pressed="'+(i===0)+'">'+k+'</button>'}).join('');
+  function showM(k){page.innerHTML=M[k].map(function(d){return '<div class="dish"><b>'+d[0]+'</b><span>'+d[1]+'</span></div>'}).join('');}
+  tabs.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(tabs.children,function(x){x.setAttribute('aria-pressed',x===b)});showM(b.textContent);});
+  showM(ks[0]);
+
+  var N=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'],td=new Date().getDay(),off=[1,2];
+  document.getElementById('week').innerHTML=[3,4,5,6,0,1,2].map(function(i){var c=off.indexOf(i)>-1;return '<li class="'+(i===td?'t ':'')+(c?'off':'')+'"><span>'+N[i]+'</span><span>'+(c?'chiuso':'19:00 – 23:00')+'</span></li>'}).join('');
+
+  var links=[].slice.call(document.querySelectorAll('.hours-nav nav a'));
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})})},{rootMargin:'-45% 0px -50% 0px'});
+  ['confessionale','carta','corte','dove'].forEach(function(id){so.observe(document.getElementById(id))});
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  [].forEach.call(document.querySelectorAll('.rv,.motto'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

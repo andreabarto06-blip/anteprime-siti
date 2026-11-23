@@ -6,7 +6,7 @@
 // A link copied with stray characters (markdown **, dots, quotes, brackets, %2A) lands here:
 // strip them and, if what is left names a known preview folder, go there.
 (function () {
-  var sites = ["il-bisogno", "pizzeria-jonica", "la-sorgente", "esteticamente-gisella", "gregori-cerutti", "kreuzberg", "tirabaci", "format-chieri", "sushi-del-masle", "rosa-bianca", "cube-chieri", "don-raffaele", "dmedical-chieri", "agrigrill-cascina-capello", "cantina-del-convento", "la-bufala-nera", "trattoria-delle-erbe", "todra-chieri", "old-building-chieri"];
+  var sites = ["il-bisogno", "pizzeria-jonica", "la-sorgente", "esteticamente-gisella", "gregori-cerutti", "kreuzberg", "tirabaci", "format-chieri", "sushi-del-masle", "rosa-bianca", "cube-chieri", "don-raffaele", "dmedical-chieri", "agrigrill-cascina-capello", "cantina-del-convento", "la-bufala-nera", "trattoria-delle-erbe", "todra-chieri", "old-building-chieri", "pizzeria-dell-arco", "tomi-ramen-chieri", "locanda-del-mure", "city-istanbul-chieri"];
   var base = "/anteprime-siti/";
   var path = decodeURIComponent(location.pathname).toLowerCase();
   var rest = path.indexOf(base) === 0 ? path.slice(base.length) : path.replace(/^\//, "");

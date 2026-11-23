@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>City Istanbul 2 · Kebab e pizza in Via Vittorio Emanuele II, Chieri</title>
+<meta name="description" content="City Istanbul 2, Via Vittorio Emanuele II 66 a Chieri: kebab, dürüm, falafel e pizza, tutti i giorni dalle 11 fino a tarda sera. Anche da asporto. Tel. 011 263 6627.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--cobalt:#1d3f8f;--cobalt2:#152d66;--turq:#2aa3a3;--tom:#e0442c;--gold:#f2b632;--cream:#fbf6ee;--ink:#1b1e2b;--mute:#6b6f80;--h:"Lalezar",Impact,sans-serif;--b:"Rubik",system-ui,sans-serif;--gut:clamp(16px,4vw,56px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+html,body{overflow-x:clip}
+body{background:var(--cream);color:var(--ink);font:400 17px/1.6 var(--b);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,10vw,130px)}
+h1,h2,h3{font-family:var(--h);font-weight:400;line-height:.98}
+h2{font-size:clamp(2.6rem,6vw,4.6rem)}
+h1 span,h2 span{color:var(--tom)}
+.kick{font:700 .78rem/1 var(--b);letter-spacing:.22em;text-transform:uppercase;color:var(--turq)}
+.lead{font-size:1.12rem;max-width:32em}
+
+/* nav */
+.top{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:16px;padding:12px var(--gut);background:rgba(21,45,102,.96);backdrop-filter:blur(8px)}
+.top .logo{color:#fff;text-decoration:none;font:400 1.6rem/1 var(--h);letter-spacing:.01em}
+.top .logo span{color:var(--gold)}
+.top nav{margin-left:auto;display:flex;gap:4px}
+.top nav a{color:#fff;text-decoration:none;font:500 .9rem/1 var(--b);padding:10px 12px;border-radius:8px}
+.top nav a:hover{background:rgba(255,255,255,.12)}
+.top .call{background:var(--tom);color:#fff;text-decoration:none;font:700 .88rem/1 var(--b);padding:12px 16px;border-radius:8px}
+
+/* hero con piastrelle */
+.hero{position:relative;background:var(--cobalt);color:#fff;min-height:100svh;padding:110px var(--gut) 60px;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,70px);align-items:center;overflow:hidden}
+.tiles{position:absolute;inset:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));grid-auto-rows:90px;opacity:.16;pointer-events:none}
+.tiles i{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 90'%3E%3Crect width='90' height='90' fill='%23fff'/%3E%3Cpath d='M45 6 L56 34 L84 45 L56 56 L45 84 L34 56 L6 45 L34 34 Z' fill='%232aa3a3'/%3E%3Ccircle cx='45' cy='45' r='10' fill='%23e0442c'/%3E%3Cpath d='M0 0 L14 0 L0 14 Z M90 0 L76 0 L90 14 Z M0 90 L14 90 L0 76 Z M90 90 L76 90 L90 76 Z' fill='%231d3f8f'/%3E%3C/svg%3E") center/cover;transform:rotateY(90deg);transition:transform .5s ease}
+.tiles.on i{transform:none}
+.hero>div:not(.tiles){position:relative;z-index:1}
+.hero h1{font-size:clamp(3.4rem,8vw,6.8rem)}
+.hero h1 span{color:var(--gold)}
+.hero p{margin-top:18px;font-size:1.14rem;max-width:30em;color:#dfe6f7}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;padding:15px 22px;border-radius:10px;font:700 .95rem/1 var(--b);text-decoration:none;border:2px solid currentColor;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--tom);border-color:var(--tom);color:#fff}
+.btn.g:hover{background:#fff;color:var(--cobalt)}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.badges span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:10px 14px;font-weight:500}
+.badges b{font:400 1.4rem/1 var(--h);color:var(--gold);margin-right:6px}
+.status{display:flex;align-items:center;gap:9px;margin-top:18px;font-weight:700}
+.status::before{content:"";width:10px;height:10px;border-radius:50%;background:#8b93ad}
+.status.on::before{background:#62e08a;box-shadow:0 0 10px #62e08a}
+.hero .shop{position:relative;z-index:1;border-radius:22px;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 60px -30px #000;aspect-ratio:3/4;max-width:460px;justify-self:center;width:100%}
+.hero .shop img{width:100%;height:100%;object-fit:cover}
+.hero .shop span{position:absolute;left:12px;bottom:12px;background:var(--gold);color:var(--ink);border-radius:8px;padding:8px 12px;font:400 1.1rem/1 var(--h)}
+
+/* componi il kebab */
+.build{background:#fff}
+.build .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:start}
+.step{margin-top:26px}
+.step h3{font:700 .8rem/1 var(--b);letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.opts button{border:2px solid var(--cobalt);border-radius:10px;padding:11px 16px;font:500 .95rem/1 var(--b);color:var(--cobalt);transition:background .2s,color .2s}
+.opts button[aria-pressed=true]{background:var(--cobalt);color:#fff}
+.ticket{position:sticky;top:90px;background:var(--cream);border:2px dashed var(--cobalt);border-radius:18px;padding:26px 26px 22px}
+.ticket .ph{border-radius:12px;overflow:hidden;aspect-ratio:4/3;margin-bottom:16px}
+.ticket .ph img{width:100%;height:100%;object-fit:cover}
+.ticket h3{font:400 2rem/1 var(--h);color:var(--cobalt)}
+.ticket p{margin-top:8px;font-size:1.05rem}
+.ticket small{display:block;margin-top:12px;color:var(--mute);font-size:.88rem}
+
+/* pizza */
+.pizza{background:var(--cobalt2);color:#fff}
+.pizza .lead{color:#dfe6f7}
+.pz{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.pz figure{text-align:center}
+.pz img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;border:6px solid rgba(255,255,255,.12);transition:transform .6s}
+.pz figure:hover img{transform:rotate(12deg) scale(1.03)}
+.pz figcaption{margin-top:14px;font:400 1.5rem/1 var(--h);color:var(--gold)}
+.pz figcaption small{display:block;font:400 .92rem/1.4 var(--b);color:#dfe6f7;margin-top:6px}
+
+/* locale */
+.locale .grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-auto-rows:260px;gap:12px;margin-top:40px}
+.locale figure{border-radius:16px;overflow:hidden}
+.locale img{width:100%;height:100%;object-fit:cover}
+.locale .t2{grid-row:span 2}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.quotes blockquote{background:#fff;border-radius:14px;padding:20px;border-left:5px solid var(--turq);font-size:1rem}
+
+/* orari */
+.ora{background:var(--cobalt);color:#fff}
+.ora .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px)}
+.week{list-style:none;margin-top:18px}
+.week li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+.week li.t{color:var(--gold);font-weight:700}
+.big{display:block;font:400 clamp(2.4rem,5vw,3.6rem)/1 var(--h);text-decoration:none;color:var(--gold);margin-top:18px}
+footer{background:var(--cobalt2);color:#c3cbe3;text-align:center;padding:30px var(--gut);font-size:.9rem}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv{opacity:1;transform:none}
+html:not(.js) .tiles i{transform:none}
+@media (max-width:900px){
+ .top nav{display:none}.top .call{margin-left:auto}
+ .hero,.build .wrap,.ora .wrap{grid-template-columns:1fr}
+ .ticket{position:static}
+ .pz{grid-template-columns:repeat(3,1fr);gap:10px}.pz figcaption{font-size:1.1rem}.pz figcaption small{display:none}
+ .locale .grid{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
+ .quotes{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.tiles i{transition:none;transform:none}.rv{opacity:1;transform:none;transition:none}.pz img{transition:none}}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#16110e;color:#f8f2e7;border-top:1px solid rgba(239,228,210,.25);font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}body{padding-bottom:34px}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+  <a class="logo" href="#" aria-label="City Istanbul 2, inizio pagina">City Istanbul <span>2</span></a>
+  <nav aria-label="Sezioni"><a href="#kebab">Il tuo kebab</a><a href="#pizza">Pizza</a><a href="#locale">Il locale</a><a href="#orari">Orari</a></nav>
+  <a class="call" href="tel:+390112636627">Ordina · 011 263 6627</a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="t-hero">
+  <div class="tiles" id="tiles" aria-hidden="true"></div>
+  <div>
+    <span class="kick" style="color:#8fe0e0">Via Vittorio Emanuele II 66 · Chieri</span>
+    <h1 id="t-hero" style="margin-top:16px">Kebab e pizza, <span>fino a mezzanotte</span>.</h1>
+    <p>Döner, dürüm, falafel e pizza, tutti i giorni dalle 11. In sala, da portare via o con la consegna a domicilio.</p>
+    <div class="btns"><a class="btn p" href="tel:+390112636627">Chiama e ordina</a><a class="btn g" href="#kebab">Componi il tuo kebab</a></div>
+    <div class="badges"><span><b>4,2</b>su Google, 405 recensioni</span><span><b>7/7</b>aperti tutti i giorni</span><span><b>A casa</b>consegna a domicilio</span></div>
+    <span class="status" id="status"></span>
+  </div>
+  <figure class="shop rv"><img src="img/insegna.jpg" alt="La vetrina di City Istanbul Turkish con l'insegna rossa" width="1050" height="1400"><span>Specialità turche</span></figure>
+</section>
+
+<section id="kebab" class="build" aria-labelledby="t-build">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kick">Componi il tuo kebab</span>
+      <h2 id="t-build" style="margin-top:14px">Come lo <span>vuoi</span>?</h2>
+      <p class="lead" style="margin-top:14px">Scegli la forma, le verdure e le salse: accanto trovi l'ordine già scritto, da leggere al telefono o da mostrare al banco.</p>
+      <div class="step"><h3>1 · La forma</h3><div class="opts" id="o-forma"></div></div>
+      <div class="step"><h3>2 · Le verdure</h3><div class="opts" id="o-verd"></div></div>
+      <div class="step"><h3>3 · Le salse</h3><div class="opts" id="o-salse"></div></div>
+    </div>
+    <aside class="ticket rv" aria-live="polite">
+      <div class="ph"><img id="t-img" src="img/kebab-piatto.jpg" alt="" width="1050" height="1400"></div>
+      <h3 id="t-tit"></h3>
+      <p id="t-txt"></p>
+      <div class="btns"><a class="btn p" href="tel:+390112636627">Chiama e ordina</a></div>
+      <small>Anche nel panino o con i falafel: chiedi al banco. Le combinazioni sono un esempio.</small>
+    </aside>
+  </div>
+</section>
+
+<section id="pizza" class="pizza" aria-labelledby="t-pizza">
+  <div class="wrap">
+    <div class="rv"><span class="kick" style="color:#8fe0e0">Non solo kebab</span><h2 id="t-pizza" style="margin-top:14px">E poi c'è <span style="color:var(--gold)">la pizza</span>.</h2>
+    <p class="lead" style="margin-top:14px">«Ho mangiato la pizza, direi buona; mio marito il kebab, buono anche quello»: da noi si mette d'accordo tutta la famiglia.</p></div>
+    <div class="pz">
+      <figure class="rv"><img src="img/pizza-salame.jpg" alt="Pizza con salame piccante" width="1050" height="1400" loading="lazy"><figcaption>Salame piccante<small>per chi vuole un po' di fuoco</small></figcaption></figure>
+      <figure class="rv"><img src="img/pizza-verdure.jpg" alt="Pizza con le verdure" width="1050" height="1400" loading="lazy"><figcaption>Alle verdure<small>colorata e leggera</small></figcaption></figure>
+      <figure class="rv"><img src="img/pizza-mista.jpg" alt="Pizza farcita con prosciutto e cipolla" width="1050" height="1400" loading="lazy"><figcaption>Ricca<small>quando la fame è tanta</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="locale" class="locale" aria-labelledby="t-loc">
+  <div class="wrap">
+    <div class="rv"><span class="kick">Il locale</span><h2 id="t-loc" style="margin-top:14px">Pulito, luminoso, <span>accogliente</span>.</h2></div>
+    <div class="grid">
+      <figure class="t2 rv"><img src="img/sala.jpg" alt="La sala con i tavoli e le sedie verdi" width="1050" height="1400" loading="lazy"></figure>
+      <figure class="rv"><img src="img/banco.jpg" alt="Il bancone con il menù illuminato" width="1400" height="1050" loading="lazy"></figure>
+      <figure class="rv"><img src="img/durum.jpg" alt="Un dürüm arrotolato con una bibita" width="1400" height="1050" loading="lazy"></figure>
+      <figure class="rv"><img src="img/bancone.jpg" alt="Il banco con la foto del Bosforo" width="1050" height="1400" loading="lazy"></figure>
+      <figure class="rv"><img src="img/esterno.jpg" alt="L'esterno del locale in Via Vittorio Emanuele II" width="1050" height="1400" loading="lazy"></figure>
+    </div>
+    <div class="quotes">
+      <blockquote class="rv">«Locale molto pulito e accogliente.»</blockquote>
+      <blockquote class="rv">«Il kebab è buono e le porzioni abbondanti.»</blockquote>
+      <blockquote class="rv">«Servizio veloce e personale sempre gentile.»</blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="orari" class="ora" aria-labelledby="t-ora">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kick" style="color:#8fe0e0">Orari</span>
+      <h2 id="t-ora" style="margin-top:14px">Tutti i <span style="color:var(--gold)">giorni</span>.</h2>
+      <ul class="week" id="week"></ul>
+    </div>
+    <div class="rv">
+      <span class="kick" style="color:#8fe0e0">Ordina</span>
+      <a class="big" href="tel:+390112636627">011 263 6627</a>
+      <p style="margin-top:14px;color:#dfe6f7">Via Vittorio Emanuele II 66 · 10023 Chieri (TO)<br>In sala, da asporto o con la consegna a domicilio.<br>Anche al 388 779 5665.</p>
+      <div class="btns"><a class="btn p" href="tel:+390112636627">Chiama</a><a class="btn g" href="https://maps.google.com/?q=City+Istanbul+2+Via+Vittorio+Emanuele+II+66+Chieri" target="_blank" rel="noopener">Indicazioni</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a City Istanbul 2. Non è il sito ufficiale.</div>
+<footer>City Istanbul 2 · Via Vittorio Emanuele II 66, Chieri · 011 263 6627</footer>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var tl=document.getElementById('tiles'),n=Math.ceil(innerWidth/90)*Math.ceil(innerHeight/90+2),h='';
+  for(var i=0;i<n;i++)h+='<i style="transition-delay:'+(reduce?0:(Math.random()*1.2).toFixed(2))+'s"></i>';tl.innerHTML=h;
+  requestAnimationFrame(function(){requestAnimationFrame(function(){tl.classList.add('on')})});
+
+  // orari: tutti i giorni 11-23:30, ven e sab fino alle 24
+  var d=new Date(),day=d.getDay(),m=d.getHours()*60+d.getMinutes(),close=(day===5||day===6)?1440:1410,on=m>=660&&m<close,st=document.getElementById('status');
+  st.classList.toggle('on',on);st.textContent=on?'Aperti ora · ordina pure':(m<660?'Oggi apriamo alle 11':'Domani dalle 11');
+  var N=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'];
+  document.getElementById('week').innerHTML=[1,2,3,4,5,6,0].map(function(i){return '<li'+(i===day?' class="t"':'')+'><span>'+N[i]+'</span><span>11:00 – '+((i===5||i===6)?'24:00':'23:30')+'</span></li>'}).join('');
+
+  // componi il kebab
+  var F=[['piatto','Al piatto','img/kebab-piatto.jpg','Kebab al piatto con insalata, pomodoro, cipolla e salsa allo yogurt'],['durum','Arrotolato (dürüm)','img/durum.jpg','Il dürüm: il kebab arrotolato nella piadina'],['box','In vaschetta da asporto','img/box.jpg','Kebab in vaschetta da asporto, con verdure e salsa']];
+  var V=['Insalata','Pomodoro','Cipolla'],S=['Yogurt','Piccante','Maionese','Ketchup'];
+  function fill(id,arr,sel){document.getElementById(id).innerHTML=arr.map(function(x,i){var k=Array.isArray(x)?x[0]:x,l=Array.isArray(x)?x[1]:x;return '<button type="button" data-k="'+k+'" aria-pressed="'+(sel.indexOf(i)>=0)+'">'+l+'</button>'}).join('')}
+  fill('o-forma',F,[0]);fill('o-verd',V,[0,1,2]);fill('o-salse',S,[0]);
+  function picked(id){return [].filter.call(document.getElementById(id).children,function(b){return b.getAttribute('aria-pressed')==='true'}).map(function(b){return b.textContent.toLowerCase()})}
+  function list(a){return a.length===1?a[0]:a.slice(0,-1).join(', ')+' e '+a[a.length-1]}
+  function upd(){var fb=document.querySelector('#o-forma [aria-pressed=true]'),f=F.filter(function(x){return x[0]===fb.dataset.k})[0];
+    var v=picked('o-verd'),s=picked('o-salse'),fal=false;
+    document.getElementById('t-img').src=f[2];document.getElementById('t-img').alt=f[3];
+    document.getElementById('t-tit').textContent=fal?'Falafel':'Kebab · '+f[1].toLowerCase();
+    document.getElementById('t-txt').textContent='«Buonasera, vorrei '+(fal?'un falafel':'un kebab '+f[1].toLowerCase())+(v.length?', con '+list(v):', senza verdure')+(s.length?' e salsa '+list(s):', senza salse')+'.»';}
+  document.getElementById('o-forma').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(this.children,function(x){x.setAttribute('aria-pressed',x===b)});upd()});
+  ['o-verd','o-salse'].forEach(function(id){document.getElementById(id).addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')!=='true');upd()})});
+  upd();
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  [].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pizzeria dell'Arco · Pizza napoletana in Via Carlo Alberto, Chieri</title>
+<meta name="description" content="Pizzeria dell'Arco, Via Carlo Alberto 6 a Chieri: pizza napoletana da asporto e al tavolo, con bufala di Carmagnola, toma chierese e salsiccia di Chieri. Panuozzi, impasto integrale. Dal martedì alla domenica 18:30–22. Tel. 011 382 2042.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--char:#141210;--char2:#211d1a;--flour:#f7f3ec;--tom:#d63a1f;--basil:#2e7d32;--sign:#1f4fa3;--mute:#8a8178;--h:"Big Shoulders Display",Impact,sans-serif;--b:"Manrope",system-ui,sans-serif;--gut:clamp(16px,4vw,56px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+html,body{overflow-x:clip}
+body{background:var(--flour);color:var(--char);font:400 17px/1.6 var(--b);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,10vw,130px)}
+h1,h2,h3{font-family:var(--h);font-weight:900;line-height:.9;text-transform:uppercase;letter-spacing:.005em}
+h2{font-size:clamp(3rem,7vw,5.6rem)}
+h2 span,h1 span{color:var(--tom)}
+.kick{font:800 .76rem/1 var(--b);letter-spacing:.24em;text-transform:uppercase;color:var(--tom)}
+.lead{font-size:1.12rem;max-width:32em}
+
+/* nav */
+.top{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:18px;padding:12px var(--gut);transition:background .4s}
+.top.s{background:rgba(20,18,16,.94);backdrop-filter:blur(8px)}
+.top .logo{color:var(--flour);text-decoration:none;font:900 1.7rem/1 var(--h);text-transform:uppercase;letter-spacing:.02em}
+.top .logo span{color:var(--tom)}
+.top nav{margin-left:auto;display:flex;gap:4px}
+.top nav a{color:var(--flour);text-decoration:none;font:800 .82rem/1 var(--b);padding:10px 12px;border-radius:999px}
+.top nav a:hover{background:rgba(255,255,255,.12)}
+.top .call{background:var(--tom);color:#fff;text-decoration:none;font:800 .82rem/1 var(--b);padding:12px 16px;border-radius:999px}
+
+/* hero */
+.hero{background:var(--char);color:var(--flour);min-height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(30px,5vw,70px);padding:110px var(--gut) 60px}
+.hero h1{font-size:clamp(3.6rem,9vw,8rem)}
+.hero p{margin-top:20px;font-size:1.15rem;max-width:30em;color:#d9d1c6}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chips span{border:1px solid rgba(247,243,236,.3);border-radius:999px;padding:8px 14px;font:600 .86rem/1 var(--b)}
+.chips b{color:var(--tom)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;padding:15px 24px;border-radius:999px;font:800 .9rem/1 var(--b);text-decoration:none;border:2px solid currentColor;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--tom);border-color:var(--tom);color:#fff}
+.btn.g:hover{background:var(--flour);color:var(--char)}
+.status{display:flex;align-items:center;gap:9px;margin-top:22px;font:800 .82rem/1 var(--b);letter-spacing:.08em;text-transform:uppercase;color:#bdb4a8}
+.status::before{content:"";width:10px;height:10px;border-radius:50%;background:#5f5851}
+.status.on{color:var(--flour)}.status.on::before{background:#ff6a3d;box-shadow:0 0 12px #ff6a3d}
+.hero .ph{position:relative;aspect-ratio:1;max-width:620px;width:100%;justify-self:center}
+.hero .ph img{width:100%;height:100%;object-fit:cover;border-radius:20px}
+.hero .ph .tag{position:absolute;right:-12px;top:24px;background:var(--flour);color:var(--char);border-radius:12px;padding:12px 16px;font:900 1.4rem/1 var(--h);text-transform:uppercase;transform:rotate(4deg);box-shadow:0 18px 30px -16px #000}
+.hero .ph .tag small{display:block;font:600 .74rem/1.3 var(--b);text-transform:none;color:var(--mute)}
+
+/* il forno */
+.forno .row{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:14px;margin-top:40px}
+.forno figure{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4}
+.forno figure img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.forno figure:hover img{transform:scale(1.05)}
+.forno figcaption{position:absolute;left:0;right:0;bottom:0;padding:50px 18px 16px;background:linear-gradient(transparent,rgba(20,18,16,.85));color:var(--flour);font:600 .95rem/1.4 var(--b)}
+.forno figcaption b{display:block;font:900 1.5rem/1 var(--h);text-transform:uppercase}
+
+/* km 0 */
+.km{background:var(--char2);color:var(--flour)}
+.km .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.km .lead{color:#d9d1c6}
+.map{width:100%;max-width:520px;justify-self:center;overflow:visible}
+.map .road{fill:none;stroke:rgba(247,243,236,.2);stroke-width:1.5;stroke-dasharray:4 6}
+.map .line{fill:none;stroke:var(--tom);stroke-width:3;stroke-linecap:round;stroke-dasharray:400;stroke-dashoffset:400;transition:stroke-dashoffset 1.4s ease}
+.map.in .line{stroke-dashoffset:0}
+.map .pin{cursor:pointer}
+.map .pin circle{fill:var(--flour);stroke:var(--char2);stroke-width:3;transition:fill .3s}
+.map .pin.on circle,.map .pin:hover circle{fill:var(--tom)}
+.map .pin text{font:900 15px var(--h);text-transform:uppercase;fill:var(--flour);pointer-events:none}
+.map .pin:focus{outline:none}.map .pin:focus-visible circle{stroke:#ffd34d}
+.map .home circle{fill:var(--tom);stroke:var(--flour)}
+.sup{margin-top:24px;background:rgba(247,243,236,.06);border:1px solid rgba(247,243,236,.15);border-radius:16px;padding:22px 24px;min-height:150px}
+.sup b{font:900 1.8rem/1 var(--h);text-transform:uppercase;color:var(--tom)}
+.sup p{margin-top:8px;color:#d9d1c6}
+.sup em{display:block;margin-top:10px;font-style:normal;font-weight:800;font-size:.86rem;letter-spacing:.06em;color:#bdb4a8}
+.suptabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.suptabs button{border:1px solid rgba(247,243,236,.3);border-radius:999px;padding:9px 14px;font:800 .82rem/1 var(--b)}
+.suptabs button[aria-pressed=true]{background:var(--tom);border-color:var(--tom)}
+
+/* menù */
+.menu .bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;margin-top:30px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tabs button{border:2px solid var(--char);border-radius:999px;padding:10px 16px;font:800 .84rem/1 var(--b)}
+.tabs button[aria-pressed=true]{background:var(--char);color:var(--flour)}
+.switch{display:inline-flex;align-items:center;gap:12px;font:800 .9rem/1.2 var(--b)}
+.switch button{width:58px;height:32px;border-radius:999px;background:#d8d0c4;position:relative;transition:background .3s;flex:none}
+.switch button::after{content:"";position:absolute;left:4px;top:4px;width:24px;height:24px;border-radius:50%;background:#fff;transition:transform .3s;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.switch button[aria-checked=true]{background:#8a5a2b}
+.switch button[aria-checked=true]::after{transform:translateX(26px)}
+.list{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;margin-top:22px}
+.it{display:grid;grid-template-columns:1fr auto;gap:2px 14px;padding:16px 0;border-bottom:2px dashed #e2d9cc}
+.it b{font:900 1.45rem/1 var(--h);text-transform:uppercase}
+.it em{font:900 1.35rem/1 var(--h);font-style:normal;color:var(--tom);white-space:nowrap}
+.it span{grid-column:1/-1;color:#5d554d;font-size:.95rem}
+.it i{font-style:normal;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--basil);margin-left:8px;vertical-align:middle}
+.note{margin-top:16px;color:var(--mute);font-size:.92rem}
+
+/* panuozzi: targhe stradali */
+.pan{background:var(--char);color:var(--flour)}
+.pan .lead{color:#d9d1c6}
+.signs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px;perspective:1000px}
+.sign{position:relative;height:190px;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.4,.2,.2,1);cursor:pointer;border-radius:8px}
+.sign.flip{transform:rotateY(180deg)}
+.sign .f,.sign .r{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:8px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:16px}
+.sign .f{background:var(--sign);border:4px solid #fff;outline:2px solid var(--sign);color:#fff}
+.sign .f small{font:800 .76rem/1 var(--b);letter-spacing:.2em;text-transform:uppercase;opacity:.85}
+.sign .f b{font:900 2rem/1 var(--h);text-transform:uppercase;margin-top:8px}
+.sign .f i{font-style:normal;font-size:.78rem;margin-top:12px;opacity:.8}
+.sign .r{background:var(--flour);color:var(--char);transform:rotateY(180deg)}
+.sign .r b{font:900 1.5rem/1 var(--h);text-transform:uppercase}
+.sign .r p{font-size:.92rem;margin-top:8px;color:#4d463f}
+.sign .r em{font-style:normal;font:900 1.4rem/1 var(--h);color:var(--tom);margin-top:10px}
+.sign:focus{outline:none}.sign:focus-visible{box-shadow:0 0 0 4px #ffd34d}
+
+/* dove */
+.dove .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.dove img{border-radius:20px;width:100%;aspect-ratio:3/4;object-fit:cover}
+.week{list-style:none;margin-top:18px}
+.week li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #e2d9cc;font-weight:600}
+.week li.t{color:var(--tom);font-weight:800}
+.big{display:block;font:900 clamp(2.4rem,5vw,3.6rem)/1 var(--h);text-decoration:none;margin-top:22px}
+footer{background:var(--char);color:#a79e93;text-align:center;padding:34px var(--gut);font-size:.9rem}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv{opacity:1;transform:none}
+@media (max-width:900px){
+ .top nav{display:none}.top .call{margin-left:auto}
+ .hero,.km .wrap,.dove .wrap{grid-template-columns:1fr}
+ .hero .ph .tag{right:8px}
+ .forno .row{grid-template-columns:1fr 1fr}.forno .row figure:first-child{grid-column:1/-1;aspect-ratio:16/10}
+ .list{grid-template-columns:1fr}
+ .signs{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.map .line{stroke-dashoffset:0;transition:none}.sign{transition:none}}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#16110e;color:#f8f2e7;border-top:1px solid rgba(239,228,210,.25);font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}body{padding-bottom:34px}
+</style>
+</head>
+<body>
+<header class="top s" id="top">
+  <a class="logo" href="#" aria-label="Pizzeria dell'Arco, inizio pagina">dell'<span>Arco</span></a>
+  <nav aria-label="Sezioni"><a href="#menu">Menù</a><a href="#panuozzi">Panuozzi</a><a href="#km0">Km 0</a><a href="#dove">Orari</a></nav>
+  <a class="call" href="tel:+390113822042">Ordina · 011 382 2042</a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="t-hero">
+  <div>
+    <span class="kick">Via Carlo Alberto 6 · Chieri</span>
+    <h1 id="t-hero" style="margin-top:16px">Pizza <span>napoletana</span>, ingredienti di casa.</h1>
+    <p>Cornicione alto, impasto leggero e materie prime che arrivano da pochi chilometri: la bufala di Carmagnola, la toma chierese, la salsiccia di Chieri. Da portare a casa, o da mangiare qui.</p>
+    <div class="chips"><span><b>4,6</b> su Google · 266 recensioni</span><span>Impasto integrale <b>+1 €</b></span><span>Asporto</span></div>
+    <div class="btns"><a class="btn p" href="tel:+390113822042">Chiama e ordina</a><a class="btn g" href="#menu">Guarda il menù</a></div>
+    <span class="status" id="status"></span>
+  </div>
+  <div class="ph rv">
+    <img src="img/pizza-studio.jpg" alt="Pizza con crema di friarielli, mozzarella e salsiccia, vista dall'alto" width="1400" height="1400">
+    <span class="tag">Salsiccia e friarielli<small>con la salsiccia nostrana</small></span>
+  </div>
+</section>
+
+<section class="forno" aria-labelledby="t-forno">
+  <div class="wrap">
+    <div class="rv"><span class="kick">Il forno</span><h2 id="t-forno" style="margin-top:14px">Leggera, <span>davvero</span>.</h2>
+    <p class="lead" style="margin-top:14px">«Impasto super digeribile», scrivono in tanti nelle recensioni. Forno ben caldo e un cornicione che si gonfia come deve.</p></div>
+    <div class="row">
+      <figure class="rv"><img src="img/forno-pizza.jpg" alt="Una pizza appena sfornata davanti al forno" width="1400" height="1400" loading="lazy"><figcaption><b>Dal forno</b>al cartone in un attimo</figcaption></figure>
+      <figure class="rv"><img src="img/cornicione.jpg" alt="Il cornicione della pizza, alveolato e leggero" width="1400" height="1050" loading="lazy"><figcaption><b>Il cornicione</b>alto e pieno d'aria</figcaption></figure>
+      <figure class="rv"><img src="img/pizzaiolo.jpg" alt="Il pizzaiolo al lavoro al banco" width="1050" height="1400" loading="lazy"><figcaption><b>Il banco</b>dove nasce ogni pizza</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="km0" class="km" aria-labelledby="t-km">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kick">Chilometro zero</span>
+      <h2 id="t-km" style="margin-top:14px">Da qui <span>a qui</span>.</h2>
+      <p class="lead" style="margin-top:14px">I nostri ingredienti hanno un nome e un indirizzo. Tocca un paese sulla mappa per sapere cosa arriva da lì.</p>
+      <div class="suptabs" id="suptabs" role="group" aria-label="Fornitori"></div>
+      <div class="sup" id="sup" aria-live="polite"></div>
+    </div>
+    <svg class="map rv" id="map" viewBox="0 0 480 460" role="group" aria-label="Mappa dei fornitori intorno a Chieri"></svg>
+  </div>
+</section>
+
+<section id="menu" class="menu" aria-labelledby="t-menu">
+  <div class="wrap">
+    <div class="rv"><span class="kick">Il menù</span><h2 id="t-menu" style="margin-top:14px">Scegli <span>la tua</span>.</h2></div>
+    <div class="bar">
+      <div class="tabs" id="tabs" role="group" aria-label="Sezione del menù"></div>
+      <div class="switch"><button type="button" id="integ" role="switch" aria-checked="false" aria-labelledby="integ-l"></button><span id="integ-l">Impasto integrale<br><small style="font-weight:600;color:var(--mute)">+1 € su ogni pizza</small></span></div>
+    </div>
+    <div class="list" id="list" aria-live="polite"></div>
+    <p class="note">Prezzi dal menù digitale della pizzeria. Chiedete al banco le stagionali e la pizza del pizzaiolo.</p>
+  </div>
+</section>
+
+<section id="panuozzi" class="pan" aria-labelledby="t-pan">
+  <div class="wrap">
+    <div class="rv"><span class="kick">I panuozzi</span><h2 id="t-pan" style="margin-top:14px">Hanno il nome <span>delle nostre vie</span>.</h2>
+    <p class="lead" style="margin-top:14px">L'impasto della pizza cotto a forma di panino e farcito. Ognuno porta il nome di una via o di una piazza di Chieri: tocca la targa e scopri cosa c'è dentro.</p></div>
+    <div class="signs" id="signs"></div>
+  </div>
+</section>
+
+<section id="dove" class="dove" aria-labelledby="t-dove">
+  <div class="wrap">
+    <img class="rv" src="img/forno.jpg" alt="Il forno con una pizza bianca in cottura" width="1400" height="934" loading="lazy">
+    <div class="rv">
+      <span class="kick">Orari</span>
+      <h2 id="t-dove" style="margin-top:14px">Il forno <span>si accende</span> alle 18:30.</h2>
+      <ul class="week" id="week"></ul>
+      <a class="big" href="tel:+390113822042">011 382 2042</a>
+      <p style="margin-top:12px">Via Carlo Alberto 6 · 10023 Chieri (TO)<br>Soprattutto asporto, con qualche tavolino dentro.</p>
+      <div class="btns"><a class="btn p" href="tel:+390113822042">Chiama e ordina</a><a class="btn g" style="color:var(--char)" href="https://maps.google.com/?q=Pizzeria+dell%27Arco+Via+Carlo+Alberto+6+Chieri" target="_blank" rel="noopener">Indicazioni</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Pizzeria dell'Arco. Non è il sito ufficiale.</div>
+<footer>Pizzeria dell'Arco · Via Carlo Alberto 6, Chieri · 011 382 2042</footer>
+
+<script>
+(function(){
+  // aperti: mar-dom 18:30-22
+  var d=new Date(),day=d.getDay(),m=d.getHours()*60+d.getMinutes(),on=day!==1&&m>=1110&&m<1320,st=document.getElementById('status');
+  st.classList.toggle('on',on);st.textContent=on?'Forno acceso · ordina ora':(day===1?'Oggi riposo · ci vediamo domani':(m<1110?'Stasera si accende alle 18:30':'Forno spento · domani dalle 18:30'));
+  var N=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'];
+  document.getElementById('week').innerHTML=[2,3,4,5,6,0,1].map(function(i){return '<li'+(i===day?' class="t"':'')+'><span>'+N[i]+'</span><span>'+(i===1?'chiuso':'18:30 – 22:00')+'</span></li>'}).join('');
+
+  // menù reale
+  var M={'Classiche':[['Margherita',6,'pomodoro, mozzarella fiordilatte, basilico, olio evo'],['Marinara',5,'pomodoro, crema all\'aglio, origano, olio evo'],['Cosacca',5,'pomodoro, scaglie di grana in cottura, origano, crema all\'aglio'],['Napoli',8,'pomodoro, fiordilatte, filetti di acciughe, capperi, basilico'],['Diavola',7,'pomodoro, fiordilatte, spianata piccante, basilico'],['Prosciutto e funghi',8,'pomodoro, fiordilatte, prosciutto cotto, funghi, basilico'],['Gorgo e cipolle',8,'pomodoro, fiordilatte, gorgonzola, cipolla di Tropea'],['4 Stagioni',8,'pomodoro, fiordilatte, cotto, carciofi, funghi, olive'],['Calzone classico',7,'pomodoro, fiordilatte, prosciutto cotto, basilico']],
+   'Le nobili':[['Bufala',8,'pomodoro, bufala del caseificio Chicco Luca di Carmagnola, basilico',1],['Regina',9,'bufala di Carmagnola, pomodorini gialli e rossi, basilico'],['4 Formaggi',8,'fiordilatte, toma chierese di Ettore e Lisa, gorgonzola, grana'],['Ortolana',8,'pomodoro, fiordilatte, verdure al forno'],['Fumè',9,'pomodoro, provola affumicata, speck'],['Capricciosa',9,'pomodoro, fiordilatte, cotto, carciofi, funghi, olive, spianata'],['Del Maslè',10,'bufala di Carmagnola, würstel, cotto, spianata, salsiccia nostrana'],['Calzone reale',9,'fiordilatte, ricotta, cotto, spianata piccante',1],['Trionfo',12,'bufala di Carmagnola, crudo di Parma, rucola, grana fuori cottura']],
+   'Le nostre chicche':[['Stracciatella e salsiccia',10,'pomodoro, stracciatella, salsiccia nostrana, basilico',1],['Maranzana',11,'pomodoro, stracciatella, \'nduja, melanzana fritta'],['Sabauda',12,'stracciatella, crudo di Parma, pomodorini, grana fuori cottura'],['Del pizzaiolo',12,'a fantasia del pizzaiolo, con interno a sorpresa',1],['Stracciatella e salsiccia cruda',12,'stracciatella, salsiccia cruda di Chieri, basilico',1]],
+   'Della tradizione':[['Valdostana',8,'fiordilatte, prosciutto cotto, toma chierese'],['Norma',8,'fiordilatte, melanzane fritte, pecorino romano'],['Parmigiana',8,'fiordilatte, melanzane fritte, grana in cottura'],['Di Recco',8,'fiordilatte, stracchino, pesto ligure'],['Marinella',9,'pomodoro, acciughe, olive riviera, capperi, crema all\'aglio'],['Tropea',9,'fiordilatte, spianata, \'nduja, cipolla di Tropea'],['Carbonara',10,'fiordilatte, guanciale, tuorlo d\'uovo, pecorino, pepe'],['Salsiccia e friarielli',10,'provola affumicata, salsiccia nostrana, friarielli'],['Bagnet verd',8,'pomodoro, mozzarella, acciughe, bagnetto verde']],
+   'Le stagionali':[['L\'Autunnale',null,'vellutata di zucca, guanciale croccante, fiordilatte, dadolata di zucca, fonduta di gorgonzola',1],['La Contadina',null,'vellutata di zucca, fiordilatte, patate al forno, zucca al forno, olio al rosmarino']]};
+  var tabs=document.getElementById('tabs'),list=document.getElementById('list'),sw=document.getElementById('integ'),cur=Object.keys(M)[0];
+  tabs.innerHTML=Object.keys(M).map(function(k,i){return '<button type="button" aria-pressed="'+(i===0)+'">'+k+'</button>'}).join('');
+  function price(p){if(p===null)return 'al banco';var v=p+(sw.getAttribute('aria-checked')==='true'?1:0);return v.toFixed(2).replace('.',',')+' €'}
+  function draw(){list.innerHTML=M[cur].map(function(x){return '<div class="it"><b>'+x[0]+(x[3]?'<i>consigliata</i>':'')+'</b><em>'+price(x[1])+'</em><span>'+x[2]+'</span></div>'}).join('')}
+  tabs.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(tabs.children,function(x){x.setAttribute('aria-pressed',x===b)});cur=b.textContent;draw()});
+  sw.addEventListener('click',function(){sw.setAttribute('aria-checked',sw.getAttribute('aria-checked')!=='true');draw()});
+  draw();
+
+  // panuozzi
+  var P=[['','Dell\'Arco','bufala di Carmagnola, salsiccia cruda di Arignano, olio evo, pepe',9],['Via','Carlo Alberto','salsiccia nostrana, friarielli, provola affumicata',9],['Piazza','Mazzini','verdure al forno, fiordilatte, rucola',7],['Piazza','Cavour','crudo di Parma, stracciatella, rucola',9]];
+  var signs=document.getElementById('signs');
+  signs.innerHTML=P.map(function(p){return '<div class="rv"><div class="sign" tabindex="0" role="button" aria-pressed="false" aria-label="Panuozzo '+p[1]+'"><div class="f"><small>Chieri</small><b>'+(p[0]?p[0]+' '+p[1]:'Panuozzo dell\'Arco')+'</b><i>tocca per girare</i></div><div class="r"><b>Panuozzo '+p[1]+'</b><p>'+p[2]+'</p><em>'+p[3]+',00 €</em></div></div></div>'}).join('');
+  [].forEach.call(signs.querySelectorAll('.sign'),function(s){function t(){s.classList.toggle('flip');s.setAttribute('aria-pressed',s.classList.contains('flip'))}s.addEventListener('click',t);s.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t()}})});
+
+  // mappa km 0
+  function P2(lon,lat){return [Math.round((lon-7.62)*1250+20),Math.round((45.08-lat)*1600+20)]}
+  var S=[['Chieri','Toma chierese di Ettore e Lisa','Il formaggio della 4 Formaggi e della Valdostana. E la salsiccia cruda di Chieri, sulla Stracciatella e salsiccia cruda.',7.825,45.012,'0 km'],
+         ['Arignano','Salsiccia cruda di Arignano','Quella del panuozzo dell\'Arco: bufala, salsiccia cruda, olio e pepe. Niente altro.',7.90,45.04,'circa 7 km'],
+         ['Carmagnola','Mozzarella di bufala del caseificio Chicco Luca','La bufala della Bufala, della Regina, del Trionfo e del Del Maslè.',7.718,44.848,'circa 25 km']];
+  var map=document.getElementById('map'),h='',home=P2(7.825,45.012);
+  h+='<path class="road" d="M20 300 C140 260 260 220 460 120"/><path class="road" d="M120 440 C180 340 240 240 300 40"/>';
+  S.forEach(function(s,i){if(i){var p=P2(s[3],s[4]);h+='<path class="line" d="M'+home[0]+' '+home[1]+' Q'+((home[0]+p[0])/2+30)+' '+((home[1]+p[1])/2-30)+' '+p[0]+' '+p[1]+'"/>'}});
+  S.forEach(function(s,i){var p=P2(s[3],s[4]);h+='<g class="pin'+(i===0?' home':'')+'" tabindex="0" role="button" data-i="'+i+'" aria-label="'+s[0]+'"><circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+(i===0?13:10)+'"/><text x="'+(p[0]+18)+'" y="'+(p[1]+5)+'">'+s[0]+(i===0?' · noi':'')+'</text></g>'});
+  map.innerHTML=h;
+  var sup=document.getElementById('sup'),st2=document.getElementById('suptabs'),pins=[].slice.call(map.querySelectorAll('.pin'));
+  st2.innerHTML=S.map(function(s,i){return '<button type="button" aria-pressed="'+(i===0)+'" data-i="'+i+'">'+s[0]+'</button>'}).join('');
+  function sel(i){var s=S[i];sup.innerHTML='<b>'+s[1]+'</b><p>'+s[2]+'</p><em>'+s[0]+' · '+s[5]+'</em>';pins.forEach(function(p){p.classList.toggle('on',+p.dataset.i===i)});[].forEach.call(st2.children,function(b){b.setAttribute('aria-pressed',+b.dataset.i===i)})}
+  pins.forEach(function(p){p.addEventListener('click',function(){sel(+p.dataset.i)});p.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();sel(+p.dataset.i)}})});
+  st2.addEventListener('click',function(e){var b=e.target.closest('button');if(b)sel(+b.dataset.i)});
+  sel(0);
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  [].forEach.call(document.querySelectorAll('.rv,.map'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

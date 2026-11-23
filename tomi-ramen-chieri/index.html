@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tomi Ramen · Cucina giapponese in Via Roma, Chieri</title>
+<meta name="description" content="Tomi Ramen, Via Roma 5b a Chieri: ramen, gyoza, involtini, edamame e dolci giapponesi, con un cortile sotto gli ombrelloni di paglia. Pranzo e cena, chiuso il lunedì. Tel. 333 438 3606.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--ink:#17120f;--ink2:#221a15;--paper:#f4ead8;--lantern:#d9411e;--gold:#e0a34a;--mute:#9d8f80;--h:"Shippori Mincho B1",Georgia,serif;--b:"Zen Kaku Gothic New",system-ui,sans-serif;--gut:clamp(16px,4vw,56px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+html,body{overflow-x:clip}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.7 var(--b);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,10vw,130px)}
+h1,h2,h3{font-family:var(--h);font-weight:800;line-height:1.05}
+h2{font-size:clamp(2.4rem,5.4vw,4.2rem)}
+h2 em,h1 em{font-style:normal;color:var(--lantern)}
+.kick{display:inline-flex;align-items:center;gap:10px;font:700 .78rem/1 var(--b);letter-spacing:.24em;text-transform:uppercase;color:var(--lantern)}
+.kick::before{content:"";width:22px;height:2px;background:currentColor}
+.lead{font-size:1.12rem;max-width:32em}
+
+/* nav */
+.top{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:16px;padding:12px var(--gut);transition:background .4s}
+.top.s{background:rgba(23,18,15,.93);backdrop-filter:blur(8px)}
+.top .logo{display:flex;align-items:center;gap:10px;color:var(--paper);text-decoration:none;font:800 1.35rem/1 var(--h)}
+.top .logo i{width:34px;height:34px;border-radius:50%;background:var(--lantern);display:grid;place-items:center;font:800 1rem/1 var(--h);font-style:normal;color:var(--paper)}
+.top nav{margin-left:auto;display:flex;gap:18px}
+.top nav a{color:var(--paper);text-decoration:none;font:700 .86rem/1 var(--b);padding:8px 0;border-bottom:2px solid transparent}
+.top nav a:hover{border-color:var(--lantern)}
+.top .call{background:var(--lantern);color:#fff;text-decoration:none;font:700 .86rem/1 var(--b);padding:12px 16px;border-radius:4px}
+
+/* hero */
+.hero{position:relative;background:var(--ink);color:var(--paper);min-height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(30px,5vw,70px);padding:110px var(--gut) 60px;overflow:hidden}
+.hero .v{position:absolute;right:clamp(10px,3vw,40px);top:90px;writing-mode:vertical-rl;font:800 clamp(4rem,9vw,8rem)/1 var(--h);color:rgba(244,234,216,.07);letter-spacing:.1em;pointer-events:none}
+.hero h1{font-size:clamp(3rem,7vw,6rem)}
+.hero p{margin-top:20px;font-size:1.14rem;max-width:30em;color:#dcd0bd}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;padding:15px 24px;border-radius:4px;font:700 .92rem/1 var(--b);text-decoration:none;border:2px solid currentColor;transition:background .25s,color .25s}
+.btn.p{background:var(--lantern);border-color:var(--lantern);color:#fff}
+.btn.p:hover{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.btn.g:hover{background:var(--paper);color:var(--ink)}
+.rating{display:flex;align-items:baseline;gap:10px;margin-top:22px;color:#dcd0bd}
+.rating b{font:800 1.8rem/1 var(--h);color:var(--gold)}
+.status{display:flex;align-items:center;gap:9px;margin-top:10px;font:700 .86rem/1 var(--b);color:#bfb2a0}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#5c514a}
+.status.on{color:var(--paper)}.status.on::before{background:#7fdc8a;box-shadow:0 0 10px #7fdc8a}
+.bowlpic{position:relative;justify-self:center;width:min(520px,90%);aspect-ratio:1}
+.bowlpic img{width:100%;height:100%;object-fit:cover;border-radius:50%;box-shadow:0 40px 80px -30px #000,0 0 0 12px rgba(244,234,216,.05)}
+.steam{position:absolute;left:20%;right:20%;top:-14%;height:45%;pointer-events:none;overflow:visible;z-index:1}
+.steam path{fill:none;stroke:rgba(244,234,216,.55);stroke-width:6;stroke-linecap:round;filter:blur(3px);animation:rise 4.5s ease-in-out infinite;opacity:0}
+.steam path:nth-child(2){animation-delay:1.4s}.steam path:nth-child(3){animation-delay:2.8s}
+@keyframes rise{0%{opacity:0;transform:translateY(40px) scaleY(.8)}30%{opacity:.8}100%{opacity:0;transform:translateY(-40px) scaleY(1.1)}}
+
+/* componi la ciotola */
+.build .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.bowl{width:100%;max-width:480px;justify-self:center;overflow:visible}
+.bowl .t{transform-box:fill-box;transform-origin:center;transform:scale(.6) translateY(-30px);opacity:0;transition:transform .5s cubic-bezier(.3,1.5,.5,1),opacity .35s}
+.bowl .t.on{transform:scale(1);opacity:1}
+.chipset{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chipset button{border:2px solid var(--ink);border-radius:999px;padding:9px 15px;font:700 .9rem/1 var(--b);transition:background .2s,color .2s}
+.chipset button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.count{margin-top:18px;font:800 1.3rem/1.3 var(--h)}
+.small{font-size:.9rem;color:var(--mute);margin-top:8px}
+
+/* non solo ramen */
+.more{background:var(--ink);color:var(--paper)}
+.more .lead{color:#dcd0bd}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:12px;margin-top:40px}
+.grid figure{position:relative;overflow:hidden;border-radius:6px;background:#2a211b}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.grid figure:hover img{transform:scale(1.05)}
+.grid figcaption{position:absolute;left:10px;bottom:10px;background:var(--paper);color:var(--ink);padding:6px 10px;font:700 .8rem/1.2 var(--b);border-radius:3px}
+.grid .t2{grid-row:span 2}.grid .w2{grid-column:span 2}
+.dishes{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.dishes li{border:1px solid rgba(244,234,216,.2);border-radius:6px;padding:16px 18px}
+.dishes b{font:800 1.25rem/1.1 var(--h);display:block;color:var(--gold)}
+.dishes span{color:#cbbfae;font-size:.94rem}
+
+/* cortile */
+.cortile .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,70px);align-items:center}
+.cortile .ph{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cortile .ph img{border-radius:6px;width:100%;aspect-ratio:4/3;object-fit:cover}
+.cortile .ph img:first-child{grid-column:1/-1;aspect-ratio:16/9}
+
+/* orari */
+.ora{background:var(--ink2);color:var(--paper)}
+.ora .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px)}
+.week{list-style:none;margin-top:18px}
+.week li{display:grid;grid-template-columns:1fr auto auto;gap:18px;padding:11px 0;border-bottom:1px solid rgba(244,234,216,.12)}
+.week li.t{color:var(--gold);font-weight:700}
+.week li span:nth-child(n+2){color:#cbbfae}.week li.t span{color:var(--gold)}
+.big{display:block;font:800 clamp(2.2rem,4.5vw,3.4rem)/1.1 var(--h);text-decoration:none;color:var(--gold);margin-top:18px}
+footer{background:var(--ink);color:#9d8f80;text-align:center;padding:32px var(--gut);font-size:.9rem}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv{opacity:1;transform:none}
+@media (max-width:900px){
+ .top nav{display:none}.top .call{margin-left:auto}
+ .hero,.build .wrap,.cortile .wrap,.ora .wrap{grid-template-columns:1fr}
+ .grid{grid-template-columns:1fr 1fr;grid-auto-rows:170px}.grid .t2,.grid .w2{grid-row:auto;grid-column:auto}
+ .dishes{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){.steam path{animation:none;opacity:.4}.bowl .t{transition:none}.rv{opacity:1;transform:none;transition:none}}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#16110e;color:#f8f2e7;border-top:1px solid rgba(239,228,210,.25);font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}body{padding-bottom:34px}
+</style>
+</head>
+<body>
+<header class="top s" id="top">
+  <a class="logo" href="#" aria-label="Tomi Ramen, inizio pagina"><i aria-hidden="true">と</i>Tomi Ramen</a>
+  <nav aria-label="Sezioni"><a href="#ciotola">La ciotola</a><a href="#menu">Non solo ramen</a><a href="#cortile">Il cortile</a><a href="#orari">Orari</a></nav>
+  <a class="call" href="tel:+393334383606">Prenota</a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="t-hero">
+  <span class="v" aria-hidden="true">ラーメン</span>
+  <div>
+    <span class="kick">Via Roma 5b · Chieri</span>
+    <h1 id="t-hero" style="margin-top:16px">Una ciotola <em>fumante</em>, in centro a Chieri.</h1>
+    <p>Ramen con uovo marinato, chashu e alga nori. Poi gyoza, involtini, edamame e un gelato al matcha. A pranzo e a cena, dentro tra le lanterne o fuori nel cortile.</p>
+    <div class="btns"><a class="btn p" href="tel:+393334383606">Prenota un tavolo</a><a class="btn g" href="#ciotola">Componi la tua ciotola</a></div>
+    <div class="rating"><b>4,7</b><span>su Google, 153 recensioni</span></div>
+    <span class="status" id="status"></span>
+  </div>
+  <div class="bowlpic rv">
+    <svg class="steam" viewBox="0 0 200 120" aria-hidden="true"><path d="M60 120 C40 90 80 70 60 40 C45 20 70 10 65 0"/><path d="M100 120 C80 90 120 70 100 40 C85 20 110 10 105 0"/><path d="M140 120 C120 90 160 70 140 40 C125 20 150 10 145 0"/></svg>
+    <img src="img/ramen-hero.jpg" alt="Una ciotola di ramen con chashu, uova marinate, naruto, funghi e cipollotto" width="1100" height="1100">
+  </div>
+</section>
+
+<section id="ciotola" class="build" aria-labelledby="t-build">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kick">Il gioco della ciotola</span>
+      <h2 id="t-build" style="margin-top:14px">Componi la tua <em>ciotola</em>.</h2>
+      <p class="lead" style="margin-top:14px">Il brodo è pronto e i noodles sono già dentro. Aggiungi quello che ti piace: sono gli ingredienti che trovi nei nostri ramen.</p>
+      <div class="chipset" id="chips" role="group" aria-label="Ingredienti"></div>
+      <p class="count" id="count" aria-live="polite"></p>
+      <p class="small">È un gioco: la composizione vera dei ramen la trovi nel menù al tavolo.</p>
+      <div class="btns"><a class="btn p" href="tel:+393334383606">Prenota e assaggia</a></div>
+    </div>
+    <svg class="bowl rv" id="bowl" viewBox="0 0 400 400" role="img" aria-label="Ciotola di ramen vista dall'alto">
+      <defs>
+        <radialGradient id="brothG" cx="48%" cy="44%" r="58%"><stop offset="0" stop-color="#f7eedc"/><stop offset=".7" stop-color="#ecdcbc"/><stop offset="1" stop-color="#d8bf92"/></radialGradient>
+        <radialGradient id="bowlG" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#ffffff"/><stop offset=".8" stop-color="#f1ede4"/><stop offset="1" stop-color="#ddd6c8"/></radialGradient>
+        <pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.3" fill="#2f5d9e"/><circle cx="7" cy="7" r="1" fill="#2f5d9e" opacity=".65"/></pattern>
+        <radialGradient id="yolk" cx="42%" cy="40%" r="62%"><stop offset="0" stop-color="#ffd98a"/><stop offset=".4" stop-color="#f7a92e"/><stop offset=".85" stop-color="#ec8f18"/><stop offset="1" stop-color="#f3b448"/></radialGradient>
+        <radialGradient id="eggW" cx="50%" cy="48%" r="55%"><stop offset=".55" stop-color="#fbf5ea"/><stop offset=".9" stop-color="#ecd2ae"/><stop offset="1" stop-color="#d7ad7c"/></radialGradient>
+        <linearGradient id="rind" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9793a"/><stop offset=".6" stop-color="#99501f"/><stop offset="1" stop-color="#6e3412"/></linearGradient>
+        <radialGradient id="meat" cx="46%" cy="44%" r="60%"><stop offset="0" stop-color="#f3dccb"/><stop offset=".6" stop-color="#e2b796"/><stop offset="1" stop-color="#c88b5f"/></radialGradient>
+        <radialGradient id="kik" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#5a463d"/><stop offset=".5" stop-color="#2a1d18"/><stop offset="1" stop-color="#0f0a08"/></radialGradient>
+        <linearGradient id="corn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe676"/><stop offset="1" stop-color="#eeb21a"/></linearGradient>
+        <pattern id="noriP" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 3 L6 2 M1 0 L2 6" stroke="#3c4a32" stroke-width=".6" opacity=".7"/></pattern>
+        <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2.5" stdDeviation="2.2" flood-color="#5c3d18" flood-opacity=".35"/></filter>
+        <clipPath id="brothClip"><circle cx="200" cy="200" r="150"/></clipPath>
+      </defs>
+      <circle cx="200" cy="204" r="194" fill="#000" opacity=".18"/>
+      <circle cx="200" cy="200" r="192" fill="url(#bowlG)" stroke="#2b2f3a" stroke-width="4"/>
+      <circle cx="200" cy="200" r="171" fill="none" stroke="url(#dots)" stroke-width="30"/>
+      <circle cx="200" cy="200" r="152" fill="#ded3c0"/>
+      <circle cx="200" cy="200" r="150" fill="url(#brothG)"/>
+      <g clip-path="url(#brothClip)">
+        <g id="noodles" fill="none" stroke-linecap="round"></g>
+        <g id="oil"></g>
+        <g class="t" data-k="germogli" id="g-germogli" filter="url(#sh)"></g>
+        <g class="t" data-k="funghi" id="g-funghi" filter="url(#sh)"></g>
+        <g class="t" data-k="nori" filter="url(#sh)">
+          <g transform="translate(78 205) rotate(-8)"><rect x="-30" y="-78" width="60" height="150" rx="3" fill="#1b2318"/><rect x="-30" y="-78" width="60" height="150" rx="3" fill="url(#noriP)"/><rect x="-30" y="-78" width="60" height="150" rx="3" fill="none" stroke="#2c3826" stroke-width="2"/></g>
+        </g>
+        <g class="t" data-k="naruto" id="g-naruto" filter="url(#sh)"></g>
+        <g class="t" data-k="mais" id="g-mais" filter="url(#sh)"></g>
+        <g class="t" data-k="chashu" id="g-chashu" filter="url(#sh)"></g>
+        <g class="t" data-k="uovo" id="g-uovo" filter="url(#sh)"></g>
+        <g class="t" data-k="cipollotto" id="g-cipollotto"></g>
+      </g>
+      <circle cx="200" cy="200" r="190" fill="none" stroke="#fff" stroke-width="2" opacity=".6"/>
+      <path d="M70 92 A170 170 0 0 1 150 38" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".55"/>
+      <g><rect x="366" y="70" width="9" height="250" rx="4.5" fill="#b98a4e" transform="rotate(6 370 195)"/><rect x="381" y="76" width="9" height="250" rx="4.5" fill="#a77a40" transform="rotate(6 385 201)"/></g>
+    </svg>
+  </div>
+</section>
+
+<section id="menu" class="more" aria-labelledby="t-more">
+  <div class="wrap">
+    <div class="rv"><span class="kick">Non solo ramen</span><h2 id="t-more" style="margin-top:14px">Il vassoio <em>completo</em>.</h2>
+    <p class="lead" style="margin-top:14px">Antipasti da dividere, ciotole da finire fino all'ultimo sorso e un dolce giapponese per chiudere.</p></div>
+    <div class="grid">
+      <figure class="t2 rv"><img src="img/vassoio.jpg" alt="Un vassoio con ramen, gyoza, edamame e alghe" width="1050" height="1400" loading="lazy"><figcaption>Il vassoio</figcaption></figure>
+      <figure class="w2 rv"><img src="img/ramen-due.jpg" alt="Due ciotole di ramen sul tavolo" width="1050" height="1400" loading="lazy"><figcaption>Ramen in due</figcaption></figure>
+      <figure class="t2 rv"><img src="img/ramen-mais.jpg" alt="Ramen con chashu, uovo, mais e funghi" width="1265" height="1400" loading="lazy"><figcaption>Con il mais</figcaption></figure>
+      <figure class="w2 rv"><img src="img/ramen.jpg" alt="Ramen con uovo marinato, naruto e alga nori" width="1050" height="1400" loading="lazy"><figcaption>Uovo e naruto</figcaption></figure>
+    </div>
+    <ul class="dishes">
+      <li class="rv"><b>Gyoza</b><span>i ravioli giapponesi, da intingere</span></li>
+      <li class="rv"><b>Involtini primavera</b><span>croccanti, tra i più citati nelle recensioni</span></li>
+      <li class="rv"><b>Edamame</b><span>da sgranare mentre arriva il ramen</span></li>
+      <li class="rv"><b>Mochi</b><span>i dolcetti di riso</span></li>
+      <li class="rv"><b>Gelato al matcha</b><span>per chiudere, al tè verde</span></li>
+      <li class="rv"><b>Asporto</b><span>il ramen anche da portare a casa</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="cortile" class="cortile" aria-labelledby="t-cort">
+  <div class="wrap">
+    <div class="ph rv">
+      <img src="img/cortile-sera.jpg" alt="Il cortile di sera con le luci e gli ombrelloni di paglia" width="1400" height="1050" loading="lazy">
+      <img src="img/lanterne.jpg" alt="La sala con le lanterne di carta" width="1050" height="1400" loading="lazy">
+      <img src="img/sala.jpg" alt="La parete con le tavolette e le lanterne" width="1400" height="1050" loading="lazy">
+    </div>
+    <div class="rv">
+      <span class="kick">Il cortile</span>
+      <h2 id="t-cort" style="margin-top:14px">Dentro le lanterne, <em>fuori la paglia</em>.</h2>
+      <p class="lead" style="margin-top:14px">Dentro, la sala con le lanterne rosse e le tavolette alle pareti. Fuori, un cortile riparato sotto gli ombrelloni di paglia, per le sere d'estate e i pranzi di sole. «Ambiente stupendo», scrivono nelle recensioni.</p>
+    </div>
+  </div>
+</section>
+
+<section id="orari" class="ora" aria-labelledby="t-ora">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kick">Orari</span>
+      <h2 id="t-ora" style="margin-top:14px">Pranzo e <em>cena</em>.</h2>
+      <ul class="week" id="week"></ul>
+    </div>
+    <div class="rv">
+      <span class="kick">Prenota</span>
+      <a class="big" href="tel:+393334383606">333 438 3606</a>
+      <p style="margin-top:14px;color:#dcd0bd">Via Roma 5b · 10023 Chieri (TO)<br>Anche da asporto.</p>
+      <div class="btns"><a class="btn p" href="tel:+393334383606">Chiama</a><a class="btn g" href="https://maps.google.com/?q=Tomi+Ramen+Via+Roma+5b+Chieri" target="_blank" rel="noopener">Indicazioni</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Tomi Ramen. Non è il sito ufficiale.</div>
+<footer>Tomi Ramen · Via Roma 5b, Chieri · 333 438 3606</footer>
+
+<script>
+(function(){
+  var d=new Date(),day=d.getDay(),m=d.getHours()*60+d.getMinutes(),on=day!==1&&((m>=720&&m<900)||(m>=1140&&m<1380)),st=document.getElementById('status');
+  st.classList.toggle('on',on);st.textContent=on?'Aperto adesso':(day===1?'Oggi chiuso · ci vediamo domani':(m<720?'Oggi apriamo alle 12':(m<1110?'Si riapre alle 19':'Ci vediamo domani a pranzo')));
+  var N=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'];
+  document.getElementById('week').innerHTML=[2,3,4,5,6,0,1].map(function(i){return '<li'+(i===day?' class="t"':'')+'><span>'+N[i]+'</span>'+(i===1?'<span>chiuso</span><span></span>':'<span>12–15</span><span>19–23</span>')+'</li>'}).join('');
+
+
+  // disegno degli ingredienti
+  var seed=7;function rnd(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646}
+  function el(id){return document.getElementById(id)}
+  var h='',i;
+  for(i=0;i<14;i++){var y=150+i*12+rnd()*6,x0=40+rnd()*30,d='M'+x0.toFixed(1)+' '+y.toFixed(1);for(var x=x0;x<380;x+=22){d+=' q11 '+(rnd()*14-7).toFixed(1)+' 22 0'}
+    h+='<path d="'+d+'" stroke="#d6b56b" stroke-width="8"/><path d="'+d+'" stroke="#f3dc9c" stroke-width="5.5"/>'}
+  el('noodles').innerHTML=h;
+  h='';for(i=0;i<26;i++){var r=1.5+rnd()*4.5;h+='<circle cx="'+(60+rnd()*280).toFixed(1)+'" cy="'+(60+rnd()*280).toFixed(1)+'" r="'+r.toFixed(1)+'" fill="rgba(255,226,160,.45)" stroke="rgba(196,140,50,.55)" stroke-width=".8"/>'}
+  el('oil').innerHTML=h;
+  function egg(x,y,a){return '<g transform="translate('+x+' '+y+') rotate('+a+')"><ellipse rx="37" ry="29" fill="url(#eggW)"/><ellipse rx="37" ry="29" fill="none" stroke="#c69560" stroke-width="2"/><ellipse cx="-1" cy="1" rx="22" ry="17.5" fill="url(#yolk)"/><ellipse cx="-1" cy="1" rx="22" ry="17.5" fill="none" stroke="#f6c463" stroke-width="2"/><ellipse cx="-6" cy="-4" rx="7" ry="4.5" fill="#ffe7b0" opacity=".75"/></g>'}
+  el('g-uovo').innerHTML=egg(282,158,-14)+egg(290,226,10);
+  function slice(x,y,a,sc){return '<g transform="translate('+x+' '+y+') rotate('+a+') scale('+sc+')"><ellipse rx="46" ry="36" fill="url(#rind)"/><ellipse rx="39" ry="29.5" fill="url(#meat)"/><path d="M-24 -4 C-18 -22 18 -24 26 -4 C32 12 12 24 -4 18 C-16 13 -14 -2 -2 -6 C8 -9 14 2 6 8" fill="none" stroke="#f9ebdf" stroke-width="5" opacity=".9"/><path d="M-30 -14 q6 -2 10 2 M24 18 q6 -4 10 -2 M-8 26 q6 2 12 0" stroke="#5a2a10" stroke-width="3" fill="none" opacity=".55" stroke-linecap="round"/><ellipse cx="-12" cy="-14" rx="10" ry="4" fill="#fff" opacity=".25"/></g>'}
+  el('g-chashu').innerHTML=slice(168,288,-12,1)+slice(228,304,14,.92);
+  function naruto(x,y,a){var d='',n=14,R=23;for(var k=0;k<=n;k++){var t=k/n*Math.PI*2,tm=(k-.5)/n*Math.PI*2,px=Math.cos(t)*R,py=Math.sin(t)*R*.86;if(k===0)d='M'+px.toFixed(1)+' '+py.toFixed(1);else d+=' Q'+(Math.cos(tm)*(R+5)).toFixed(1)+' '+(Math.sin(tm)*(R+5)*.86).toFixed(1)+' '+px.toFixed(1)+' '+py.toFixed(1)}
+    return '<g transform="translate('+x+' '+y+') rotate('+a+')"><path d="'+d+'Z" fill="#fdfaf7" stroke="#e8dad3" stroke-width="1.5"/><path d="M0 0 m-13 0 a13 11 0 1 1 13 11 a8.5 7 0 1 1 -8.5 -7 a4.5 4 0 1 1 4.5 4" fill="none" stroke="#ef8aa6" stroke-width="3.2" stroke-linecap="round"/></g>'}
+  el('g-naruto').innerHTML=naruto(128,178,-10)+naruto(158,190,6)+naruto(188,200,-4);
+  function blob(cx,cy,R){var n=11,d='';for(var k=0;k<=n;k++){var t=k/n*Math.PI*2,r=R*(.8+rnd()*.25),px=cx+Math.cos(t)*r,py=cy+Math.sin(t)*r*.8,tm=t-Math.PI/n,rm=R*(1.0+rnd()*.25);if(k===0)d='M'+px.toFixed(1)+' '+py.toFixed(1);else d+=' Q'+(cx+Math.cos(tm)*rm).toFixed(1)+' '+(cy+Math.sin(tm)*rm*.8).toFixed(1)+' '+px.toFixed(1)+' '+py.toFixed(1)}return d+'Z'}
+  h='';[[175,100,24],[205,92,22],[232,104,20],[190,122,18],[218,124,17],[160,118,15]].forEach(function(b){var d=blob(b[0],b[1],b[2]);h+='<path d="'+d+'" fill="url(#kik)"/><path d="'+d+'" fill="none" stroke="#6e5a4e" stroke-width="1.2" opacity=".7"/>'});
+  el('g-funghi').innerHTML=h;
+  h='';for(i=0;i<16;i++){var x=95+rnd()*70,y=88+rnd()*50,a=rnd()*Math.PI,l=24+rnd()*16,ex=x+Math.cos(a)*l,ey=y+Math.sin(a)*l*.6;
+    h+='<path d="M'+x.toFixed(1)+' '+y.toFixed(1)+' Q'+((x+ex)/2+8).toFixed(1)+' '+((y+ey)/2-8).toFixed(1)+' '+ex.toFixed(1)+' '+ey.toFixed(1)+'" stroke="#f7f1de" stroke-width="3.4" fill="none" stroke-linecap="round"/><ellipse cx="'+ex.toFixed(1)+'" cy="'+ey.toFixed(1)+'" rx="3.4" ry="2.4" fill="#efe0a2"/>'}
+  el('g-germogli').innerHTML=h;
+  h='';for(i=0;i<22;i++){var cx=258+rnd()*52,cy=268+rnd()*44,ang=rnd()*90;h+='<g transform="translate('+cx.toFixed(1)+' '+cy.toFixed(1)+') rotate('+ang.toFixed(0)+')"><rect x="-5" y="-4.5" width="10" height="9" rx="3.5" fill="url(#corn)" stroke="#d99b12" stroke-width=".8"/><ellipse cx="-1.5" cy="-1.8" rx="2.2" ry="1.3" fill="#fff5c4" opacity=".8"/></g>'}
+  el('g-mais').innerHTML=h;
+  h='';for(i=0;i<16;i++){var cx2=180+rnd()*70,cy2=170+rnd()*60,r2=3.5+rnd()*3;h+='<circle cx="'+cx2.toFixed(1)+'" cy="'+cy2.toFixed(1)+'" r="'+r2.toFixed(1)+'" fill="#e3f4cc" stroke="#6fb441" stroke-width="2.2"/><circle cx="'+cx2.toFixed(1)+'" cy="'+cy2.toFixed(1)+'" r="'+(r2*.45).toFixed(1)+'" fill="none" stroke="#a6d77c" stroke-width="1"/>'}
+  for(i=0;i<10;i++){var x3=185+rnd()*60,y3=175+rnd()*50,a3=rnd()*6.28;h+='<path d="M'+x3.toFixed(1)+' '+y3.toFixed(1)+' l'+(Math.cos(a3)*16).toFixed(1)+' '+(Math.sin(a3)*16).toFixed(1)+'" stroke="#4f9a2e" stroke-width="2.2" stroke-linecap="round"/>'}
+  el('g-cipollotto').innerHTML=h;
+  var K=[['uovo','Uovo marinato'],['chashu','Chashu'],['nori','Nori'],['naruto','Naruto'],['mais','Mais'],['funghi','Funghi kikurage'],['germogli','Germogli'],['cipollotto','Cipollotto']];
+  var chips=document.getElementById('chips'),bowl=document.getElementById('bowl'),cnt=document.getElementById('count');
+  chips.innerHTML=K.map(function(k){return '<button type="button" aria-pressed="false" data-k="'+k[0]+'">'+k[1]+'</button>'}).join('');
+  function upd(){var on=[].filter.call(chips.children,function(b){return b.getAttribute('aria-pressed')==='true'});
+    cnt.textContent=on.length===0?'Solo brodo e noodles, per ora.':(on.length===K.length?'Tutto dentro: questa sì che è una ciotola!':on.length+(on.length===1?' ingrediente':' ingredienti')+' nella ciotola.');}
+  chips.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var v=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',v);bowl.querySelector('.t[data-k="'+b.dataset.k+'"]').classList.toggle('on',v);upd()});
+  ['uovo','chashu','cipollotto'].forEach(function(k){chips.querySelector('[data-k="'+k+'"]').setAttribute('aria-pressed','true');bowl.querySelector('.t[data-k="'+k+'"]').classList.add('on')});upd();
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  [].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

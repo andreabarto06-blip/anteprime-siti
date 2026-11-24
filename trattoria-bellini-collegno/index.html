@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trattoria Enoteca Bellini · Collegno, dal 2000</title>
+<meta name="description" content="Trattoria Enoteca Bellini, Corso Togliatti 11B a Collegno, dal 2000. Cucina vera, fatta al momento: ogni giorno un menù diverso a pranzo, e una cantina di vini sempre in movimento. Aperti dalle 7. Tel. 011 405 5335.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--cream:#f4e9d3;--cream2:#ead9b8;--wine:#6e1626;--wine2:#4d0e1a;--gold:#b08a4a;--ink:#2a1d17;--mute:#7c6a5b;--s:"Pinyon Script",cursive;--h:"Libre Caslon Text",Georgia,serif;--c:"Marcellus",Georgia,serif;--b:"Karla",system-ui,sans-serif;--gut:clamp(22px,5vw,64px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:400 1.05rem/1.65 var(--b);color:var(--ink);background:var(--cream)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gut)}
+h1,h2,h3{font-family:var(--h);font-weight:400;line-height:1.1}
+h2{font-size:clamp(2rem,4.4vw,3.3rem)}
+h2 i{color:var(--wine)}
+.kick{font:400 .82rem/1 var(--c);letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+.lead{font-size:1.12rem;color:#54453a;max-width:56ch}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:2px;font:700 .92rem/1 var(--b);letter-spacing:.04em;text-decoration:none;border:1px solid var(--wine);transition:background .25s,color .25s}
+.btn.p{background:var(--wine);color:var(--cream)}
+.btn.p:hover{background:var(--wine2)}
+.btn.g:hover{background:var(--wine);color:var(--cream)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+section{padding:clamp(70px,10vw,120px) 0}
+/* top */
+.top{position:fixed;inset:0 0 auto;z-index:20;display:flex;align-items:center;gap:22px;padding:10px var(--gut);background:rgba(244,233,211,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(110,22,38,.15)}
+.mark{display:flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--wine);line-height:1}
+.mark small{font:400 .56rem/1 var(--c);letter-spacing:.24em}
+.mark b{font:400 1.9rem/1 var(--s);margin-top:-2px}
+.top nav{margin-left:auto;display:flex;gap:24px}
+.top nav a{font:400 .82rem/1 var(--c);letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
+.top nav a:hover{color:var(--wine)}
+.top .call{padding:10px 16px;font-size:.82rem}
+/* hero */
+.hero{min-height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:stretch;padding-top:64px}
+.hero .txt{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:50px var(--gut)}
+.logo-big{width:min(460px,100%)}
+.logo-big .tr,.logo-big .dal{font:400 15px/1 var(--c);letter-spacing:.34em;fill:var(--wine)}
+.logo-big .bel{font:400 112px/1 var(--s);fill:var(--wine);stroke:var(--wine);stroke-width:1.2;stroke-dasharray:900;stroke-dashoffset:900;fill-opacity:0}
+.logo-big.go .bel{animation:write 2.6s ease forwards}
+@keyframes write{70%{stroke-dashoffset:0;fill-opacity:0}100%{stroke-dashoffset:0;fill-opacity:1;stroke-width:0}}
+.hero .motto{font:italic 400 clamp(1.4rem,2.6vw,2rem)/1.3 var(--h);margin-top:26px}
+.hero .lead{margin:16px auto 0}
+.hero .btns{justify-content:center}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font:700 .85rem/1 var(--b);color:var(--mute)}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#bfae99}
+.status.on{color:var(--ink)}.status.on::before{background:#3d8d55;box-shadow:0 0 0 4px rgba(61,141,85,.18)}
+.hero .pic{position:relative;overflow:hidden}
+.hero .pic img{width:100%;height:100%;object-fit:cover}
+.hero .pic::after{content:"";position:absolute;inset:16px;border:1px solid rgba(244,233,211,.7);pointer-events:none}
+/* giornata */
+.giorno{background:var(--wine);color:var(--cream)}
+.giorno h2 i{color:var(--cream2)}
+.giorno .kick{color:var(--cream2)}
+.giorno .lead{color:#ead6c6}
+.stage{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,4vw,56px);align-items:center;margin-top:44px}
+.frames{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--wine2)}
+.frames img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s,transform 1.4s}
+.frames img.on{opacity:1;transform:none}
+.moment .hour{font:400 clamp(3rem,7vw,5.2rem)/1 var(--h);font-variant-numeric:tabular-nums}
+.moment h3{font:400 2.6rem/1.1 var(--s);color:var(--cream2);margin-top:6px}
+.moment p{margin-top:12px;color:#ead6c6;max-width:40ch}
+.ribbon{margin-top:40px}
+.ribbon input{width:100%;appearance:none;-webkit-appearance:none;background:transparent;height:44px;cursor:grab}
+.ribbon input::-webkit-slider-runnable-track{height:4px;background:linear-gradient(90deg,var(--cream2) var(--p,0%),rgba(234,217,184,.25) var(--p,0%))}
+.ribbon input::-moz-range-track{height:4px;background:rgba(234,217,184,.25)}
+.ribbon input::-moz-range-progress{height:4px;background:var(--cream2)}
+.ribbon input::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:var(--cream);border:6px solid var(--gold);margin-top:-13px}
+.ribbon input::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--cream);border:6px solid var(--gold)}
+.ribbon input:focus-visible{outline:2px solid var(--cream2);outline-offset:4px}
+.ticks{display:flex;justify-content:space-between;font:400 .78rem/1 var(--c);letter-spacing:.14em;color:#d8bfae;margin-top:4px}
+.ticks button{background:none;border:0;color:inherit;font:inherit;letter-spacing:inherit;cursor:pointer;padding:6px 0}
+.ticks button:hover{color:var(--cream)}
+/* menu */
+.menu .head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
+.plates{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.plate{background:#fff;padding:10px 10px 14px;box-shadow:0 20px 34px -26px rgba(42,29,23,.55);transition:transform .4s}
+.plate:hover{transform:translateY(-6px) rotate(-.6deg)}
+.plate img{width:100%;aspect-ratio:1;object-fit:cover}
+.plate span{display:block;margin-top:10px;font:italic 400 1rem/1.25 var(--h);text-align:center}
+.menu .note{margin-top:22px;font-size:.92rem;color:var(--mute);text-align:center}
+/* famiglia */
+.fam{background:var(--cream2)}
+.fam .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(30px,5vw,70px);align-items:center}
+.fam img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:200px 200px 3px 3px}
+.quotes{display:grid;gap:14px;margin-top:26px}
+.quotes blockquote{background:var(--cream);padding:18px 22px;font:italic 400 1.12rem/1.45 var(--h);border-left:3px solid var(--wine)}
+.quotes cite{display:block;margin-top:6px;font:700 .78rem/1 var(--b);font-style:normal;color:var(--mute)}
+/* cantina */
+.cantina .wrap{display:grid;grid-template-columns:auto 1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center}
+.glass{width:clamp(110px,14vw,170px)}
+.glass .wine{transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(var(--fill,0))}
+.cantina .ph{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cantina .ph img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.cantina .ph img:first-child{grid-row:span 2;aspect-ratio:auto;height:100%}
+.cantina blockquote{margin-top:22px;font:italic 400 1.1rem/1.45 var(--h);border-left:3px solid var(--wine);padding-left:18px}
+/* orari */
+.ora{background:var(--cream2)}
+.ora .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px)}
+.days{list-style:none;margin-top:24px}
+.days li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px dashed rgba(110,22,38,.3)}
+.days li.t{color:var(--wine);font-weight:700}
+.days li span:last-child{font-variant-numeric:tabular-nums}
+.ora .small{margin-top:14px;font-size:.92rem;color:var(--mute)}
+.card{background:#fff;padding:clamp(22px,3vw,34px);box-shadow:0 30px 50px -40px rgba(42,29,23,.6)}
+.card dl{display:grid;gap:14px;margin-top:18px}
+.card dt{font:400 .74rem/1 var(--c);letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.card dd a{text-decoration:none;font-weight:700}
+.map{margin-top:20px;aspect-ratio:16/9;background:var(--cream2)}
+.map iframe{width:100%;height:100%;border:0}
+footer{padding:46px 0 60px;text-align:center;color:var(--mute);font-size:.9rem}
+footer .mark{margin-bottom:12px}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s}
+.js .rv.in{opacity:1;transform:none}
+@media (max-width:900px){
+ .top nav{display:none}.top .call{margin-left:auto}
+ .hero{grid-template-columns:1fr}
+ .hero .pic{height:62vw;order:-1}
+ .stage,.menu .head,.fam .wrap,.ora .wrap{grid-template-columns:1fr}
+ .plates{grid-template-columns:1fr 1fr}
+ .cantina .wrap{grid-template-columns:1fr}
+ .glass{margin:0 auto}
+}
+@media (prefers-reduced-motion:reduce){.logo-big .bel{animation:none!important;stroke-dashoffset:0;fill-opacity:1;stroke-width:0}.js .rv{opacity:1;transform:none;transition:none}.frames img{transition:none}}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#16110e;color:#f8f2e7;border-top:1px solid rgba(239,228,210,.25);font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}body{padding-bottom:34px}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="mark" href="#" aria-label="Trattoria Enoteca Bellini, inizio pagina"><small>TRATTORIA · ENOTECA</small><b>Bellini</b></a>
+  <nav aria-label="Sezioni"><a href="#giornata">La giornata</a><a href="#menu">Il menù</a><a href="#cantina">La cantina</a><a href="#orari">Orari</a></nav>
+  <a class="btn p call" href="tel:+390114055335">Prenota</a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="t-hero" style="padding-bottom:0">
+  <div class="txt">
+    <h1 id="t-hero" style="width:100%;display:flex;justify-content:center">
+      <svg class="logo-big" id="logo" viewBox="0 0 460 210" role="img" aria-label="Trattoria Enoteca Bellini, dal 2000">
+        <text class="tr" x="230" y="30" text-anchor="middle">TRATTORIA – ENOTECA</text>
+        <text class="bel" x="230" y="148" text-anchor="middle">Bellini</text>
+        <text class="dal" x="230" y="196" text-anchor="middle">DAL 2000</text>
+      </svg>
+    </h1>
+    <p class="motto">Cucina vera, fatta al momento.</p>
+    <p class="lead">In Corso Togliatti, a Collegno: il caffè la mattina, ogni giorno un menù diverso a pranzo, e un bicchiere scelto bene.</p>
+    <span class="status" id="status">Orari di oggi</span>
+    <div class="btns"><a class="btn p" href="tel:+390114055335">Chiama e prenota</a><a class="btn g" href="#giornata">La nostra giornata</a></div>
+  </div>
+  <div class="pic"><img src="img/sala.jpg" alt="La sala con le pareti arancio, i quadri, i tavoli apparecchiati e il paravento decorato" width="1050" height="1400"></div>
+</section>
+
+<section id="giornata" class="giorno" aria-labelledby="t-giorno">
+  <div class="wrap">
+    <div class="rv"><span class="kick">Dalle 7 alle 21</span>
+    <h2 id="t-giorno" style="margin-top:14px">Una giornata <i>al Bellini</i>.</h2>
+    <p class="lead" style="margin-top:14px">Trascinate la lancetta lungo la giornata: siamo aperti dal mattino, e ogni ora ha la sua cosa buona.</p></div>
+    <div class="stage rv">
+      <div class="frames" id="frames">
+        <img class="on" src="img/bancone.jpg" alt="Il bancone con gli scaffali delle bottiglie e le pareti arancio" width="1400" height="1050">
+        <img src="img/gnocchi.jpg" alt="Gnocchi al pomodoro con il basilico" width="1400" height="1400" loading="lazy">
+        <img src="img/calice.jpg" alt="Un calice di vino bianco con il logo Bellini" width="590" height="590" loading="lazy">
+      </div>
+      <div class="moment" aria-live="polite">
+        <div class="hour" id="hour">7:00</div>
+        <h3 id="mname">Il caffè</h3>
+        <p id="mtext">Si apre alle sette: caffè al banco, due parole e la giornata può cominciare.</p>
+      </div>
+    </div>
+    <div class="ribbon rv">
+      <label for="day" class="kick" style="display:block;margin-bottom:6px">Che ore sono?</label>
+      <input type="range" id="day" min="420" max="1260" step="15" value="420">
+      <div class="ticks"><button type="button" data-t="420">7:00</button><button type="button" data-t="750">12:30</button><button type="button" data-t="1080">18:00</button><button type="button" data-t="1260">21:00</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu" aria-labelledby="t-menu">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="kick">A pranzo, dal lunedì al sabato</span><h2 id="t-menu" style="margin-top:14px">Ogni giorno <i>un menù diverso</i>.</h2></div>
+      <p class="lead">Segui la stagionalità, gusta la freschezza, torna a trovarci. La cucina è aperta dalle 12 alle 14:15, e ogni giorno porta in tavola il meglio della tradizione.</p>
+    </div>
+    <div class="plates">
+      <figure class="plate rv"><img src="img/arrosto.jpg" alt="Arrosto al sugo con il purè" width="1120" height="1400" loading="lazy"><span>Arrosto e purè</span></figure>
+      <figure class="plate rv"><img src="img/gnocchi.jpg" alt="Gnocchi al pomodoro" width="1400" height="1400" loading="lazy"><span>Gnocchi al pomodoro</span></figure>
+      <figure class="plate rv"><img src="img/cotoletta.jpg" alt="Cotoletta con patate e limone" width="1242" height="932" loading="lazy"><span>La cotoletta</span></figure>
+      <figure class="plate rv"><img src="img/tagliolini.jpg" alt="Tagliolini con le zucchine" width="590" height="590" loading="lazy"><span>Tagliolini e zucchine</span></figure>
+      <figure class="plate rv"><img src="img/polenta.jpg" alt="Polenta con salsiccia al sugo" width="1400" height="1400" loading="lazy"><span>Polenta e salsiccia</span></figure>
+      <figure class="plate rv"><img src="img/verdure.jpg" alt="Verdure grigliate con peperoni" width="1242" height="932" loading="lazy"><span>Le verdure</span></figure>
+      <figure class="plate rv"><img src="img/tagliata.jpg" alt="Carne alla griglia con patate" width="1242" height="932" loading="lazy"><span>La carne</span></figure>
+      <figure class="plate rv"><img src="img/crespella.jpg" alt="Crespella gratinata al forno" width="1242" height="932" loading="lazy"><span>Crespelle al forno</span></figure>
+    </div>
+    <p class="note rv">Alcuni piatti passati dal nostro menù: per sapere quelli di oggi, chiamateci.</p>
+  </div>
+</section>
+
+<section class="fam" aria-labelledby="t-fam">
+  <div class="wrap">
+    <img class="rv" src="img/pollo.jpg" alt="Pollo arrosto con le patate" width="590" height="590" loading="lazy">
+    <div class="rv">
+      <span class="kick">Dal 2000</span>
+      <h2 id="t-fam" style="margin-top:14px">Un cuoco, un cameriere, <i>niente fretta</i>.</h2>
+      <p class="lead" style="margin-top:14px">Papà e figlio, la cucina e la sala: una trattoria dove ci si sente in famiglia, si mangia casalingo e si può continuare a chiacchierare.</p>
+      <div class="quotes">
+        <blockquote>«Ottimo cibo, prezzi giusti, papà e figlio simpaticissimi.»<cite>Dalle recensioni su Google</cite></blockquote>
+        <blockquote>«Cibo casalingo, gentilezza e simpatia la fanno da padrone.»<cite>Dalle recensioni su Google</cite></blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cantina" class="cantina" aria-labelledby="t-cantina">
+  <div class="wrap">
+    <svg class="glass rv" viewBox="0 0 120 240" aria-hidden="true">
+      <defs><clipPath id="bowl"><path d="M22 14h76c2 40-4 74-38 86C26 88 20 54 22 14z"/></clipPath></defs>
+      <g clip-path="url(#bowl)"><rect class="wine" id="wine" x="0" y="40" width="120" height="62" fill="#6e1626"/></g>
+      <path d="M22 14h76c2 40-4 74-38 86C26 88 20 54 22 14z" fill="none" stroke="#2a1d17" stroke-width="2.5"/>
+      <path d="M60 100v104M30 220c10-12 50-12 60 0z" fill="none" stroke="#2a1d17" stroke-width="2.5" stroke-linejoin="round"/>
+    </svg>
+    <div class="rv">
+      <span class="kick">La cantina</span>
+      <h2 id="t-cantina" style="margin-top:14px">Una cantina <i>sempre in movimento</i>.</h2>
+      <p class="lead" style="margin-top:14px">Vini italiani e stranieri, etichette scelte e bollicine: al bicchiere con l'aperitivo, con un tagliere di salumi e formaggi, o in bottiglia per il pranzo.</p>
+      <blockquote>«Una fantastica soppressa e formaggi di qualità. Il prezzo giusto per la degustazione.»</blockquote>
+    </div>
+    <div class="ph rv">
+      <img src="img/cantina.jpg" alt="Una bottiglia di rosso tenuta davanti agli scaffali della cantina" width="590" height="590" loading="lazy">
+      <img src="img/bollicine.jpg" alt="Un calice e una bottiglia di spumante" width="590" height="590" loading="lazy">
+      <img src="img/spaghetti.jpg" alt="Spaghetti al sugo" width="590" height="590" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="orari" class="ora" aria-labelledby="t-ora">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kick">Orari</span>
+      <h2 id="t-ora" style="margin-top:14px">Quando <i>ci trovate</i>.</h2>
+      <ul class="days" id="days"></ul>
+      <p class="small">La cucina è aperta a pranzo, dalle 12 alle 14:15, dal lunedì al sabato.</p>
+    </div>
+    <div class="card rv">
+      <span class="kick">Prenota un tavolo</span>
+      <dl>
+        <div><dt>Telefono</dt><dd><a href="tel:+390114055335">011 405 5335</a></dd></div>
+        <div><dt>Indirizzo</dt><dd>Corso Palmiro Togliatti 11B · 10093 Collegno (TO)</dd></div>
+        <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/trattoria.enoteca.bellini/" rel="noopener">Trattoria Enoteca Bellini</a></dd></div>
+      </dl>
+      <div class="map"><iframe title="Mappa: Corso Palmiro Togliatti 11B, Collegno" loading="lazy" src="https://www.google.com/maps?q=Corso+Palmiro+Togliatti+11B+Collegno&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Trattoria Enoteca Bellini. Non è il sito ufficiale.</div>
+<footer>
+  <div class="mark"><small>TRATTORIA · ENOTECA</small><b>Bellini</b></div>
+  Dal 2000 · Corso Palmiro Togliatti 11B, Collegno (TO) · 011 405 5335
+</footer>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  requestAnimationFrame(function(){document.getElementById('logo').classList.add('go')});
+
+  // orari: lun-sab 7-21, dom 7-15
+  var N=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'],O={0:[420,900]};
+  for(var k=1;k<7;k++)O[k]=[420,1260];
+  function f(m){return Math.floor(m/60)+':'+('0'+m%60).slice(-2)}
+  var d=new Date(),day=d.getDay(),m=d.getHours()*60+d.getMinutes();
+  document.getElementById('days').innerHTML=[1,2,3,4,5,6,0].map(function(k){return '<li'+(k===day?' class="t"':'')+'><span>'+N[k]+'</span><span>'+f(O[k][0])+' – '+f(O[k][1])+'</span></li>'}).join('');
+  var on=m>=O[day][0]&&m<O[day][1],st=document.getElementById('status');
+  st.classList.toggle('on',on);st.textContent=on?(day!==0&&m>=720&&m<855?'Aperti: la cucina è in servizio':'Aperti adesso'):(m<O[day][0]?'Apriamo alle 7':'Chiusi, domani dalle 7');
+
+  // la giornata
+  var M=[{from:420,n:'Il caffè',t:'Si apre alle sette: caffè al banco, due parole e la giornata può cominciare.',i:0},
+         {from:720,n:'Il pranzo',t:'Dalle 12 alle 14:15 la cucina è in servizio, con il menù del giorno: primi, secondi e contorni fatti al momento.',i:1},
+         {from:855,n:'Il bicchiere',t:'Il pomeriggio e la sera: un calice al banco e un tagliere di salumi e formaggi per l\'aperitivo.',i:2}];
+  var r=document.getElementById('day'),imgs=document.querySelectorAll('#frames img'),cur=-1;
+  function show(t){var x=M[0];M.forEach(function(mm){if(t>=mm.from)x=mm});
+    document.getElementById('hour').textContent=f(t);r.style.setProperty('--p',((t-420)/840*100)+'%');
+    r.setAttribute('aria-valuetext',f(t)+', '+x.n);
+    if(x.i!==cur){cur=x.i;imgs.forEach(function(im,j){im.classList.toggle('on',j===x.i)});document.getElementById('mname').textContent=x.n;document.getElementById('mtext').textContent=x.t}}
+  r.addEventListener('input',function(){show(+r.value)});
+  document.querySelectorAll('.ticks button').forEach(function(b){b.addEventListener('click',function(){r.value=b.dataset.t;show(+b.dataset.t)})});
+  var start=(m>=420&&m<=1260)?Math.round(m/15)*15:420;r.value=start;show(start);
+
+  // il calice si riempie con lo scroll
+  var wine=document.getElementById('wine'),cs=document.getElementById('cantina');
+  function fill(){var b=cs.getBoundingClientRect(),v=Math.min(1,Math.max(0,(innerHeight-b.top)/(innerHeight+b.height*.4)));wine.style.setProperty('--fill',reduce?1:v.toFixed(3))}
+  addEventListener('scroll',fill,{passive:true});fill();
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

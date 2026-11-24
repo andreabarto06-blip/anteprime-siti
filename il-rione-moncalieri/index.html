@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il Rione · Pinsa romana in Via Garibaldi, Moncalieri</title>
+<meta name="description" content="Il Rione, Via Garibaldi 16 a Moncalieri: ristorante pinseria con pinsa romana, carne, pesce, birre artigianali e dolci della casa, con il dehors in giardino. Pranzo e cena tutti i giorni, brunch la domenica. Tel. 011 977 6616.">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--terra:#d9622b;--terra2:#b84d1d;--slate:#3f4650;--slate2:#2b3038;--cream:#f6f1e9;--olive:#6b7a3a;--ink:#23262b;--mute:#7b7f86;--h:"Young Serif",Georgia,serif;--b:"Inter Tight",system-ui,sans-serif;--gut:clamp(16px,4vw,56px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+html,body{overflow-x:clip}
+body{background:var(--cream);color:var(--ink);font:400 17px/1.65 var(--b);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+section{padding-block:clamp(80px,10vw,130px)}
+h1,h2,h3{font-family:var(--h);font-weight:400;line-height:1.02}
+h2{font-size:clamp(2.5rem,5.8vw,4.4rem)}
+h1 span,h2 span{color:var(--terra)}
+.kick{font:800 .76rem/1 var(--b);letter-spacing:.22em;text-transform:uppercase;color:var(--terra)}
+.lead{font-size:1.13rem;max-width:32em}
+
+/* nav */
+.top{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:16px;padding:12px var(--gut);background:rgba(246,241,233,.94);backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(35,38,43,.08)}
+.top .logo{text-decoration:none;font:400 1.6rem/1 var(--h)}
+.top .logo span{color:var(--terra)}
+.top .logo img{height:44px;width:auto;display:block}
+.top nav{margin-left:auto;display:flex;gap:4px}
+.top nav a{text-decoration:none;font:600 .9rem/1 var(--b);padding:10px 12px;border-radius:999px}
+.top nav a:hover{background:#ece3d6}
+.top .call{background:var(--terra);color:#fff;text-decoration:none;font:800 .86rem/1 var(--b);padding:12px 18px;border-radius:999px}
+
+/* hero: la pinsa si stende */
+.hero{min-height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(30px,5vw,60px);padding:110px var(--gut) 60px;max-width:1280px;margin:0 auto;overflow:clip}
+.hero h1{font-size:clamp(3.2rem,7.4vw,6.4rem)}
+.hero p{margin-top:18px;font-size:1.16rem;max-width:30em;color:#4a4e55}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;padding:15px 24px;border-radius:999px;font:800 .92rem/1 var(--b);text-decoration:none;border:2px solid var(--ink);transition:background .25s,color .25s,transform .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--terra);border-color:var(--terra);color:#fff}
+.btn.g:hover{background:var(--ink);color:var(--cream)}
+.facts{display:flex;flex-wrap:wrap;gap:22px;margin-top:24px}
+.facts b{display:block;font:400 2rem/1 var(--h);color:var(--terra)}
+.facts span{font-size:.92rem;color:var(--mute)}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-weight:600}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#b7b0a5}
+.status.on::before{background:#3bb35f;box-shadow:0 0 10px #3bb35f}
+.stage{position:relative;height:min(560px,70vh);display:grid;place-items:center}
+.board{position:absolute;width:min(560px,92%);height:62%;background:linear-gradient(90deg,#b8854e,#d6a56b 50%,#b8854e);border-radius:40px;box-shadow:0 30px 50px -30px rgba(60,35,10,.6);transform:rotate(-6deg)}
+.board::after{content:"";position:absolute;right:-70px;top:50%;width:90px;height:26px;margin-top:-13px;background:#b8854e;border-radius:0 14px 14px 0}
+.pinsa{position:relative;width:min(380px,70%);aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 20px 30px -18px rgba(0,0,0,.5);transition:width 1.6s cubic-bezier(.6,.05,.2,1),aspect-ratio 1.6s cubic-bezier(.6,.05,.2,1),border-radius 1.6s;transform:rotate(-6deg)}
+.stretched .pinsa{width:min(520px,88%);aspect-ratio:1.9;border-radius:48% / 50%}
+.pinsa img{width:100%;height:100%;object-fit:cover}
+.stage .tag{position:absolute;right:4%;bottom:8%;background:var(--slate);color:var(--cream);padding:10px 14px;border-radius:10px;font:600 .9rem/1.3 var(--b);transform:rotate(3deg);opacity:0;transition:opacity .6s 1.4s}
+.stretched .tag{opacity:1}
+.stage .tag b{display:block;font:400 1.2rem/1 var(--h);color:#ffb183}
+
+/* cos'è la pinsa */
+.cos{background:var(--slate);color:var(--cream)}
+.cos .kick{color:#ffb183}
+.cos h2 span{color:#ffb183}
+.cos .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.cos .lead{color:#dfe2e6}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.vs div{border:1px solid rgba(246,241,233,.2);border-radius:16px;padding:18px}
+.vs b{font:400 1.4rem/1.1 var(--h);display:block;color:#ffb183}
+.vs span{font-size:.95rem;color:#c9cdd3}
+.cos img{border-radius:20px;width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* la tavola: carosello trascinabile */
+.tav .head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.arrows{display:flex;gap:8px}
+.arrows button{width:52px;height:52px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;transition:background .2s,color .2s}
+.arrows button:hover{background:var(--ink);color:var(--cream)}
+.track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:36px var(--gut) 24px;cursor:grab;scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.track.drag{cursor:grabbing;scroll-snap-type:none}
+.card{flex:0 0 clamp(270px,32vw,400px);scroll-snap-align:start;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 20px 40px -30px rgba(35,38,43,.5);user-select:none}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;pointer-events:none}
+.card div{padding:18px 20px 22px}
+.card h3{font-size:1.5rem}
+.card p{color:#5b5f66;font-size:.96rem;margin-top:6px}
+.note{color:var(--mute);font-size:.92rem;padding-inline:var(--gut);max-width:1180px;margin:0 auto}
+
+/* non solo pinsa */
+.more .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.more .it{border-top:3px solid var(--terra);padding-top:14px}
+.more .it b{font:400 1.5rem/1.1 var(--h);display:block}
+.more .it span{color:#5b5f66}
+.more .ph{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.more .ph figure{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:4/5}
+.more .ph img{width:100%;height:100%;object-fit:cover}
+.more .ph figcaption{position:absolute;left:10px;bottom:10px;background:var(--cream);border-radius:999px;padding:6px 12px;font:600 .82rem/1.2 var(--b)}
+/* brunch */
+.brunch{background:#efe3cf}
+.brunch .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,70px);align-items:center}
+.brunch .card2{background:#fff;border-radius:24px;padding:clamp(22px,3vw,34px);box-shadow:0 30px 50px -36px rgba(35,38,43,.5)}
+.brunch .steps{list-style:none;display:grid;gap:14px}
+.brunch .steps li{display:grid;grid-template-columns:90px 1fr;gap:12px;align-items:baseline}
+.brunch .steps b{font:400 1.3rem/1 var(--h);color:var(--terra)}
+.brunch img{border-radius:24px;width:100%;aspect-ratio:4/5;object-fit:cover}
+
+/* il posto */
+.posto{background:var(--slate2);color:var(--cream)}
+.posto .kick{color:#ffb183}
+.posto h2 span{color:#ffb183}
+.posto .grid{display:grid;grid-template-columns:.8fr 1.2fr 1fr;gap:12px;margin-top:40px;align-items:stretch}
+.posto img{width:100%;height:100%;object-fit:cover;border-radius:18px}
+.posto .txt{display:flex;flex-direction:column;justify-content:center;gap:14px}
+.posto .txt p{color:#d6d9de}
+
+/* orari */
+.ora .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px)}
+.week{list-style:none;margin-top:18px}
+.week li{display:grid;grid-template-columns:1fr auto auto;gap:18px;padding:11px 0;border-bottom:1px solid #e3d9ca}
+.week li.t{color:var(--terra);font-weight:800}
+.big{display:block;font:400 clamp(2.2rem,4.5vw,3.4rem)/1.1 var(--h);text-decoration:none;color:var(--terra);margin-top:18px}
+footer{background:var(--slate2);color:#aeb3ba;text-align:center;padding:30px var(--gut);font-size:.92rem}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv{opacity:1;transform:none}
+@media (max-width:900px){
+ .top nav{display:none}.top .call{margin-left:auto}
+ .hero,.cos .wrap,.ora .wrap,.brunch .wrap{grid-template-columns:1fr}
+ .more .ph{grid-template-columns:1fr 1fr}.more .ph figure:last-child{grid-column:1/-1;aspect-ratio:16/9}
+ .stage{height:340px}
+ .more .grid{grid-template-columns:1fr}
+ .posto .grid{grid-template-columns:1fr 1fr}.posto .txt{grid-column:1/-1}
+}
+@media (prefers-reduced-motion:reduce){.pinsa,.stage .tag{transition:none}.rv{opacity:1;transform:none;transition:none}}
+.preview-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#16110e;color:#f8f2e7;border-top:1px solid rgba(239,228,210,.25);font:600 .7rem/1.3 system-ui,sans-serif;letter-spacing:.04em;text-align:center;padding:9px 16px}body{padding-bottom:34px}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+  <a class="logo" href="#" aria-label="Il Rione, inizio pagina"><img src="img/logo.png" alt="il Rione" width="907" height="308"></a>
+  <nav aria-label="Sezioni"><a href="#pinsa">La pinsa</a><a href="#tavola">In tavola</a><a href="#posto">Il posto</a><a href="#orari">Orari</a></nav>
+  <a class="call" href="tel:+390119776616">Prenota</a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="t-hero">
+  <div>
+    <span class="kick">Via Garibaldi 16 · Moncalieri</span>
+    <h1 id="t-hero" style="margin-top:16px">La pinsa <span>romana</span>, nel cuore del rione.</h1>
+    <p>Impasto leggero, steso in forma ovale e condito con ingredienti freschi. A pranzo e a cena, con una birra artigianale e un dolce della casa. E la domenica mattina, il brunch.</p>
+    <div class="btns"><a class="btn p" href="tel:+390119776616">Prenota un tavolo</a><a class="btn g" href="#tavola">Guarda le pinse</a></div>
+    <div class="facts"><span><b>4,5</b>su Google, 775 recensioni</span><span><b>7/7</b>pranzo e cena</span></div>
+    <span class="status" id="status"></span>
+  </div>
+  <div class="stage" id="stage" aria-hidden="true">
+    <div class="board"></div>
+    <div class="pinsa"><img src="img/pinsa-burrata.jpg" alt="" width="1400" height="1050"></div>
+    <span class="tag"><b>Si stende ovale</b>la forma della pinsa</span>
+  </div>
+</section>
+
+<section id="pinsa" class="cos" aria-labelledby="t-cos">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kick">Pinsa o pizza?</span>
+      <h2 id="t-cos" style="margin-top:14px">Non è una pizza, <span>ed è proprio questo il bello</span>.</h2>
+      <p class="lead" style="margin-top:14px">La pinsa è la cugina romana della pizza: si stende in forma ovale, viene croccante fuori e morbida dentro. Non è paragonabile alla napoletana, e non vuole esserlo.</p>
+      <div class="vs">
+        <div><b>La forma</b><span>ovale, servita sulla tavola di legno</span></div>
+        <div><b>Il morso</b><span>croccante fuori e soffice dentro</span></div>
+        <div><b>I condimenti</b><span>ingredienti freschi, abbinamenti che non ti aspetti</span></div>
+        <div><b>Da dividere</b><span>tagliata a spicchi, si passa al centro del tavolo</span></div>
+      </div>
+    </div>
+    <img class="rv" src="img/pinsa.jpg" alt="Una pinsa con cipolla rossa e verdure sulla tavola di legno del Rione" width="1400" height="1050" loading="lazy">
+  </div>
+</section>
+
+<section id="tavola" class="tav" aria-labelledby="t-tav">
+  <div class="wrap head">
+    <div class="rv"><span class="kick">In tavola</span><h2 id="t-tav" style="margin-top:14px">Passa la <span>tavola</span>.</h2></div>
+    <div class="arrows rv"><button type="button" id="prev" aria-label="Pinse precedenti"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M12 4 L6 10 L12 16" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></button><button type="button" id="next" aria-label="Pinse successive"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4 L14 10 L8 16" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></button></div>
+  </div>
+  <div class="track" id="track" tabindex="0" aria-label="Le pinse: trascina o scorri in orizzontale">
+    <article class="card"><img src="img/pinsa-burrata.jpg" alt="Pinsa con burrata e salumi" width="1400" height="1050" loading="lazy"><div><h3>Con la burrata</h3><p>Burrata a ciuffi e salumi, su un fondo rosso.</p></div></article>
+    <article class="card"><img src="img/pinsa-mortadella.jpg" alt="Pinsa con mortadella e stracciatella" width="1050" height="1400" loading="lazy"><div><h3>Mortadella e stracciatella</h3><p>Una delle bianche: rosa, morbida, golosa.</p></div></article>
+    <article class="card"><img src="img/pinsa.jpg" alt="Pinsa con cipolla rossa e verdure" width="1400" height="1050" loading="lazy"><div><h3>Con la cipolla rossa</h3><p>Rossa, con verdure e cipolla.</p></div></article>
+    <article class="card"><img src="img/pinsa-spicchi.jpg" alt="Pinsa tagliata a spicchi sul piatto" width="1050" height="1400" loading="lazy"><div><h3>A spicchi</h3><p>Per chi vuole assaggiarne un po' di tutte.</p></div></article>
+    <article class="card"><img src="img/pinsa-farcita.jpg" alt="Pinsa farcita e tagliata" width="1400" height="787" loading="lazy"><div><h3>Ripiena</h3><p>Chiusa e farcita, da dividere.</p></div></article>
+  </div>
+  <p class="note">Tra le più citate nelle recensioni: la «Rione d'amicizia» e la pinsa con miele, fichi, lardo e castagne.</p>
+</section>
+
+<section class="more" aria-labelledby="t-more">
+  <div class="wrap">
+    <div class="rv"><span class="kick">Non solo pinsa</span><h2 id="t-more" style="margin-top:14px">E poi, <span>il resto della carta</span>.</h2></div>
+    <div class="grid">
+      <div class="it rv"><b>Birre artigianali</b><span>una selezione da abbinare alla pinsa</span></div>
+      <div class="it rv"><b>Carne e pesce</b><span>ristorante oltre che pinseria: risotti, funghi, fritture</span></div>
+      <div class="it rv"><b>Dolci della casa</b><span>«ampia varietà», scrivono i clienti</span></div>
+    </div>
+    <div class="ph">
+      <figure class="rv"><img src="img/risotto.jpg" alt="Risotto alla milanese con salsiccia e stracciatella" width="1236" height="1400" loading="lazy"><figcaption>Risotto, salsiccia e stracciatella</figcaption></figure>
+      <figure class="rv"><img src="img/porcini.jpg" alt="Una cassetta di funghi porcini freschi" width="1051" height="1400" loading="lazy"><figcaption>Porcini, quando è stagione</figcaption></figure>
+      <figure class="rv"><img src="img/gamberi.jpg" alt="Un piatto di gamberoni" width="1400" height="1050" loading="lazy"><figcaption>Dal mare</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="brunch" class="brunch" aria-labelledby="t-brunch">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kick">La domenica</span>
+      <h2 id="t-brunch" style="margin-top:14px">Il brunch <span>della domenica</span>.</h2>
+      <p class="lead" style="margin-top:14px">«Si inizia col brunch, si prosegue con l'aperitivo e si fa pranzo»: la domenica il Rione apre la mattina, dalle 9 alle 13.</p>
+      <div class="card2" style="margin-top:22px">
+        <ul class="steps">
+          <li><b>dalle 9</b><span>si comincia con il brunch</span></li>
+          <li><b>poi</b><span>si prosegue con l'aperitivo</span></li>
+          <li><b>fino alle 13</b><span>e si fa pranzo</span></li>
+        </ul>
+      </div>
+      <div class="btns"><a class="btn p" href="tel:+390119776616">Prenota il brunch</a></div>
+    </div>
+    <img class="rv" src="img/giardino.jpg" alt="Il giardino del Rione con i tavolini all'ombra degli ulivi" width="787" height="1400" loading="lazy">
+  </div>
+</section>
+
+<section id="posto" class="posto" aria-labelledby="t-posto">
+  <div class="wrap">
+    <div class="rv"><span class="kick">Il posto</span><h2 id="t-posto" style="margin-top:14px">Due piani <span>e un dehors</span>.</h2></div>
+    <div class="grid">
+      <img class="rv" src="img/facciata.jpg" alt="La facciata del Rione in Via Garibaldi, con il balcone e l'insegna" width="1050" height="1400" loading="lazy">
+      <img class="rv" src="img/dehors.jpg" alt="Il dehors con le luci appese e i tavolini" width="1400" height="1050" loading="lazy">
+      <div class="txt rv">
+        <p>Una palazzina in Via Garibaldi, con la sala su due piani e i muri arancio. Fuori, il giardino per il pranzo e il dehors con le lucine per le sere d'estate.</p>
+        <p>«Location che stupisce per gli ampi spazi e l'ambiente semplice e curato», scrive un cliente.</p>
+        <img src="img/insegna.jpg" alt="L'insegna del Rione illuminata" width="1400" height="931" loading="lazy" style="height:auto;aspect-ratio:3/2">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="orari" class="ora" aria-labelledby="t-ora">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kick">Orari</span>
+      <h2 id="t-ora" style="margin-top:14px">Pranzo, <span>cena</span> e brunch.</h2>
+      <ul class="week" id="week"></ul>
+    </div>
+    <div class="rv">
+      <span class="kick">Prenota</span>
+      <a class="big" href="tel:+390119776616">011 977 6616</a>
+      <p style="margin-top:14px">Via Garibaldi 16 · 10024 Moncalieri (TO)<br>Anche al 351 524 9464 · da asporto.</p>
+      <div class="btns"><a class="btn p" href="tel:+390119776616">Chiama</a><a class="btn g" href="https://maps.google.com/?q=Il+Rione+Via+Garibaldi+16+Moncalieri" target="_blank" rel="noopener">Indicazioni</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="preview-bar" role="note">Anteprima di un nuovo sito proposto a Il Rione. Non è il sito ufficiale.</div>
+<footer>Il Rione · Via Garibaldi 16, Moncalieri · 011 977 6616</footer>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  setTimeout(function(){document.getElementById('stage').classList.add('stretched')},reduce?0:500);
+  var d=new Date(),day=d.getDay(),m=d.getHours()*60+d.getMinutes(),on=(m>=1140&&m<1380)||(day!==0&&m>=720&&m<855)||(day===0&&m>=540&&m<780),st=document.getElementById('status');
+  st.classList.toggle('on',on);st.textContent=on?'Aperti ora':(m<720?(day===0?'Brunch dalle 9':'A pranzo dalle 12'):(m<1140?'Stasera dalle 19':'A domani'));
+  var N=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'];
+  document.getElementById('week').innerHTML=[1,2,3,4,5,6,0].map(function(i){return '<li'+(i===day?' class="t"':'')+'><span>'+N[i]+'</span><span>'+(i===0?'brunch 9–13':'12–14:15')+'</span><span>19–23</span></li>'}).join('');
+  var tr=document.getElementById('track'),down=false,sx=0,sl=0;
+  tr.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;down=true;sx=e.clientX;sl=tr.scrollLeft;tr.classList.add('drag');tr.setPointerCapture(e.pointerId)});
+  tr.addEventListener('pointermove',function(e){if(down)tr.scrollLeft=sl-(e.clientX-sx)});
+  function up(){down=false;tr.classList.remove('drag')}
+  tr.addEventListener('pointerup',up);tr.addEventListener('pointercancel',up);
+  function go(dir){var c=tr.querySelector('.card');tr.scrollBy({left:dir*(c.offsetWidth+20),behavior:reduce?'auto':'smooth'})}
+  document.getElementById('prev').addEventListener('click',function(){go(-1)});
+  document.getElementById('next').addEventListener('click',function(){go(1)});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  [].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
